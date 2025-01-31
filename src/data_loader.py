@@ -16,8 +16,8 @@ def load_data(train_file, validation_file, test_file):
     return train_dataset, validation_dataset, test_dataset
 
 def preprocess_data(examples):
-  text = examples["text"]
-  label = examples['label']
+  text = examples["project_a"]
+  label = examples['weight_a']
 
   encoding = tokenizer(text, padding="max_length", truncation=True, max_length=512)
   encoding["label"] = label
