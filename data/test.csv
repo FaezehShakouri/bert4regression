@@ -1,2 +1,2 @@
-project_a,weight_a
-"project A: Prettier plugin for Solidity formatting, supporting latest Prettier & Node.js with continuous improvements. project B: Hardhat: Ethereum development environment with Ignition deployments, EDR execution, and pnpm.",0.1016685195
+project_a,project_b,weight_a,weight_b
+"project A: Prettier plugin for Solidity formatting, supporting latest Prettier & Node.js with continuous improvements. project B: Hardhat: Ethereum development environment with Ignition deployments, EDR execution, and pnpm.","Hardhat: Ethereum development environment with Ignition deployments, EDR execution, and pnpm.",0.1016685195,0.8983314805
