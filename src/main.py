@@ -48,8 +48,8 @@ def main(train_file, validation_file, test_file):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--train_file', type=str, required=True, help='Path to the training dataset')
-    parser.add_argument('--validation_file', type=str, required=True, help='Path to the validation dataset')
-    parser.add_argument('--test_file', type=str, required=True, help='Path to the test dataset')
+    parser.add_argument('--train_file', type=str, default='data/test.csv', help='Path to the training dataset')
+    parser.add_argument('--validation_file', type=str, default='data/test.csv', help='Path to the validation dataset')
+    parser.add_argument('--test_file', type=str, default='data/test.csv', help='Path to the test dataset')
     args = parser.parse_args()
     main(args.train_file, args.validation_file, args.test_file)

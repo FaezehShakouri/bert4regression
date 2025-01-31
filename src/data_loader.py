@@ -25,7 +25,7 @@ def preprocess_data(examples):
   return encoding
 
 def tokenize_dataset(file_path, tokenizer):
-    dataset = load_dataset('json', data_files=file_path)['train']
+    dataset = load_dataset('csv', data_files=file_path)['train']
     encoded_dataset = dataset.map(preprocess_data, batched=True, remove_columns=dataset.column_names)
     encoded_dataset.set_format("torch")
     return encoded_dataset
