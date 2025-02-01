@@ -20,7 +20,7 @@ def main(dataset_file):
     # Define training arguments
     training_args = TrainingArguments(
         output_dir='./results',
-        evaluation_strategy='epoch',
+        eval_strategy='epoch',
         save_strategy = "epoch",
         learning_rate=2e-5,
         per_device_train_batch_size=batch_size,
@@ -36,7 +36,7 @@ def main(dataset_file):
         args=training_args,
         train_dataset=train_dataset,
         eval_dataset=validation_dataset,
-        tokenizer=tokenizer,
+        processing_class=tokenizer,
         compute_metrics=compute_metrics_for_regression
     )
 
