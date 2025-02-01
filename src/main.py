@@ -1,15 +1,28 @@
 import argparse
 from numpy import max
-import torch
+import pandas as pd
 from transformers import Trainer, TrainingArguments
-from data_loader import load_data, load_predict_data
+
+from data_loader import load_data, load_predict_data, tokenizer
 from model import create_model
 from utils import compute_metrics_for_regression
-from data_loader import tokenizer
 
 batch_size = 16
 metric_name = "f1"
 
+
+def save_predictions(predictions):
+    # Load the original predict data to get IDs
+    predict_df = pd.read_csv("data/test.csv")
+    
+    # Create DataFrame with predictions
+    results_df = pd.DataFrame({
+        'id': predict_df['id'],
+        'pred': predictions.predictions.flatten()
+    })
+    
+    # Save to CSV
+    results_df.to_csv('predictions.csv', index=False)
 
 def main(dataset_file):
     # Load datasets
@@ -41,26 +54,19 @@ def main(dataset_file):
         compute_metrics=compute_metrics_for_regression
     )
     
-    trainer.train(resume_from_checkpoint="results/checkpoint-515")
-    # Evaluate the model
-    # trainer.evaluate(test_dataset)
-    # trainer.save_model("results/model")
+    # Train model
+    trainer.train()
 
-    # make predictions
-    predictions = trainer.predict(load_predict_data("data/predict.csv"))
-    
-    # Load the original predict data to get IDs
-    import pandas as pd
-    predict_df = pd.read_csv("data/predict.csv")
-    
-    # Create DataFrame with predictions
-    results_df = pd.DataFrame({
-        'id': predict_df['id'],
-        'pred': predictions.predictions.flatten()
-    })
-    
-    # Save to CSV
-    results_df.to_csv('predictions.csv', index=False)
+    # Evaluate the model
+    trainer.evaluate(test_dataset)
+
+    # Save model
+    trainer.save_model("results/model")
+
+    # Make predictions
+    predictions = trainer.predict(load_predict_data("data/test.csv"))
+
+    save_predictions(predictions)
 
 
 if __name__ == "__main__":
