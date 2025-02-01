@@ -3,6 +3,9 @@ import numpy as np
 from datasets import load_dataset
 from transformers import AutoTokenizer
 import logging
+import pandas as pd
+from sklearn.model_selection import train_test_split
+import os
 
 from model import BASE_MODEL
 
@@ -10,13 +13,38 @@ tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL)
 logger = logging.getLogger(__name__)
 
 
-def load_data(train_file, validation_file, test_file):
+def load_data(dataset_file):
     logger.info("Loading datasets...")
-    train_dataset = tokenize_dataset(train_file, tokenizer)
-    validation_dataset = tokenize_dataset(validation_file, tokenizer)
-    test_dataset = tokenize_dataset(test_file, tokenizer)
+
+    split_data(dataset_file)
+
+    train_dataset = tokenize_dataset('data/splitted_data/train.csv', tokenizer)
+    validation_dataset = tokenize_dataset('data/splitted_data/validation.csv', tokenizer)
+    test_dataset = tokenize_dataset('data/splitted_data/test.csv', tokenizer)
 
     return train_dataset, validation_dataset, test_dataset
+
+def split_data(file_path, train_size=0.7, validation_size=0.15, test_size=0.15):
+    df = pd.read_csv(file_path)
+
+    logger.info("Splitting datasets to train, validation and test...")
+    train_df, temp_df = train_test_split(df, train_size=train_size, random_state=42, shuffle=True)
+    validation_size_adjusted = validation_size / (validation_size + test_size)
+    validation_df, test_df = train_test_split(temp_df, train_size=validation_size_adjusted, random_state=42, shuffle=True)
+
+    # Ensure the output directory exists
+    output_dir = 'data/splitted_data'
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Save the splitted datasets to new CSV files
+    train_df.to_csv(os.path.join(output_dir, 'train.csv'), index=False)
+    validation_df.to_csv(os.path.join(output_dir, 'validation.csv'), index=False)
+    test_df.to_csv(os.path.join(output_dir, 'test.csv'), index=False)
+
+    logger.info("Data split completed:")
+    logger.info(f"Training data: {len(train_df)} rows")
+    logger.info(f"Validation data: {len(validation_df)} rows")
+    logger.info(f"Test data: {len(test_df)} rows")
 
 def preprocess_data(examples):
     logger.info("Preprocessing data...")

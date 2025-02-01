@@ -10,9 +10,9 @@ batch_size = 16
 metric_name = "f1"
 
 
-def main(train_file, validation_file, test_file):
+def main(dataset_file):
     # Load datasets
-    train_dataset, validation_dataset, test_dataset = load_data(train_file, validation_file, test_file)
+    train_dataset, validation_dataset, test_dataset = load_data(dataset_file)
 
     # Create model
     model = create_model()
@@ -48,8 +48,6 @@ def main(train_file, validation_file, test_file):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--train_file', type=str, default='data/test.csv', help='Path to the training dataset')
-    parser.add_argument('--validation_file', type=str, default='data/test.csv', help='Path to the validation dataset')
-    parser.add_argument('--test_file', type=str, default='data/test.csv', help='Path to the test dataset')
+    parser.add_argument('--dataset-file', type=str, default='data/data.csv', help='Path to the dataset')
     args = parser.parse_args()
-    main(args.train_file, args.validation_file, args.test_file)
+    main(args.dataset_file)
