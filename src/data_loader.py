@@ -24,6 +24,11 @@ def load_data(dataset_file):
 
     return train_dataset, validation_dataset, test_dataset
 
+
+def load_predict_data(file_path):
+    data = tokenize_dataset(file_path, tokenizer, mapping_function=preprocess_predict_data)
+    return data
+
 def split_data(file_path, train_size=0.7, validation_size=0.15, test_size=0.15):
     df = pd.read_csv(file_path)
 
@@ -59,9 +64,20 @@ def preprocess_data(examples):
   
     return encoding
 
-def tokenize_dataset(file_path, tokenizer):
+def preprocess_predict_data(examples):
+    logger.info("Preprocessing predict data...")
+    project_as = examples["project_a"]
+    project_bs = examples["project_b"]
+
+    text = [f"Project A: {project_a}, Project B: {project_b}" for project_a, project_b in zip(project_as, project_bs)]
+
+    encoding = tokenizer(text, padding="max_length", truncation=True, max_length=512)
+  
+    return encoding
+
+def tokenize_dataset(file_path, tokenizer, mapping_function=preprocess_data):
     logger.info("Tokenizing dataset...")
     dataset = load_dataset('csv', data_files=file_path)['train']
-    encoded_dataset = dataset.map(preprocess_data, batched=True, remove_columns=dataset.column_names)
+    encoded_dataset = dataset.map(mapping_function, batched=True, remove_columns=dataset.column_names)
     encoded_dataset.set_format("torch")
     return encoded_dataset

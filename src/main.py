@@ -1,7 +1,8 @@
 import argparse
+from numpy import max
+import torch
 from transformers import Trainer, TrainingArguments
-
-from data_loader import load_data
+from data_loader import load_data, load_predict_data
 from model import create_model
 from utils import compute_metrics_for_regression
 from data_loader import tokenizer
@@ -21,7 +22,7 @@ def main(dataset_file):
     training_args = TrainingArguments(
         output_dir='./results',
         eval_strategy='epoch',
-        save_strategy = "epoch",
+        save_strategy="epoch",
         learning_rate=2e-5,
         per_device_train_batch_size=batch_size,
         per_device_eval_batch_size=batch_size,
@@ -39,12 +40,28 @@ def main(dataset_file):
         processing_class=tokenizer,
         compute_metrics=compute_metrics_for_regression
     )
-
-    # Train the model
-    trainer.train()
-
+    
+    trainer.train(resume_from_checkpoint="results/checkpoint-515")
     # Evaluate the model
-    trainer.evaluate(test_dataset)
+    # trainer.evaluate(test_dataset)
+    # trainer.save_model("results/model")
+
+    # make predictions
+    predictions = trainer.predict(load_predict_data("data/predict.csv"))
+    
+    # Load the original predict data to get IDs
+    import pandas as pd
+    predict_df = pd.read_csv("data/predict.csv")
+    
+    # Create DataFrame with predictions
+    results_df = pd.DataFrame({
+        'id': predict_df['id'],
+        'pred': predictions.predictions.flatten()
+    })
+    
+    # Save to CSV
+    results_df.to_csv('predictions.csv', index=False)
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
