@@ -4,7 +4,7 @@ import pandas as pd
 from transformers import Trainer, TrainingArguments
 
 from data_loader import load_data, load_predict_data, tokenizer
-from model import create_model
+from model import create_bert_model, create_longformer_model
 from utils import compute_metrics_for_regression
 
 batch_size = 16
@@ -29,7 +29,7 @@ def main(dataset_file):
     train_dataset, validation_dataset, test_dataset = load_data(dataset_file)
 
     # Create model
-    model = create_model()
+    model = create_longformer_model()
 
     # Define training arguments
     training_args = TrainingArguments(
