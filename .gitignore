@@ -176,3 +176,5 @@ cython_debug/
 results/
 
 data/splitted_data/
+
+artifacts
