@@ -7,8 +7,6 @@ from transformers import Trainer, TrainingArguments, AutoTokenizer
 from datasets import load_dataset
 from sklearn.model_selection import train_test_split
 from transformers import AutoModelForSequenceClassification
-
-from model import create_bert_model, create_longformer_model, BASE_MODEL
 from utils import compute_metrics_for_regression
 
 logger = logging.getLogger(__name__)
@@ -22,6 +20,11 @@ class ModelTrainer:
         self.tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL)
         self.tokenizer_max_length = tokenizer_max_length
         self.trainer = None
+
+        logger.info("Initializing trainer with:")
+        logger.info(f"Model type: {self.model_type}")
+        logger.info(f"Batch size: {self.batch_size}")
+        logger.info(f"Tokenizer max length: {self.tokenizer_max_length}")
     
     def _get_model(self):
         return AutoModelForSequenceClassification.from_pretrained(self.model_type, num_labels=1)
@@ -102,9 +105,10 @@ class ModelTrainer:
         results_df.to_csv(output_file, index=False)
 
     def train(self, args):
-        # Add timestamp and model type to output directory
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        args.output_dir = f"artifacts/{args.output_dir}_{self.model_type}_{timestamp}"
+        # Add timestamp and model type to output directory if not specified
+        if args.output_dir is None:
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            args.output_dir = f"artifacts/output_{self.model_type}_{timestamp}"
 
         # Load datasets
         train_dataset, validation_dataset, test_dataset = self.load_data(args.dataset_file)
@@ -144,9 +148,9 @@ class ModelTrainer:
         # Save model if specified
         if args.save_model:
             # Add timestamp and model type to model save path
-            save_path = args.save_model.rstrip("/")
-            args.save_model = f"artifacts/{save_path}_{self.model_type}_{timestamp}"
-            self.trainer.save_model(args.save_model)
+            save_path = "model"  # Default path since save_model is now a bool flag
+            model_save_path = f"artifacts/{save_path}_{self.model_type}_{timestamp}"
+            self.trainer.save_model(model_save_path)
 
     def predict(self, test_file, output_file):
         if self.trainer is None:
@@ -164,14 +168,14 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset-file', type=str, default='data/data.csv', help='Path to the dataset')
-    parser.add_argument('--model-type', type=str, default='longformer', choices=['bert', 'longformer'], help='Type of model to use')
+    parser.add_argument('--dataset-file', type=str, default='data/data.mirror.csv', help='Path to the dataset')
+    parser.add_argument('--model-type', type=str, default='FacebookAI/roberta-base', help='Type of model to use')
     parser.add_argument('--tokenizer-max-length', type=int, default=512, help='Max length of the tokenizer')
-    parser.add_argument('--output-dir', type=str, default='results', help='Directory for output files')
+    parser.add_argument('--output-dir', type=str, default=None, help='Directory for output files')
     parser.add_argument('--num-epochs', type=int, default=5, help='Number of training epochs')
     parser.add_argument('--checkpoint', type=str, help='Path to checkpoint to resume from')
-    parser.add_argument('--save-model', type=str, help='Path to save the final model')
-    parser.add_argument('--test-file', type=str, default='data/test.log.csv', help='File to make predictions on')
-    parser.add_argument('--predictions-output', type=str, default='predictions.log.csv', help='Where to save predictions')
+    parser.add_argument('--save-model', action='store_true', help='Whether to save the final model')
+    parser.add_argument('--test-file', type=str, default='data/test.csv', help='File to make predictions on')
+    parser.add_argument('--predictions-output', type=str, default=None, help='Where to save predictions')
     args = parser.parse_args()
     main(args)
