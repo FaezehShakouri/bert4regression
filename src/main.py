@@ -178,7 +178,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset-file', type=str, default='data/data.mirror.csv', help='Path to the dataset')
-    parser.add_argument('--model-type', type=str, default='roberta-base', help='Type of model to use')
+    parser.add_argument('--model-type', type=str, default='bert-base-uncased', help='Type of model to use')
     parser.add_argument('--tokenizer-max-length', type=int, default=512, help='Max length of the tokenizer')
     parser.add_argument('--output-dir', type=str, default=None, help='Directory for output files')
     parser.add_argument('--num-epochs', type=int, default=5, help='Number of training epochs')
