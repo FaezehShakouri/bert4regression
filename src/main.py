@@ -10,15 +10,17 @@ from transformers import AutoModelForSequenceClassification
 from utils import compute_metrics_for_regression
 
 logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO)
 
 class ModelTrainer:
-    def __init__(self, model_type, batch_size=16, tokenizer_max_length=512):
-        self.model_type = model_type
-        self.batch_size = batch_size
+    def __init__(self, args):
+        self.args = args
+        self.model_type = args.model_type
+        self.batch_size = 16
         self.metric_name = "f1"
         self.model = self._get_model()
-        self.tokenizer = AutoTokenizer.from_pretrained(BASE_MODEL)
-        self.tokenizer_max_length = tokenizer_max_length
+        self.tokenizer = AutoTokenizer.from_pretrained(self.model_type)
+        self.tokenizer_max_length = args.tokenizer_max_length
         self.trainer = None
 
         logger.info("Initializing trainer with:")
@@ -39,21 +41,21 @@ class ModelTrainer:
         
         if include_label:
             encoding["label"] = examples['weight_a']
-      
+
         return encoding
 
-    def tokenize_dataset(self, file_path, mapping_function=None):
+    def tokenize_dataset(self, data_file, mapping_function=None):
         if mapping_function is None:
             mapping_function = self.preprocess_data
             
         logger.info("Tokenizing dataset...")
-        dataset = load_dataset('csv', data_files=file_path)['train']
+        dataset = load_dataset('csv', data_files=data_file)['train']
         encoded_dataset = dataset.map(mapping_function, batched=True, remove_columns=dataset.column_names)
         encoded_dataset.set_format("torch")
         return encoded_dataset
 
-    def split_data(self, file_path, train_size=0.7, validation_size=0.15, test_size=0.15):
-        df = pd.read_csv(file_path)
+    def split_data(self, train_size=0.7, validation_size=0.15, test_size=0.15):
+        df = pd.read_csv(self.args.dataset_file)
 
         logger.info("Splitting datasets to train, validation and test...")
         train_df, temp_df = train_test_split(df, train_size=train_size, random_state=42, shuffle=True)
@@ -75,7 +77,7 @@ class ModelTrainer:
     def load_data(self, dataset_file):
         logger.info("Loading datasets...")
 
-        self.split_data(dataset_file)
+        self.split_data()
 
         train_dataset = self.tokenize_dataset('data/splitted_data/train.csv')
         validation_dataset = self.tokenize_dataset('data/splitted_data/validation.csv')
@@ -83,8 +85,10 @@ class ModelTrainer:
 
         return train_dataset, validation_dataset, test_dataset
 
-    def load_test_data(self, file_path):
-        return self.tokenize_dataset(file_path, mapping_function=lambda x: self.preprocess_data(x, include_label=False))
+    def load_test_data(self, test_file=None):
+        if test_file is None:
+            test_file = self.args.test_file
+        return self.tokenize_dataset(test_file, mapping_function=lambda x: self.preprocess_data(x, include_label=False))
 
     def save_predictions(self, predictions, output_file):
         # Load the original test data to get IDs
@@ -104,24 +108,24 @@ class ModelTrainer:
         # Save to CSV
         results_df.to_csv(output_file, index=False)
 
-    def train(self, args):
+    def train(self):
         # Add timestamp and model type to output directory if not specified
-        if args.output_dir is None:
+        if self.args.output_dir is None:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            args.output_dir = f"artifacts/output_{self.model_type}_{timestamp}"
+            self.args.output_dir = f"artifacts/output_{self.model_type}_{timestamp}"
 
         # Load datasets
-        train_dataset, validation_dataset, test_dataset = self.load_data(args.dataset_file)
+        train_dataset, validation_dataset, test_dataset = self.load_data(self.args.dataset_file)
 
         # Define training arguments
         training_args = TrainingArguments(
-            output_dir=args.output_dir,
+            output_dir=self.args.output_dir,
             eval_strategy='epoch',
             save_strategy="epoch",
             learning_rate=2e-5,
             per_device_train_batch_size=self.batch_size,
             per_device_eval_batch_size=self.batch_size,
-            num_train_epochs=args.num_epochs,
+            num_train_epochs=self.args.num_epochs,
             weight_decay=0.01,
             load_best_model_at_end=True,
         )
@@ -137,8 +141,8 @@ class ModelTrainer:
         )
         
         # Train model
-        if args.checkpoint:
-            self.trainer.train(resume_from_checkpoint=args.checkpoint)
+        if self.args.checkpoint:
+            self.trainer.train(resume_from_checkpoint=self.args.checkpoint)
         else:
             self.trainer.train()
 
@@ -146,30 +150,35 @@ class ModelTrainer:
         self.trainer.evaluate(test_dataset)
 
         # Save model if specified
-        if args.save_model:
+        if self.args.save_model:
             # Add timestamp and model type to model save path
             save_path = "model"  # Default path since save_model is now a bool flag
             model_save_path = f"artifacts/{save_path}_{self.model_type}_{timestamp}"
             self.trainer.save_model(model_save_path)
 
-    def predict(self, test_file, output_file):
+    def predict(self, test_file=None, output_file=None):
         if self.trainer is None:
             raise ValueError("Model must be trained before making predictions")
             
         # Make predictions
+        if test_file is None:
+            test_file = self.args.test_file
+        if output_file is None:
+            output_file = self.args.predictions_output
+        
         predictions = self.trainer.predict(self.load_test_data(test_file))
         self.save_predictions(predictions, output_file)
 
 def main(args):
-    trainer = ModelTrainer(args.model_type)
-    trainer.train(args)
-    trainer.predict(args.test_file, args.predictions_output)
+    trainer = ModelTrainer(args)
+    trainer.train()
+    trainer.predict()
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset-file', type=str, default='data/data.mirror.csv', help='Path to the dataset')
-    parser.add_argument('--model-type', type=str, default='FacebookAI/roberta-base', help='Type of model to use')
+    parser.add_argument('--model-type', type=str, default='roberta-base', help='Type of model to use')
     parser.add_argument('--tokenizer-max-length', type=int, default=512, help='Max length of the tokenizer')
     parser.add_argument('--output-dir', type=str, default=None, help='Directory for output files')
     parser.add_argument('--num-epochs', type=int, default=5, help='Number of training epochs')
