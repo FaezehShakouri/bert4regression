@@ -173,8 +173,12 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-results/
+# From model
+model/results/
 
-data/splitted_data/
+model/data/splitted_data/
 
-artifacts
+model/artifacts
+
+# From data analysis
+data_analysis/data/repos/
