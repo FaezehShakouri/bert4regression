@@ -1,0 +1,1 @@
+JavaScript positioning library offering performant, accessible UI element placement with React/Vue integrations.

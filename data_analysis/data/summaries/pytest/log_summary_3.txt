@@ -1,0 +1,39 @@
+[description]
+This project is the pytest testing framework. The commit logs span several months and primarily focus on bug fixes, documentation improvements, and preparing for the 2.7 and 2.8 releases.  Some architectural changes related to plugin management and hook wrappers are also present.
+
+[milestones]
+• Release 2.8.0
+    - Vendored pluggy 0.3.1
+    - Several bug fixes including fixes to tmpdir handling and assertion re-encoding.
+    - Improved documentation for plugins and various features.
+• Release 2.7.0
+    - Several bug fixes and documentation updates
+    - AST rewriting fixes for Python 3.5
+•  Integration of pytest-cache plugin into core
+    - Introduced new cache fixture and command line options for cache management.
+•  Improved tmpdir handling
+    - More robust tmpdir creation, especially for different user environments and platforms.
+•  Refactoring of plugin management and hook calling.
+    -  Introduction of hook wrappers.
+    - Simplifying plugin registration/unregistration
+•  Assertion Rewriting Improvements.
+    - Improved assertion messages and handling of unicode.
+• Documentation Overhaul.
+    - Switch from bitbucket to Github, updating all links and contribution guidelines
+    - Improved documentation on fixtures, plugins and various other features
+
+[patterns]
+• Increased focus on Python 3 compatibility.
+    - Many commits address Python 3 specific issues, reflecting a shift towards supporting newer Python versions.
+•  Active development of new features and bug fixes.
+    - The high frequency of commits and pull requests shows active maintenance and community involvement.
+•  Focus on improving user experience.
+    - Several commits are dedicated to improving error messages, documentation, and command-line help.
+•  Refactoring for code maintainability.
+    -  Changes to plugin management and the introduction of hook wrappers suggest efforts to improve the framework's architecture and maintainability.
+•  Potential technical debt in older code.
+    - Some commits address regressions and inconsistencies, indicating potential technical debt in certain areas.
+•  Occasional flaky tests.
+    -  A few commits address flaky tests, particularly on Windows, suggesting areas where the test suite could be improved.  
+•  Emphasis on documentation.
+    -  Several commits address documentation updates and rewrites, reflecting a commitment to providing clear and up-to-date information for users.

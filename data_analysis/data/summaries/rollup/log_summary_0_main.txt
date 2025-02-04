@@ -1,0 +1,26 @@
+[description]
+Rollup, a JavaScript module bundler, underwent significant development with a focus on performance enhancements, new features like JSX support, improved developer experience with an enhanced REPL and detailed error messages, and a major architectural shift towards native/WASM code with the adoption of the SWC parser.
+
+[milestones]
+• Rollup 4.0: Introduced SWC parser and native/WASM code, marking a major architectural change, impacting performance and potentially plugin compatibility.
+• JSX Support (4.24.0): Introduced JSX support, expanding Rollup's capabilities for modern JavaScript development.
+• Enhanced REPL: Multiple improvements to the REPL, including support for logging, better colors, and more available options, improved developer experience.
+• Detailed Error Messages & Locations: Enhanced error messages with location information and improved logging for better debugging.
+• Performance Enhancements: Continuous focus on performance optimizations, especially in chunking and module resolution.
+• Improved Documentation: Revamped website using Vitepress, improved architecture documentation, and ongoing refinements.
+• Enhanced Tree-shaking: ongoing refinements and bug fixes to tree-shaking, leading to smaller bundle sizes.
+• Support for New Syntax: Ongoing addition of support for modern JavaScript syntax like decorators, import assertions, and optional chaining.
+• Wider Platform Support: Added support for more platforms like FreeBSD, Linux LoongArch, ppc64le, s390x.
+
+[patterns]
+• Regular Releases: Consistent releases indicate active maintenance and development.
+• Performance Focus: Recurring performance improvements across different areas suggest a commitment to optimization.
+• Community Contributions: Many commits from external contributors demonstrate a healthy and active community.
+• Documentation Improvements: Regular documentation updates suggest a focus on user experience.
+• Security Updates:  Security vulnerabilities are addressed promptly, showing attention to security best practices.
+• Dependency Updates: Active dependency management with Renovate shows a focus on keeping dependencies up-to-date.
+• Shift to Native Code: The introduction of the SWC parser and WASM code marks a strategic shift towards using native code, which has significant performance implications.
+• Experimental Feature Introductions:  Incremental introduction of experimental features like minChunkSize and logging side effects allows for community feedback and iterative improvement.
+• Addressing Technical Debt:  Refactoring efforts and code cleanups indicate a commitment to addressing technical debt, though potential for more remains in older parts of the codebase.
+• Increased use of Rust:  Growing usage of Rust for core parts of the bundler shows a strategic investment in long-term performance and maintainability.
+• Testing & Code Quality:  Comprehensive testing and linting practices, including the introduction of clippy, suggest a commitment to code quality.

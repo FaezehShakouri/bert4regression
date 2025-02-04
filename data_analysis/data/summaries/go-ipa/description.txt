@@ -1,0 +1,1 @@
+Go library for fast Inner Product Arguments (IPA) and multiproofs using Bandersnatch.

@@ -1,0 +1,49 @@
+[description]
+A React Hooks library for remote data fetching.
+
+[milestones]
+• 2.0 Release
+    - Introduced hook for remote mutations (`useSWRMutation`).
+    - Added support for promises as fallback data.
+    - Improved React 18 support, including Suspense and streaming SSR.
+    - Removed default fetcher.
+    - Changed error broadcasting behavior in mutations.
+• 1.0 Release
+    - Introduced middleware for customizing the request lifecycle.
+    - Added `useSWRConfig` for accessing and modifying SWR configurations.
+    - Improved type safety and stability.
+• Subscription Mode
+    - Introduced experimental subscription mode for real-time updates.
+• Infinite Loading Improvements
+    - Added `useSWRInfinite` hook for fetching paginated data.
+    - Improved performance and stability of infinite loading.
+• Custom Cache Provider
+    - Added support for custom cache providers.
+• DevTools Integration
+    - Added DevTools hook for improved debugging experience.
+
+[patterns]
+• Increased Focus on Types and Testing
+    - Numerous commits address type issues, improvements, and stricter type checking.
+    - Addition of more comprehensive tests and testing infrastructure.
+    - Impact: Enhanced code quality, maintainability, and developer experience.
+• Performance Optimizations
+    - Several commits focus on reducing re-renders, optimizing cache usage, and improving data comparison performance.
+    - Impact: Better runtime performance and user experience.
+• React 18 Adoption and Support
+    - Ongoing efforts to ensure compatibility and leverage new features in React 18.
+    - Impact: Improved performance and developer experience with React 18.
+• Simplification and Refactoring
+    - Regular code refactoring and cleanup, including project structure and build processes.
+    - Impact: Improved code maintainability and reduced bundle size.
+• Community Contributions and Feedback
+    - Several bug fixes and improvements based on community feedback and contributions.
+    - Impact: Enhanced library usability and community engagement.
+• Dependency Management
+    - Upgrades and changes to dependencies, including build tools and testing libraries.
+    - Removal of unnecessary dependencies to reduce bundle size.
+    - Impact: Improved build process, security, and maintainability.
+• Deprecations and Breaking Changes
+    - Gradual deprecation of older APIs and introduction of new, improved alternatives.
+    - Clear communication of breaking changes through release notes and documentation.
+    - Impact: Encourages adoption of best practices and simplifies the library over time.

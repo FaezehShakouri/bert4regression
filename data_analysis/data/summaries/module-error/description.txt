@@ -1,0 +1,1 @@
+Node.js library with TypeScript support, focused on dependency management and maintenance.

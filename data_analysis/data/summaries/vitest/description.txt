@@ -1,0 +1,1 @@
+Vitest: Blazing fast Vite-powered unit testing with browser support, rich matchers, and a flexible reporter API.

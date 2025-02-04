@@ -1,0 +1,1 @@
+Java Ethereum client Teku supports Beacon Chain, validator functions, and Deneb/EIP-4844 upgrade.

@@ -1,0 +1,65 @@
+[description]
+Rollup, a module bundler for JavaScript, focuses on optimizing code for ES modules. This log reflects its early development, establishing core features and build processes.
+
+[milestones]
+• v0.37.0
+    - Tree-shaking improvements for smaller bundle sizes.
+    - More lenient handling of `export default` declarations.
+    - Gather possible values for external declarations.
+• v0.36.0
+    - Support for templates literals.
+    - Automatic semicolon insertion.
+• v0.35.0
+    - Deconflicting of classes.
+    - Upgrade to Acorn 4.
+• v0.34.0
+    - `--watch` implemented.
+• v0.33.0
+    - Plugin hooks introduced.
+    - Support for multiple output targets.
+• v0.32.0
+    - Switch tests from Babel to Buble.
+• v0.30.0
+    - Acorn options support.
+• v0.25.0
+    - Browser-friendly build process.
+• v0.20.0
+    - Plugin support.
+• Initial commit
+    - Basic functionality established.
+
+[patterns]
+• Performance optimization
+    - Tree-shaking improvements.
+    - Caching resolved IDs.
+    - Performance labels for debugging.
+    - AST cloning for incremental rebuilds.
+• Code quality and testing
+    - Introduction of ESLint and linting tests.
+    - Expansion of test suite with failing tests that drove bug fixes.
+    - Codecov integration for coverage reports.
+• Refactoring and architectural changes
+    - Rewriting of internal components.
+    - Switch from Babel to Buble for tests.
+    - Introduction of the Scope class for managing variables and namespaces.
+• Bug fixes
+    - Numerous bug fixes addressing edge cases, especially regarding external modules and default exports.
+    - Sourcemap generation fixes.
+• Feature development
+    - Implementation of core Rollup features such as tree-shaking, code splitting, and support for various module formats.
+    - Incremental build support.
+• CLI improvements
+    - `--watch`, `--config`, `--no-strict`, `--environment` and other CLI options added.
+    - Improved error reporting.
+• Documentation
+    - Gradual improvement of the README.
+    - Changelog updates reflect major changes.
+• Legacy support
+    - `legacy` option to control features for older browsers.
+• Project management
+    - Use of Greenkeeper for dependency updates.
+    - Use of issue and pull request templates.
+• Technical debt indicators
+    - Skipped tests due to pending issues.
+    - Workarounds for older Node.js versions.
+    - Comments indicating "TODO" or messy code.

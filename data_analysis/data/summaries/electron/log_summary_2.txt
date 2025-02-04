@@ -1,0 +1,42 @@
+[description]
+Chromium and Node.js upgrades and refactoring for Electron, including changes to APIs, build processes, security, and documentation.
+
+[milestones]
+• Chromium Upgraded to versions 72, 71, 70, 69, 68, 67, 66, 63, 62, 61
+    - Numerous API changes and refactoring required across various modules including network, printing, media, devtools, and views.
+• Node.js Upgraded to versions 10.11.0, 10.10.0, 10.6.0, 10.2.0, 9.7.0, 9.3.0, 8.9.3
+    - Changes to build processes, module loading, and handling of unhandled rejections.
+• Offscreen Rendering (OSR) Improvements and Fixes
+    - Refactoring of OSR implementation, resolution of crashes and visual glitches, improved framerate control, and support for transparent windows.
+• Security Enhancements
+    - Enabling mixed-sandbox mode by default, improved IPC validation, remote module filtering, blocking of certain APIs in sandboxed renderers, and addition of security warnings.
+• Promisification of APIs
+    - Many APIs were promisified for improved developer experience.
+• TypeScript Definitions
+    - Internal Electron JS code converted to TypeScript, and automatic generation of TypeScript definitions introduced.
+• GN Build System
+    - Gradual migration towards GN build system from GYP, including support for different platforms and architectures.
+• Removal of Brightray
+    - Brightray components progressively replaced with Electron counterparts, simplifying the codebase.
+• Improved Documentation
+    - Extensive documentation updates and improvements, including new guides for dark mode, security, and building native modules.
+
+[patterns]
+• Refactoring for Chromium and Node.js Upgrades
+    - Supporting evidence: Numerous commits addressing API changes, deprecated methods, build issues, and test failures.
+    - Impact assessment: Continuous effort to keep Electron up-to-date with latest Chromium and Node.js releases, requiring significant development resources.
+• Gradual Adoption of GN Build System
+    - Supporting evidence: Introduction of GN build targets and configuration, refactoring of build scripts, and enabling of GN builds on different platforms.
+    - Impact assessment: Transition towards a more modern and flexible build system, potentially improving build performance and maintainability.
+• Increased Focus on Security
+    - Supporting evidence: Commits related to sandbox improvements, IPC validation, and blocking of potentially unsafe APIs.
+    - Impact assessment: Enhanced security posture for Electron applications, reducing risk of vulnerabilities.
+• Emphasis on Developer Experience
+    - Supporting evidence: Promisification of APIs, TypeScript conversion, improved documentation, and new developer tools.
+    - Impact assessment: Easier development, improved code quality, and better maintainability for Electron applications.
+• Addressing Technical Debt
+    - Supporting evidence: Removal of Brightray, refactoring of OSR and default app implementation.
+    - Impact assessment: Reduced complexity and improved code maintainability.
+• Continuous Integration Improvements
+    - Supporting evidence: Changes to CI scripts and configurations, enabling cross-arch testing, and faster build times.
+    - Impact assessment: More robust and efficient testing process, enabling faster identification and resolution of issues.

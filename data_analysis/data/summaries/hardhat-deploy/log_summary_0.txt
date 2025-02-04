@@ -1,0 +1,50 @@
+[description]
+Hardhat deployment plugin for managing contract deployments and simplifying upgrades.
+
+[milestones]
+• zkSync Network Support
+    - Added hardhat signer and provider for zkSync.
+    - Updated deployment process for zkSync compatibility.
+    - Introduced deterministic deployment and custom data for zkSync.
+    - Fixed issues related to factory dependencies and re-deployment in zkSync.
+• Improved Etherscan Verification
+    - Added support for various Etherscan networks (Arbitrum Goerli, Optimism Goerli/Mainnet, Moonriver, Snowtrace, BscScan, PolygonScan, Cronos, Huobi Eco Chain, etc.).
+    - Introduced the --contract-name option for specifying contract names during verification.
+    - Added options for specifying API URLs and handling verification failures.
+• Enhanced Proxy Support
+    - Implemented support for UUPS proxies, including custom upgrade functions and deterministic deployments.
+    - Added the ability to specify implementation names for reusing implementations across multiple proxies.
+    - Fixed issues related to proxy dependencies and re-deployment checks.
+• Diamond Pattern Support
+    - Added support for deploying and managing Diamond contracts.
+    - Introduced deterministic deployment for Diamond contracts.
+    - Implemented filtering of selectors by facets in Diamonds.
+• Ledger Hardware Wallet Support
+    - Integrated support for Ledger hardware wallets, including path support and handling connection issues.
+• Exporting Artifacts and Deployments
+    - Implemented exporting artifacts and deployments, including support for TypeScript const export.
+    - Added options for preserving directory structure and filtering exported artifacts.
+• Improved Logging and Debugging
+    - Introduced more detailed logging and debugging output, including transaction hashes and gas estimates.
+    - Added the HARDHAT_DEPLOY_LOG environment variable for controlling log output.
+• Companion Networks
+    - Implemented companion networks for running tasks on different networks.
+
+[patterns]
+• Active Development and Community Contributions
+    - Regular releases and consistent updates indicate active development.
+    - Numerous pull requests from external contributors demonstrate a strong community involvement.
+• Focus on Cross-Chain Compatibility
+    - Frequent additions of support for various networks (zkSync, Optimism, Arbitrum, Polygon, BSC, etc.) suggest a focus on cross-chain compatibility.
+• Addressing Technical Debt
+    - Refactoring and code cleanup efforts, such as fixing typos, removing redundant code, and upgrading dependencies, indicate attention to technical debt.
+• Emphasis on Deterministic Deployments
+    - Several updates focused on ensuring deterministic deployments, particularly for proxies and diamond contracts, highlight the importance of predictable deployment addresses.
+• Iterative Improvement of Features
+    - Features like proxy support and diamond management have been progressively improved over time, suggesting an iterative development approach.
+    - The addition of custom data/arguments and upgrade function options for proxies demonstrates this pattern.
+• Growing Complexity
+    - The addition of support for more complex patterns like diamond and proxies, along with numerous network integrations, suggests increasing complexity of the plugin.
+    - This may require increased attention to maintainability and documentation.
+• Potential for Feature Creep
+    - The wide range of features and network integrations might lead to feature creep. Careful consideration should be given to the scope and complexity of future additions.

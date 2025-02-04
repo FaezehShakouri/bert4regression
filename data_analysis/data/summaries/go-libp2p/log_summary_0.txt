@@ -1,0 +1,25 @@
+[description]
+This project is go-libp2p, a modular peer-to-peer networking stack. The commit logs span from mid-2018 to early 2025, showing continuous development and improvement of the library.
+
+[milestones]
+• WebRTC Transport Stabilization and Enablement:  WebRTC transport graduated from experimental, becoming a default transport. Improvements include QUIC connection reuse, enhanced handshake parallelism, bug fixes related to closing and buffering, and removal of the experimental tag.
+• QUIC Protocol Updates and Improvements: Updated quic-go to several versions, culminating in v0.49.0. Support added for QUIC v1 (RFC 9000), stateless reset keys, QLOG recording, improved handling of multiple versions and listeners, and bug fixes for stalled listeners.
+• HTTP Handling Enhancements: Implemented HTTP spec, adding HTTP path support for libp2phttp and handling concurrent requests on the server.  Included workarounds for ResponseWriter's CloseNotifier, preference for owned listeners, and returning ErrServerClosed on Close.
+• Resource Management and Metrics: Introduced resource manager with features like connection limiting per IP CIDR, autoscaling limits based on system resources, allowlisting, blocked resource tracking, and a dedicated dashboard. Extensive metrics added for various components including eventbus, swarm, identify, and autorelay.
+• Security Improvements and Protocol Negotiation:  Switched from SECIO to Noise as the default security transport.  Added support for TLS 1.3, custom x509 certificates, a security policy, and improved protocol negotiation using ALPN and Noise extensions. Restricted RSA key sizes for security reasons.
+• Connection Management and Dialing Improvements:  Refactored address resolution, implemented "Happy Eyeballs" dialing for improved performance and reliability, added support for SOCKS proxy with websockets, deduplicated dial addresses, and introduced smart dialing logic. Added a peer dial latency metric and backoff for local IP updates.
+• Peer Store Enhancements:  Improved garbage collection in the memory-backed peerstore, addressed race conditions, and limited the number of non-connected peers in the address book. Added contexts to peerstore methods and deprecated the database-backed peerstore.
+• Refactoring and Dependency Updates:  Significant refactoring done to clean up code, remove unused packages (like mplex and goprocess), and update dependencies like gorilla/websocket, go-multistream, and fx. Migrated away from gx to go modules.
+• Connection Gating: Implemented comprehensive connection gating, allowing interception and control of dials and accepted connections.  Added tests and an allowlist option for finer control.
+• Auto Relay and NAT Traversal: Improved autonat with features like server metrics, dial request handling, interaction with autorelay, and status check method.  Enhanced autorelay with bug fixes, static relay handling, and reconnect logic. Implemented autonat v2 based on the latest spec.
+
+[patterns]
+• Focus on Performance and Scalability: Recurring themes of optimizing memory usage, reducing allocations, and improving dialing efficiency (e.g., Happy Eyeballs, smart dialing, deduplication). Suggests performance is a key priority.
+• Increased Use of Metrics:  Extensive addition of metrics across multiple components demonstrates a focus on observability and data-driven decision making.
+•  Shift Towards QUIC and WebRTC: The development emphasis on QUIC and WebRTC transports, including updates and bug fixes, indicates a strategic move towards modern, performant transport protocols.
+•  Deprecation and Modernization: Regular deprecation of older components and upgrades to newer dependencies (e.g., gx to Go modules, SECIO to Noise) reflects an active effort to keep the library current.
+•  Addressing Technical Debt:  Several commits focus on refactoring, bug fixes, and race condition resolution, suggesting a commitment to addressing technical debt and improving code quality.
+• Emphasis on Testing: Regular addition and improvement of tests, including integration and interoperability tests, points to a good testing culture.  Flaky tests were addressed frequently.
+• Active Community Involvement:  Several commits came from community contributions, bug reports, and documentation improvements, demonstrating a healthy and active community.
+•  Focus on Security:  Commits related to restricting RSA key sizes, switching to Noise, and adding a security policy indicate an awareness of security best practices.
+•  Standardization and Specification Adherence:  Updates to QUIC v1 (RFC 9000), autonat v2 spec, and mDNS spec illustrate commitment to standardization and interoperability.

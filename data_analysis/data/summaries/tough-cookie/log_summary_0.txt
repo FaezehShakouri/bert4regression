@@ -1,0 +1,31 @@
+[description]
+This project is a robust cookie library designed for Node.js and browsers. It handles cookie parsing, manipulation, and storage, adhering to RFC 6265 specifications.  The project emphasizes correctness and compliance with standards, along with offering various features like a memory store.
+
+[milestones]
+• Version 5.0.0
+    - Introduced TypeScript support, enhancing code maintainability and developer experience.
+    - Refactored the codebase, splitting a large cookie file into multiple smaller, more manageable files.
+    - Implemented stricter ESLint rules for improved code quality and consistency.
+    - Replaced the `psl` library with `tldts` for more efficient public suffix handling.
+    - Dropped support for older Node.js versions, requiring a minimum of version 6.
+• Version 4.0.0
+    - Removed the `ip-regex` dependency.
+    - Implemented a new embedded IP regex for better performance.
+    - Added a `CHANGELOG.md` file for tracking changes.
+    - Introduced support for "SameSite" cookie attribute.
+
+[patterns]
+• Regular Dependency Updates
+    - Frequent commits from dependabot and developers indicate a focus on keeping dependencies up-to-date.
+    - This reflects a proactive approach to security and leveraging the latest features and improvements.
+• Refactoring and Code Quality Improvements
+    - Several commits address code style, linting, and refactoring.
+    - This suggests a commitment to code maintainability and reducing technical debt.
+• Incremental Feature Development and Bug Fixes
+    - Commits like "Fix validation errors not calling callbacks" and "Fix expiry time not updating" demonstrate ongoing bug fixing.
+    - Introductions of features like "allowSpecialUseDomain" and "removeAllCookies" showcase incremental feature development.
+• Addressing External Contributions
+    - Merge commits from external contributors indicate community involvement and responsiveness to issues and pull requests.  This demonstrates open-source collaboration.
+• Transition to TypeScript and Modern Tooling
+    - A major shift is observed with the introduction of TypeScript and tools like ESLint and Prettier.
+    - This reflects a modernization effort and a focus on improving code quality and maintainability in the long term.

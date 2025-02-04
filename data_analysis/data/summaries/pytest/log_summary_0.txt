@@ -1,0 +1,35 @@
+[description]
+Pytest, a mature Python testing framework, has undergone continuous development with a focus on performance optimization, code quality improvements, enhanced features, and documentation enhancements.  This evolution includes significant architectural changes, modernization efforts, and a commitment to supporting newer Python versions while deprecating older ones.  The project demonstrates active maintenance, community involvement, and a dedication to providing a robust and user-friendly testing experience.
+
+[milestones]
+• **Typing Improvements:** Extensive addition of type annotations across the codebase to enhance type safety and maintainability.  Improvements to type checking compatibility across different Python versions.
+• **Code Cleanup and Refactoring:** Ongoing removal of dead code, simplification of logic, and code style improvements in various areas, including capturing, terminal reporting, and assertion rewriting. Removal of obsolete compatibility code for older Python and pytest versions.  Modernization efforts like migrating from py.path to pathlib and using dataclasses.
+• **Performance Optimizations:** Micro-optimizations targeting specific areas like node attribute access, expression compilation, fixture handling, unittest collection, and assertion rewriting. Caching strategies to speed up collection and other operations.
+• **Documentation Enhancements:** Continuous improvements and clarifications to the documentation, including restructuring, improved navigation, updated information, and expanded examples. Use of pygments for code highlighting. Specific updates regarding hooks, fixtures, reporting, migrating from nose, contributing guidelines, tmp_path, and importlib mode.
+• **Deprecations:** Deprecation of older features like specific -k syntaxes, --no-print-logs option, direct fixture calling, pytest.collect, -k syntax variations, pytest_warning_captured hook, _fillfuncargs function, pytest.Instance, --strict option, pytest_cmdline_preparse hook, and specific py.path and TerminalReporter features. Introduction of new features to replace deprecated ones, along with clear instructions on migration. Dropping support for older Python versions (2.3, 2.4, 3.5, 3.6, 3.7).
+• **New Features:** Introduction of features like --import-mode=importlib, support for pyproject.toml, --report-log option, hostname and timestamp in JUnit XML, pytester fixture, --stepwise-skip, package-scoped fixtures (experimental), improved pytest.approx and pytest.raises, enhanced logging capabilities, support for NO_COLOR and FORCE_COLOR environment variables, integrated pytest-cache plugin, and distributed testing features (--dist=each, --hosts/--gateways, --rsyncdirs).
+• **Plugin System Evolution:**  Significant refactoring of plugin management and hook calling, including the introduction of hook wrappers and a simplified plugin registration/unregistration process. Renaming and refactoring of plugin-related objects. Introduction of new plugin hooks (e.g., pytest_item_makereport). Integration of plugins like pytest-twisted and pytest-figleaf.
+• **Assertion Rewriting Improvements:** Optimizations for assertion rewriting, addressing crashes and edge cases, including handling of changing current working directories and pyc file writing, and improved assertion messages.
+• **Warnings System Revamp:** Overhaul of the warnings system with better capture, display, and filtering of warnings, including new hooks and changed default behaviors.
+• **Logging Plugin Integration:** Integration of a logging plugin for capturing and displaying logs during test execution, along with new command-line options and ini file settings.
+• **Markers Refactor:** Refactoring of the marker implementation to address performance, scoping issues, and interaction with parametrization.
+• **Build System Transition:** Transition from setuptools to a different build system.
+
+
+[patterns]
+• **Continuous Modernization:** Adoption of modern Python features and best practices, including pathlib, dataclasses, type annotations, and new-style pluggy hook wrappers.
+• **Increased Use of Type Annotations:**  Gradual addition of type annotations demonstrates a commitment to enhanced type safety, maintainability, and improved developer experience.
+• **Active Maintenance and Refinement:** Consistent focus on code cleanup, removal of dead code, micro-optimizations, and dependency updates demonstrates active maintenance practices and prevents the accumulation of technical debt.
+• **Focus on Documentation:** Regular improvements and clarifications to the documentation suggest a focus on user experience, making it easier for users to adopt and contribute to the project.
+• **Breaking Changes Introduced Carefully:** Deprecations are implemented with clear warnings and guidelines, demonstrating consideration for users' existing codebases.
+• **Ongoing Testing and Bug Fixing:** Presence of bug fixes across different areas suggests regular testing efforts and ensures project stability and reliability.
+• **Active Community Involvement:** Regular contributions of bug fixes, documentation updates, and new features foster a collaborative environment.
+• **Strong Focus on Testing:** Maintaining high test coverage and utilizing tools like pre-commit.ci to ensure code quality.
+• **Use of CI/CD:** Employing CI/CD pipelines for automated testing, releases, and other tasks.
+• **Focus on Performance Optimization:** Continuous efforts to improve execution speed and reduce resource consumption.
+• **Focus on Improved User Experience:** Providing informative error messages, enhanced documentation, and warnings for potential issues.
+• **Increased Cross-Python Compatibility:** Addressing compatibility issues across different Python versions.
+• **Proactive Deprecation of Legacy Code:** Removing old and unused features to maintain a streamlined framework.
+• **Addressing Technical Debt:**  Refactoring and cleanup efforts to improve code maintainability and long-term stability.  Occasional addressing of regressions and inconsistencies suggests potential areas of technical debt.  Flaky tests indicate areas for improvement in the test suite.
+
+

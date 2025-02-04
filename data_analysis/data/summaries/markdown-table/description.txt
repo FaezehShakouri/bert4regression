@@ -1,0 +1,1 @@
+JavaScript markdown table alignment tool, using ESM modules, focused on simplicity and modern standards.

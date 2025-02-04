@@ -1,0 +1,1 @@
+Lodestar: TypeScript Ethereum consensus client with performance optimizations and hard fork support (Electra, Deneb).

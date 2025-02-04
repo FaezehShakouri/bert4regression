@@ -1,0 +1,34 @@
+[description]
+ESLint project, focusing on bug fixes, documentation improvements, dependency upgrades, internal refactoring and tooling, and some new features and rules.
+
+[milestones]
+• New Rules: function-paren-newline, semi-style, padding-line-between-statements, array-bracket-newline, capitalized-comments, prefer-promise-reject-errors, no-chained-assignments, array-element-newline, for-direction, getter-return, no-compare-neg-zero, nonblock-statement-body-position, no-restricted-properties, template-tag-spacing, no-await-in-loop, class-methods-use-this, no-useless-return, capitalized-comments, func-name-matching, prefer-numeric-literals, line-comment-position, array-bracket-newline, symbol-description, max-lines, prefer-destructuring, no-useless-rename, no-global-assign, no-unsafe-negation, no-duplicate-imports, sort-keys, no-template-curly-in-string, rest-spread-spacing, no-useless-computed-key, multiline-ternary,  require-await, no-buffer-constructor
+• Autofixing Improvements: Numerous rules now have autofixing capabilities. A utility was added to avoid autofix conflicts.  Autofixing now does multiple passes.  Integration tests were added for autofixing.
+• Performance Improvements: Performance improvements were made in several areas including the SourceCode constructor, the no-multiple-empty-lines rule, autofix processing, and the indent rule.
+• Linter API changes: Major refactoring of the Linter API, making many internal methods private and introducing new methods.
+• Reporting logic refactoring: Major refactoring of the reporting logic.
+• RuleTester conversion: RuleTester was converted to an ES6 class.
+• SourceCode conversion: SourceCode was converted to an ES6 class.
+• CLIEngine conversion: CLIEngine was converted to an ES6 class.
+• Espree upgrade: Several upgrades to the Espree parser.
+• Deprecated rules: Several rules were deprecated, often replaced by newer rules.
+• ecmaVersion support: Added support for specifying ecmaVersion using years (e.g., ecmaVersion: 2017).
+• Configuration updates: Improvements to configuration handling, including glob-based configs, overrides, caching, and merging.
+• Node.js API documentation: Added comprehensive documentation for Linter methods.
+• Rule deprecation policy: Updated the rule deprecation policy.
+• Editor Integration: Improved support for editor integrations through glob-based config and configuration cascading/hierarchy.
+• JSCS migration guide: A migration guide was created for users coming from JSCS to ESLint.
+• ES6 refactoring: Many internal components were refactored to use ES6 classes.
+• Enhanced parser support: Added support for enhanced parsers.
+
+[patterns]
+• Focus on code quality and consistency: Recurring updates and bug fixes in rules related to code style and potential errors, demonstrating ongoing effort to improve code quality.
+• Shift towards ES6: Refactoring of internal components and rules to ES6 patterns, as well as increased ES6 rule support indicate a shift towards modern JavaScript.
+• Increased use of automated testing: More tests are added for core rules and features, including integration tests for autofixing and configuration, suggesting an increase in emphasis on automated testing.
+• Addressing technical debt: Refactoring of core components and removal of deprecated/undocumented methods suggests proactive measures to address technical debt.
+• Performance optimization: Performance improvements in critical areas indicate consideration for efficiency and scalability.
+• Improved documentation: Ongoing updates and additions to documentation show a dedication to user experience and clarity.
+• Community involvement: Pull requests from various contributors and inclusion of new team members indicate a healthy and active community.
+• Improved tooling: Development of tools like fuzzers and performance benchmarks suggests investment in robust internal tooling to maintain code quality and performance.
+• Emphasis on fixing issues: Many commits directly address reported issues, showing responsiveness to bug reports and user feedback.
+• Increased configurability: Several rules gain new options, and new features like glob-based configurations and overrides demonstrate a desire for greater customization.

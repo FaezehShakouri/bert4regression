@@ -1,0 +1,1 @@
+ESLint: Pluggable JavaScript linter enhancing DX, performance, and supporting modern JS/TS.

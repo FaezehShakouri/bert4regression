@@ -1,0 +1,45 @@
+[description]
+Lighthouse, an Ethereum 2.0 client, undergoes significant development with a focus on state processing, SSZ implementation, testing infrastructure, and validator client functionality. The project transitions to the v0.6.1 spec, introducing changes to state structure, shuffling, and reward mechanisms. A notable shift occurs from RocksDB to LevelDB for improved performance.
+
+[milestones]
+• Eth 2.0 Phase 0 v0.6.1 Implementation
+    - State Transition to v0.6.1 spec: includes updates to epoch processing, reward calculations, justification and finalization, deposit processing, attestation handling, and validator registry updates.
+    - SSZ Encoding and Decoding: Implementations for various data structures, including `IndexedAttestation`, `AttestationDataAndCustodyBit`, `HistoricalBatch`, `BeaconBlockHeader`, and `Fork` struct, are added and updated according to the spec.
+    - Shuffling Updates: Modifications to shuffling algorithms and introduction of `get_crosslink_committees_at_slot`.
+    - Transition from RocksDB to LevelDB: Replaces RocksDB with LevelDB as the database backend, improving testing and potentially enhancing performance.
+• Enhanced Testing Infrastructure
+    - Introduction of `ef_tests`: New testing format added for improved code quality and spec conformance.
+    - Expansion of State Transition Tests: Includes tests for state transitions, SSZ serialization and deserialization, and edge cases like underflow conditions.
+    - Introduction of `ssz_static` Tests: Facilitates passing of all SSZ tests.
+    - Deterministic Keypair Generation: Improves testing consistency.
+
+• Validator Client Development
+    - Implementation of Validator Services: Includes epoch duty management, attestation production, and block proposal services.
+    - Integration of gRPC: Introduces gRPC for communication between the validator client and beacon node.
+    - Key Management Enhancements: Adds support for loading keypairs from files and deterministic key generation.
+    - Network Syncing Logic: Implements a syncing mechanism, including handling "hello" messages and goodbye requests.
+• Improved Performance and Optimization
+    - Cached Tree Hashing: Improves performance of state transitions by caching tree hash computations.
+    - Parallel Processing: Introduction of parallel processing for deposits, transfers, and other state operations.
+    - Epoch Cache Optimization: Reduces memory usage and improves efficiency.
+
+[patterns]
+• Focus on Spec Conformance
+    - Frequent updates to various modules to align with the v0.6.1 spec.
+    - Introduction of new tests specifically designed for compliance with the updated specification.
+    - Impact: Ensures the client's adherence to the latest Eth 2.0 standards.
+• Emphasis on Testing and Code Quality
+    - Implementation of new testing frameworks like `ef_tests` and expansion of existing test suites.
+    - Attention to edge cases and bug fixes.
+    - Static analysis tools like `clippy` are integrated into CI pipelines.
+    - Impact: Demonstrates a commitment to delivering a robust and reliable client.
+• Performance Optimization
+    - Consistent efforts to improve performance through caching, parallel processing, and algorithm optimization.
+    - Impact: Enhances the efficiency and scalability of the client.
+• Active Development and Collaboration
+    - Numerous pull requests and contributions from multiple developers, addressing various aspects of the project.
+    - Impact: Reflects a vibrant and collaborative development environment, contributing to the project's progress.
+• Addressing Technical Debt
+    - Refactoring of existing code, addressing inconsistencies and improving code clarity.
+    - Transition from RocksDB to LevelDB is aimed at simplification and better testing.
+    - Impact: Contributes to long-term maintainability and stability.

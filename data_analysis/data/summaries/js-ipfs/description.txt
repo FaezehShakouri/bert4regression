@@ -1,0 +1,1 @@
+JavaScript IPFS client with ESM, gRPC, TypeScript, and enhanced API for interacting with IPFS nodes.

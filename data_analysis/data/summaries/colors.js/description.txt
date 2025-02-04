@@ -1,0 +1,1 @@
+Node.js library for styling terminal output with ANSI escape codes, supporting multiline strings and Typescript.

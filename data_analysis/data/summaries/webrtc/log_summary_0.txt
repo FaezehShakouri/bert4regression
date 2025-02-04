@@ -1,0 +1,57 @@
+[description]
+A WebRTC library for Go, providing peer-to-peer communication capabilities.
+
+[milestones]
+• v4 Release (3f1622a)
+    - Major version bump, incorporating numerous features and improvements.
+    - Includes updated dependencies and enhanced examples.
+• ORTC Media Examples (e409a1d)
+    - Added examples demonstrating Object Real-time Communications (ORTC) media usage.
+• New Track API (7edfb70)
+    - Introduced a new, more streamlined Track API for managing media streams.
+• Simulcast Support (6ee528d)
+    - Implemented simulcast, enabling sending multiple layers of a media stream for adaptive bitrate.
+• Interceptors (5bbc84e)
+    - Introduced interceptors for modifying and inspecting RTP/RTCP packets.
+• SSRC Based Simulcast (d570b78)
+    - Implemented SSRC based simulcast as an alternative to RID based simulcast.
+• WASM Support (94262c1)
+    - Added support for WebAssembly (WASM), enabling Pion WebRTC in web browsers.
+• Go Modules Support (c6ebe60)
+    - Migrated project to Go modules for dependency management.
+• SRTP Rewrites (0f0dd62, b3ecfc9)
+    - Rewrote SRTP handling for improved performance and security, including native Go implementation.
+• Data Channel Support in Go (faf413d)
+    - Implemented support for Data Channels in Go.
+• SDP Unified Plan Migration (1202dba)
+    - Migrated SDP generation to the Unified Plan.
+• RTCP Package Development (cc4160f, 998e370)
+    - Developed a dedicated package for handling RTCP.
+• Initial Commit (cef4f4f)
+    - Project started, initial groundwork laid.
+
+[patterns]
+• Continuous Dependency Updates (Numerous commits)
+    - Frequent updates to dependencies suggest attention to security and leveraging new features.
+    - May introduce breaking changes requiring adaptation.
+• Focus on Performance Improvement (e570531, baiyufei)
+    - Several commits aimed at optimizing performance, particularly in H264 and RTX handling.
+    - Demonstrates prioritization of efficiency.
+• Enhancement of Examples (e409a1d, 2bf9486, 98df5e4)
+    - Consistent addition and improvement of examples indicate focus on user experience and practical application.
+• Addressing Race Conditions (Numerous commits)
+    - Multiple commits fix race conditions, suggesting concurrent programming practices and focus on stability.
+• Refactoring and Code Quality (7c60bb9, 81e80b4, 7015730)
+    - Regular refactoring and linting demonstrate commitment to maintainable and clean code.
+• Expanding Test Coverage (d5e07a1, 8780e68, 92fce5f)
+    - Focus on adding and improving tests suggests concern for code reliability and correctness.
+• Feature-Driven Development (6ee528d, faf413d, 1202dba)
+    - Commits often introduce new features or improve existing ones, indicating a feature-driven approach.
+• Addressing Browser Compatibility (24f350c, 012f129)
+    - Several commits address compatibility issues with different browsers, indicating cross-browser support goals.
+• API Evolution (7edfb70, 21c5a71)
+    - The API has evolved over time, sometimes introducing breaking changes.  Users must adapt to API modifications.
+• Gradual Implementation of Standards Compliance (f7f760f, 98e6612, 28adb77)
+    - Commits show ongoing efforts to align with WebRTC standards and improve interoperability.
+• Documentation Improvements (2585a2f, de913a9)
+    - Regular updates to documentation show concern for user understanding and ease of use.

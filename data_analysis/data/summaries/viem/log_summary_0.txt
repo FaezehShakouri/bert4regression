@@ -1,0 +1,25 @@
+[description]
+A TypeScript library for interacting with Ethereum. Includes tools for building clients, encoding/decoding ABIs and other utilities. Version 2.0 is a significant refactor.
+
+[milestones]
+• Account Abstraction Support:  Significant changes introduced support for Account Abstraction, including new actions, utilities, and updates to the `simulateContract` function. Includes ERC-4337 and ERC-7739 account features, universal signature validators, paymaster utilities, and contract interaction helpers.
+• Enhanced Error Handling: Error handling improved with new error types, more informative messages, improved handling of non-deterministic errors, and better support for contract revert errors including custom Solidity errors.
+• WebSocket Support: Support for WebSockets introduced for subscriptions and real-time updates using `watchBlockNumber`, `watchBlocks`, `watchContractEvent`, and `watchEvent`. Reconnection logic and handling for missed blocks added.
+• Blob Transaction Support: Support for Blob Transactions (EIP-4844) added, including updates to transaction types and request preparation functions.
+• Chain Management: Chain management features enhanced. Includes functions like `extractChain`, chain formatters, serializers, chain-specific transaction formatting, OP Stack contract support, configurable chain-specific priority fees, and a utility for asserting chain ID consistency.
+• Proxy Packages: Proxy packages added for specific protocols and chains such as zkSync and Celo, improving tree-shakability and reducing bundle sizes.
+• Performance Improvements: Refactoring efforts focused on performance optimization, including faster ABI decoding, reduced redundant requests, optimized `waitForTransactionReceipt`, and a new LRU cache for address checksums.
+• Tooling and Infrastructure:  Migrated build process to Bun and TypeScript 5, improved test setup with Anvil, added benchmarks, and updated dependencies. Documentation improved with better code examples, a glossary of error types, and a migration guide.
+• Deprecated Features: Deprecated various features, including certain chain properties, and replaced SnowTrace with SnowScan block explorer.
+
+[patterns]
+• Continuous Integration and Deployment: Frequent package version bumps and automated chore tasks indicate a robust CI/CD pipeline. The use of GitHub Actions and bots streamlines releases and dependency management.
+• Feature-Driven Development:  Commits organized around specific features (e.g., EIP support, new actions). Changesets and versioning suggest a structured release cycle.
+• Test-Driven Development: Regular snapshot updates and test improvements across commits indicate a focus on testing, covering both unit and integration tests.  Flaky tests are addressed promptly.
+• Documentation Focus: Consistent attention to documentation evident through updates to guides, examples, and typos. Use of tools like Twoslash improves code example integration.
+• Community Involvement:  Several contributors propose new features, fix bugs, and improve documentation, reflecting an active and engaged community.
+• Performance Consciousness: Recurring performance improvements and optimizations demonstrate an awareness of efficiency and bundle size.
+• Experimental Features: Introduction of experimental features (e.g., Account Abstraction, ERC-7715) suggests a forward-looking approach to development.
+• Breaking Changes Management: Major version bump for v2.0 signals significant API changes.  Migration guides provided to assist users with updates.
+• Dependency Management:  Regular dependency updates and proactive management indicate attention to security and utilizing latest features.
+• Technical Debt Addressed: Occasional refactoring and removal of dead code demonstrate an effort to maintain a clean codebase and address technical debt.

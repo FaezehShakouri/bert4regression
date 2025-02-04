@@ -1,0 +1,1 @@
+JavaScript library for Long integer support, featuring WebAssembly, ESM, and TypeScript compatibility.

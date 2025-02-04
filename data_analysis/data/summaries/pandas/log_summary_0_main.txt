@@ -1,0 +1,59 @@
+[description]
+This project focuses on enhancing Pandas, a Python data analysis library.  The commits address bugs, improve performance, enhance existing features, update documentation, and refactor code. A main theme observed involves enabling PyArrow backend and new string dtype for several functionalities. Another important aspect is the full implementation of Copy-on-Write and deprecation of related features and warnings.
+
+[milestones]
+• String dtype support
+    - Implemented new string dtype backed by PyArrow for improved performance and compatibility.
+    - Enabled string dtype support in various operations, I/O methods, and functions like merge, concat, groupby, etc.
+    - Adjusted tests for new string dtype.
+
+• Copy-on-Write (CoW) Implementation
+    - Fully implemented Copy-on-Write, changing default copy behavior.
+    - Introduced warning mode for potential CoW-related behavior changes.
+    - Added ChainedAssignmentError for inplace operations under CoW.
+    - Cleaned up CoW-related code and documentation.
+
+• Python 3.12 Support
+    - Added support for building and testing Pandas with Python 3.12.
+
+• PyArrow integration and dependency upgrade
+    - PyArrow set as a required dependency.
+    - Expanded PyArrow backend support for functionalities like to_datetime, duration types, reductions, string operations.
+    - Fixed related bugs and deprecations.
+    
+• Deprecations
+    - Deprecated features like ArrayManager, delim_whitespace, use_inf_as_na, various nonkeyword and keyword arguments.
+    - Deprecated warnings like SettingWithCopyWarning.
+    - Enforced deprecations by changing FutureWarnings to DeprecationWarnings and raising errors.
+
+• Performance Improvements
+    - Improved performance in areas like groupby, reductions, string operations, array_strptime, DataFrame/Series construction, DataFrame.to_csv.
+    - Added benchmarks for several operations.
+    
+• Numba engine for Groupby and apply
+    - Added numba engine support to DataFrame.apply and GroupBy aggregations including support for returning non-float64 results.
+
+[patterns]
+• Focus on performance optimization
+    - Evidence: Numerous performance-related commits addressing specific bottlenecks, introduction of new algorithms, and leveraging PyArrow for faster operations.
+    - Impact: Enhanced efficiency in various functionalities, including groupby, reductions, and string operations.
+
+• Increased use of PyArrow
+    - Evidence: Many commits dedicated to integrating PyArrow functionality for various dtypes and operations. 
+    - Impact: Improved string handling, better handling of various data types including timestamps and durations.
+
+• Active code cleanup and refactoring
+    - Evidence: Regular commits addressing code smells, removing deprecated code, de-duplicating logic, and improving type hints.
+    - Impact: Improved maintainability, readability, and type safety of the codebase.
+
+• Focus on documentation improvement and compliance to Numpy standards.
+    - Evidence: Commits fixing docstrings, typos, examples, and enforcing Numpy docstring validation.
+    - Impact: Enhanced clarity, accuracy, and consistency across the documentation.
+
+
+• Transition to Meson build system.
+    - Evidence: Commits related to setting up and adjusting meson build files.
+    - Impact: Modernized build process and eliminated setup.py based builds.
+
+
+

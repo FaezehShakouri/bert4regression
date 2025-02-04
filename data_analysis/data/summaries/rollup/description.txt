@@ -1,0 +1,1 @@
+Rollup, a JavaScript module bundler, uses SWC for fast, optimized ES module builds with JSX support and enhanced developer experience.

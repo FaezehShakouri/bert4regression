@@ -1,0 +1,1 @@
+A querystring parsing and stringifying library with some added security. Lead Maintainer: Jordan Harband. The qs module was originally created and maintained by TJ Holowaychuk.

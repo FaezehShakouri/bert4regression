@@ -1,0 +1,49 @@
+[description]
+Revm is an Ethereum Virtual Machine implementation in Rust. The project focuses on performance, modularity, and extensibility, aiming to be suitable for various use cases like execution clients, testing tools, and research.
+
+[milestones]
+• Project Restructuring
+    - Splitting the project into multiple crates (database, inspector, transaction) for better organization and modularity.
+• Ethereum Object Format (EOF) Support
+    - Implementation of EOF validation and execution, including new opcodes and changes to existing ones.
+• Introduction of EvmWiring
+    - A mechanism for chain-specific configurations, improving flexibility and customizability.
+•  State Management Improvements
+    - Introduction of account status and bundle states, enhancing state management capabilities for reverts and transactions.
+•  Performance Optimizations
+    - Various performance improvements throughout the project, including gas calculation, memory management, and stack operations.
+•  Introduction of the Instruction Table
+    - Compile-time generated instruction table for improved execution speed and reduced dynamic dispatch.
+•  Tooling and CLI Improvements
+    - Enhancements to the `revme` command-line tool, including statetest runner and bytecode analysis.
+•  EIP Implementations
+    - Implementation of various EIPs like EIP-2935 (BLOCKHASH), EIP-4844 (shard blob transactions), EIP-7702 (versioned transactions), and others.
+•  Optimism Support
+    - Specific features and changes related to Optimism, an L2 scaling solution.
+•  Precompile Improvements
+    - Improvements to precompiles, including BLS12-381 curve operations (EIP-2537) and a generic precompile context.
+
+[patterns]
+• Performance Focus
+    - Frequent commits related to performance optimizations.
+    - Introduction of tools like codspeed for benchmarking.
+    - Positive impact on execution speed.
+•  Increased Modularity and Extensibility
+    - Project restructuring into crates and introduction of EvmWiring.
+    - Easier integration with different components and customization for various chains.
+•  EIP-Driven Development
+    - Several EIPs implemented, showing a focus on staying up-to-date with Ethereum updates.
+    - Indicates commitment to supporting new features and network upgrades.
+•  Emphasis on Testing and Code Quality
+    - Integration of `eth/tests` for comprehensive testing.
+    - Use of clippy for code linting and improved code style.
+    - Increased reliability and maintainability of the codebase.
+•  Active Dependency Management
+    - Regular dependency bumps using dependabot.
+    - Reduced risk of vulnerabilities and ensures compatibility with other libraries.
+• Iterative Refactoring
+    - Continuous refactoring efforts, such as gas calculation improvements and code cleanup.
+    - Improved code maintainability and performance.
+•  Documentation Improvements
+    - Ongoing effort to document the codebase and provide usage examples.
+    - Increased developer experience and accessibility for new users.

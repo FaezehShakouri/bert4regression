@@ -1,0 +1,54 @@
+[description]
+Yarn package manager.
+
+[milestones]
+• Initial Commit
+    - Basic file structure and initial codebase.
+• Package Management Implementation
+    - Core features like add, remove, install, upgrade.
+• Lockfile Management
+    - Introduction of yarn.lock for dependency management.
+• Offline Cache
+    - Implementation of offline caching for faster installs.
+• Workspaces
+    - Support for managing multiple packages within a single project.
+• Plug'n'Play
+    - Introduction of Plug'n'Play for dependency resolution.
+• Selective Version Resolution
+    - Feature for resolving specific dependency versions in nested projects.
+• Independent Lockfile Package
+    - Separating lockfile parsing into a standalone package.
+• Substantially changed Lockfile Version
+    - Optimization to reduce lockfile size for identical dependencies.
+• Integrity Check
+    - Added integrity checks for package verification.
+• Automatic Conflict Resolution
+    - Automatic merging of lockfile conflicts.
+
+[patterns]
+• Focus on Performance
+    - Continuous optimizations for install speed, caching, and dependency resolution.
+• Emphasis on Determinism
+    - Efforts to ensure consistent dependency resolution.
+• Transition from npm fork to standalone project.
+• Increased emphasis on security with integrity checks.
+• Improved User Experience
+    - Refinement of CLI output and error messages.
+• Growing Community Involvement
+    - Increased contributions and feedback.
+• Active Maintenance and Bug Fixing
+    - Addressing reported issues and bugs promptly.
+• Windows Compatibility Improvements
+    - Significant effort to improve Windows support and resolve related issues.
+• Documentation and Testing
+    - Continuous improvement in test coverage and documentation clarity.
+• Focus on Cross-Platform Compatibility
+    - Consistent effort to resolve compatibility issues for Windows, macOS, and Linux.
+• Shift towards more streamlined architecture.
+• Introduction of experimental features like Plug'n'Play.
+• Deprecation of older features and aliases for better consistency.
+• Increased use of best practices for maintainability.
+• Focus on backwards compatibility.
+• Growing utilization of community tools for development.
+• Potential Technical Debt
+    - Older Node.js compatibility workarounds may require refactoring in the future.

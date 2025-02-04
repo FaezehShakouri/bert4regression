@@ -1,0 +1,49 @@
+[description]
+FlatBuffers, a serialization library, underwent significant development focused on improving build system compatibility, expanding language support, enhancing code generation, and refining the object API and core functionality.  Emphasis was placed on performance optimization, schema evolution, and resolving bugs detected through fuzzing and static analysis.
+
+[milestones]
+• Bazel & CMake Build System Improvements
+    - Migrated from rules_nodejs to rules_js/rules_ts for Bazel.
+    - Introduced flatbuffers_generate_headers and flatbuffers_generate_binary_files CMake functions.
+    - Added Bazel support for compatible_with and restricted_to attributes.
+• Language Support Expansion & Refinement
+    - Added Rust and Lua language support.
+    - Implemented or improved object APIs for several languages including C++, Rust, and Lua.
+    - Enhanced Swift language support, including WASM compatibility and performance improvements.
+• Enhanced Code Generation
+    - Implemented a name manager for consistent naming across generators.
+    - Added options for generating size-prefixed buffers, single-file TypeScript output, and embedding binary schemas.
+    - Implemented optional scalars for JSON in various languages.
+    - Improved support for enums, including scoped enums, min/max values, and minimizing generation.
+• Object API & Core Functionality Refinements
+    - Added optional object API for C++ and other languages.
+    - Implemented a verifier for FlexBuffers and enhanced the C++ verifier.
+    - Implemented sorted vectors and binary search functionality.
+    - Optimized string pooling and reduced heap allocations.
+    - Introduced support for custom allocators and uninitialized vectors.
+• Schema Evolution
+    - Added schema evolution test cases in C++.
+    - Enabled --conform for vector of unions.
+    - Introduced binary schema reflection.
+• Bug Fixes & Improvements
+    - Fixed various bugs identified through fuzzing and static analysis, including issues with union vectors, string handling, and alignment.
+    - Resolved memory leaks in several languages.
+    - Improved error handling and messaging in flatc and the parser.
+
+[patterns]
+• Focus on Cross-Platform Compatibility
+    - Bazel, CMake, and various compiler support improvements indicate a commitment to cross-platform development.
+• Emphasis on Performance Optimization
+    - Reductions in heap allocations, introduction of custom allocators, and Swift vector/array improvements demonstrate focus on performance.
+• Increased Use of Fuzzing and Static Analysis
+    - Bug fixes related to fuzzing and static analysis suggest a proactive approach to code quality and security.
+• Expanding Language Support and Feature Parity
+    - Introduction of new languages like Rust and Lua, and object API implementations in multiple languages show commitment to broad language support and consistent feature sets.
+• Ongoing Refinement of Object API
+    - Changes to object API design and enhancements in various languages point to ongoing efforts to improve usability and consistency.
+• Attention to Schema Evolution and Compatibility
+    - Development of schema evolution tests and support for features like optional scalars reflect a focus on backwards compatibility and smooth schema upgrades.
+• Active Community Contributions
+    - Many commits come from community members, indicating a healthy and active open-source project.
+• Prioritization of Robustness and Security
+    - Improvements to the verifier and focus on memory leak detection demonstrate a dedication to code robustness and security.

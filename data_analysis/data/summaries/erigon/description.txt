@@ -1,0 +1,1 @@
+Erigon: Fast Ethereum client with Polygon integration, optimized database, and Caplin beacon sync.

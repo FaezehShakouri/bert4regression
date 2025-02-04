@@ -1,0 +1,57 @@
+[description]
+Lodestar, a TypeScript implementation of the Ethereum consensus layer client. The project is actively developed and focuses on performance improvements, spec compliance, API enhancements, and support for new forks like Electra and Deneb.  The commit logs span a period of significant development, including preparations for and activation of multiple hard forks.
+
+[milestones]
+• Electra Hard Fork Support
+    - Handling attester slashing, updating rate limits, emitting block gossip events, and partial withdrawal balance calculations.
+• Deneb Hard Fork Support
+    - Increased blob throughput, architectural improvements like using napi-rs for BLS bindings and async shuffling refactor.
+• Devnet Support (devnet-4, devnet-5)
+    - Adapting to the evolving specifications of different test networks.
+• Capella Hard Fork Support
+    - Implementing proposer boost reorg panels, BLS to execution changes, historical state regen, and blob archival.
+• Altair Hard Fork Support
+    - Implementation of Altair endpoints, various bug fixes and performance improvements.
+• Merge Support
+    - Transitioning to a post-merge Ethereum network, including changes to block production and syncing mechanisms.
+• API Enhancements
+    - Introduction of new endpoints for historical summaries, validator identities, proposer duties, fork choice context, and blinded blocks.
+• Performance Improvements
+    - Optimizations in block processing, state serialization, gossip validation, keystore decryption, and BLS signature verification.
+• Refactoring and Code Quality
+    - Ongoing refactoring for better code structure and type safety, and migration from eslint to biomejs.
+• Dependency Updates
+    - Regular updates to external dependencies, including updates to js-libp2p, discv5, and various other packages.
+• Documentation Updates
+    - Improvements to documentation, including contributor guidelines, debugging instructions, and API references.
+• Testing Improvements
+    - Migration to vitest for testing, addition of simulation tests, and improvements to spec test coverage.
+• Tooling and Infrastructure
+    - Docker build improvements, Prometheus and Grafana dashboards, and GitHub Actions workflows.
+• Validator Client Enhancements
+    - Adding support for remote signer, proposer configuration file, and improved validator monitoring.
+
+
+[patterns]
+• Continuous Integration and Continuous Delivery
+    - Frequent releases, both stable and nightly, including release candidates and hotfixes. Regular dependency bumps and documentation updates.
+• Test-Driven Development
+    - Significant focus on testing, including unit tests, simulation tests, and integration tests. Use of spec tests for conformance testing.
+• Performance Optimization
+    - Recurring theme of performance improvements across various parts of the codebase, particularly in state management, block processing, and network interactions.
+• Refactoring for Maintainability
+    - Ongoing refactoring for better code structure, type safety, and adherence to coding standards.
+• Spec Compliance
+    - Frequent updates and adaptations to changes in the Ethereum consensus specifications. Use of spec tests to ensure compliance.
+• Active Development
+    - High frequency of commits and a large number of contributors indicate a very active project.
+• Focus on API Design
+    - Regular additions and improvements to APIs, including focus on spec compliance, error handling, and extensibility.
+• Security Consciousness
+    - Addressed some security vulnerabilities, such as memory leaks and denial-of-service vulnerabilities. Implemented JWT-based authentication for certain APIs.
+• Tooling and Automation
+    - Reliance on automated tools and workflows for building, testing, releasing, and monitoring.
+• Community Engagement
+    - Documented contributor guidelines, bug reporting templates, and active engagement with external contributors.
+
+

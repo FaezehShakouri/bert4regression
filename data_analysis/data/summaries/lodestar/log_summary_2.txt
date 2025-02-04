@@ -1,0 +1,40 @@
+[description]
+Lodestar is a Javascript implementation of the Ethereum 2.0 blockchain client. The project aims to provide a fully functional client capable of participating in the Ethereum 2.0 network.
+
+[milestones]
+• Implementation of state transition logic based on Ethereum 2.0 specification version 0.7.1.
+    - Includes state transitions for block processing, epoch processing, and registry updates.
+• Implementation of a new SSZ (Simple Serialize) library.
+    - Supports various data types and includes tests for serialization and deserialization.
+• Integration of libp2p networking library.
+    - Enables peer-to-peer communication and message propagation.
+• Development of a command-line interface (CLI).
+    - Provides commands for starting the beacon node, managing validators, and interacting with the blockchain.
+• Implementation of a JSON-RPC server.
+    - Allows external applications to interact with the Lodestar client.
+• Integration of BLS (Boneh-Lynn-Shacham) signature scheme using the milagro-crypto-js library.
+    - Enables secure signing and verification of messages.
+• Addition of database support using PouchDB.
+    - Provides persistent storage for blockchain data.
+• Implementation of LMD-GHOST fork choice rule.
+    - Determines the canonical chain based on the latest message driven GHOST algorithm.
+• Implementation of Ethereum 1.0 data handling.
+    - Includes fetching deposit events and tracking the latest Ethereum 1.0 block hash.
+• Implementation of validator logic.
+    - Includes attestation production, block proposing, and slashing protection.
+
+[patterns]
+• Iterative development based on the evolving Ethereum 2.0 specification.
+    - Frequent updates to constants, interfaces, and state transition logic based on specification changes.
+• Focus on testing and code quality.
+    - Implementation of unit tests, end-to-end tests, and integration with code coverage tools.
+• Refactoring and code reorganization.
+    - Efforts to improve code structure, modularity, and readability.
+• Addressing technical debt.
+    - Fixing bugs, removing unused dependencies, and improving error handling.
+• Shift from stubbed implementations to actual logic.
+    - Progressive implementation of BLS signature verification, database operations, and networking functionality.
+• Emphasis on modular design.
+    - Separation of concerns between different modules like networking, database, state transitions, and CLI.
+• Integration of external libraries and tools.
+    - Utilization of libraries like libp2p, milagro-crypto-js, PouchDB, and Winston logger.

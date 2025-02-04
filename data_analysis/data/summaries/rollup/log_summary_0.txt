@@ -1,0 +1,70 @@
+[description]
+Rollup, a JavaScript module bundler, has evolved significantly from its early stages of establishing core features to incorporating advanced optimizations and architectural shifts.  Initially focused on optimizing ES module code, Rollup now boasts enhanced performance, support for modern JavaScript features like JSX, an improved developer experience, and a transition towards native/WASM code using the SWC parser.
+
+[milestones]
+• Initial Commit: Basic functionality established.
+• v0.20.0: Plugin support.
+• v0.25.0: Browser-friendly build process.
+• v0.30.0: Acorn options support.
+• v0.32.0: Switch tests from Babel to Buble.
+• v0.33.0: Plugin hooks introduced; Support for multiple output targets.
+• v0.34.0: `--watch` implemented.
+• v0.35.0: Deconflicting of classes; Upgrade to Acorn 4.
+• v0.36.0: Support for template literals; Automatic semicolon insertion.
+• v0.37.0: Tree-shaking improvements; More lenient handling of `export default`; Gather possible values for external declarations.
+• Rollup 4.0: Introduced SWC parser and native/WASM code.
+• 4.24.0: Introduced JSX support.
+• Enhanced REPL: Multiple improvements including logging, colors, and options.
+• Detailed Error Messages & Locations: Improved error messages and logging.
+
+[patterns]
+• Performance optimization:
+    - Tree-shaking improvements.
+    - Caching resolved IDs.
+    - Performance labels for debugging.
+    - AST cloning for incremental rebuilds.
+    - Continuous focus on performance, especially in chunking and module resolution.
+    - Shift to Native Code (SWC/WASM) for performance gains.
+• Code quality and testing:
+    - Introduction of ESLint and linting tests.
+    - Expansion of test suite.
+    - Codecov integration for coverage reports.
+    - Comprehensive testing and linting, including clippy.
+• Refactoring and architectural changes:
+    - Rewriting of internal components.
+    - Switch from Babel to Buble for tests.
+    - Introduction of the Scope class.
+    - Major architectural shift with SWC parser and WASM.
+    - Increased use of Rust for core components.
+• Bug fixes:
+    - Numerous bug fixes, especially regarding external modules and default exports.
+    - Sourcemap generation fixes.
+    - Ongoing refinements and bug fixes to tree-shaking.
+• Feature development:
+    - Implementation of core Rollup features (tree-shaking, code splitting, module format support).
+    - Incremental build support.
+    - JSX support.
+    - Support for new syntax (decorators, import assertions, optional chaining).
+    - Wider platform support.
+• CLI improvements:
+    - Addition of CLI options (`--watch`, `--config`, `--no-strict`, `--environment`, etc.).
+    - Improved error reporting.
+• Documentation:
+    - Gradual improvement of the README.
+    - Changelog updates.
+    - Revamped website using Vitepress; improved architecture documentation.
+• Legacy support:
+    - `legacy` option for older browsers.
+• Project management:
+    - Use of Greenkeeper/Renovate for dependency updates.
+    - Use of issue and pull request templates.
+• Technical debt indicators:
+    - Skipped tests due to pending issues.
+    - Workarounds for older Node.js versions.
+    - Comments indicating "TODO" or messy code.
+    - Addressing technical debt through refactoring and code cleanups.
+• Community Contributions: Active community contributing code.
+• Security Updates: Promptly addressing security vulnerabilities.
+• Experimental Feature Introductions: Iterative improvement through experimental features (e.g., minChunkSize).
+
+

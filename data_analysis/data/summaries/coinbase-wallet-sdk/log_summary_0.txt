@@ -1,0 +1,62 @@
+[description]
+Coinbase Wallet SDK, enabling dApps to connect to Coinbase Wallet via various methods including WalletLink and injected providers.  Supports multiple chains and includes a playground for testing.
+
+[milestones]
+• Version 4.0.0 Release
+    - Major refactor of provider and connection handling.
+    - Introduction of smart wallet support and related APIs.
+    - Improved error handling and adherence to EIP standards.
+    - Removal of deprecated components and simplification of state management.
+• Enhanced Configuration Options
+    - Dynamic chain ID updates for send calls.
+    - Generic signer request handling.
+    - Passing SDK configuration parameters to injected provider.
+    - Ability to pass custom parameters to SDK configuration.
+• WalletLink Improvements
+    - Refactoring for simpler connection logic and removal of redundant types.
+    - Simplification of request handling for various methods.
+    - Handling WalletLink session requests initiated by popup.
+• Playground Enhancements
+    - SDK version picker and Smart Wallet URL picker added to playground.
+    - Improved linting and deployment processes for the playground.
+• Native Mobile SDK Development
+    - Introduction of iOS and Android native SDKs with example apps.
+    - Response handling and communication mechanisms established for native environments.
+• Security and Performance Improvements
+    - Replacement of `sha.js` and `keccak` with smaller, more secure alternatives.
+    - Throttling of `eth_blockNumber` requests.
+    - Removal of unused dependencies and package cleanup for reduced bundle size.
+• Testing and Documentation
+    - Extensive additions and revisions to provider and RPC method tests.
+    - New documentation for v4, including a migration guide.
+    - Smart Wallet development guide with Wagmi example added.
+
+
+[patterns]
+• Iterative Development with Beta Releases
+    - Frequent beta releases used for testing and feedback prior to major version bumps.
+    - Examples: 4.0.0-beta.1 through 4.0.0-beta.12.
+    - Impact: Allows for community involvement and early identification of issues.
+• Focus on Code Quality and Maintenance
+    - Regular dependency updates via Dependabot and addressing of alerts.
+    - Linting and formatting improvements throughout the project's history.
+    - Refactoring efforts to reduce code complexity and technical debt.
+    - Impact: Enhances maintainability, security, and overall project health.
+• Transition to Smart Wallet Focus
+    - Clear shift towards supporting smart wallets as a primary connection method.
+    - Introduction of new APIs and examples related to smart wallet interaction.
+    - Impact: Reflects the growing importance of smart wallets in the ecosystem.
+• Emphasis on Mobile Support
+    - Development of native mobile SDKs for iOS and Android.
+    - Improvements to WalletLink for mobile environments.
+    - Handling of deep links and mobile-specific UI elements.
+    - Impact: Expands the reach of the SDK to mobile dApp users.
+• Addressing Security Concerns
+    - Proactive updates to dependencies with known vulnerabilities.
+    - Focus on secure session management and message encryption.
+    - Input validation and origin checking implemented for enhanced security.
+    - Impact: Reduces the risk of security exploits and vulnerabilities.
+• Community Engagement and Documentation
+    - Addition of new documentation and guides, particularly for v4 and smart wallets.
+    - Use of GitHub issues and pull requests for feedback and contributions.
+    - Impact: Improves developer experience and facilitates wider adoption of the SDK.

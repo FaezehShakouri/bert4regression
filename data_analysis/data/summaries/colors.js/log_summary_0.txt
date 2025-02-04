@@ -1,0 +1,31 @@
+[description]
+A Node.js module that adds ANSI escape codes to string prototypes for styling terminal output.
+
+[milestones]
+• Release 1.0.0
+    - Introduced safe mode and removed browser functionality.
+    - Major code cleanup and refactoring.
+• Typescript definitions added
+    - Improved developer experience with Typescript support.
+• Multiline handling functionality
+    - Extended styling capabilities to handle multiline strings.
+• Exposing enable/disable methods
+    - Added functions to enable and disable color styling programmatically.
+• Node 10 CI integration
+    - Ensured compatibility with newer Node versions.
+• ESLint integration
+    - Enhanced code quality through linting.
+
+[patterns]
+• Frequent version bumps
+    - Indicates active development and regular releases.
+• Addressing community contributions and bug reports
+    - Shows responsiveness to user feedback and bug fixes.
+• Expanding styling options and functionality
+    - Focus on adding new styling features and customization.
+• Deprecated features and improved compatibility
+    - Reflects an effort to maintain backwards compatibility while modernizing the codebase.
+• Improving test coverage and CI
+    - Demonstrates a commitment to code quality and automated testing.
+• Addressing technical debt with refactoring and linting
+    - Shows an awareness and effort to improve code maintainability.

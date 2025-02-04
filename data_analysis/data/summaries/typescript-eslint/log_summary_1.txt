@@ -1,0 +1,29 @@
+[description]
+A TypeScript-based ESLint parser and plugin project, aiming to provide enhanced linting capabilities for TypeScript code. The project focuses on accurate TypeScript parsing, AST transformations for ESLint compatibility, scope analysis, and a rich set of rules tailored for TypeScript-specific code patterns.
+
+[milestones]
+• Nx Monorepo Migration: Project migrated to Nx monorepo structure, enabling better code organization and tooling.
+• TypeScript 4.3 Support: Added support for TypeScript 4.3 features, including overrides on class members, getter/setter signatures on types, and more.
+• AST Specification Module: Refactored AST specification into a separate module, improving code maintainability and testability.
+• Scope Manager Package: Introduced the `scope-manager` package for enhanced scope analysis, including support for JSX and improved handling of decorators.
+• ESLint v7 Upgrade: Upgraded to ESLint v7, enabling new features and better compatibility.
+• Splitting of Core Modules: Split visitor keys and types into separate packages for improved modularity.
+• TypeScript 4.2 Support: Added support for TypeScript 4.2 syntax.
+• Support for Optional Chaining and Nullish Coalescing: Introduced support for optional chaining and nullish coalescing operators in both parsing and rules.
+• Custom Module Resolution Support:  Allowed custom module resolution for improved project flexibility.
+• Decorator Metadata Support: Enabled support for decorator metadata in scope analysis and rules.
+• Project References Handling: Improved handling of project references and resolution, including an option to ignore specific folders.
+
+[patterns]
+• Continuous Dependency Updates: Frequent dependency bumps indicate active maintenance and integration of new features.
+• Focus on Performance: Several commits address performance optimization, particularly in parsing and scope analysis.
+• Increased Type Safety:  Recurring theme of improving type safety in AST definitions, predicate types, utility functions, and other areas.
+• AST Alignment with ESTree:  Significant effort dedicated to aligning the generated AST with the ESTree standard, ensuring compatibility with ESLint.
+• Expansion of Rule Set: Continuous development of new rules, often based on or extending existing ESLint rules or migrating rules from TSLint.
+• Documentation Improvements:  Regular documentation updates reflect a focus on clarity and comprehensive coverage of features and usage.
+• Community Contributions:  Many contributions from the community indicate active engagement and collaborative development.
+• Refactoring and Simplification:  Occasional refactoring efforts aim to simplify the codebase and remove redundancies.
+• Focus on Correctness and Bug Fixes:  Many commits address bug fixes and regressions, demonstrating a commitment to maintaining stability and reliability.
+• Testing Enhancements:  Several commits improve testing infrastructure, including integration tests, AST alignment tests, and better coverage reporting.
+• Adoption of New Technologies: Migration to Nx, adoption of Prettier, and upgrade to ESLint v7 demonstrate an openness to integrating new technologies and best practices.
+• Potential Technical Debt Indicators: Some instances of experimental flags and workarounds might suggest areas of potential technical debt to be addressed in the future.

@@ -1,0 +1,58 @@
+[description]
+Hardhat is a development environment for Ethereum software. It consists of different components, including a task runner, a local Ethereum network, and a plugin system.
+
+[milestones]
+• Solidity 0.8.x support
+    - Added support for Solidity versions 0.8.6 through 0.8.9.
+    - Improved error detection and reporting for Solidity 0.8.x contracts.
+    - Implemented handling of panic errors and custom errors in Solidity 0.8.x.
+    - Added support for top-level functions in Solidity 0.8.x.
+    - Fixed issues with stack traces, error messages, and contract visibility in Solidity 0.8.x.
+• London Hardfork Support
+    - Implemented support for EIP-1559 and related changes introduced by the London hardfork.
+    - Adapted gas price and fee calculation mechanisms, transaction validation, and RPC methods.
+    - Updated network helpers, configuration options, and documentation to reflect London hardfork changes.
+• Test Utilities and Chai Matchers
+    - Introduced new test utilities and chai matchers for improved testing workflows.
+    - Added support for BigNumbers, improved error messages, and enhanced compatibility with waffle.
+    - Implemented .reverted, .revertedWith, .revertedWithPanic, .revertedWithCustomError, changeEtherBalance(s), and changeTokenBalance(s) matchers.
+• Hardhat Toolbox
+    - Created a new Hardhat Toolbox plugin that bundles commonly used plugins and dependencies.
+    - Simplified project setup and dependency management.
+• Performance Improvements
+    - Optimized various components of Hardhat for improved performance, especially during compilation and forking.
+    - Implemented parallel compilation, caching mechanisms, and reduced unnecessary blocking operations.
+    - Refactored modules and simplified logic for better efficiency.
+• Improved Documentation and Tutorials
+    - Rewrote and updated several documentation guides, tutorials, and READMEs.
+    - Improved clarity, fixed broken links, and added new content.
+    - Migrated the website to Next.js.
+• EthereumJS Upgrade
+    - Upgraded EthereumJS dependencies to newer versions.
+    - Fixed various bugs related to forking and improved compatibility.
+• Support for multiple etherscan APIs
+    - Added support for specifying multiple Etherscan API keys.
+    - Improved handling of API keys and warnings for unsupported networks.
+• Configurable node task logging
+    - Made logging in the node task configurable.
+• Hardhat Network Helpers
+    - Introduced new Hardhat Network Helpers for interacting with the Hardhat Network.
+    - Added methods for dropping and mining transactions, setting storage, and more.
+
+[patterns]
+• Focus on Solidity 0.8.x compatibility and London Hardfork support: A significant portion of the commits addresses these major upgrades, indicating a commitment to keeping Hardhat up-to-date with the Ethereum ecosystem.
+    - Numerous commits related to error handling, RPC methods, and gas/fee calculations.
+    - Impact: Ensures Hardhat remains a relevant and useful tool for developers working with the latest Solidity versions and Ethereum hardforks.
+• Emphasis on improved developer experience: Several commits focus on enhancing documentation, providing more informative error messages, simplifying project setup, and introducing new testing utilities.
+    - Updates to tutorials, READMEs, and error messages.
+    - Implementation of the Hardhat Toolbox plugin and test helpers.
+    - Impact: Makes Hardhat easier to learn and use, reducing friction for developers.
+• Addressing technical debt and improving code quality: Refactoring efforts, performance optimizations, and removal of workarounds demonstrate a commitment to maintaining a healthy codebase.
+    - Refactoring of modules, optimization of algorithms, and removal of dead code.
+    - Impact: Enhances the long-term maintainability and stability of Hardhat.
+• Increased community engagement: Incorporation of community plugins, contributions to documentation, and bug fixes submitted by external contributors demonstrate a collaborative development process.
+    - Merge commits from external contributors and updates to the plugin list.
+    - Impact: Fosters a thriving ecosystem around Hardhat and encourages further community involvement.
+• Active maintenance and bug fixing: Several commits address specific bugs and issues reported by users, indicating a responsive development team.
+    - Bug fixes related to forking, error reporting, and RPC methods.
+    - Impact: Enhances the reliability and stability of Hardhat.

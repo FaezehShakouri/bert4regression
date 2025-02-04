@@ -1,0 +1,31 @@
+[description]
+Rome/Biome is a linter, compiler, bundler, and more for JavaScript, TypeScript, HTML, JSON, Markdown, and CSS.  Biome is a rewrite of Rome, focused on building a robust and performant toolchain for web development.
+
+[milestones]
+Rome Initial Release (0.6.0):** Basic formatting for JavaScript/TypeScript (including JSX/TSX) with Prettier compatibility metrics and tests.  Initial linter, CLI, LSP server, VS Code extension, and playground. Core infrastructure improvements. Introduction of the `rome_rowan` crate. Parsers and formatters for CSS, JSON, and Markdown.  CSS lint rules.
+Biome Enhancements:
+    Parsers and Formatters:** HTML, CSS, Grit, and GraphQL. Support for CSS modules, variables, and functions in CSS. GritQL queries and snippet node support.
+    Linting:** Expanded JavaScript/TypeScript linting rules (useImportType, useExportType, useStrictMode, noControlCharactersInRegex, noUselessStringRaw, noProcessGlobal, noDuplicateProperties, ARIA checks), GraphQL linting (duplicate fields, deprecated reasons). Focus on performance and code actions.
+    Configuration and File System:** .editorconfig support, nested .gitignore support, improved glob pattern matching, project-level configuration with extends and overrides, `biome.jsonc` support.
+    CLI:** New commands (`rage`, `clean`), improved diagnostics and filtering, new options (`--only`, `--skip`, `--write`, `--fix`).
+    LSP & VS Code Extension:** Workspace support, multi-file diagnostics, configuration error handling, dynamic formatter registration, Astro/Vue/Svelte support.
+    JS API & WASM:** Experimental support.
+    Migration Tooling:** Prettier and (in-progress) ESLint configuration migration.
+    Documentation and Website:** Launch of Biome website with updated documentation and examples.
+
+[patterns]
+Incremental Development:** Features developed and improved iteratively.
+Performance Focus:** Optimizations for printer source maps, code action diff generation, file features caching, computed overrides caching, resolved dependencies caching, and efficient data structures/algorithms.
+Testing and Correctness:** Snapshot tests, Prettier compatibility tests, parser tests, coverage tools.
+Open Source Collaboration:** Active community contributions.
+Extensibility:** Macros for lint rules and AST node unions.
+Codebase Refactoring:**  For improved maintainability (e.g., `FormatLanguage` trait, diagnostics refactor).
+Automation:** Code generation for formatter and documentation, CI workflows.
+Stability Focus:**  Later development emphasized stability and user experience, particularly in CLI and LSP.
+Prettier Compatibility (Biome):**  Significant effort to match Prettier's formatting output.
+Migration from Rome to Biome:** Renaming, documentation updates, configuration updates.
+Growing Community Involvement (Biome):** Increased community contributions.
+Cross-Platform Compatibility (Biome):** Support across different operating systems and musl target.
+Continuous Integration and Delivery (Biome):** Robust CI/CD pipeline using GitHub Actions.
+Emphasis on Documentation and Developer Experience (Biome):** Continuous documentation improvements and accessibility focus.
+Potential Technical Debt Indicator:** Early use of `println` and `dbg`, later removed.

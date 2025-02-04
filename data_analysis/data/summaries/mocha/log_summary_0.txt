@@ -1,0 +1,55 @@
+[description]
+Mocha is a feature-rich JavaScript test framework running on Node.js and in the browser, making asynchronous testing simple and fun. Mocha tests run serially, allowing for flexible and accurate reporting, while mapping uncaught exceptions to the correct test cases.
+
+[milestones]
+• Version 11.1.0 Release
+    - New features and bug fixes.
+• Version 11.0.0 Release
+    - Adapted new engine range for Mocha 11.
+• Version 10.8.0 Release
+    - Browser failure highlighting.
+• Version 10 Version 9 and Version 8 Release
+    - No specific user-facing features extracted from commit messages.
+• Version 8.0.0 Release
+    - Parallel mode execution for tests.
+• Version 6.0.0 Release
+    - Support for Node.js native ES modules.
+• Version 5.0.0 Release
+    - Introduced custom error objects.
+• Version 4.0.0 Release
+    - Support for running tests in parallel mode.
+• Version 3.0.0 Release
+    - Support for global setup/teardown functions.
+• Version 2.0.0 Release
+    - Support for Node-12.x in CI.
+• Version 1.0.0 Release
+    - No specific user-facing features extracted from commit messages.
+
+[patterns]
+• Continuous Improvement
+    - Regular releases with version bumps, dependency updates, and documentation improvements.
+    - Positive impact on project maintainability and user experience.
+• Focus on Documentation
+    - Frequent updates and improvements to the documentation.
+    - Enhances usability and understanding of the framework.
+• Refactoring and Dependency Updates
+    - Regular refactoring efforts and dependency updates indicate attention to code quality and security.
+    - Reduces technical debt and ensures compatibility.
+• Addressing Technical Debt
+    - Removal of deprecated methods, shims, and outdated dependencies.
+    - Improves long-term maintainability and codebase health.
+• Focus on Compatibility and Browser Support
+    - Explicitly addressing compatibility across browsers and Node.js versions.
+    - Expands user base and enhances developer experience.
+• Testing and Integration Tests
+    - Regular improvements and additions to integration tests.
+    - Increases confidence in stability and correctness of the framework.
+• Community Involvement
+    - Contributions from various developers via pull requests.
+    - Fosters open-source collaboration and project growth.
+• Security Updates
+    - Addressing vulnerabilities via dependency upgrades.
+    - Improves project security and user confidence.
+• Automation and CI/CD
+    - Regular updates to CI/CD workflows, including automated releases.
+    - Enhances development efficiency and release process.

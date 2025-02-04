@@ -1,0 +1,64 @@
+[description]
+Webpack, a module bundler for JavaScript applications.
+
+[milestones]
+• Release 1.4.0
+    - Support for nested variables in ProvidePlugin.
+    - Async loading of extra JSONP chunks.
+    - Weak dependencies.
+    - `require.resolveWeak` function.
+    - `NewWatchingPlugin`.
+    - Experimental features and performance improvements.
+• Release 1.3.0
+    - Hot Module Replacement (HMR) improvements and bug fixes.
+    - Optional externals support.
+    - UMD2 library target.
+    - Configuration test infrastructure.
+• Release 1.2.0
+    - Configurable source map filenames.
+    - Dedupe plugin improvements.
+    - Optional externals as globals.
+• Release 1.1.0
+    - Node-webkit target.
+    - Support for multiple entry points.
+• Release 1.0.0
+    - Browserify compatibility improvements.
+    - UTF-8 BOM handling.
+    - Local module support.
+    - Improved error reporting.
+• Release 0.11.0
+    - Support for labeled modules.
+    - Multiple entry points example.
+• Release 0.9.0
+    - UMD support.
+    - Multi module export.
+• Release 0.8.0
+    - Module ID predictability.
+    - Loaders as entry modules.
+• Initial Commit
+
+[patterns]
+• Frequent releases and updates
+    - Multiple releases within short timeframes suggest active development and responsiveness to user needs.
+    - Demonstrates commitment to project evolution.
+• Focus on performance and optimization
+    - Recurring themes of caching improvements, code minimization, and efficient module loading.
+    - Contributes to improved user experience.
+• Feature-driven development
+    - New features like HMR, code splitting, loaders, and plugins regularly introduced.
+    - Reflects a focus on expanding Webpack's capabilities.
+• Community contributions
+    - Pull requests from external contributors incorporated.
+    - Shows active community involvement and collaboration.
+• Emphasis on testing and bug fixing
+    - Numerous commits dedicated to testing, resolving bugs, and improving error reporting.
+    - Promotes code quality and stability.
+• Addressing technical debt
+    - Refactoring of core components, like module templates, into plugin interfaces.
+    - Improves maintainability and extensibility.
+• Documentation updates
+    - README and example updates alongside releases.
+    - Aids user understanding and adoption.
+• Shift towards plugin-based architecture
+    - Refactoring core components into plugins suggests a move towards greater flexibility and customization.
+    - Empowers developers to extend and tailor Webpack to specific needs.

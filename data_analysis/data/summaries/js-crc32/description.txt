@@ -1,0 +1,1 @@
+Fast JavaScript CRC32 library with rolling checksums, optimized for various environments.

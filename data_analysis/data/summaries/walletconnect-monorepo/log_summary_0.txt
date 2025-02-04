@@ -1,0 +1,57 @@
+[description]
+WalletConnect v2 monorepo, encompassing client packages, relay server, utilities, and providers for connecting dapps and wallets. The project aims to provide seamless wallet connections for decentralized applications.
+
+[milestones]
+• Relay Server Integration:
+    - Initial commit of relay v2 within the `lerna` packages directory.
+    - Build output path modification and `pino` logging added for relay and utils.
+    - Removal of `nginx` buffer size configuration and config file from `.gitignore`.
+• Client Package Development:
+    - Initial commit and addition of client packages.
+    - Major refactoring of relay types and utils, URI fixes, and client tweaks.
+    - Removal of `rejectUnauthorized` option and JSON RPC implementation for relay.
+• New Wallet Support:
+    - Added PeakDeFi, Tongue, Huobi, SafePal, KyberSwap, ZelCore, Flare, Nash, EasyPocket, imToken, Trust, Pillar, Crypto.com DeFi, ONTO, SparkPoint, Math, TokenPocket, and MYKEY wallets.
+    - Added Farsi language support to the registry.
+• QRCode Modal Enhancements:
+    - Refactoring and migration to Preact for improved performance and size.
+    - Support for multiple buttons, mobile layout and deep linking enhancements.
+    - Node.js support, SVG QR code rendering, CSS and DOM injection improvements.
+    - Automatic browser opening, SVG code optimization, and animation fix.
+• Web3 Provider and Subprovider Updates:
+    - Bug fixes and improvements to error handling, message parameters, and event emitting.
+    - New EIP-1193 methods, `close` event handling, and `pollingInterval` parameter.
+    - `QRCodeModal` integration, hex leading zero removal, and capitalization fix.
+    - Ethereum provider updates: custom RPC URL support, `chainId` handling, and improved `eth_` request processing.
+• Internationalization (i18n) Support:
+    - Implemented i18n with Portuguese, German, Korean, French, and Chinese translations.
+    - Text and notification updates.
+• Security Improvements and Refactoring:
+    - Bumped dependencies (`acorn`, `elliptic`, `lodash`) for security.
+    - Reconnect enabled via pending state reset.
+• Release 2.18.0: Latency improvements, dependency updates, and repository cleanup.
+• Cryptography Refactoring: Replaced stablelibs with noble libs for performance and security.
+• Pairing Method Deprecation: Added deprecation warnings and reduced expiry time for active pairings.
+• Repository Cleanup: Removed unused files and dependencies, optimized imports, improved structure.
+• Connection Stability Improvements: Request queueing, reconnection logic, and network drop handling.
+• Release 2.17.0: Telegram deeplink support and improved URI handling.
+• Tezos Support: Added to the Universal Provider.
+• Authentication API: Introduced session authentication and verification context.
+• Bundler Proxy Support: Added support for custom bundler URLs.
+• Release 2.15.0: Link mode support, improved deeplink handling, and automatic publishing.
+• Request Queue Mechanism: Implemented to handle incoming requests sequentially and prevent race conditions.
+
+[patterns]
+• Frequent Releases and Bug Fixes: Active development with iterative improvements and user feedback integration.
+• Refactoring and Dependency Updates: Commitment to code quality, performance, and security.
+• Expanded Chain and Provider Support: Focus on platform compatibility and ecosystem growth.
+• Connection Stability Focus: Prioritizing robust infrastructure for dapps.
+• New Features and API Improvements: Ongoing development and platform expansion.
+• Proactive Technical Debt Management: Repository cleanup and refactoring for maintainability and stability.
+• Thorough Testing Practices: Numerous tests and regular updates to test suites ensure quality.
+• Performance Optimization:  Latency reduction and performance improvements through optimized cryptography and payload handling.
+• Focus on Mobile Integration: Significant development dedicated to mobile deep linking, UI improvements, and expanding mobile wallet registry.
+• Emphasis on Performance and Bundle Size Optimization:  Migration to Preact, dependency removal, and bundle size analysis reflect performance focus.
+• Feature-Driven Development: Many commits introduce or improve user-facing features.
+• Addressing Technical Debt:  Commits address technical debt through refactoring, dependency updates, and error handling improvements.
+• Shift towards Modularization: Decoupling of components and creation of independent packages improve modularity.

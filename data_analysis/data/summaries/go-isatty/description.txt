@@ -1,0 +1,1 @@
+Go library detects terminal connections across diverse OS (Windows, macOS, Linux, BSD, etc.).

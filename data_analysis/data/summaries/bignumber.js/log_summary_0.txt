@@ -1,0 +1,45 @@
+[description]
+A JavaScript library for arbitrary-precision decimal arithmetic.
+
+[milestones]
+• Version 9.0.0
+    - Removed `Symbol` references for legacy browser compatibility.
+• Version 8.0.0
+    - Removed `isArray`.  `min`, `max`, and `sum` no longer accept arrays.
+    - TypeScript definition updates.
+    - Removed bower.json.
+• Version 7.0.0
+    - Enabled compatibility with `Object.freeze(Object.prototype)`.
+• Version 6.0.0
+    - Refactored tests and declaration file.
+    - Added and renamed methods.
+• Version 5.0.0
+    - Constructor no longer requires `new` keyword.
+• Version 4.0.0
+    - Replaced `BigNumber.isBigNumber` with a prototype property.
+• Version 3.0.0
+    - Removed crypto requirement.
+    - Added `set` as config alias.
+• Version 2.0.0
+    - Various bug fixes and improvements.
+• Version 1.0.0
+    - Initial release.
+
+[patterns]
+• Bugfix focus
+    - Many commits address specific bug reports (e.g., #344, #338, #121).
+    - Indicates active maintenance and responsiveness to user feedback.
+• TypeScript definition improvements
+    - Several commits refine TypeScript definitions (e.g., #170, #189).
+    - Suggests increasing focus on TypeScript support.
+• Performance optimization
+    - Commits like "Optimise toString(10)" suggest ongoing efforts to improve performance.
+• Compatibility improvements
+    - Several commits address compatibility with different environments (e.g., legacy browsers, ES6 modules, CSP).
+• Documentation updates
+    - Regular updates to README and other documentation.
+    - Reflects commitment to clear communication with users.
+• Refactoring and code cleanup
+    - Sporadic commits address code style, typos, and potential technical debt (e.g., #329, lint commits).
+• Feature additions
+    - New features are introduced over time, such as BigInt support, custom alphabets, and new methods (e.g., `sum`, `toNumber`).  Some features are later reverted or modified based on community feedback or further testing.

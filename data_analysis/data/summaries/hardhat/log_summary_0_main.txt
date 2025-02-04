@@ -1,0 +1,52 @@
+[description]
+Hardhat, a development environment for Ethereum software, has undergone significant development with a focus on integrating Ignition, a deployment tool, improving error reporting, supporting new Solidity versions, and migrating to pnpm as the package manager.  A new execution engine, EDR, is being integrated, bringing performance enhancements and new features.
+
+[milestones]
+• Ignition Integration
+    - Added support for Ignition deployments in scripts, tests, and the CLI.
+    - Introduced new tasks and commands for managing and visualizing Ignition deployments.
+    - Enhanced documentation with guides for using Ignition, including error handling, versioning, and reconciliation.
+    - Integrated hardhat-deploy plugin with Ignition.
+• Improved Error Reporting
+    - Centralized error handling with IgnitionError and HardhatPluginError.
+    - Enhanced error messages for better clarity, including specific error codes.
+    - Implemented whitelisting of error codes for improved error management.
+• Solidity Version Support
+    - Added support for Solidity versions 0.8.22, 0.8.23, 0.8.24, 0.8.25, 0.8.26, 0.8.27, and 0.8.28.
+    - Set Cancun as the default hardfork.
+• Package Manager Migration
+    - Migrated the monorepo from npm and yarn to pnpm for improved dependency management.
+• EDR Integration
+    - Introduced Execution Data Retriever (EDR) as a new execution engine.
+    - Ported various features and tests to EDR, focusing on performance optimization and stack traces.
+    - Added support for blob transactions and the Cancun hardfork in EDR.
+• Hardhat Verify and Sourcify
+    - Introduced hardhat-verify plugin for contract verification.
+    - Added support for Sourcify verification.
+• Viem Integration
+    - Added viem support, including a new toolbox and project creation options.
+    - Updated hardhat-viem for viem@2.
+• Scoped Tasks
+    - Introduced scoped tasks for better organization and extensibility.
+• Configuration Variables
+    - Added support for configuration variables, allowing users to manage sensitive information more effectively.
+• Hardhat Ledger
+    - Introduced hardhat-ledger plugin for Ledger hardware wallet support.
+• Miscellaneous Improvements
+    - Improved documentation with various guides and tutorials.
+    - Enhanced CLI commands, such as `status` and `init`.
+    - Fixed numerous bugs and improved error handling.
+
+
+[patterns]
+• Focus on developer experience: 
+    - Ignition and EDR integrations simplify deployment and debugging. Enhanced error messages and documentation improvements facilitate easier development.
+    - Introduction of Configuration Variables addresses secrets management concerns.
+• Performance optimization: 
+    - EDR integration and compiler downloader optimization demonstrate a commitment to faster build and execution times.
+• Embrace of new technologies and tools: 
+    - Migration to pnpm reflects adoption of modern package management practices. Viem and Sourcify integrations enhance development options.
+• Continuous improvement and maintenance: 
+    - Solidity version support, bug fixes, and dependency updates indicate active maintenance and commitment to supporting the evolving Ethereum ecosystem.  The deprecation of older Solidity versions streamlines the project.
+• Potential Technical Debt: 
+    - Frequent refactoring and renaming of modules and types might indicate rapid development pace, possibly leading to inconsistencies or requiring further cleanup.  This is mitigated by thorough testing, including snapshot and integration tests.  The introduction of new execution engines (EDR) necessitates significant code migration and testing efforts, creating a potential but manageable source of technical debt.

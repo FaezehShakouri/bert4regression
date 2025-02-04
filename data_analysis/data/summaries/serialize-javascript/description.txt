@@ -1,0 +1,1 @@
+JavaScript serializer for complex data structures (RegExp, functions) optimized for server-side rendering.

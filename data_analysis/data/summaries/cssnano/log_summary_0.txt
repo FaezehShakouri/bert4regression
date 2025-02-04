@@ -1,0 +1,41 @@
+[description]
+cssnano is a modular minifier, built on top of the PostCSS ecosystem. It provides a safe default preset that combines many CSS optimisations, including the removal of comments and whitespace, merging of rules and more.
+
+[milestones]
+• PostCSS 8 Migration (2021-01-11)
+    - Upgraded cssnano to use PostCSS 8, bringing significant performance improvements and enabling compatibility with newer PostCSS plugins.
+• cssnano 5 Release (2021-04-06)
+    - Marked a major release with new features, substantial refactoring, and dependency updates.
+    - Introduced new plugins and presets for enhanced optimization capabilities.
+• cssnano 6 & 7 Releases (2022-03-27, 2024-04-24)
+    - These releases focused on refining performance, improving TypeScript types, and dropping support for older Node.js versions.  They also introduced several breaking changes, such as removing YAML config support and shifting development dependencies to workspaces.
+• cssnano 7 included dropping support for Node 14 and 16
+• Changeset introduction for better dependency management.
+• Typescript improvements for better developer experience
+• Multiple dependency updates and security patches across all releases
+• New documentation website and playground launched for improved user experience
+• Dropped YAML config support, favoring other configuration methods.
+
+[patterns]
+• Continuous dependency updates
+    - Frequent updates of development dependencies and core libraries like PostCSS, indicating good maintenance practices.
+• Focus on Performance Improvement
+    - Recurring commits related to performance optimizations and dependency upgrades demonstrate a commitment to efficiency.
+• Refactoring for Maintainability
+    - Consistent refactoring efforts, including code simplification and type improvements, indicate ongoing efforts to reduce technical debt and enhance maintainability.
+• Testing Improvements
+    - Migration to the built-in Node.js test runner and an increased focus on improving code coverage demonstrates improving testing practices.
+• Security Consciousness
+    - Addressing CVE alerts and upgrading dependencies with security vulnerabilities highlights a concern for security best practices.
+• Shift to Workspaces and Changesets
+    - Migration to a workspace-based monorepo structure and the adoption of changesets for dependency management suggest an improved development workflow.
+• Emphasis on TypeScript
+    - Progressive enhancement of TypeScript definitions and resolution of type-related issues reflects an emphasis on improving type safety and developer experience.
+• Documentation improvements and website updates
+    - Continuous effort to keep the documentation updated for each release.
+• Community contributions addressed
+    - Many pull requests and issues from the community incorporated into cssnano showing attention to user feedback
+• Deprecations and breaking changes introduced gradually
+    - Removal of YAML support and older node versions highlights this pattern indicating deliberate version management and migration planning
+• Simplification and reduction of dependencies
+    - A theme of inlining smaller dependencies and simplifying code for performance and reduced bundle size.

@@ -1,0 +1,1 @@
+Redux-Saga simplifies async side effects in JavaScript apps using generators, channels, and declarative effects.

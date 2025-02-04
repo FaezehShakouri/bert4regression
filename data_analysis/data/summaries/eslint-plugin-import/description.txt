@@ -1,0 +1,1 @@
+ESLint plugin enforcing import best practices, resolving paths, with TypeScript support and performance optimizations.

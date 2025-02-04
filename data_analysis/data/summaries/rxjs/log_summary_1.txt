@@ -1,0 +1,56 @@
+[description]
+This project is RxJS, a reactive programming library. The commit logs document development towards a 5.0.0 release, with a focus on documentation, testing, refactoring, and performance improvements.  TypeScript adoption is a significant theme.
+
+[milestones]
+• Documentation overhaul
+    - Comprehensive JSDoc added for numerous operators
+    - New content for the manual covering schedulers, subjects, subscriptions, and operators
+    - Migration guide from RxJS 4
+    - Improved ESDoc page styling and structure with a playground environment
+• Testing improvements
+    - Migration to Mocha and Chai assertions
+    - Increased test coverage including marble tests and subscription assertions
+    - PNG diagram generation for visualizing tests
+    - Browser compatibility testing and test helper refactoring
+• Refactoring for RxJS 5
+    - Modularization of operators and observables
+    - Removal of redundant code and operators
+    - TypeScript adoption and associated type definition updates
+    - Introduction of new subscription types and handling
+    - Refactoring of core classes like Subscriber and Subject
+• Performance enhancements
+    - Custom try-catch implementations for speed improvements in operators
+    - Fast paths added for scalar observables in several operators
+    - Optimization of forkJoin and other operators
+• New Operators and Features
+    - Addition of timestamp, auditTime, cache, multiplex, WebSocketSubject, AjaxObservable functionality
+    - FormData support in AjaxObservable
+    - Symbol.observable implementation and shim
+    - Introduction of let operator for fluent style queries
+    - Updated error handling and introduction of ObjectUnsubscribedError
+
+
+[patterns]
+• Focus on documentation clarity and completeness
+    - Large number of commits dedicated to JSDoc, operator documentation, and the user manual.
+    - Suggests commitment to user experience and onboarding.
+• Test-driven development and improving test quality
+    - Introduction of new test helpers, marble tests, and visualization tools
+    - Focus on comprehensive test coverage and addressing edge cases, especially regarding subscriptions and unsubscriptions.
+    - Indicates a high priority on correctness and preventing regressions.
+• Incremental refactoring towards TypeScript
+    - Gradual migration of existing code to TypeScript
+    - Type definition updates and resolving TypeScript compiler errors.
+    - Suggests a careful and deliberate approach to adopting new technologies.
+• Performance optimization as a continuous effort
+    - Frequent micro-performance benchmarks and targeted optimizations in operators.
+    - Custom try-catch blocks and fast paths for scalar values.
+    - Indicates awareness of performance implications and dedication to efficient code.
+• Community involvement and responsiveness
+    - Incorporation of community contributions and bug fixes.
+    - Documentation improvements and migration guide based on user feedback.
+    - Suggests a healthy and collaborative project environment.
+• Technical debt addressed proactively
+    - Removal of redundant code, operators, and legacy features.
+    - Refactoring for improved composability, maintainability, and clarity.
+    - Indicates a focus on long-term code health and sustainability.

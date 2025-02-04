@@ -1,0 +1,27 @@
+[description]
+Webpack, a module bundler, undergoes improvements and refactoring in this set of commits.  Focus is on bug fixes, performance enhancements, code cleanup, ES6 refactoring, and enhanced schema validation.  New features include an import() function, support for web assembly modules, and a mode option.  Several dependencies are upgraded.
+
+[milestones]
+• Child Compilation Errors: Improved error handling for child compilations, including updates to NoEmitOnErrorsPlugin and tests.
+• Configuration Options: Output.globalObject option added.  Mode option introduced to control defaults for development and production. Tree-shaking enabled for JSON modules. Support for imports in WASM modules.
+• Tapable Upgrade: Migrated several plugins to use Tapable v1 hooks.
+• Deprecations: Module.loaders deprecated in favor of module.rules.  Several APIs deprecated.
+• ES6 Refactoring: Multiple components refactored to ES6 classes.
+• Schema Validation: Improved schema validation and error reporting for plugin options.
+• Performance Improvements: Optimized several processes for performance, including module concatenation, chunk graph building, and hashing.
+• Cleanup and Refactoring: Removed dead code, consolidated logic, and improved code style.
+• Examples: New and updated examples for various features.
+• Dependency Upgrades: Upgraded various dependencies, including enhanced-resolve, tapable, and webpack-sources.
+• WebAssembly Support: Added WebAssembly proof of concept and support for imports.
+• JSON Tree Shaking: Added tree-shaking support for JSON modules.
+• Templated String Functions: Added support for functions in templated string configuration properties.
+
+[patterns]
+• Focus on Error Handling: Several commits address child compilation errors and improve error messages. This suggests a focus on robustness.
+• ES6 Migration: The recurring theme of refactoring to ES6 suggests a drive towards modernizing the codebase.
+• Performance Optimization:  Frequent optimizations indicate a priority on improving build speed and efficiency.
+• Schema Validation: Enhanced schema validation reflects an emphasis on configuration correctness and ease of use.
+• Increased Testing: Additions of unit and integration tests indicate a focus on maintaining code quality and preventing regressions.
+• Dependency Management:  Regular dependency updates demonstrate an effort to keep the project current and leverage external improvements and bug fixes.
+• Example-Driven Development:  The inclusion and updates of examples suggest a focus on practical application and user experience.
+• Breaking Changes:  Deprecations and removal of certain APIs indicate a willingness to evolve the project despite introducing potential breaking changes for users.  Appropriate warnings are added in these cases.

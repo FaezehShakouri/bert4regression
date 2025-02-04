@@ -1,0 +1,45 @@
+[description]
+Improvements to pandas library including performance enhancements, bug fixes, API changes, documentation updates, and continuous integration enhancements.  Significant changes include introduction of RangeIndex, reorganization of tests, deprecation of various functions and arguments, support for new features like datetime64[ns, tz] dtype in HDF5, and addition of new accessors for string, datetime, and categorical data types in Series.
+
+[milestones]
+• Introduction of RangeIndex
+    - New index type for representing a range of integers.
+• Reorganization of pandas tests
+    - Several test files reorganized for better structure and maintainability.
+• Deprecation of pandas.ols and pandas.fama_macbeth
+    - Part of ongoing effort to remove deprecated functionalities.
+• Support for datetime64[ns, tz] dtype in HDF5
+    - Enables storing timezone-aware datetime data in HDF5 files.
+• Addition of accessors .str, .dt, and .cat for Series
+    - Provides convenient access to type-specific methods for string, datetime, and categorical data.
+• Improved performance for various operations
+    - concat, to_csv, drop_duplicates, isin, groupby operations.
+• Enhancements to to_datetime function
+    - More flexible ISO8601 parsing and improved performance.
+• Bug fixes for various issues
+    - Including thread safety in read_csv, duplicated column names in to_excel, and various indexing issues.
+
+[patterns]
+• Performance optimization
+    - Regular focus on improving the speed of core operations like concat, groupby, to_csv, and indexing.
+    - Use of Cython and other optimization techniques.
+    - Positive impact on overall library performance.
+• API cleanup and deprecation
+    - Ongoing effort to remove deprecated functions and arguments, improving API consistency and maintainability.
+    - Clear communication of deprecations through warnings and documentation updates.
+    - Reduces technical debt and potential confusion for users.
+• Enhanced testing and continuous integration
+    - Regular improvements to test suite, including addition of new tests and reorganization of existing tests.
+    - Integration of new tools like asv for benchmarking and appveyor for Windows builds.
+    - Improves code quality, reliability, and platform compatibility.
+• Focus on datetime and timezone handling
+    - Significant development effort dedicated to improving support for datetime64[ns, tz] dtype and handling timezone conversions.
+    - Addresses several bugs and inconsistencies related to timezones.
+    - Improves correctness and reliability of time-series operations.
+• Introduction and improvement of Categorical dtype
+    - Ongoing development and refinement of the Categorical data type.
+    - Addition of new methods and improved performance.
+    - Provides a more efficient and memory-friendly way to work with categorical data.
+• Documentation updates
+    - Consistent effort to improve documentation, including adding new examples, fixing typos, and clarifying existing documentation.
+    - Improves usability and helps users understand the library's functionalities.

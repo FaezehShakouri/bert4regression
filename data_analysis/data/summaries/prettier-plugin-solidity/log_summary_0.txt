@@ -1,0 +1,28 @@
+[description]
+A Solidity code formatter for Prettier.
+
+[milestones]
+• Standalone Prettier support
+    - Allows usage without a Prettier dependency.  Enables independent testing and broader compatibility.
+• Prettier v3 Support
+    - Added compatibility with Prettier v3 alongside existing v2 support, requiring logic adjustments in comment printing. Backward compatibility tests were implemented.
+• ECMAScript Modules Migration
+    - Project refactored to use ECMAScript modules.
+• Dropped Node 14 and 16 Support, Added Node 20
+    - Improved performance and maintainability by focusing on actively supported Node versions.
+• User-Defined Operators Support
+    - Enhanced parsing and formatting of user-defined operators.
+• Numerous Formatting Improvements
+    - Addressed array indentation, return statement formatting, chained member access indentation, spacing between functions and contracts, try statement formatting, long variable declaration handling, enum and struct formatting,  and file-level constant support. Refactored core printing logic and improved comment handling.
+
+[patterns]
+• Regular Dependency Updates
+    - Frequent dependency bumps indicate active maintenance but also suggest potential churn and a need for careful version management.
+• Focus on Compatibility
+    - Ongoing efforts to support newer Prettier and Node versions, along with Solidity language features, demonstrates a commitment to compatibility and a broad user base.
+• Community Contributions
+    - Pull requests from external contributors show community engagement.
+• Refactoring and Code Quality Improvements
+    - Refactoring efforts are visible throughout the commit history.  Coupled with the use of ESLint, testing, and code coverage tools, this indicates a dedication to code quality.
+• Technical Debt Indicators
+    - Frequent bug fixes related to edge cases in formatting point to potential complexity in the parsing and printing logic.  The removal of the `explicitTypes` option suggests earlier design decisions may have introduced unnecessary complexity.

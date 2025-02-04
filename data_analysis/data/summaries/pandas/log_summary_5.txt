@@ -1,0 +1,73 @@
+[description]
+This project is Pandas, a Python library for data analysis. The commit logs span from May 2016 to June 2018 and show a period of active development with a focus on performance enhancements, bug fixes, API improvements, documentation updates, and compatibility with other libraries.
+
+[milestones]
+• Release of v0.24.0
+    - Started 0.24.0 whatsnew.
+• Release of v0.23.0
+    - MultiIndex sorting fix.
+    - Support for OO optimization.
+    - Color text based on background in Styler.
+    - Implement mode(dropna=False).
+    - Improved performance of NDFrame.describe.
+    - Added Featuretools to Pandas Ecosystem Page.
+    - Fixed various bugs.
+• Release of v0.22.0
+    - Implemented ExtensionArray.
+    - Improved performance of CategoricalIndex.
+    - Started 0.22.0 whatsnew.
+    - Deprecated various functions and methods.
+    - Fixed various bugs.
+• Release of v0.21.0
+    - Implemented Timedelta isoformat.
+    - Improved performance of to_datetime.
+    - Deprecated .ix in favor of .loc/.iloc.
+    - Added .isnull and .notnull methods to Index.
+    - Fixed various bugs.
+• Release of v0.20.0
+    - Dropped support for NaN categories in Categorical.
+    - Changed boxplot return_type kwarg.
+    - Refactored Resample API.
+    - Added to_json_schema method.
+    - Fixed various bugs.
+• Release of v0.19.0
+    - Added support for reading SAS7BDAT files.
+    - Implemented TimeGrouper.
+    - Deprecated pd.TimeSeries and Series.is_time_series.
+    - Improved to_datetime exception handling.
+    - Fixed various bugs.
+• Release of v0.18.0
+    - Added pd.asof_merge function.
+    - Deprecated .sym_diff in favor of .symmetric_difference.
+    - Added support for decimal argument in read_html.
+    - Fixed various bugs related to resampling, groupby, and indexing.
+
+
+[patterns]
+• Focus on performance improvement
+    - Cythonization of various functions, like GroupBy operations and rolling functions.
+    - Optimization of specific operations like DatetimeIndex.time, NDFrame.describe, and MultiIndex operations.
+    - Impact: Significant speed improvements in various areas of the library.
+• API cleanup and consistency
+    - Deprecation and removal of inconsistent or redundant functions and attributes, like .ix, .as_matrix, from_items, TimeGrouper, and various Panel methods.
+    - Introduction of new, more consistent APIs like .agg/.aggregate and to_xarray.
+    - Standardization of function signatures and keyword arguments.
+    - Impact: A cleaner, more consistent, and easier-to-use API.
+• Enhanced support for Categorical data
+    - Several improvements and bug fixes related to CategoricalIndex, CategoricalDtype, and categorical data handling in various functions.
+    - Introduction of union_categoricals.
+    - Impact: Better support and performance for working with categorical data.
+• Improved documentation
+    - Extensive docstring updates, additions of examples, and corrections of typos and errors.
+    - Updated contributing guidelines.
+    - Impact: Clearer and more comprehensive documentation for users and contributors.
+• Increased testing and compatibility
+    - Parametrization of tests for better coverage of different data types and scenarios.
+    - Use of pytest framework.
+    - Compatibility fixes for various NumPy, Python, and library versions.
+    - Improved handling of timezones and DST.
+    - Impact: More robust and reliable code with better compatibility across platforms and libraries.
+• Addressing technical debt
+    - Removal of deprecated code and functions.
+    - Refactoring of existing code for better organization and maintainability.
+    - Impact: Improved codebase maintainability and reduced technical debt.

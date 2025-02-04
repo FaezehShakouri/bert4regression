@@ -1,0 +1,1 @@
+High-performance Rust Ethereum consensus client with Electra/Deneb support, optimized sync, and slashing protection.

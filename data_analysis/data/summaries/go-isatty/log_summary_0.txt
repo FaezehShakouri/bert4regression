@@ -1,0 +1,33 @@
+[description]
+A Go library to determine whether a file descriptor refers to a terminal.  Supports various operating systems including Windows, macOS, Linux, BSD variants, Plan 9, Solaris, AIX, and more.  Includes support for Cygwin/MSYS2 terminals and App Engine.
+
+[milestones]
+• Go Modules Support
+    - Introduced go modules for dependency management.
+• Multi-OS Support Expansion
+    - Added support for GNU/Hurd, FreeBSD/arm64, Plan9, Windows XP, RISC-V, AIX, Android, Solaris, NetBSD, OpenBSD, DragonflyBSD and zOS.
+• TinyGo Support
+    - Adjusted build tags for TinyGo compatibility.
+• Improved Testing
+    - Enhanced tests to log the value of IsTerminal.
+• CI Updates
+    - Migrated from Travis CI to GitHub Actions.
+    - Added Go 1.20 to CI pipeline.
+    - Dropped Go 1.15 and 1.16 from CI.
+
+
+[patterns]
+• Platform-Specific Implementations
+    - Many commits address platform-specific terminal handling.
+    - Demonstrates a focus on broad OS compatibility.
+• Dependency Management Updates
+    - Regular updates to `golang.org/x/sys` demonstrate dependency management and best practices.
+    - Shift to Go modules streamlined dependency handling.
+• Community Contributions
+    - Several pull requests indicate active community involvement.
+    - Suggests a healthy and collaborative project.
+• Incremental Improvements
+    - Many commits are minor bug fixes, typo corrections, and documentation updates.
+    - Indicates ongoing maintenance and refinement.
+• Build Tag Refinement
+    - Adjustments to build tags for different architectures and Go versions indicate a focus on build flexibility and support.

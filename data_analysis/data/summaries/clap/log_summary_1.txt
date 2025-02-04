@@ -1,0 +1,38 @@
+[description]
+This project is the `clap-rs` command-line argument parser. The commit logs span from initial commit to March 2021 and cover a wide range of changes, including feature additions, bug fixes, documentation improvements, performance optimizations, and refactoring.
+
+[milestones]
+• Implementation of a new templated help system.
+    - Introduced template tags for customization.
+    - Added `before_help` and `after_help` to App.
+• Support for generating Bash and PowerShell completion scripts at compile time.
+• YAML configuration support.
+    - Added the ability to define arguments, groups, and settings in YAML files.
+• Refactoring of error handling.
+    - Improved error messages and context.
+    - Introduced custom error descriptions.
+• Introduction of `Arg::case_insensitive` for case-insensitive matching of possible values.
+• Implementation of `Arg::require_delimiter` for enforcing value delimiters.
+• Support for conditionally required arguments (`required_if`, `required_unless`, etc.).
+• Arg Indices: Ability to query argument value indices.
+• Overhaul of multiple value handling with enhancements for number of values, terminators, and delimiters.
+
+[patterns]
+• Iterative improvement of help and usage messages.
+    - Consistent focus on clarity and user experience.
+    - Numerous adjustments in formatting, wrapping, and content.
+• Ongoing refactoring and code cleanup.
+    - Regular use of `clippy` and `rustfmt`.
+    - Focus on code deduplication and performance optimization.
+• Increasing use of macros for code generation and API simplification.
+    - Examples: `clap_app!`, `arg_enum!`, `value_t!`.
+• Growing support for external configuration (YAML).
+    - Reflects a shift towards more declarative CLI definitions.
+• Gradual deprecation of older APIs and methods.
+    - Shows a commitment to maintaining a clean and consistent API.
+• Proactive bug fixing and addition of comprehensive tests.
+    - Demonstrates a focus on code correctness and robustness.
+• Active contribution and community involvement.
+    - Frequent pull requests and feedback from various contributors.
+• Potential technical debt indicators with internal refactoring cycles to clean code duplication and streamline internal APIs.
+    - This might indicate evolving internal designs.

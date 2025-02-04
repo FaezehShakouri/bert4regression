@@ -1,0 +1,60 @@
+[description]
+A JavaScript formatting tool aiming for consistent code style.  The project supports various languages and integrates with multiple editors.  Development focuses on improving formatting heuristics, expanding language support, and enhancing CLI/API functionality.
+
+[milestones]
+• Markdown Support
+    - Added TOML support within markdown.
+    - Implemented auto-detection of ordered list numbering style and preferred unordered list style.
+    - Preserved non-breakable whitespaces, handled punctuation variants, and improved emphasis text escaping.
+• GraphQL Support
+    - Added support for top-level interpolations in GraphQL tags.
+    - Implemented schema, scalar, interface, input, enum, and directive definition printing.
+    - Added support for type extension definitions.
+• CSS Support
+    - Implemented support for `prettier-ignore` within CSS.
+    - Added normalization of CSS case, including hex colors.
+    - Implemented printing of sub-nodes of `@import` in Less and workarounds for Less/SCSS parsing issues.
+• TypeScript Support
+    - Improved JSX formatting for TypeScript.
+    - Added support for printing optional catch binding and declare modifiers.
+    - Upgraded TypeScript to 2.6.2 and addressed several AST printing issues.
+• JSX Formatting Improvements
+    - Improved JSX formatting for styled-components.
+    - Added support for JSX fragments and spread children.
+    - Addressed various line break and inlining issues in JSX.
+• CLI Enhancements
+    - Added `--loglevel` option and support for multiple ignore patterns.
+    - Implemented `--stdin-filepath` to infer parser type for stdin input.
+    - Improved error handling and reporting, including clickable errors.
+• Configuration
+    - Implemented support for configuration files via cosmiconfig.
+    - Added `--find-config-path` (formerly `--resolve-config`) option.
+    - Improved documentation for configuration options.
+• Performance Improvements
+    - Added caching for printing and optimized `prettier --help`.
+    - Refactored code for efficiency, removing dead code and unnecessary function calls.
+• General Formatting Heuristics
+    - Improved formatting of template literals, member expressions, and binary expressions.
+    - Added support for optional chaining and improved handling of comments.
+    - Added supervisory parens for various operations to ensure correct output.
+• Refactoring
+    - Separated parser logic into multiple files and converted build scripts to JavaScript.
+    - Improved code quality through linting and formatting the codebase with Prettier.
+
+
+[patterns]
+• Iterative Development and Bug Fixing
+    - Many commits address specific formatting edge cases and bugs reported by users.
+    - Snapshots are frequently updated reflecting the ongoing changes and bug fixes.
+• Focus on Expanding Language Support
+    - Significant effort is devoted to adding and improving support for Markdown, GraphQL, CSS, TypeScript, and JSX.
+    - This demonstrates a commitment to making Prettier a versatile formatting solution.
+• Community Involvement
+    - Pull requests from contributors are regularly merged, indicating an open and collaborative development process.
+    - Issues and feature requests from users are actively addressed.
+• Attention to Code Quality and Testing
+    - Integration tests, unit tests, and AST comparison tests are used to ensure the correctness of the formatter.
+    - Linting rules and automatic formatting are enforced, promoting consistent code style and preventing technical debt.
+• Documentation Improvements
+    - Regular updates to the README and other documentation files make it easier for users to understand and contribute to the project.
+    - Efforts are made to keep documentation clear, concise, and up-to-date.

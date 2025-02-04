@@ -1,0 +1,47 @@
+[description]
+A WebAssembly toolkit for JavaScript, including parser, generator, interpreter, and other utilities.  The project has evolved to support both WAST and WASM formats, including features like custom sections, name sections, and various instructions.  Significant effort has been invested in improving spec compliancy, testing infrastructure, and performance benchmarks.  The project has also transitioned to a monorepo structure and uses modern tools like Yarn, Prettier, and ESLint.
+
+[milestones]
+• WASM Format Support
+    - Decoding and encoding of WASM binary format.
+    - Support for various WASM sections and instructions (e.g., custom sections, name sections, start section, data section, imports, exports, globals, memory, table, control flow instructions, numeric instructions).
+• AST Transformations and Manipulation
+    - Introduction of an Abstract Syntax Tree (AST) for representing WebAssembly code.
+    - Development of tools for traversing, modifying, and generating code from the AST.
+    - Support for location information (line and column numbers) in both WAST and WASM.
+• Validation and Type Checking
+    - Implementation of validation rules to ensure WebAssembly code correctness.
+    - Type checking capabilities for detecting type errors.
+• Tooling and Infrastructure Improvements
+    - Transition to a monorepo structure for better package management.
+    - Adoption of modern development tools (Yarn, Prettier, ESLint).
+    - Improved testing framework and CI integration, including spectest integration.
+    - Development of command-line tools like `wasmdump` and `wast2wasm`.
+    - Creation of a website with documentation and a REPL.
+• Performance Enhancements
+    - Optimization of the interpreter and other core components.
+    - Introduction of performance benchmarks to track improvements.
+• Refactoring and Code Quality Improvements
+    - Numerous refactoring efforts to improve code structure, readability, and maintainability.
+    - Use of Flow for static type checking.
+• Support for New Instructions and Features
+    - Implementation of various WebAssembly instructions over time, such as control flow instructions (br, br_if, br_table, block, loop, if), numeric instructions (i32, i64, f32, f64 operations), memory instructions (load, store), and administrative instructions (unreachable, nop, drop).
+    - Support for new features like shared memory, atomics, and v128 SIMD instructions.
+
+[patterns]
+• Incremental Development
+    - Features and instructions were implemented gradually, with frequent releases and continuous integration.
+• Focus on Spec Compliancy
+    - Significant effort was dedicated to ensuring the tools adhere to the WebAssembly specification, as evidenced by integration with the spectest suite.
+• Refactoring and Code Quality
+    - Regular refactoring and the use of Flow and linters demonstrate a focus on code quality and maintainability.
+• Testing and Validation
+    - The development of a robust testing framework, including both unit and integration tests, demonstrates a commitment to correctness.
+• Community Contributions
+    - Several pull requests from external contributors indicate a healthy and growing community.
+• Shift Towards WASM
+    - Initial focus on WAST was followed by a significant shift toward supporting WASM, reflecting the importance of the binary format.
+• Technical Debt Management
+    - Occasional reverts and fixes for bugs and inconsistencies suggest the existence of technical debt, although efforts were made to address these issues through refactoring.
+• Improved Developer Experience
+    - The transition to Yarn workspaces, the adoption of Prettier and ESLint, and the development of new command-line tools indicate a focus on improving the developer experience.

@@ -1,0 +1,29 @@
+[Description]
+Pandas is a Python library for data analysis and manipulation.  Development activity consistently focuses on performance improvements, bug fixes, API enhancements, documentation updates, and expanding functionality.  Key themes include integration with PyArrow, support for nullable dtypes, implementation of Copy-on-Write (CoW), improved string handling, and modernization of the codebase.
+
+[Milestones]
+Performance Enhancements:  Numerous optimizations across core operations like indexing, groupby, rolling, resampling, parsing, string manipulation, datetime handling, I/O (CSV, Excel, HDF5, SQL, Parquet), DataFrame/Series construction, and Styler rendering.  Leveraging Cython, Numba, and memory views for speed gains. Block-wise operations and caching strategies implemented.
+PyArrow Integration: Increased usage of PyArrow for various data types and operations, leading to improved string handling, timestamp and duration processing, and overall performance. PyArrow eventually becomes a required dependency.
+Nullable Dtypes: Introduction of nullable dtypes, including `ArrowDtype` and `ArrowExtensionArray`, enhancing data handling capabilities. Support added across various functions and operations.
+Copy-on-Write (CoW): Full implementation of CoW to improve performance by avoiding unnecessary data copying. Introduction of a warning mode and `ChainedAssignmentError` for inplace operations.
+String dtype: Implemented new string dtype backed by PyArrow for improved performance and compatibility across various operations.
+ArrayManager: Introduction of a new array-based data manager for improved performance. Gradual integration with core functionalities.
+Extension Arrays: Introduction and development of various Extension Arrays (BooleanArray, StringArray, IntegerArray) for flexible and extensible data types.
+Type Hinting: Extensive improvements to type annotations across the codebase using MyPy and future annotations, enhancing maintainability and static analysis.
+API Cleanup and Deprecations: Continuous deprecation of legacy functionalities (e.g., `ix`, `get_values`, `append`, `delim_whitespace`, `use_inf_as_na`, `ArrayManager`, `xlrd`, `xlwt`, various Index subclasses) and standardization of API signatures.
+Documentation Improvements:  Consistent updates to docstrings, examples, and user guides, improving clarity and comprehensiveness.
+Testing Improvements:  Parametrization of tests, stricter assertions, reorganization of test files, and addition of benchmarks enhance robustness and coverage.  Addressing flaky tests and updating exception messages.
+Build System Modernization: Transition to Meson build system, replacing setup.py.
+Python Version Support: Added support for newer Python versions (e.g., 3.4, 3.12) and dropped support for older versions (e.g., Python 2).
+New Features:  Numerous new features and functionalities added throughout the development period, including pairwise rolling moments, custom business days, enhanced pivot_table and Styler functionalities, pluggable SQL engine, improved plotting capabilities (e.g., error bars, pie plots, KDE plots), HDF5 enhancements, and new accessors (.str, .dt, .cat).
+
+
+[Patterns]
+Performance Optimization: Continuous focus on performance improvements using various techniques like Cythonization, algorithmic optimization, and leveraging PyArrow.
+Code Quality and Maintainability: Emphasis on code cleanup, refactoring, type hinting, and testing improvements. Active management of technical debt through deprecations and refactoring.
+API Consistency and Usability:  Efforts to standardize APIs, improve error messages, and enhance documentation.
+Increased Testing and Robustness:  Comprehensive testing strategies using pytest, including parametrization and addressing flaky tests.
+Community Involvement:  Evidence of community contributions through merge requests and issue discussions.
+Modernization: Adoption of newer Python features (e.g., f-strings), updated dependencies, and modern build systems.
+Focus on Data Structures: Ongoing development and refinement of core data structures like Index, Series, DataFrame, MultiIndex, and extension arrays.
+Time Series Functionality: Significant effort dedicated to improving time series related features and handling of datetime/timedelta data types.

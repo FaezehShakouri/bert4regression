@@ -1,0 +1,1 @@
+Efficient Nim-based Ethereum client supporting Capella, Deneb, Electra, and light clients.

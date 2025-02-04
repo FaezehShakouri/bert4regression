@@ -1,0 +1,1 @@
+FlatBuffers: efficient cross-platform serialization library with code generation, schema evolution, and broad language support.

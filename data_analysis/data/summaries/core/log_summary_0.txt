@@ -1,0 +1,34 @@
+[milestones]
+• **Solidity Macro and ABI Code Generation (0.3.0 - 0.8.0):** This period saw the introduction and maturation of the `sol!` macro, enabling automated Solidity parsing and Rust code generation for contracts, including ABIs, events, errors, getters, and even RPC calls. Support for JSON ABIs and user-defined types significantly expanded the macro's capabilities.  Overloaded functions and events were also added, along with customization options for attributes, derives, and import paths.  Performance of the macro was also addressed via lookup tables and optimized hex decoding. Version 0.8.0 marked a major milestone with the stabilization of this feature set.
+    - Introduction of `sol!` macro for contracts (0.3.0)
+    - JSON ABI support in `sol!` macro (0.7.0)
+    - User defined types and namespaces in `sol!` (0.8.0)
+• **Dynamic ABI and EIP-712 Support (0.4.0 - 0.7.0):** The project gained robust dynamic ABI handling and EIP-712 encoding/decoding. The introduction of `DynSolType`, `DynSolValue`, and related traits provided a flexible way to interact with Solidity data at runtime.  Significant performance improvements brought `dyn-abi` to parity with `ethabi`.  Error handling and parsing were also improved.
+    - DynSolType and related traits introduced (0.6.0)
+    - EIP-712 support and `eip712_domain!` macro (0.7.0)
+• **Primitive Types and Utilities (0.3.0 - present):**  Ongoing development has enriched the `primitives` crate with essential types like `Address`, `FixedBytes`, `Bytes`, `Signature`, and `U256`, along with various utility functions and traits (e.g., checksums, conversions, hashing).  Focus has been on performance optimization, expanded trait implementations (e.g., `rand`, `serde`), and improved error handling. A notable change involved the introduction of `foldhash` as the default hasher.
+    - `Address` type with checksum support (0.3.0)
+    - Introduction of `Signature` and related utilities (0.6.0)
+    - `FixedBytes` macros and various utility implementations (0.7.0)
+• **RLP Crate Migration (0.7.0):** RLP-related functionality was moved to a dedicated repository, improving project focus and maintainability.
+• **Minimum Supported Rust Version (MSRV) Bump (0.8.0):**  The MSRV was raised to 1.81, allowing for more modern Rust language features and potentially improving performance.
+
+[patterns]
+• **Focus on Developer Experience (DX):**  The project consistently prioritizes DX through features like the `sol!` macro, intuitive APIs, helpful error messages, and comprehensive documentation.  The use of proc macros, derives, and helper functions simplifies common tasks for developers.
+    - `sol!` macro automates code generation.
+    - Clearer error messages across crates.
+    - Doc alias feature for improved documentation.
+• **Performance Optimization:** Several commits focus on performance enhancements, particularly within the `sol-macro`, `dyn-abi`, and `primitives` crates.  Techniques like lookup tables, binary search, and optimized algorithms indicate a commitment to efficiency.
+    - Use of lookup tables in `sol-macro` for decoding.
+    - Optimized identifier parsing in `syn-solidity`.
+    - Improved checksum algorithm in `primitives`.
+• **Iterative Refinement and Bug Fixing:** The commit history reveals a continuous cycle of bug fixes, refactoring, and smaller improvements, demonstrating a commitment to code quality and stability.  Regression tests were frequently added to prevent recurring issues.
+    - Numerous commits address specific bugs or edge cases.
+    - Refactoring efforts improve code clarity and maintainability.
+    - Consistent addition of tests throughout the project lifecycle.
+• **Dependency Management:** The project actively manages dependencies, bumping versions to address vulnerabilities and leverage new features.  This suggests an awareness of security best practices and a desire to keep the project up-to-date.
+    - Several commits update dependencies like `winnow`, `hashbrown`, and `k256`.
+• **Community Contributions:** Several commits come from external contributors, indicating a growing and active community around the project. This is a positive sign for long-term health and sustainability.
+    - Examples include contributions to documentation, bug fixes, and new features.
+
+

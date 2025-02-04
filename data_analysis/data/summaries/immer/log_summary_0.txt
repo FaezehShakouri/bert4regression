@@ -1,0 +1,51 @@
+[description]
+Immer is a JavaScript library for immutable state management.
+
+[milestones]
+• Immer 7
+    - Introduced `current` function to access the current state of a draft.
+    - Rewrote Map and Set implementation.
+    - Always freeze by default.
+    - TypeScript conversion.
+    - Dropped node 6 support.
+    - Added first class support for Map and Set.
+    - Dropped ES5 support.
+    - `useStrictShallowCopy` enabled by default.
+    - Introduced `StrictMode` enum.
+    - Improved performance in non-strict mode for classes.
+• Immer 6
+    - Add `produceWithPatches` function for generating patches.
+• Immer 5
+    - Readonly arrays support in TypeScript 3.4+.
+• Immer 4
+    - Introduced `Immer` class.
+    - Support for ES modules.
+• Immer 1.x
+    - Initial implementation of core features.
+
+
+[patterns]
+• Extensive dependency updates
+    - Frequent dependency bumps across the project, especially in the website.
+    - Indicates attention to security and utilizing the latest features, but potential for instability.
+• Focus on performance improvement
+    - Recurring commits focused on performance optimizations, particularly in non-strict mode and for specific data structures.
+    - Demonstrates commitment to efficiency and responsiveness.
+• Active maintenance and bug fixing
+    - Regular bug fixes and documentation improvements.
+    - Indicates responsiveness to community feedback and maintaining project health.
+• Shift towards TypeScript
+    - Conversion of the codebase to TypeScript and associated type improvements.
+    - Improves maintainability, code clarity, and developer experience.
+• Emphasis on documentation
+    - Frequent documentation updates, migration guides, and expansion of usage examples.
+    - Improves user onboarding and clarifies functionality.
+• Community contributions
+    - Several commits from contributors addressing typos, documentation improvements, and examples.
+    - Indicates an active and engaged community around the project.
+• Refactoring and code cleanup
+    - Sporadic commits dedicated to code cleanup and refactoring.
+    - Improves long-term maintainability and reduces technical debt.
+• Security vulnerability fixes
+    - Several commits address security vulnerabilities.
+    - Shows a concern for security best practices and responsible disclosure.

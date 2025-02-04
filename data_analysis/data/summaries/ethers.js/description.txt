@@ -1,0 +1,1 @@
+JavaScript Ethereum library (ethers.js v6) with enhanced providers, contracts, wallets, and EIP-4844 support.

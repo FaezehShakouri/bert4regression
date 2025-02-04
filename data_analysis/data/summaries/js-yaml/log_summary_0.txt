@@ -1,0 +1,126 @@
+[description]
+A YAML parser and dumper for JavaScript.
+
+[milestones]
+• Version 4.1.0
+    - Exported built-in types.
+    - Type override preserves order.
+• Version 4.0.0
+    - Improved error handling for block sequences and mappings with tabs.
+    - Fixed parsing of invalid block mappings and anchor assignment.
+• Version 3.14.0
+    - Added support for safe/loadAll with options.
+• Version 3.13.1
+    - Fixed possible code execution vulnerability in load().
+• Version 3.13.0
+    - Restricted data types for object keys.
+• Version 3.12.2
+    - Fixed issue #468 related to wrong quote position.
+• Version 3.12.1
+    - Added "noArrayIndent" option.
+• Version 3.12.0
+    - Added support for arrow functions.
+• Version 3.11.0
+    - Fixed negative integers in bin/octal/hex formats.
+• Version 3.10.0
+    - Combined surrogate pairs into one escape sequence.
+• Version 3.9.1
+    - Ensured stack presence for custom errors.
+• Version 3.9.0
+    - Added `condenseFlow` option.
+• Version 3.8.4
+    - Fixed wrapping array space issue.
+• Version 3.8.3
+    - Disallowed numbers beginning or ending with underscores.
+• Version 3.8.2
+    - Allowed integer casting for floats.
+• Version 3.8.1
+• Version 3.8.0
+• Version 3.7.0
+• Version 3.6.1
+• Version 3.6.0
+• Version 3.5.5
+• Version 3.5.4
+• Version 3.5.3
+• Version 3.5.2
+• Version 3.5.1
+• Version 3.5.0
+    - Added option to sort keys on dump.
+• Version 3.4.6
+• Version 3.4.5
+    - Added lineWidth option.
+• Version 3.4.4
+• Version 3.4.3
+• Version 3.4.2
+• Version 3.4.1
+• Version 3.4.0
+    - Reworked error class.
+• Version 3.3.1
+• Version 3.3.0
+• Version 3.2.7
+• Version 3.2.6
+• Version 3.2.5
+• Version 3.2.4
+• Version 3.2.3
+• Version 3.2.2
+• Version 3.2.1
+• Version 3.2.0
+    - Improved base64 encoding/decoding.
+• Version 3.1.0
+• Version 3.0.2
+• Version 3.0.1
+• Version 3.0.0
+    - Deprecated loading YAML files via require().
+• Version 2.1.3
+• Version 2.1.2
+• Version 2.1.1
+• Version 2.1.0
+• Version 2.0.5
+• Version 2.0.4
+• Version 2.0.3
+• Version 2.0.2
+• Version 2.0.1
+• Version 2.0.0
+• Version 1.0.3
+• Version 1.0.2
+• Version 1.0.1
+• Version 1.0.0
+• Version 0.3.7
+• Version 0.3.6
+• Version 0.3.5
+• Version 0.3.4
+• Version 0.3.3
+• Version 0.3.2
+• Version 0.3.1
+• Version 0.3.0
+• Version 0.2.2
+• Version 0.2.1
+• Version 0.2.0
+• Version 0.1.0
+
+[patterns]
+• Continuous Improvement
+    - Regular releases and bug fixes demonstrate an ongoing effort to improve the library.
+    - Addressing issues raised by the community indicates responsiveness and commitment to quality.
+• Performance Optimization
+    - Several commits focus on performance improvements, including optimizations for base64 encoding/decoding, integer resolution, and escaped sequence scanning.
+    - This suggests a focus on efficiency and responsiveness.
+• Refactoring and Code Quality
+    - Commits addressing code style, linting, and dependency updates show attention to maintainability and code quality.
+    - Rewriting core components and simplifying logic demonstrates a commitment to improving the internal structure of the library.
+• Security Consciousness
+    - Addressing potential code execution vulnerabilities shows an awareness of security concerns.
+• Documentation Updates
+    - Regular updates to the README and other documentation indicate a focus on providing clear and up-to-date information for users.
+• Community Involvement
+    - Merging pull requests from contributors demonstrates openness to community contributions and collaboration.
+• Addressing Technical Debt
+    - Refactoring and code cleanup efforts, like removing deprecated features and updating dependencies, indicate a proactive approach to managing technical debt.
+    - However, the presence of some workarounds and "bad idea" TODO comments suggests some accumulated technical debt.
+• Shift in Development Focus
+    - Early commits focus on porting code and implementing basic features, while later commits emphasize performance, bug fixes, and new features.
+    - This reflects the natural evolution of a project from initial development to maturity.
+• Testing Practices
+    - The introduction of new testing tools and frameworks, as well as the addition of test cases for specific issues, shows an increasing emphasis on testing and quality assurance.
+
+

@@ -1,0 +1,49 @@
+description
+This project is Prysm, an Ethereum consensus client. The commit logs span several months and show development focused on multiple areas, primarily the transition to proof-of-stake and the implementation of features related to upcoming Ethereum upgrades like Electra and Deneb.
+
+milestones
+• Electra Implementation
+    - Core processing logic and data structures for Electra.
+    - Networking and P2P support for Electra-specific messages.
+    - RPC and API endpoints for interacting with Electra features.
+    - Testing and test coverage improvements for Electra.
+• Deneb Implementation
+    - Support for blobs, including storage, retrieval, and P2P gossip.
+    - Integration with the execution engine API for blobs.
+    - RPC and API modifications to accommodate Deneb changes.
+    - Testing and benchmarking for blob handling and Deneb integration.
+• Capella Hard Fork Support
+    - Implementation of Capella-specific state transitions and consensus logic.
+    - Updates to RPC and API endpoints for Capella compatibility.
+    - Testing and deployment of Capella on various testnets.
+• Refactoring and Optimization
+    - Significant code cleanup and reorganization.
+    - Optimization of various core processes like state transitions and attestation processing.
+    - Introduction of new caching mechanisms and data structures to improve performance.
+• Testing Improvements
+    - Expansion of test coverage, including new unit, integration, and end-to-end tests.
+    - Implementation of a spec test runner and coverage reporter.
+    - Addressing and fixing flaky tests.
+• Infrastructure and Tooling
+    - Updates to build system (Bazel), dependencies, and cross-compilation toolchains.
+    - Introduction of new tools for exploring and manipulating the database, generating genesis states, and managing keys.
+• Deprecations and Removals
+    - Removal of deprecated code, flags, and endpoints.
+    - Transition from older data structures and algorithms to newer, more efficient ones.
+
+patterns
+• Focus on Proof-of-Stake Transition and Upcoming Upgrades: The majority of commits relate to implementing and testing features for upgrades like Electra, Deneb, and Capella, showcasing a strong focus on the proof-of-stake transition and its associated features like blobs, withdrawals, and proposer/builder separation.
+    - Evidence: Numerous commits related to Electra/Deneb/Capella consensus logic, data structures, networking, RPC/API, and testing.
+    - Impact: Enables participation in the evolving Ethereum network and its new functionality.
+• Continuous Improvement of Performance and Code Quality: Recurring themes include code cleanup, refactoring, optimization, and testing improvements, suggesting an ongoing effort to improve codebase maintainability and performance.
+    - Evidence: Commits related to code refactoring, optimization of core processes, introduction of caches, and expansion of test coverage.
+    - Impact: Leads to a more robust, performant, and maintainable codebase.
+• Proactive Technical Debt Management: Deprecations and removals indicate a focus on reducing technical debt and simplifying the codebase.
+    - Evidence: Commits removing deprecated flags, endpoints, and code.
+    - Impact: Reduces complexity and improves maintainability for long-term development.
+• Strong Emphasis on Testing and Correctness: The significant investment in testing, including new tests, spec test integration, and addressing flaky tests, demonstrates a commitment to ensuring the correctness and stability of the software.
+    - Evidence: Commits related to expanding test coverage, integrating spec tests, and fixing flaky tests.
+    - Impact: Increases confidence in the reliability and security of the software.
+• Shifting Development Focus Based on Upgrade Timeline: The commits reflect shifts in development focus corresponding to the timelines of different upgrades, with initial emphasis on the Merge followed by work on subsequent upgrades.
+    - Evidence: Commits related to The Merge initially, followed by a gradual shift toward features for later upgrades like withdrawals and blobs.
+    - Impact: Aligns development efforts with the broader Ethereum roadmap.

@@ -1,0 +1,57 @@
+[description]
+RxJS project, focusing on building and testing, documentation improvements, dependency updates, refactoring for performance and size reduction, and new features like `lastValueFrom`, `firstValueFrom`, support for ReadableStreams, and configurable `share`.  Version 7 and 8 alpha releases are in progress, with breaking changes and deprecated features removed. Node 14 support dropped. Project moved to a monorepo.
+
+[milestones]
+• Version 8 Alpha Release
+    - Several alpha releases (up to 14) published, introducing breaking changes and new features.
+• Version 7 Release
+    - Major release with breaking changes like removal of deprecated operators, Node 14 support, and UMD/ES5 builds.
+    - Performance improvements and new features like `Symbol.asyncIterator` for Observables.
+• Monorepo Migration
+    - Project migrated to a monorepo structure, impacting build and dependency management.
+• Lettable/Pipeable Operators
+    - Introduction and refinement of lettable/pipeable operators, changing how operators are used.
+• Removal of Deprecated Features
+    - Systematic removal of deprecated features like `toPromise`, `config.Promise`, and various operators/signatures.
+• TypeScript Updates
+    - Continuous updates to TypeScript versions, impacting types and requiring code adjustments.
+• Documentation Overhaul
+    - Extensive documentation improvements, including new guides, examples, and fixes for broken links/typos.
+• Dependency Management
+    - Regular dependency updates and audits to address vulnerabilities and improve compatibility.
+• Performance Optimization
+    - Ongoing performance optimizations to reduce bundle size and improve execution speed, particularly for schedulers and subjects.
+• New Features
+    - `lastValueFrom` and `firstValueFrom` added for easier promise conversion.
+    - Support for ReadableStreams via `from(readableStream)`.
+    - Configurable `share` operator for more control over sharing behavior.
+
+
+[patterns]
+• Focus on Modernization
+    - Continuous updates to TypeScript, removal of legacy code, and adoption of modern JavaScript features.
+        -  Impact: Improves code maintainability and takes advantage of new language features.
+• Performance Awareness
+    - Regular performance tests and optimizations.
+        - Impact:  Leads to a smaller and faster library.
+• Emphasis on Documentation
+    - Consistent effort towards improving documentation, addressing community feedback.
+        - Impact: Enhances developer experience and understanding of the library.
+• Breaking Changes Managed
+    - Major releases introduce breaking changes, with migration guides provided.
+        - Impact: Can require code adjustments for users upgrading to newer versions.
+• Community Engagement
+    -  Responsiveness to issues and pull requests.
+        - Impact:  Fosters a collaborative environment and improves library quality.
+• Dependency Hygiene
+    - Regular dependency updates and vulnerability audits.
+        - Impact: Reduces security risks and keeps the project up-to-date.
+• Testing Focus
+    - Comprehensive test suite with various types of tests.
+        - Impact: Ensures code correctness and catches regressions.
+• Refactoring for Maintainability
+    -  Efforts to simplify and reduce code size.
+        - Impact: Improves code readability and maintainability.
+• Deprecation Policy
+    - Clear deprecation warnings are provided before features are removed.
+        - Impact: Gives users time to update their code before upgrades.

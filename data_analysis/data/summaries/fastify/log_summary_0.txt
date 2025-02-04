@@ -1,0 +1,49 @@
+[description]
+Fastify web framework project. Focus on performance, extensibility, and developer experience.
+
+[milestones]
+• Migration from Tap to Node.js's native test runner
+    - Multiple commits refactor tests across various modules.
+• Documentation overhaul
+    - Restructuring, typo fixes, and content updates across various documentation files.
+• HTTP/2 support
+    - Introduction of experimental HTTP/2 support and associated tests.
+• Plugin system enhancements
+    - Improvements to plugin encapsulation, lifecycle management, and error handling.
+• Hooks system refinement
+    - Introduction of new hooks (onReady, onRequest, preSerialization, onRequestAbort, onListen) and enhancements to existing ones.
+• Asynchronous validation support
+• Enhanced error handling and reporting
+    - Improved error messages, status code handling, and framework error management.
+• Performance optimizations
+    - Caching of regex, optimized parameter splitting, and replacement of tiny-lru with toad-cache.
+• Dependency updates and refactoring
+    - Upgrading key dependencies like Pino, ajv-compiler, find-my-way, and others.
+• Security improvements
+    - Protection against prototype poisoning, more strict contentTypeParser checks.
+• Deprecations
+    - `reply.getResponseTime()` in favor of `reply.elapsedTime`, variadic `listen` method, modifying `reply.sent` property, `setDefaultRoute` and `getDefaultRoute` methods, JSON shorthand.
+• Code style standardization
+    - Added `use strict` directives and standardized style using `.gitattributes`.
+• TypeScript improvements
+    - Enhanced type definitions and support for generics.
+• V5 release and migration guide.
+
+[patterns]
+• Incremental migration towards native Node.js test runner
+    - Reflects a commitment to modern tooling and maintainability.
+• Continuous focus on documentation improvement
+    - Suggests a dedication to developer experience.
+• Performance-driven development
+    - Regular optimizations highlight performance as a priority.
+• Active dependency management
+    - Keeping dependencies up-to-date demonstrates good maintenance practices.
+• Emphasis on testing and code quality
+    - High test coverage and test refactoring indicate a focus on code quality.
+• Proactive approach to security
+    - Addressing potential vulnerabilities, implementing more strict checks.
+• Incrementally addressing technical debt with deprecations.
+• Strong community involvement
+    - Contributions from various developers indicate a healthy and active community.
+• Focus on TypeScript support improvement and providing better types.
+• Preparing Fastify V5 and ensuring smooth migration.

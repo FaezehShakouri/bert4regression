@@ -1,0 +1,1 @@
+Fast, lightweight JavaScript library for terminal styling with bright color support and strong TypeScript types.

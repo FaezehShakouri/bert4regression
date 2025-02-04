@@ -1,0 +1,102 @@
+[description]
+This project is core-js, a JavaScript polyfill library. The logs span from April 2019 to January 2025 and show a focus on maintaining the library by updating dependencies, enabling new linting rules, fixing bugs, and implementing new ECMAScript features and proposals.
+
+[milestones]
+• v3.40.0 (January 2025)
+    - Introduced eslint rule package-json/no-empty-fields.
+    - Several dependency updates.
+• v3.39.0 (October 2024)
+    - Implemented Iterator sequencing stage 2.7 proposal.
+    - Disabled NodeJS ExperimentalWarning on npm install.
+    - Reworked babel plugin usage and added tests for `Map` upsert proposal.
+• v3.38.1 (August 2024)
+    - Several dependency updates.
+    - Implemented self-compare NaN check.
+• v3.38.0 (August 2024)
+    - Added Samsung Internet 27 compat data mapping.
+    - Optimized regex usage and added tests from test262.
+    - Implemented Uint8Array base64 encoding with padding omission.
+• v3.37.1 (May 2024)
+    - Updated Electron 31 compat data mapping.
+    - Several dependency updates.
+• v3.37.0 (April 2024)
+    - URL.parse functionality improvements including feature detection and NodeJS support.
+    - Set methods proposal feature implementation and bug fixes related to infinite length handling in Set methods.
+• v3.36.1 (March 2024)
+    - Bug fix in ArrayBuffer.prototype.transfer logic and URLSearchParams size in ES3 engines.
+• v3.36.0 (February 2024)
+    - ArrayBuffer.prototype.transfer bug fixes.
+    - Implemented ArrayBuffer.prototype.transfer feature with dependencies loading fixed.
+• v3.35.1 (January 2024)
+    - Minor optimization in prototype methods export logic.
+• v3.35.0 (December 2023)
+    - Several dependency updates.
+    - Improved collection methods and DOM collections.
+    - Enhanced handling of Array integrity level.
+• v3.34.0 (December 2023)
+    - Number.fromString validation improvements.
+    - Add Uint8Array base64 and hex conversion methods.
+• v3.33.3 (November 2023)
+    - Improved usage script performance.
+• v3.33.2 (October 2023)
+    - Integrated compat table to browser runner.
+    - Clarified link formats and dependency updates.
+• v3.33.1 (October 2023)
+    - Improved for-each dependencies and global object detection.
+    - Implemented workarounds for possible errors with Symbol polyfill on global object.
+• v3.33.0 (October 2023)
+    - RegExp.escape implementation and documentation.
+    - Dependency updates and stylistic changes.
+• v3.32.2 (September 2023)
+    - Bug fix in structuredClone feature detection.
+• v3.32.1 (August 2023)
+    - Dependency updates, eslint core rules review, and ReDoS vulnerability fixes.
+• v3.32.0 (July 2023)
+    - Implemented DataView get/set Uint8C methods.
+    - Improved array grouping documentation and iterator helpers proposal methods.
+    - Several dependency updates and bug fixes.
+• v3.31.1 (July 2023)
+    - Added Deno 1.35 compat data mapping and dependency updates.
+• v3.31.0 (June 2023)
+    - Added Safari 17.0 compat data.
+    - Implemented URLSearchParams.prototype.size for ES3 engines.
+    - Several dependency updates.
+• v3.30.2 (May 2023)
+    - Dependency updates and NodeJS 20.1.0 support for URL.canParse.
+• v3.30.1 (April 2023)
+    - Dependency updates.
+• v3.30.0 (April 2023)
+    - Introduced URL.canParse method and related dependency updates.
+    - Added Samsung Internet 21 compat data and Electron 25 compat data mapping.
+
+[patterns]
+• Regular Dependency Updates
+    - Evidence: Frequent commits with "update dependencies".
+    - Impact: Keeps the project current with security patches and new features from other libraries.  Indicates good maintenance practices.
+• Continuous Improvement of Linting Rules
+    - Evidence: Frequent commits with "enable/update eslint rule(s)", "review eslint config".
+    - Impact: Reflects a commitment to improving code quality and style consistency.
+• Focus on Compatibility and Feature Detection
+    - Evidence: Numerous commits related to compat data mapping for various browsers and engines (Chrome, Firefox, Safari, NodeJS, Deno, Electron, Rhino, Hermes, Oculus Browser, Samsung Internet).  Presence of feature detection logic.
+    - Impact: Ensures the library behaves consistently across many target environments. A key requirement for a polyfill library like core-js.  Reflects substantial testing and maintenance effort.
+• Implementation of New ECMAScript Features and Proposals
+    - Evidence: Mentions of implementing `Iterator` helpers, `Array` grouping and changes by copy, `Promise.try` and `Promise.withResolvers`, `String.cooked` and `String.dedent`, well-formed unicode strings, `RegExp.escape`, `Symbol` predicates, `Error.isError`, `URL.parse`, `ArrayBuffer.prototype.transfer`, float16 methods, and other proposals.
+    - Impact: Keeps core-js at the forefront of JavaScript language evolution and extends its functionality. Shows active development.
+• Refactoring and Optimization Efforts
+    - Evidence: Mentions of refactoring, code optimization, and reducing code duplication.
+    - Impact: Suggests ongoing efforts to reduce technical debt and increase performance and maintainability.
+• Bug Fixes
+    - Evidence: Commits mentioning bug fixes for various issues, often referencing specific bug numbers or issues.
+    - Impact: Maintains the stability and reliability of the library.
+• Documentation Updates
+    - Evidence: Commits related to updating the readme, changelog, and other documentation.
+    - Impact: Makes it easier for users to understand and contribute to the project.
+• Funding and Sponsorship
+    - Evidence: Addition of funding and sponsorship links and sections.
+    - Impact: Indicates the project actively seeks and relies on community support for ongoing development.
+• Tooling Improvements and Migrations
+    - Evidence: Mentions of build script refactoring, `grunt` removal, migration to `webpack@5`, and use of `zx` scripts.
+    - Impact: Streamlines development and build processes.
+• Security Audits and Fixes
+    - Evidence: Mentions of ReDoS vulnerabilities and related fixes, as well as the addition of a security policy.
+    - Impact: Shows a concern for security best practices.

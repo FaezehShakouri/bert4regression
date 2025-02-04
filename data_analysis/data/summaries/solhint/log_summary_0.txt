@@ -1,0 +1,62 @@
+[description]
+Solhint is a linter for Solidity code. It provides both security and style guide validations for smart contracts written in Solidity.
+
+[milestones]
+• Version 5.0.5 Pre-Release
+    - Introduced a duplicated import rule.
+• Version 5.0.4 Pre-Release
+    - Renamed camelCase rules.
+    - Fixed various typos.
+• Version 5.0.2 Pre-Release
+    - Added an import order rule and associated autofixes.
+• Version 4.5.3
+    - Bug fixes related to compiler version and gas optimization rules.
+• Version 4.5.2
+    - Minor updates and pre-release preparations.
+• Version 4.5.0
+    - Several gas optimization rules added or improved (struct packing, increment by one, calldata parameters, indexed events, small strings, multitoken1155).
+• Version 4.1.1
+    - Minor updates and pre-release preparations, including changelog typos and Docker updates.
+• Version 4.1.0
+    - Added autofixing for several rules (avoid-suicide, quotes, payable).
+    - Added SARIF formatter.
+    - Improved error reporting and exit codes.
+• Version 3.6.2
+    - One contract per file rule.
+• Version 3.6.1
+    - Unused imports fix.
+• Version 3.4.1
+    - Fixes related to named parameters in mappings.
+• Version 3.0.0
+    - Introduced plugins and rulesets, allowing for modularity and extensibility.
+    - Added autofix capabilities.
+    - Numerous rule updates and improvements.
+• Version 2.0.0
+    - Introduced plugins support.
+    - Removed deprecated rules.
+• Version 1.0.0
+    - Initial implementation of core linting rules and functionalities.
+
+[patterns]
+• Regular Releases and Pre-releases
+    - Frequent pre-releases suggest an iterative development process.
+• Focus on Gas Optimization
+    - Version 4.5.0 shows a clear focus on gas optimization, suggesting project priorities.
+• Autofix Implementation
+    - Increased focus on autofixing functionalities indicates a move towards improving developer experience.
+• Refactoring and Bug Fixes
+    - Consistent presence of bug fixes and minor refactoring suggests ongoing maintenance and improvement efforts.
+• Rule Deprecations and Updates
+    - Deprecation of older rules and introduction of new ones indicates active evolution of the linter's capabilities and best practices.
+• Community Contributions
+    - Several pull requests from external contributors demonstrate community involvement in the project's development.
+• Documentation Improvements
+    - Regular updates to documentation show a commitment to maintaining clear and up-to-date information for users.
+• Security Focus
+    - Implementation of rules related to reentrancy, low-level calls, tx.origin usage, and timestamp dependence indicates a focus on security best practices.
+• Tooling and Infrastructure
+    - Updates to workflows, Docker images, testing frameworks, and dependency management suggest continuous improvement of the project's tooling and infrastructure.
+• Shift to ANTLR Parser
+    - Adoption of the solidity-parser-antlr shows a major architectural change that facilitated improved rule accuracy.
+• Potential Technical Debt
+    - The presence of bug fixes across multiple versions, particularly related to rule logic and edge cases, indicates potential technical debt that needs to be addressed.  Further analysis of individual issues would be needed to confirm this.

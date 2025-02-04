@@ -1,0 +1,40 @@
+[description]
+A command-line interface library for interactive input, similar to GNU Readline, written in Go.
+
+[milestones]
+• Initial Commit and Basic Functionality (2015-09-20)
+    - Core library structure and initial features laid out.
+• History Support (2015-09-21)
+    - Introduced history management, allowing users to recall previous commands.
+• Autocompletion (2015-09-25)
+    - Basic autocompletion functionality added.
+• Vim Mode (2015-10-02)
+    - Support for Vim-like keybindings introduced.
+• Windows Support (2015-09-29)
+    - Library adapted to function in Windows environments.
+• Remote Mode (2016-03-13)
+    - Enabled interaction with a remote readline server.
+• Dynamic Autocompletion (2016-07-26)
+    - Enhanced autocompletion to support dynamic content.
+• Platform Support Expansion (2017-2022)
+    - Added support for various operating systems: Solaris, AIX, os400.
+• Improved Input Handling (2016-2022)
+    - Bug fixes and enhancements related to input handling, including support for bold text, escape sequences, and multi-line input.
+• Go Modules (2022-04-13)
+    - Project transitioned to using Go modules.
+
+[patterns]
+• Continuous Improvement and Bug Fixing
+    - Consistent stream of bug fixes and minor improvements throughout the project's history.
+• Expanding Platform Support
+    - Recurring theme of adding support for new operating systems and terminals.
+• Focus on Input Handling and User Experience
+    - Significant development effort dedicated to refining input handling, cursor movement, and other UX aspects.
+• Addressing Race Conditions and Deadlocks
+    - Multiple commits focused on resolving race conditions and deadlocks, indicating attention to concurrency issues.
+• Refactoring and Code Quality
+    - Sporadic refactoring efforts, but no major overhauls observed.
+• Limited Testing Evidence
+    - Few explicit mentions of testing in commit messages.  Potential technical debt indicator.
+• Dependency Management Shift
+    - Transition to Go modules suggests modernization of dependency management practices.

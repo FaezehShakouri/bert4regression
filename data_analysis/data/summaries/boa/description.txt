@@ -1,0 +1,1 @@
+Boa: A high-performance, embeddable JavaScript engine written in Rust, featuring a CLI and modules.

@@ -1,0 +1,34 @@
+[description]
+A Go library for Minisign, providing functionalities for key generation, signature creation and verification.
+
+[milestones]
+• Public Key and Signature API Update (2018-01-13)
+    - Introduced `NewPublicKey()` function.
+    - Made `DecodePublicKey` and `DecodeSignature` private, enhancing API clarity.
+• Go Modules Integration (2019-04-20)
+    - Migrated to Go modules for dependency management.
+• Minisign Verification Bug Fix (2019-01-16)
+    - Resolved issue where carriage return characters caused verification failures.
+• Prehashed Signature Support (2021-10-08)
+    - Added support for prehashed signatures, improving performance and flexibility.
+• GitHub Actions CI Integration (2021-01-06)
+    - Migrated from Travis CI to GitHub Actions for continuous integration.
+• Dependabot Configuration (2021-04-14)
+    - Introduced Dependabot for automated dependency updates.
+
+[patterns]
+• Regular Dependency Updates
+    - Frequent commits updating dependencies.
+    - Indicates proactive dependency management and potential vulnerability mitigation.
+• API Refinement
+    - Changes to public functions and introduction of new helper functions like `NewPublicKey()`.
+    - Demonstrates focus on improving usability and maintainability.
+• Focus on Correctness and Security
+    - Bug fix for carriage return verification and use of Go's `hash.Sum()`.
+    - Shows commitment to robust implementation and secure practices.
+• Modernization of Tooling
+    - Switch to Go modules and GitHub Actions.
+    - Reflects adoption of best practices and improved developer experience.
+• Limited Community Contributions
+    - Few external contributions observed.
+    - Suggests potential for increased community engagement.

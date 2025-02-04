@@ -1,0 +1,1 @@
+Go Minisign library: key generation, signing, verification, and prehashed signature support.

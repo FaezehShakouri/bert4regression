@@ -1,0 +1,88 @@
+[description]
+A Python library for interacting with Ethereum.
+
+[milestones]
+• Version 3.4.4
+    - Fix eth_getTransaction for unknown transaction hashes.
+    - Handle null values in transaction formatter.
+• Version 3.4.3
+    - Fix dynamic event type decoding.
+• Tester Module Introduction (3.4.2 - 3.4.4)
+    - Integrated a testing module with the latest testrpc.
+• Dependency Issue Resolution (3.4.2)
+    - Fixed a dependency issue related to testrpc imports, improving project stability.
+• Improved ABI Error Reporting (3.4.0)
+    - Enhanced ABI error reporting to provide more informative messages during output decoding failures.
+• Performance Improvements (3.4.0, 3.3.0)
+    - Reduced test run overhead, optimizing test execution speed.
+• Provider Reorganization and Documentation (3.3.0)
+    - Reorganized and documented providers, improving code structure and usability.
+• Configuration and Transaction Handling Improvements (3.4.0)
+    - Added support for respecting the defaultAccount configuration in contract transactions.
+    - Default to data=fn_selector in encodeABI for easier function calls.
+• Keep-Alive RPC Provider (3.2.0)
+    - Implemented a Keep-Alive RPC provider with configurable connection pooling and timeout options, enhancing the reliability and efficiency of RPC interactions.
+• Enhanced Filter Functionality (3.2.0, 3.1.0)
+    - Added a poll interval option to filter polling for greater control over filter updates.
+    - Fixed filter running issue, ensuring the proper functioning of filter mechanisms.
+• Default Account Usage in Transactions (3.1.1)
+    - Fixed an issue where coinbase was used instead of defaultAccount for the default 'from' value in transactions, aligning with expected behavior.
+• Delegated Signing Manager (3.1.0)
+    - Implemented a delegated signing manager for improved private key management and transaction signing.
+• Documentation Improvements (3.0.0, 2.7.0)
+    - Created comprehensive documentation for various APIs, including the ETH API and contract interactions, enhancing the developer experience.
+• Gevent Compatibility and Timeout Management (3.0.0, 2.8.0)
+    - Improved Gevent compatibility and removed Gevent monkeypatching, reducing potential conflicts and enhancing concurrency.
+    - Introduced timeout options for RPC interactions, providing better control over communication with the Ethereum node.
+• Contract API Cleanup and SSL Support (2.9.0, 2.8.0)
+    - Cleaned up the contract API, simplifying usage and improving code structure.
+    - Added support for SSL connections, increasing security for interactions with remote nodes.
+• Automatic Gas Estimation and Transaction Kwarg Support (2.5.0, 2.4.0)
+    - Implemented automatic gas estimation for transactions, streamlining transaction submission.
+    - Allowed the use of kwargs in the transact method, providing greater flexibility for transaction parameters.
+• Event API Enhancements (2.3.0)
+    - Expanded the Event API to be used as both a class method and instance method, increasing versatility.
+• Event Data Extraction and Filter Improvements (2.2.0, 2.1.0)
+    - Added a function to extract and decode event data, facilitating the processing of event logs.
+    - Fixed issues with log filters and implemented support for non-indexed argument filters, enhancing filter precision.
+• Config Object Removal and Port Handling (2.1.0)
+    - Removed the config object, simplifying project configuration.
+    - Cast RPCProvider port to an integer, resolving potential type-related issues.
+• Admin Interface and Sync Return Formatting (1.7.0, 1.6.0)
+    - Added an admin interface, providing additional management capabilities.
+    - Formatted syncing return values for improved consistency and readability.
+• Homestead Changes and Automatic Gas Estimation (1.5.0)
+    - Incorporated downstream Homestead changes, ensuring compatibility with the Homestead hard fork.
+    - Implemented automatic gas estimation, simplifying transaction construction.
+• Contract Development and Major Code Cleanup (1.3.0, 1.2.0)
+    - Implemented initial support for contracts, enabling interactions with smart contracts.
+    - Conducted major code cleanup, removing dead code and improving overall code quality.
+• Provider and Connection Enhancements (1.1.0, 1.0.0)
+    - Introduced various providers, including RPCProvider and IPCProvider, offering flexible connection options.
+    - Added support for string arguments in function calls, enhancing contract interaction capabilities.
+• Initial Commit (0.1.0)
+    - Laid the foundation for the project, establishing the basic structure and functionality.
+
+
+[patterns]
+• Frequent Releases & Bug Fixes
+    - Evidence: Multiple release versions within short periods, commit messages indicating bug fixes.
+    - Impact: Demonstrates active development and responsiveness to issues but could also suggest underlying instability or rapid changes.
+• Focus on Testing and Stability
+    - Evidence: Introduction of a tester module, improvements to test run overhead, fixing flaky tests.
+    - Impact: Prioritizes code reliability and robustness.
+• Incremental Development of Contract Interaction Features
+    - Evidence: Gradual implementation of contract functionality, including deployment, ABI encoding, gas estimation, and event filtering.
+    - Impact: Suggests a structured approach towards building out complex features.
+• Refactoring and Code Cleanup
+    - Evidence: Commits related to code reorganization, cleanup, and formatter refactoring.
+    - Impact: Improves code maintainability and readability, reducing technical debt.
+• Documentation Improvements alongside Feature Development
+    - Evidence: Commits adding documentation for new APIs and features.
+    - Impact: Enhances usability and developer experience.
+• Dependency Management
+    - Evidence: Updates to dependencies, resolving conflicts and import issues.
+    - Impact: Ensures compatibility and reduces potential integration problems.
+• Addressing Cross-Platform Compatibility (Python 2/3)
+    - Evidence: Fixes for encoding and JSON decoding errors across Python versions.
+    - Impact: Broadens the library's accessibility and usability across different environments.

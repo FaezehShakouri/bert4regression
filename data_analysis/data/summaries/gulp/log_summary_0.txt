@@ -1,0 +1,36 @@
+[description]
+Gulp.js build system project.
+
+[milestones]
+• Release 5.0.0
+    - Added index.mjs to file list.
+    - Provided an ESM export.
+• Release 4.0.0
+    - Dropped node <10.13 support and normalized repository.
+    - Several dependency upgrades.
+    - Removed gulp-util and run-sequence from recipes.
+    - Replaced Orchestrator with Undertaker.
+    - Introduced ESM support.
+• Introduction of glob-watcher for gulp.watch
+    - Replaced chokidar with a glob-watcher wrapper.
+• Implementation of a custom registry feature.
+• Documentation overhaul using Docusaurus.
+    - API documentation split into individual files.
+    - New "Getting Started" guides.
+
+[patterns]
+• Extensive focus on documentation updates and improvements.
+    - Numerous commits address typos, broken links, and clarification of examples.
+    - Indicates commitment to user experience and onboarding.
+• Regular dependency upgrades and maintenance.
+    - Demonstrates active maintenance and a focus on keeping the project up-to-date.
+• Gradual shift towards ESM support.
+    - Introduction of ESM export and related changes suggests a modernization effort.
+• Breaking changes introduced in major releases.
+    - Dropping older Node versions and replacing core dependencies represent significant shifts.
+• Emphasis on code quality and formatting.
+    - Adoption of JSCS and ESLint reflects an emphasis on code style and consistency.
+• Several recipes and examples added over time.
+    - Demonstrates practical focus and addressing common use cases.
+• Occasional documentation and build script issues.
+    - Minor typos, broken links, and build script adjustments indicate areas for potential improvement in documentation review and release process.

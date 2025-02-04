@@ -1,0 +1,53 @@
+[description]
+Go Ethereum (Geth) development during a period with a focus on performance improvements, new features like the light client (LES), transaction pool optimizations, a shift to a pluggable consensus engine architecture, and the introduction of the Puppeth private network manager. This period also includes preparations for the Metropolis hard fork, including the implementation of EIPs and testing.
+
+[milestones]
+• Go Ethash Implementation
+    - Replaced the C++ implementation of Ethash with a pure Go version, improving performance and portability. Mining functionality using this implementation is still pending.
+• Pluggable Consensus Engines
+    - Introduced a pluggable consensus engine architecture, paving the way for supporting different consensus mechanisms beyond Proof-of-Work.
+• Clique Proof-of-Authority Consensus
+    - Implemented Clique, a Proof-of-Authority consensus engine, offering an alternative consensus mechanism suitable for private or permissioned networks.
+• Light Client Protocol (LES/2)
+    - Implemented and improved the Light Ethereum Subprotocol (LES), specifically version 2, enhancing the efficiency and functionality of light clients.
+• Transaction Pool Optimizations
+    - Implemented various transaction pool optimizations to improve performance and handling of pending transactions, including local transaction journaling, gas price oracle integration, and queue management.
+• Puppeth Network Manager
+    - Introduced Puppeth, a command-line tool designed to manage and deploy private Ethereum networks easily. It includes features such as genesis block creation, network configuration, and service deployment.
+• Metropolis Hard Fork Preparations
+    - Implemented several Ethereum Improvement Proposals (EIPs) in preparation for the Metropolis hard fork, including EIP 100 (difficulty adjustment algorithm change), EIP 649 (gas cost reductions), EIP 658 (receipt status codes), and others. Extensive testing was conducted to ensure compatibility and identify potential issues.
+• Hardware Wallet Support
+    - Added support for hardware wallets like Trezor and Ledger, improving security for managing accounts and signing transactions.
+• Network Protocol Updates (devp2p v5)
+    - Implemented devp2p version 5, which includes Snappy compression for network messages, increasing the efficiency of network communication.
+• Refactoring and Code Improvements
+    - Significant refactoring and code improvements were carried out across the codebase, including the removal of dead code, cleanup of transaction and receipt handling, improvements to logging, and standardization of APIs.
+• Comprehensive Testing and Benchmarking
+    - Expanded the test suite and added benchmarks for various components, ensuring code quality, stability, and performance improvements. New testing tools like Hive were also integrated.
+
+
+[patterns]
+• Performance Optimization
+    - Evidence: Implementation of Go Ethash, trie optimizations, transaction pool improvements, and hash optimizations.
+    - Impact: Reduced memory usage, faster block processing, improved network efficiency, and faster synchronization.
+• Focus on Light Clients
+    - Evidence: Implementation and improvements to LES/2, light client API additions, and optimizations for light client synchronization.
+    - Impact: Improved efficiency and functionality for light clients, allowing users to interact with the Ethereum network without needing to download the full blockchain.
+• Preparation for Metropolis Hard Fork
+    - Evidence: Implementation of various Metropolis EIPs, extensive testing, and updates to consensus rules and parameters.
+    - Impact: Ensured compatibility with the upcoming Metropolis hard fork and introduced new features and improvements.
+• Increased Security
+    - Evidence: Support for hardware wallets, normalization of signature handling, and prevention of various network attacks.
+    - Impact: Enhanced security for users and the network by reducing vulnerabilities and providing better account management options.
+• Code Quality and Maintainability
+    - Evidence: Refactoring, dead code removal, code style improvements, and addition of documentation.
+    - Impact: Improved code readability, maintainability, and reduced technical debt.
+• Extensive Testing
+    - Evidence: Expanded test suite, integration of Hive testing framework, and addition of benchmarks.
+    - Impact: Enhanced code stability and reliability, and identified potential issues and regressions.
+• Improved Logging and Monitoring
+    - Evidence: Updates to logging system, support for contextual logs, and addition of a monitoring command.
+    - Impact: Easier debugging and monitoring of Geth nodes.
+• Modularity and Reusability
+    - Evidence: Introduction of pluggable consensus engines, split of accounts backends, and creation of reusable packages like the console.
+    - Impact: Improved code organization and flexibility, and enabled easier extension and maintenance.

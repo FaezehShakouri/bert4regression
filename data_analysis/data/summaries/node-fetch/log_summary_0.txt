@@ -1,0 +1,36 @@
+[description]
+A lightweight module that brings the Fetch API to Node.js.
+
+[milestones]
+• V3 stable release (2021-08-31)
+    - Support for BodyMixin.formData()
+    - Node.js v12.20.0+ required, moved to ESM
+• V2 stable release (2019-05-16)
+    - Data URI support
+    - AbortSignal support
+    - TypeScript support
+• V1 stable release (2015-01-28)
+    - Basic fetch functionality
+    - Streaming body support
+    - Redirect handling
+
+
+[patterns]
+• Focus on spec compliance and modernization
+    - Removal of non-spec API, move to ESM, use of Node.js native APIs
+    - Improves interoperability and maintainability
+• Addressing community feedback and feature requests
+    - Addition of convenience methods like `buffer()`, `response.ok`
+    - Improves developer experience
+• Consistent documentation and testing improvements
+    - Updated README, improved test coverage, and modernized tests
+    - Enhances project understanding and reliability
+• Dependency updates and security fixes
+    - Regular dependency bumps and addressing vulnerabilities
+    - Ensures project health and security
+• Performance optimizations and bug fixes
+    - Optimized header handling, gzip decompression, and timeout implementation
+    - Improves efficiency and robustness
+• Refactoring and code cleanup
+    - Several instances of code cleanup and refactoring for improved structure
+    - Enhances code quality and maintainability

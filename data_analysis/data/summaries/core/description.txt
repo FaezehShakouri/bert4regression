@@ -1,0 +1,1 @@
+Rust Ethereum 'core' provides Solidity macro, dynamic ABI, primitives, and EIP-712 support.

@@ -1,0 +1,29 @@
+[description]
+A Node.js library implementing Git's ignore functionality, allowing users to match file paths against various ignore patterns.
+
+[milestones]
+• Version 7.0.0
+    - Updated TypeScript definitions and test specifications.
+    - Added support for specifying custom marks for ignore patterns.
+• Version 6.0.0
+    - Addressed TypeScript module resolution issues for Node.js 16.
+• Version 5.0.0
+    - Introduced a new API for checking path validity and enhanced handling of backslashes, especially in Windows environments.
+• Version 4.0.0
+    - Implemented support for character sets and ranges in ignore patterns.
+    - Switched from Mocha/Expect to Tap for testing.
+• Version 3.0.0
+    - Refactored the library to use ES6 syntax and removed legacy methods.
+    - Improved handling of trailing spaces in ignore patterns.
+
+[patterns]
+• Regular bug fixes and improvements
+    - Multiple commits address specific issues and improve performance across different Node.js versions and operating systems.
+• Focus on TypeScript support
+    - Several commits update TypeScript definitions and add related test cases, indicating ongoing efforts to improve TypeScript integration.
+• Testing and code quality improvements
+    - Updates to testing frameworks, addition of test cases for specific edge cases, and improvements in code coverage demonstrate a focus on code quality and robustness.
+• Dependency updates and maintenance
+    - Regular dependency bumps and configuration updates for CI/CD pipelines suggest active project maintenance.
+• Documentation updates
+    - Frequent updates to the README file, including improved explanations and upgrade guides, show a commitment to clear documentation.

@@ -1,0 +1,1 @@
+SWC: Fast Rust-based TypeScript/JavaScript compiler with a bundler, minifier, and plugin support.

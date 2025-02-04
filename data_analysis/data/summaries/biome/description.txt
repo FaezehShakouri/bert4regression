@@ -1,0 +1,1 @@
+Fast JS/TS linter, formatter, and codemod tool with HTML, CSS, GraphQL support and a VS Code extension.

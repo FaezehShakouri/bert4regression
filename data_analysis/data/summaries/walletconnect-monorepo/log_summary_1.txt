@@ -1,0 +1,58 @@
+[description]
+WalletConnect v2 monorepo, including client packages, relay server, and utilities.  The project aims to provide seamless wallet connections for decentralized applications.
+
+[milestones]
+• Relay Server Integration
+    - Initial commit of relay v2, moved into `lerna` packages directory.
+    - Build output path modification for relay server.
+    - `pino` logging library added for relay and utils.
+    - Removal of `nginx` buffer size configuration.
+    - Config file removed from `.gitignore`.
+• Client Package Development
+    - Initial commit and addition of client packages.
+    - Major refactoring of relay types and utils.
+    - URI fixes and tweaks to client functionality.
+    - Removal of `rejectUnauthorized` option.
+    - JSON RPC implementation for relay.
+• New Wallet Support
+    - Addition of PeakDeFi Wallet, Tongue Wallet, Huobi Wallet, SafePal Wallet, KyberSwap, ZelCore, Flare Wallet, Nash Wallet, EasyPocket, imToken, Trust Wallet, Pillar Wallet, Crypto.com DeFi Wallet, ONTO Wallet, SparkPoint Wallet, Math Wallet, TokenPocket Wallet, MYKEY Wallet, and Farsi language support to the registry.
+•  QRCode Modal Enhancements
+    - Refactoring and migration to Preact for improved performance and bundle size.
+    - Support for multiple buttons, mobile layout improvements, and mobile deep linking.
+    - Node.js support, SVG QR code rendering, CSS and DOM injection improvements.
+    - Automatic browser opening, optimized SVG code, and animation fix.
+• Web3 Provider and Subprovider Updates
+    - Various bug fixes and improvements to error handling, message parameters, and event emitting.
+    - Addition of new EIP-1193 methods, handling of `close` event, and `pollingInterval` parameter.
+    - Integration of `QRCodeModal` into the connector, removal of hex leading zeroes, and capitalization fix.
+    - Ethereum provider updates, including custom RPC URL support, `chainId` handling, and improved `eth_` request processing.
+• Internationalization (i18n) Support
+    - Implementation of i18n with translations for Portuguese, German, Korean, French, and Chinese.
+    - Text updates and notification additions.
+• Security Improvements and Refactoring
+    - Bumping dependencies for `acorn`, `elliptic`, and `lodash` to address security vulnerabilities.
+    - Allowing reconnect by resetting the pending state.
+
+
+[patterns]
+• Frequent Dependency Updates
+    - Regular updates to packages like `eccrypto`, `enc-utils`, `bignumber.js`, `bn.js`, `web3-provider-engine`, etc.
+    - Impact: Indicates active maintenance and dependency management, but also a potential source of instability if updates introduce breaking changes.
+• Focus on Mobile Integration
+    - Significant development effort dedicated to mobile deep linking, UI improvements for mobile, and expanding the mobile wallet registry.
+    - Impact: Prioritizes mobile user experience and broadens wallet compatibility.
+• Emphasis on Performance and Bundle Size Optimization
+    - Migration to Preact, removal of unnecessary dependencies, and bundle size analysis reflect a focus on performance.
+    - Impact: Improves loading times and overall user experience.
+• Refactoring and Code Quality
+    - Recurring refactoring efforts, linting, and unit testing demonstrate attention to code quality.
+    - Impact: Enhances maintainability and reduces the risk of bugs.
+• Feature-Driven Development
+    - Many commits introduce or improve user-facing features like QR code modal, multi-wallet support, and i18n.
+    - Impact:  Delivers value to end-users but may also lead to technical debt if not balanced with architectural improvements.
+• Addressing Technical Debt
+    - Several commits specifically address technical debt by refactoring code, updating dependencies, and improving error handling.
+    - Impact: Shows a commitment to long-term maintainability and stability.
+• Shift towards Modularization
+    - Decoupling of transport from core, separation of web3 provider and subprovider, and creation of independent packages improve modularity.
+    - Impact: Enhances code organization, reusability, and testability.

@@ -1,0 +1,20 @@
+[description]
+Solidity compiler project.  Development focuses on bug fixes, new features, refactoring, improved error reporting, documentation updates, and CI/testing enhancements.  A major theme is the implementation of user-defined value types and transitioning towards using the Yul intermediate representation (IR).
+
+[milestones]
+• User-Defined Value Types: Implemented parsing, type checking, code generation, and assembly access for user-defined value types. Includes support for mapping keys, contract access, and array copying.
+• Yul Intermediate Representation (IR): Transitioning towards using Yul IR for code generation and optimization.  Refactored various components to work with IR, including control flow graph, stack layout generator, and source location handling.
+• Optimizer Improvements: Made optimizer deterministic, implemented function specializer and inlining, added new simplification rules, and improved heuristics for rematerialization and stack optimization.
+• SMTChecker Enhancements: Support for user types, modules, constants, and improved counterexample reporting. Added options for solver choice and targets.
+• ABI Coder V2: Enabled ABI coder v2 by default and implemented stricter type checking for conversions and assignments involving ABIEncoderV1 and V2 types.
+• Error Reporting: Improved error messages for various compiler components, including better diagnostics for failed imports, bad paths, and exception handling.
+• Language Features: Added support for immutables, fixed-point types, authorized proxies, and changes related to the London EVM version (basefee).
+• Documentation Updates: Extensive documentation improvements, including clarifications on path resolution, optimizer steps, storage layout, and fixed point type in isoltest.
+• Build System and CI: Improved build speed, switched CI runs to Ubuntu 20.04, added UBSan build and test CI, enhanced caching, and improved bytecode comparison scripts.
+
+[patterns]
+• Increased use of Yul IR:  Many changes refactor existing code to use the Yul IR, demonstrating a shift towards a more modular and optimizable code generation pipeline.  Impact: Improved code generation and optimization capabilities.
+• Focus on correctness and error handling:  Multiple bug fixes and improved error messages indicate a strong focus on code quality and robustness.  Impact:  Enhanced compiler reliability and developer experience.
+•  Increased use of ranges-v3 library: Boost library is replaced with ranges-v3 for better code style and efficiency. Impact:  Improved code quality and reduced technical debt by removing dependency on boost library.
+• Proactive technical debt reduction:  Refactoring and code cleanup efforts, such as removing dead code and unifying resolution, indicate ongoing attention to technical debt. Impact: Improved maintainability and reduced risk of future bugs.
+• Comprehensive testing and CI:  Regular updates to tests, including the addition of semantic tests and fuzzing, demonstrate a commitment to quality assurance.  Impact: Enhanced confidence in the correctness and stability of the compiler.

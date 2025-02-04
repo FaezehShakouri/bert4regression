@@ -1,0 +1,1 @@
+Safe: A multi-sig smart contract wallet (Solidity) for secure digital asset management with modular features and L2 scaling.

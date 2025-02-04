@@ -1,0 +1,55 @@
+[description]
+Electron project development, focusing on features, bug fixes, documentation updates, dependency upgrades, and code refactoring.
+
+[milestones]
+• Notification API for macOS
+    - Added support for notification actions.
+    - Implemented notifications in the main process.
+    - Added documentation for the Notification API.
+• Native window.open implementation
+    - Implemented native window.open behavior.
+    - Added the `nativeWindowOpen` and `useNativeWindowOpen` options.
+    - Added specs for nativeWindowOpen events and inheritance.
+• Touch Bar support
+    - Implemented TouchBar API with support for various item types (buttons, labels, color pickers, sliders, popovers, segmented controls, scrubbers, spacers, etc.).
+    - Added specs for Touch Bar interactions and dynamic properties.
+    - Documented the Touch Bar API.
+• BrowserView API implementation
+    - Initial experimental implementation of the BrowserView API.
+    - Added support for BrowserView autoresizing.
+    - Added BrowserView to documentation index.
+•  Off-screen rendering improvements and fixes.
+    - Various fixes for off-screen rendering on macOS, including window sizing, popup rendering, and image scaling.
+    - Improved performance and simplified GPU rendering.
+    - Added ability to set high memory usage.
+
+• PDF viewer enhancements
+    - Implemented PDF viewer as a WebUI.
+    - Added support for zoom, Save As, and other PDF viewer features.
+    - Updated PDF viewer UI and data source.
+• Net module documentation and enhancements
+    - Added support for custom sessions and interceptors.
+    - Implemented API to set request flags for testing.
+    - Added documentation for the net module.
+• Chromium upgrade to version 59 and related API changes and fixes.
+• Node.js upgrade to version 8.2.1 and related changes and fixes.
+
+[patterns]
+• Refactoring and code cleanup
+    - Numerous commits address code style, linting issues, and general code cleanup across the project.
+    - Brightray library has undergone significant cleanup and refactoring, including improvements to include paths, header guards, and removal of unused code.
+• Increased testing
+    - Many commits include new specs for added features and bug fixes, indicating a focus on improving test coverage.
+• Documentation improvements
+    - Numerous documentation updates and fixes across the project, demonstrating attention to documentation quality and clarity.
+    - Added new documentation for APIs like the Notification API, Touch Bar API, and BrowserView API.
+• Focus on cross-platform compatibility
+    - Many commits address platform-specific issues and aim to make Electron behave more consistently across different operating systems.
+• Dependency upgrades
+    - Regular updates to Chromium, Node.js, and other dependencies, indicating an effort to keep Electron up-to-date with the latest versions.
+•  Experimental feature implementation
+    - Several new APIs and features, such as the BrowserView API, native window.open, and Touch Bar support, are marked as experimental.
+• Deprecation of old APIs and introduction of new APIs for features like window styling, default protocols, and system preferences.
+• Addressing security concerns by adding security warnings, enabling sandboxing in webviews, and improving permission handling.
+• Focus on performance by implementing changes to avoid idle wakeups on Windows, enabling off-screen rendering, and improving garbage collection.
+• Active development and issue resolution, evidenced by the numerous bug fixes and pull request merges related to various components, including notifications, window management, dialogs, menus, webviews, and the net module.  Potential technical debt indicators are present due to some experimental APIs, ongoing refactoring and dependency updates.

@@ -1,0 +1,60 @@
+[description]
+ESLint, a pluggable JavaScript linting utility. This project focuses on improving developer experience by enhancing error messages, refining rules, improving performance, and expanding support for new language features and frameworks.  Significant effort is dedicated to documentation updates and maintaining compatibility.  A major version 9 release introduces breaking changes related to flat config, rule metadata, Node.js version support, and removal of deprecated context methods and formatting rules.
+
+[milestones]
+• Version 9 Release
+    - Switch to flat config as the default.
+    - Introduce new `ESLint` and `RuleTester` classes for flat config.
+    - Require `meta.schema`, `meta.defaultOptions`, `meta.hasSuggestions`.
+    - Remove deprecated context methods, formatting rules, and some core rules.
+    - Increase minimum supported Node.js version.
+• Rule Improvements
+    - `no-unused-vars`: Enhanced suggestions and handling of various patterns.
+    - `no-implicit-coercion`: Add more cases, granular errors, and suggestion fixes.
+    - `no-misleading-character-class`: Granular error reporting and new options like `allowEscape`.
+    - `require-unicode-regexp`: New `requireFlag` option.
+    - `sort-keys`: New `ignoreComputedKeys` and `allowLineSeparatedGroups` options.
+    - New rules: `no-constant-binary-expression`, `no-loss-of-precision`, `no-new-native-nonconstructor`, `no-empty-static-block`, `no-restricted-exports`, `no-useless-assignment`, `no-constructor-return`, `no-unsafe-optional-chaining`, `prefer-object-has-own`, `logical-assignment-operators`, `default-case-last`, `no-useless-backreference`,  `no-unreachable-loop`.
+• TypeScript Support
+    -  Add support for TS config files.
+    - Correct and improve types across rules and the `@eslint/js` package.
+• Documentation Enhancements
+    - Rewrite rules documentation with better structure and examples.
+    - Migrate to new docs site with versioned URLs, better search, improved theming.
+    - Expand documentation on custom rules, plugins, processors, formatters, etc.
+• Performance Optimizations
+    - Fix caching in config loaders.
+    - Optimize `text-table` by replacing regex.
+    - Improve performance of selector `:function`.
+    - Introduce lazy loading of core rules.
+    - Use `v8-compile-cache`.
+
+
+[patterns]
+• Focus on Developer Experience:
+    - Numerous commits address error message clarity, autofixing issues, and improved suggestions.
+    - Impact: Makes ESLint easier and more productive to use.
+• Documentation Priority:
+    - Significant effort dedicated to improving the documentation structure, content, and website UI.
+    - Impact:  Makes it easier for users to find information and understand ESLint.
+• Breaking Change Management:
+    - Version 9 introduced numerous breaking changes, but with a clear migration guide and deprecation warnings.
+    - Impact: Allows for significant improvements while mitigating disruption for users.
+• Performance Awareness:
+    - Recurring theme of improving performance through caching, optimization, and reducing unnecessary operations.
+    - Impact:  Improves linting speed and efficiency.
+• Community Engagement:
+    - Many contributions from the community, including bug reports, documentation updates, and rule enhancements.
+    - Impact:  Shows a healthy and active community around ESLint.
+• Shift to Flat Config:
+    - Major architectural change with the introduction and defaulting to flat config.
+    - Impact: Simplifies configuration, removes complexities of cascading configs, and improves performance.
+• Increased TypeScript Integration:
+    - More rules are updated to handle TypeScript syntax and features.
+    - Focus on fixing type errors and ensuring accurate type definitions.
+    - Impact: Better support and experience for TypeScript users.
+• Focus on Best Practices:
+    - New rules are added that enforce modern JavaScript best practices and warn about potential issues.
+    - Deprecated rules that are no longer necessary are removed.
+    - Impact:  Encourages developers to write cleaner and more maintainable JavaScript.
+

@@ -1,0 +1,31 @@
+[description]
+A command-line tool for generating addition chains, focusing on algorithms, optimization, and code generation for efficient scalar multiplication in cryptography.  The project also includes tools for documentation and release management.
+
+[milestones]
+• Initial Implementation of Addition Chain Algorithms
+    - Implemented core addition chain algorithms: continued fraction, Bos-Coster, binary, dictionary-based, sliding window, fixed window, and hybrid approaches.
+• Command-Line Interface (CLI) Development
+    - Created a CLI (`cmd/addchain`) with subcommands for generating, evaluating, and formatting addition chains, enabling user interaction and control over algorithms and parameters.
+• Addition Chain Compiler (acc)
+    - Developed a compiler (acc) to translate addition chains into optimized code. Includes an intermediate representation (IR), parser, and printer for generating source code.
+• Documentation and Release Automation
+    - Implemented automated documentation generation including a bibliography, README, and results table. Integrated goreleaser for automated release builds and uploads.
+• Continuous Integration (CI) and Testing
+    - Established CI pipelines for automated testing, linting, code generation, and weekly stress tests. Implemented code coverage tracking and security hardening.
+
+[patterns]
+• Focus on Performance Optimization
+    - Evidence: Numerous commits dedicated to optimizing algorithms (e.g., Approximation with sorted contains check, optimized Chain.Ops()). Benchmarks introduced for performance measurement.
+    - Impact: Enhances the efficiency of generated addition chains for faster scalar multiplication.
+• Emphasis on Code Quality and Maintainability
+    - Evidence: Consistent use of linting and code formatting tools (golangci-lint). Refactoring commits for code cleanup and package restructuring. Introduction of testing utilities and golden files.
+    - Impact: Improves code readability, reduces technical debt, and promotes robust software development practices.
+• Incremental Development and Testing
+    - Evidence: Commits show a progression from basic implementations to more advanced features. Introduction of tests alongside new functionality. Use of temporary directories for testing isolation.
+    - Impact: Demonstrates a systematic approach to development, ensuring code correctness and facilitating feature additions.
+• Automation of Development Tasks
+    - Evidence: Automation of code generation for finite fields, documentation generation, and release processes. Use of `go generate` and `make` for managing build tasks.
+    - Impact: Streamlines development workflows, reduces manual effort, and ensures consistency in build and release procedures.
+• Regular Dependency Updates and Go Version Upgrades
+    - Evidence: Frequent commits bumping Go versions and updating dependencies like golangci-lint and goreleaser.
+    - Impact: Keeps the project current with the latest language features, security patches, and tool improvements, potentially minimizing future technical debt.

@@ -1,0 +1,38 @@
+[description]
+This project manages command shims for Node.js, enabling execution of scripts with different Node.js versions or configurations. It facilitates creating executable files for Node.js applications on various platforms, including Windows and PowerShell.
+
+[milestones]
+• Node.js Version Support Updates
+    - Dropped support for Node.js 4, 6, 8, 10, and 12.
+    - Added support for Node.js 4, 7, and 10.
+• Cross-Platform Compatibility Improvements
+    - Enhanced support for PowerShell, including pipeline input and environment variable handling.
+    - Fixed cross-drive linking on Windows.
+    - Improved handling of command shims for executable files on Windows.
+• Configuration and API Changes
+    - Introduced ability to specify custom Node.js executables.
+    - Added option to set NODE_PATH environment variable.
+    - Implemented program arguments support.
+    - Made `options` argument optional.
+• Refactoring and Testing Improvements
+    - Refactored code using template literals.
+    - Improved tests using Jest, snapshots, and `describe` blocks.
+    - Switched to using pnpm for dependency management.
+• Breaking Change: NODE_PATH Prioritization (f31686d)
+    - New NODE_PATH entries now have higher priority than existing ones.
+
+
+[patterns]
+• Regular Dependency Updates
+    - Frequent updates to project dependencies, demonstrating active maintenance.
+• Continuous Improvement of Windows Support
+    - Recurring focus on fixing and improving compatibility with Windows, addressing PowerShell and cmd file generation.
+• Focus on Testing and Code Quality
+    - Use of testing frameworks like Jest and Tap, along with practices like snapshots and refactoring, suggests commitment to code quality.
+• Proactive Node.js Version Support
+    - Both adding and dropping Node.js versions indicates active adaptation to evolving JavaScript ecosystem.
+    - May indicate potential maintenance overhead.
+• Incremental Feature Development
+    - Features often added in small increments, implying iterative development approach.
+• Occasional Breaking Changes
+    - Infrequent breaking changes, but with clear identification and rationale provided (e.g., f31686d).

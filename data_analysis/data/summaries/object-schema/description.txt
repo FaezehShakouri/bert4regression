@@ -1,0 +1,1 @@
+Object-schema: A config merging/validation library with subschema support and custom error handling.

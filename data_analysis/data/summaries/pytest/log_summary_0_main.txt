@@ -1,0 +1,25 @@
+[description]
+Pytest, a testing framework, undergoes continuous development with a focus on performance, code quality, enhanced features, and documentation improvements.
+
+[milestones]
+• Dropped Python 3.5, 3.6, and 3.7 support, simplifying code and dependency management.
+• Introduced the `pytester` fixture to modernize tests, enhancing maintainability and performance.
+• Revamped documentation with restructuring, improved navigation, and updated information, including migrating from nose, contributing guidelines, and explanations of features like `tmp_path` and `importlib` mode.
+• Enhanced `pytest.approx` with support for more data types, improved error messages, and handling of edge cases.
+• Added `--stepwise-skip` to improve the user experience with the `--stepwise` mode.
+• Improved `pytest.raises` with better handling of exception matching and error messages.
+• Enhanced logging capabilities, including custom log levels and formatting options.
+• Added support for `NO_COLOR` and `FORCE_COLOR` environment variables to control color output.
+• Deprecated and removed several features, including `pytest.collect`, `-k` syntax variations, `pytest_warning_captured` hook, `_fillfuncargs` function, `pytest.Instance`, `--strict` option, `pytest_cmdline_preparse` hook, and specific `py.path` and `TerminalReporter` features, streamlining the framework and encouraging best practices.
+
+[patterns]
+• Continuous modernization of the codebase: Migration from py.path to pathlib, use of dataclasses instead of attrs, and adoption of new-style pluggy hook wrappers. This shows a commitment to adopting modern Python features and improving code maintainability.
+• Increased use of type annotations: Many parts of the codebase have received type annotations, aiding static analysis and improving maintainability.
+• Focus on performance optimization: Several optimizations were made to fixture handling, unittest collection, and internal functions, showing a commitment to performance.
+• Regular dependency updates: Dependencies like pluggy, Django, pytest-asyncio, and pytest-mock are regularly bumped, indicating active maintenance and ensuring compatibility.
+• Documentation improvements: The documentation received continuous improvements including restructuring, clarifications, and expanding examples. This makes the framework more accessible to users.
+• Active community involvement: The project has an active community with regular contributions of bug fixes, documentation updates, and new features.
+• Proactive deprecation and removal of old features: Old and unused features are consistently deprecated and then removed, which indicates a strong emphasis on maintaining a streamlined framework.
+• Strong focus on testing: The project maintains a high level of test coverage and utilizes tools like `pre-commit.ci` to maintain code quality.
+• Use of CI/CD: The project employs GitHub Actions for continuous integration and continuous delivery, automating tests, releases, and other tasks.
+• Shift from py.path to pathlib: The ongoing transition away from `py.path` towards `pathlib` indicates modernization and aligns with current Python best practices.  There may be a small period of transition for users with plugins or code still using `py.path`.

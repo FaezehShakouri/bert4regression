@@ -1,0 +1,1 @@
+Node.js LevelDB wrapper with simplified API, streams, encodings, and modern browser support.

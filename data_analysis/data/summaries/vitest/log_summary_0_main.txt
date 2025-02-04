@@ -1,0 +1,60 @@
+[description]
+Vitest, a blazing fast unit test framework powered by Vite, has undergone significant development towards a stable v3.0.0 release. This project focuses on enhancing testing capabilities, improving developer experience, performance optimization, expanding browser testing functionalities, introducing a new reporter API, and stabilizing the core API.
+
+[milestones]
+• Vitest 3.0.0 Release
+    - Stable release with significant feature additions and improvements.
+• Browser Testing Enhancements
+    - Multi-browser configuration support.
+    - Built-in locators for easier DOM interaction.
+    - Browser test initialization command for setup.
+    - Screenshot capture on browser test failure.
+    - Improved TypeScript support and source maps.
+    - Mocking module support in browser mode.
+    - DOM testing matchers bundled with @vitest/browser.
+• New Reporter API
+    -  Introduction of a new, flexible reporter API.
+• Stable Vitest API
+    - Stabilization of the core Vitest API for consistent usage.
+• Vite 6 Support
+    - Compatibility with Vite 6.
+• Enhanced Test Hooks and Context
+    - Test context can inject values from config's provide.
+    - Global setup context can access current project and onTestsRerun.
+• Improved CLI Options
+    - New CLI options for project selection, excluding projects, specifying line numbers for test filtering, and displaying queued tests.
+• Performance Optimizations
+    - Dependency optimizer for faster test runs and reduced bundle sizes.
+    - Limiting workspace project concurrency to available cores.
+• Concurrent Suite and Fixture Support
+    - describe.for and test.for for loop-based testing.
+    - Shuffle option for test order randomization.
+    - Automatic fixtures for improved test setup.
+• Enhanced Expect Matchers
+    - Numerous new matchers like toBeOneOf, toSatisfy, toHaveBeenCalledAfter, toHaveBeenCalledBefore, toHaveBeenCalledExactlyOnceWith.
+• Improved Error Handling
+    - Better error messages for improved debugging, such as missing peer dependencies and infinite loops.
+• Improved Diff Output
+    - More visually appealing and informative diff output.
+
+[patterns]
+• Focus on Developer Experience
+    -  Many commits address documentation improvements, CLI enhancements, IDE integrations, and clearer error messaging. This indicates a strong focus on enhancing developer experience.
+• Continuous Improvement and Bug Fixing
+    - Consistent fixes for various issues, including browser compatibility, snapshot handling, and edge cases in mocking, demonstrating ongoing maintenance and improvement.
+• Performance Optimization Efforts
+    -  Specific commits aimed at optimizing dependency resolution, caching, and limiting concurrency for performance gains.
+• Browser Mode Development and Expansion
+    -  A concentrated effort on building out the functionality and usability of Vitest in browser environments, offering greater flexibility for frontend testing.
+• API Stabilization and Refinement
+    -  Deprecated old APIs, refactored existing functionalities, and introduced new utilities and hooks indicate a move towards establishing API stability.
+• Community Contributions and Feedback
+    -  Several commits incorporate community feedback and contributions, suggesting a receptive approach towards community engagement.
+• Increasing Jest Compatibility
+    -  Addition of new matchers and features, many inspired by Jest, indicate efforts towards improved parity with Jest for seamless migration.
+• Shift Towards Modularization
+    -  Splitting Vitest into separate packages such as @vitest/runner, @vitest/snapshot, @vitest/mocker, and @vitest/browser indicate improving project organization and maintainability.
+• Dependency Upgrades and Management
+    -  Regular dependency updates, addressing vulnerabilities, and managing peer dependencies versions point towards responsible maintenance practices.
+• Active Testing and Maintenance
+    -  Extensive test cases across different environments like Node.js, Safari, and web workers suggest dedication to quality control and regression prevention.

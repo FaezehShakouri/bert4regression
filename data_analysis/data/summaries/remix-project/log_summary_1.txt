@@ -1,0 +1,66 @@
+[description]
+Remix IDE, a browser-based Solidity integrated development environment.
+
+[milestones]
+• Circom language support added
+    - Language configuration and token provider implemented.
+    - Circom icons added.
+• Static Analysis Plugin Enhancements
+    - Solhint integration for linting and warnings.
+    - Slither integration for security analysis (remixd required).
+    - UI improvements with tabs for different analysis categories.
+    - Badge and tooltip enhancements for better user experience.
+• Documentation Generator Plugin
+    - Generates documentation from Solidity contracts.
+    - New viewer plugin to display generated documentation.
+    - Context menu integration for easy access.
+• Etherscan Plugin Integration
+    - Verify contracts on Etherscan.
+    - Proxy contract verification support.
+    - Display contract receipt status.
+    - UX improvements and additional explorer support.
+• Wallet Connect Functionality Improvements
+    - Updated wallet connect dependencies and implementation.
+    - Support for various wallets and testnets.
+    - Bug fixes related to chainId and deactivation.
+• Build System and Dependency Updates
+    - Web3 updated to v4.
+    - OpenZeppelin contracts updated.
+    - Various dependency bumps for security and functionality.
+    - Build system fixes and optimizations.
+• UI/UX Improvements
+    - New themes added (Violet, Pride/Unicorn).
+    - Placeholder text and button color improvements for better accessibility.
+    - Tooltips added/updated for enhanced clarity.
+    - Layout shifts in the explorer fixed.
+• Miscellaneous Fixes and Improvements
+    - Various bug fixes across different features (e.g., wallet connect, static analysis).
+    - Code cleanup, linting, and refactoring for improved code quality.
+    - Removal of toasters and update of messages for a cleaner interface.
+
+[patterns]
+• Focus on Plugin Development
+    - Multiple plugins introduced or significantly updated (static analysis, documentation generator, Etherscan).
+    - Suggests a trend towards modularizing functionality and extending the IDE's capabilities.
+• Emphasis on UI/UX Enhancements
+    - Recurring theme of UI/UX improvements, including new themes, accessibility improvements, and tooltip enhancements.
+    - Indicates a commitment to improving user experience and making the IDE more user-friendly.
+• Active Dependency Management
+    - Frequent dependency updates and version bumps, particularly for security-related packages.
+    - Suggests an emphasis on maintaining a secure and up-to-date codebase.
+• Addressing Technical Debt
+    - Code cleanup, linting, and refactoring efforts observed.
+    - Demonstrates an awareness of technical debt and a commitment to improving code quality.
+• Iterative Development and QA
+    - Frequent bug fixes and e2e tests updates alongside feature development.
+    - Indicates an iterative development approach with a focus on quality assurance.
+• Transitioning to Web3 v4 and EthereumJS VM updates
+    - Focus on updating core dependencies to support latest features and performance improvements
+    - May introduce breaking changes requiring code adaptations for compatibility
+• Enhanced Solidity Compiler Support
+    - Numerous updates and fixes related to the Solidity compiler, including version management, error handling, and licensing.
+    - Reflects the importance of Solidity as the primary language for Remix IDE.
+• Growing Support for Development Frameworks and Alternative Languages
+    - Integration of Foundry and Hardhat project types and related tooling.
+    - Addition of Circom language support.
+    - Expands the scope of Remix beyond just basic Solidity development.

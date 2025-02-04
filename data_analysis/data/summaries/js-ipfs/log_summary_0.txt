@@ -1,0 +1,25 @@
+[description]
+A JavaScript implementation of the IPFS HTTP client, allowing interaction with an IPFS node through HTTP requests.  It supports a wide range of IPFS functionalities, including adding files, retrieving data, managing the distributed filesystem (MFS), interacting with the distributed hash table (DHT), managing keys and pins, configuring the node, and using pubsub.
+
+[milestones]
+• ESM Module Support (9a401096): Switched the module system to ESM, which is the standard JavaScript module system. This change marks a significant step towards modern JavaScript development.
+• gRPC Support (a9027e0e): Added support for gRPC, a high-performance, open-source universal RPC framework. This allows for more efficient communication with the IPFS node.
+• TypeScript Support (6816bc64): Introduced TypeScript support, improving developer experience by providing type checking and autocompletion.
+• libp2p Upgrade: Upgraded the libp2p library to newer versions (e.g., 0.40.x - 0cee4a4c, 0.38.x - 39dbf708), introducing performance improvements, new features, and compatibility with newer IPFS node versions.
+• UnixFS Upgrade: Upgraded the UnixFS implementation to support version 1.5 metadata (e.g., acbda683), allowing for more efficient handling of files and directories.
+• Multiformats Upgrade (521c84a9): Updated the multiformats library to version 11.x.x, improving compatibility with other multiformats projects.
+• Improved Metrics (33f1034a):  Enhanced the collection and reporting of metrics, providing more insights into the performance of the client and the IPFS node.
+• Cancellable API Calls (2b24f590): Implemented cancellable API calls, providing more control over long-running operations.
+• Async Iterators (5f7ee717, 251eff0b):  Refactored several API methods to use async iterators, simplifying the handling of streamed data.
+• HTTP API Server Refactor (dba30851): Refactored the HTTP API server to use Hapi v20 (1aeef89c), a modern and robust web framework.
+• DAG API Improvements (38c01be0): Updated the DAG API to match go-ipfs 0.10 changes, improving consistency and interoperability.
+• MFS Implementation (87a8f96b): Introduced a fully functional MFS implementation in the HTTP client.
+
+[patterns]
+• Regular Dependency Updates:  The project maintains a pattern of regularly updating dependencies (e.g., 6eeb1be5, 870d446f), ensuring that the codebase stays current with the latest security patches and improvements.
+• Documentation Improvements: The commit logs indicate ongoing efforts to improve documentation (e.g., 7b79c1b8, ab02e8f8, 89db3711), which is a positive sign for project maintainability.
+• Focus on Performance: Several commits focus on improving performance by using more efficient data structures and algorithms (e.g., dfc43d4e, 226a138e).
+• Refactoring and Code Cleanup: The project shows a regular pattern of refactoring and code cleanup (e.g., 8f351a89, 70e142ac), contributing to code maintainability and readability.
+• Focus on Interoperability:  A recurring theme is ensuring interoperability with the Go implementation of IPFS (e.g., 880e47d9, 95b891f1), indicating a commitment to cross-implementation compatibility.
+• Addressing Technical Debt:  Several commits address technical debt by refactoring old code and upgrading to newer versions of libraries (e.g., e2f3cadf, 533845e3).  However,  reliance on older libraries in some parts of the codebase and temporary disabling of tests suggests potential areas of accumulating technical debt.  (e.g. 9c36cb8f)
+• Testing Practices: Comprehensive testing, including unit, integration, and interoperability tests (e.g., 419aae1b, 6ae5eb7d, 8f7ce23c) suggests good focus on code quality. However,  instances of skipped tests due to lacking features or interoperability issues (e.g., d46aa65d, 0565f479)  point to possible quality gaps.  Flaky tests (e.g., 55afc2f8, 8bcf56fb) indicate potential issues with testing environment stability and test design.

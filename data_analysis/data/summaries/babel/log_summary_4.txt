@@ -1,0 +1,42 @@
+[description]
+A JavaScript parser, initially based on Esprima, with a focus on performance and extensibility.  Development includes adding features like ES6 support, JSX, a loose parser mode, and utilities like an AST walker.
+
+[milestones]
+• Initial Import and Basic Functionality
+    - Initial codebase imported and adapted from Esprima.
+    - Basic parsing capabilities established.
+• JSX Support
+    - Added parsing for JSX syntax, including namespaces, member expressions in tag names, attributes, and element nesting.
+• ES6 Support
+    - Implemented support for various ES6 features: let, const, arrow functions, classes, template strings, generators, destructuring assignments, spread operator, and modules.
+• Loose Parser
+    - Introduced a "loose" parsing mode with relaxed syntax rules and improved error recovery.
+• AST Walker Utility
+    - Developed an AST walker for traversing and manipulating the Abstract Syntax Tree.
+• Tooling and Infrastructure Improvements
+    - Integrated Travis CI for continuous integration.
+    - Added test coverage reporting with Code Climate and Istanbul.
+    - Improved documentation and README.
+
+
+[patterns]
+• Incremental ES6 Feature Implementation
+    - ES6 features were added progressively, with commits focused on specific language constructs.
+    - Demonstrates a structured approach to incorporating new language features.
+• Refactoring and Code Quality Improvements
+    - Several commits addressed code style, dead code removal, and minor bug fixes.
+    - Indicates attention to code maintainability and quality.
+• Performance Optimization
+    - Commits aimed to reduce array creation, optimize string handling, and improve regular expression usage.
+    - Reflects a focus on parser performance.
+• Addressing External Dependencies and Compatibility
+    - Updates to Esprima, handling of HTML comments, and browser compatibility fixes.
+    - Suggests ongoing effort to manage dependencies and ensure broader compatibility.
+• Testing and Validation
+    - Addition of new tests for JSX, ES6 features, and edge cases.
+    - Improvement of test infrastructure and reporting.
+    - Shows commitment to testing and validation.
+• Documentation Improvements
+    - Rewriting and restructuring of the README for clarity and completeness.
+    - Updates to documentation to reflect new features and options.
+    - Indicates a focus on user experience and documentation quality.

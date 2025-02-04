@@ -1,0 +1,1 @@
+JavaScript library for arbitrary-precision decimal arithmetic with TypeScript support and continuous improvements.

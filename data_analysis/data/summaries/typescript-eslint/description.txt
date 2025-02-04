@@ -1,0 +1,1 @@
+TypeScript-based ESLint parser and plugin for enhanced linting of TS code, using ESTree AST and custom rules.

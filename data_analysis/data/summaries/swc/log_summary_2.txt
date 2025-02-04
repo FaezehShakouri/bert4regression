@@ -1,0 +1,59 @@
+[description]
+SWC, a super-fast TypeScript / JavaScript compiler written in Rust.
+
+[milestones]
+• Bundler Implementation
+    - Initial bundler implementation introduced, including features like dynamic imports and handling of circular dependencies.
+    - Deterministic output implemented for bundler.
+    - Performance improvements and bug fixes for the bundler.
+• Wasm Support
+    - Initial Wasm support added, enabling SWC to run in the browser.
+    - Improvements to Wasm compilation and deployment.
+• Jest Extension
+    - Extension for Jest testing framework introduced.
+• Spack
+    - Spack introduced, enhancing build processes and module handling.
+• TypeScript 4.0 and 4.1 Support
+    - Parser updated to support new TypeScript features, including template literal types and the `intrinsic` keyword.
+• Plugin System
+    - Final groundwork and implementation of a plugin system for extensibility.
+• Node-SWC Integration
+    - node-swc, a Node.js binding for SWC, moved into the main repository.
+• Hygiene and Block Scoping
+    - Improvements to hygiene and block scoping to prevent variable naming conflicts and ensure proper code generation.
+• Performance Improvements
+    - Multiple commits focused on improving parsing, code generation, serialization, and deserialization performance, as well as reducing binary size.
+• AST Improvements and Refactoring
+    - Significant changes and refactoring of the Abstract Syntax Tree (AST) to improve performance and support new features.
+• Error Reporting and Messaging
+    - Improvements to error reporting and messaging, providing more helpful diagnostics.
+• JSX Support and Improvements
+    - JSX support introduced and refined, including handling JSX pragmas and fragments.
+• Decorator Support
+    - Support for legacy and TypeScript decorators added, including those on parameter properties.
+• TypeScript Stripper
+    - Improvements to the TypeScript stripper, removing unused type annotations and imports.
+• Legacy Feature Support
+    - Support for various legacy ECMAScript features and transforms added.
+• Testing Improvements
+    - New testing framework introduced and test coverage expanded.
+
+[patterns]
+• Focus on Performance
+    - Recurring commits address performance optimization in parsing, code generation, and serialization, indicating a project priority.
+• Incremental Feature Implementation
+    - Features like the bundler, Wasm support, and plugin system are developed incrementally, demonstrating an iterative development process.
+• Community Contributions
+    - Contributions from external developers, including bug fixes, documentation improvements, and feature implementations, show a healthy and active community.
+• Emphasis on Testing
+    - The introduction of a new testing framework and ongoing addition of tests demonstrate a commitment to code quality and stability.
+• Addressing Technical Debt
+    - Refactoring efforts, such as the AST rewrite and improvements to hygiene, suggest an awareness and proactive approach to managing technical debt.
+• Focus on TypeScript Support
+    - Consistent updates and bug fixes related to TypeScript features demonstrate the project's dedication to maintaining up-to-date compatibility.
+• Strong Focus on Correctness
+    - Many commits address bug fixes and edge cases, particularly in the parser and code generation modules, demonstrating a commitment to accuracy.
+• Regular Version Bumps
+    - Frequent version bumps indicate active development and a regular release cycle.
+
+

@@ -1,0 +1,1 @@
+Solidity, an Ethereum smart contract language, enhances Yul IR, SMTChecker, and language features like try-catch.

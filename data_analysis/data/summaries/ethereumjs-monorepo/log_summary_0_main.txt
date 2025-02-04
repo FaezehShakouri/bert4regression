@@ -1,0 +1,60 @@
+[description]
+EthereumJS monorepo project focusing on core Ethereum functionalities implemented in JavaScript. Packages include components for VM execution, blockchain management, transaction processing, peer-to-peer networking, consensus mechanisms, and utility functions.
+
+[milestones]
+• Verkle Tree Implementation
+    - Introduced verkle tree structure and functionalities in the `verkle` package.
+    - Implemented verkle proof verification.
+    - Integrated verkle stateful execution within the client.
+    - Various verkle fixes and optimizations.
+• Ethereum Client Development
+    - Implemented snap sync and associated fetchers for storage, bytecode, and trie nodes.
+    - Implemented new engine API methods for Shanghai and Cancun hardforks.
+    - Improved client syncing stability and performance.
+    - Added support for Holesky and Kaustinen testnets.
+    - Implemented various RPC methods, including debug_traceTransaction and debug_traceCall.
+• Transaction Processing Improvements
+    - Refactored transaction capabilities and added a generic transaction interface.
+    - Implemented EIP-7702 (withdrawal requests) and EIP-4895 (beacon chain withdrawals).
+    - EIP-4844 implementation (blobs).
+    - Added support for EIP-1559 transactions.
+• State Management Enhancements
+    - Introduced stateful and stateless verkle state managers.
+    - Refactored and optimized storage caching within the state manager.
+• Code Refactoring and Dependency Management
+    - Trie package renamed to `mpt`.
+    - Migrated from BN.js to BigInt for number representation.
+    - Upgraded Typescript to v5.
+    - Migrated from JSON to JS test data.
+    - Removed and replaced various dependencies.
+    - Improved code documentation and added debugging tools.
+    - Addressed technical debt through refactoring and code cleanup.
+
+[patterns]
+• Continuous Integration and Testing Improvement
+    - Migrated test data from JSON files to JS objects.
+    - Implemented a more performant code cache.
+    - Extended test timeouts and added test coverage.
+    - Shifted to Vitest for testing.
+• Performance Optimizations
+    - Implemented various EVM and VM optimizations, like stack optimization and memory management.
+    - Optimized storage of default values in VerkleNode.
+    - Improved trie findPath performance.
+• Hardfork Readiness & Support
+    - Implementation and support for upcoming hardforks like Shanghai and Cancun.
+    - Constant updates and integration of new EIPs.
+    - Refactoring for better HF management within common.
+• Increased Modularity
+    - Extraction of EVM from VM as a standalone package.
+    - Introduction of genesis and wallet packages.
+    - State manager refactored with improved caching.
+• Developer Experience Enhancements
+    - Improved code documentation and added more debugging utilities.
+    - Enhanced logging with DEBUG variable and Prometheus.
+    - Implemented an EVM profiler.
+    - Introduced easier conversion helpers like the Unit class.
+• Addressing Technical Debt
+    - Continuous removal of ts-ignore statements.
+    - Upgrading dependencies and addressing vulnerabilities.
+    - Linting issues and code clean up.
+

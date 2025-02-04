@@ -1,0 +1,1 @@
+JavaScript color code management library with ESM support, community contributions, and focused on code quality.

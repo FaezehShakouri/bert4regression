@@ -1,0 +1,17 @@
+[description]
+Teku, a Java-based Ethereum 2.0 client, undergoes significant development towards enhanced networking, a standardized API, improved storage, and validator client functionality.
+
+[milestones]
+• Standardized API Implementation:  Transition to a standard API for various endpoints including validator duties, block submission, attestation aggregation, and network management. Includes implementation of new endpoints for spec compliance and improved functionality.
+• Enhanced Networking: Integration of discv5 discovery, improved peer management, connection stability, and request throttling. Support for gossipsub 1.1 and snappy compression.
+• Improved Storage:  Introduction of RocksDB as default database, support for multiple database versions, and efficient state and block storage and retrieval. Implementation of pruning strategies for hot and finalized states.
+• Validator Client Development:  Implementation of validator duties, local signing, slashing protection, and remote validator API support. Transition towards independent validator timing and management.
+• Performance Optimizations:  Reduction of BeaconState memory footprint, optimized BLS verification, and asynchronous processing of various tasks.
+
+[patterns]
+• Focus on Standardization:  A clear shift towards adhering to standard API specifications and best practices. This improves interoperability and reduces technical debt.
+• Performance and Stability Improvements: Recurring themes of optimizing performance, improving connection stability, and reducing memory usage indicate a focus on creating a robust and efficient client.
+• Incremental Development and Testing:  Frequent small commits and addition of unit and integration tests alongside new features demonstrate a commitment to code quality and a test-driven approach.
+• Refactoring and Code Cleanup:  Regular code cleanup, refactoring, and dependency updates demonstrate a dedication to maintaining code quality and reducing technical debt.
+• Transition to Async Operations:  Increasing use of asynchronous operations for various tasks suggests a focus on improving responsiveness and resource utilization.
+• Enhanced Logging and Metrics:  Improvements to logging and metrics provide better insights into node operation and performance, contributing to better monitoring and debugging.

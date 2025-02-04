@@ -1,0 +1,1 @@
+Go-libp2p: Modular P2P networking stack using QUIC, WebRTC, with enhanced security, performance, and resource management.

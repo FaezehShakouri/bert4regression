@@ -1,0 +1,50 @@
+[description]
+Hardhat is a development environment for Ethereum software, evolving from its early stages (initially named Buidler) to a robust platform.  It provides a local Ethereum network (Hardhat Network, formerly Buidler EVM), a plugin system, and integrations with essential tools like Ethers.js, Waffle, and more recently, Ignition and Viem.  Development has focused on core functionality, extensibility, performance, and improving the developer experience.
+
+[milestones]
+• Hardhat Network (formerly Buidler EVM):
+    - Supports mainnet forking, account impersonation, and essential RPC methods like `evm_mine`, `evm_setIntervalMining`, `evm_snapshot`, and `evm_revert`.
+    - Manages transaction pool, nonce, logging, block gas limit, and gas estimations.
+    - Includes Hardhat Network Helpers for interacting with the network (dropping/mining transactions, setting storage).
+• Plugin System:
+    - Enables extending Hardhat's functionality through plugins.
+    - Supports plugin loading, configuration resolution, and type extensions.
+    - Includes Hardhat Toolbox, bundling commonly used plugins.
+    - Introduces scoped tasks for organization.
+• Integrations:
+    - Ethers.js: Exposes Ethers.js API through the Hardhat Runtime Environment (HRE) and provides helper functions like `getSigner`.
+    - Waffle: Enables testing with Waffle and Chai, automatically initializing matchers and integrating with the Hardhat Network.
+    - Etherscan: Supports contract verification on Etherscan, handling multiple Solidity versions, fully qualified names, and libraries.  Now also supports Sourcify verification through hardhat-verify.
+    - Ignition: Supports deployments in scripts, tests, and the CLI, with new tasks and commands for management and visualization.  Integrates with hardhat-deploy.
+    - Viem: Provides Viem support, including a new toolbox and project creation options. Updated hardhat-viem for viem@2.
+    - Ledger: Supports Ledger hardware wallets through the hardhat-ledger plugin.
+• Solidity Support:
+    - Supports a wide range of Solidity versions, from early 0.8.x versions up to 0.8.28.
+    - Includes improvements to error detection, handling of panic errors and custom errors, and support for top-level functions.
+    - Cancun set as the default hardfork.
+• Compilation:
+    - Improved compilation pipeline with handling of multiple Solidity versions (`--multi-solc`).
+    - Introduced `CompilationJob` and internal tasks for compilation steps.
+    - Implemented parallel compilation and caching mechanisms for performance improvements.
+• Testing and Debugging:
+    - Introduced new test utilities and chai matchers (`.reverted`, `.revertedWith`, `.revertedWithPanic`, `.revertedWithCustomError`, `changeEtherBalance(s)`, `changeTokenBalance(s)`).
+    - Improved error reporting with centralized error handling (IgnitionError and HardhatPluginError), enhanced error messages, and error code whitelisting.
+    - Configurable node task logging.
+• Developer Experience:
+    - Improved documentation, tutorials, and READMEs.
+    - Migrated the website to Next.js.
+    - Enhanced CLI commands (e.g., `status`, `init`).
+    - Introduced configuration variables for managing sensitive information.
+• Package Management:
+    - Migrated from npm and yarn to pnpm.
+• EDR Integration:
+    - Introduced Execution Data Retriever (EDR) as a new execution engine, focusing on performance optimization and stack traces.
+    - Added support for blob transactions and the Cancun hardfork in EDR.
+
+[patterns]
+• Focus on Developer Experience: Continuous improvements to documentation, error messages, CLI, plugin integrations (Ignition, Viem, Ledger), and testing utilities demonstrate a commitment to making Hardhat user-friendly. Configuration variables enhance secrets management.
+• Performance Optimization: Parallel compilation, caching mechanisms, EDR integration, and compiler downloader optimization prioritize faster build and execution times.
+• Embrace of New Technologies:  Adoption of pnpm, integration of Ignition, Viem, Sourcify, and support for newer Solidity versions and hardforks reflect a commitment to staying current with the evolving Ethereum ecosystem.
+• Continuous Improvement and Maintenance:  Ongoing support for new Solidity versions, bug fixes, dependency updates, and refactoring efforts demonstrate active maintenance and a dedication to code quality.  Deprecation of older Solidity versions streamlines the project.
+• Addressing Technical Debt: While rapid development and introduction of new features like EDR create potential technical debt through refactoring and code migration, thorough testing (including snapshot and integration tests) mitigates this risk.
+• Community Involvement:  From early stages, community contributions (bug fixes, documentation, plugins) have been actively incorporated, fostering a thriving ecosystem.

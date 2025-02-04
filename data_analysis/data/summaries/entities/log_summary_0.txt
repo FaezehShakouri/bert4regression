@@ -1,0 +1,91 @@
+[description]
+This project is an HTML entity encoding/decoding library.
+
+[milestones]
+• Version 6.0.0
+    - No specific details provided in commit message. Likely a major release.
+• Version 5.0.0
+    - Toolchain upgrade, code style improvements using eslint-plugin-unicorn, and updates to the `files` field in package.json.
+• Version 4.5.0
+    - Fix for handling chunks for numeric entities and introduction of an `EntityDecoder` class.
+• Automated publishes (#1532)
+    - Automation added for publishing process.
+• Simplification of export paths, old NodeJS compatibility (#1531, #1522)
+    - Improved export paths and ensured compatibility with older NodeJS versions. Enabled isolated declarations for better tree shaking.
+• Version 4.4.0
+    - Improved tree shaking.
+• Version 4.3.1
+    - Minor bug fix related to an off-by-one error.
+• Version 4.3.0
+    - Stricter TypeScript configuration, improvements to source maps, addition of `escape` file as an export.
+• Version 4.2.0
+    - Handling of edge cases with surrogate pairs and addition of `escapeAttribute` and `escapeText` functions.
+• Version 4.1.1
+    - Addressed a missed ESM change.
+• Version 4.1.0
+    - Pregenerated encode trie.
+• Version 4.0.0
+    - Added ESM support.
+• Version 3.0.1
+    - Fixed a surrogate check and improved decoding with bitmaps.
+• Version 3.0.0
+    - Trie-based encoding for performance improvements and introduction of `escapeUTF8` and `encodeNonAsciiHTML` functions.
+• Version 2.2.0
+    - Combined regexes for escaping, use of string codepoint methods, added `escapeUTF8` function.
+• Version 2.1.0
+    - Features section added to README, documentation improved.
+• Version 2.0.3
+    - Minor bug fixes and reset version
+• Version 2.0.2
+    - Added types to package.json
+• Version 2.0.1
+    - Improved algorithms and modernized codebase
+• Version 2.0.0
+    - Converted project to TypeScript and modernized the codebase.
+• Version 1.1.2
+    - Readme fixes and updates.
+• Version 1.1.1
+    - Encode fix to not encode commas.
+• Version 1.1.0
+    - Improved handling of astral symbols and tests added for astral entities.
+• Version 1.0.0
+    - Initial stable release.
+• Version 0.5.0
+    - Updated entity tables and improved test coverage.
+• Version 0.4.1
+    - Changed mistyped variable name.
+• Version 0.4.0
+    - Regexp compilation moved and test case fixed.
+• Version 0.3.0
+    - Added encode<name>Strict methods and refactoring.
+• Version 0.2.2
+    - Simplified code and removed unused stuff
+• Version 0.2.1
+    - Updated entity tables.
+• Version 0.2.0
+    - Removed unnecessary decodeXML function and fixed related issues.
+
+
+[patterns]
+• Consistent dependency updates
+    - Frequent dependency bumps via Dependabot.
+    - Keeps the project up-to-date with security patches and new features.
+• Focus on code quality
+    - Use of linters (ESLint, Prettier).
+    - Enforcement of stricter TypeScript configuration. Indicates a commitment to maintainable code.
+• Performance optimization
+    - Introduction of trie data structure for encoding/decoding. Demonstrates concern for performance.
+• Security consciousness
+    - Regular security updates via Dependabot.
+    - Adoption of stricter CI practices.
+• Continuous improvement
+    - Incremental updates and bug fixes. Regular releases suggest an active and responsive development cycle.
+• Automation
+    - Automated publishes and auto-merging of dependency updates.  Reduces manual effort.
+• Modernization effort
+    - Conversion to TypeScript, adoption of ESM, upgrade of toolchain. Keeps the project current with modern development practices.
+• Comprehensive Testing
+    - Use of Jest for testing. Regular updates to tests and an emphasis on test coverage. Suggests commitment to code quality.
+• Technical Debt Indicators
+    - Version 6.0.0 commit message lacks details, making it difficult to understand changes and their scope.
+

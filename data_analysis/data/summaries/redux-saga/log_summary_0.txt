@@ -1,0 +1,20 @@
+[description]
+Redux-Saga is a library that aims to make application side effects (e.g., asynchronous things like data fetching and impure things like accessing the browser cache) easier to manage, more efficient to execute, easy to test, and better at handling failures.
+
+[milestones]
+• Initial Commit and First Release (2015): Project started, basic structure laid out, including core functionalities like handling effects, basic middleware, and generator support. Initial documentation created.
+• Introduction of Fork/Join and Cancellation (2016): Support for concurrent tasks using fork/join and task cancellation implemented. Enhanced error handling and logging, including SagaCancellationException.
+• Enhanced Monitoring, Select Effect, and Channels (2016): Monitoring capabilities improved with sagaMonitor, getState effect replaced by select effect. Channel system introduced for managing actions and buffers, including support for various buffer types.
+• Declarative Effects and Helpers, and Babel Plugin (2016-2017): Declarative effect creators for helpers added, along with the development of a Babel plugin to optimize performance. Support for Symbol action types and mixed array patterns in matchers.
+• Effects Middleware and All Effect (2017): Middleware system extended with effectMiddlewares for greater flexibility. All effect introduced for explicit parallel effects. Documentation revamped and migrated to a monorepo structure.
+• Version 1.0.0 Release (2019): Stabilization and refinement of the API, including removal of deprecated methods and consolidation of the core package. Enhanced TypeScript definitions, and a focus on performance and bundle size optimization.
+• Ongoing Maintenance and Documentation (2020-2024): Continuous refinement of documentation, bug fixes, and minor feature additions. The emphasis on TypeScript support, documentation improvements, and addressing user-reported issues.
+
+[patterns]
+• Incremental Development: The project demonstrates an incremental approach, with features being introduced and refined over time, from basic functionality to more advanced concepts.
+• Community-Driven Development: Many commits come from community contributions, including bug fixes, documentation improvements, and translations, suggesting a healthy and active community.
+• Focus on Testing and Code Quality: Regular updates to dev dependencies, testing infrastructure, and a focus on code style indicate a commitment to code quality. Tests cover various scenarios, from basic functionality to edge cases.
+• Documentation Improvement: The significant effort put into documenting new features, fixing typos, and reorganizing the docs structure suggests an understanding of documentation's importance.
+• Performance Optimization: The use of Babel plugins, focus on bundle size reduction, and refactoring efforts indicate an emphasis on performance.
+• Addresssing Technical Debt: Refactoring of internals like the channel system and eventChannel and removal of deprecated APIs demonstrate a proactive approach to reducing technical debt.
+• Shift Towards TypeScript: Increased emphasis on improving TypeScript definitions and ensuring compatibility with newer TS versions indicate a shift towards catering to the TypeScript user base.

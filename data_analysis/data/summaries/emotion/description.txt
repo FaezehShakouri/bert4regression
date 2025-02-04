@@ -1,0 +1,1 @@
+Performant CSS-in-JS library (Emotion) in TypeScript, featuring improved JSX runtime, Stylis v4, and enhanced DX.

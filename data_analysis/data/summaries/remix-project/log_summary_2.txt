@@ -1,0 +1,60 @@
+[description]
+Remix IDE project, a browser-based Integrated Development Environment for developing smart contracts using Solidity and other languages.
+
+[milestones]
+• Universal UDApp UI implemented
+    - New UI for interacting with deployed contracts, including features like deployment, interaction, and transaction logging.
+    - Recorder module for capturing and replaying contract interactions.
+    - Low-level interaction functionality.
+    - Response decoding for contract calls.
+• Support for multiple networks and providers
+    - Hardhat provider integration for local development.
+    - AtAddress functionality re-enabled for interacting with contracts at specific addresses.
+    - Injected Web3 support.
+• Plugin architecture migrated to React
+    - Many core plugins, including the file manager, plugin manager, and settings tab, were refactored to use React.
+    - Modals and toasters were refactored into plugin calls.
+    - Vertical icons panel implemented in React.
+• Terminal improvements
+    - Dragbar for resizing the terminal.
+    - Style improvements for enhanced readability.
+    - Provider bug fixes in transaction logs.
+• Editor improvements
+    - Solidity warning tooltip fixes.
+    - Context view implemented in React.
+    - Line highlight fixes.
+    - Auto-closing brackets added.
+• Solid testing suite enhancement
+    - Splitting of E2E tests for faster execution.
+    - Debugger tests improved.
+    - Various bug fixes in different test suites.
+• Refreshed Home tab
+    - Scam alert added.
+    - File and folder creation bugs fixed.
+    - Download backup functionality.
+• General UI/UX improvements
+    - Vertical icons panel badges fixed.
+    - Theme switching fixes.
+    - Scroll height bug fixes.
+• Support for new languages
+    - Cairo (StarkNet) added.
+    - Optimism compiler support.
+
+[patterns]
+• Shift towards React
+    - Many modules were rewritten in React. This suggests a deliberate move to modernize the frontend and improve maintainability.
+• Increased focus on testing
+    - Improvements and bug fixes in E2E tests, debugger tests, and other suites indicate a growing emphasis on code quality and stability.
+    - Splitting of E2E tests suggests a concern about CI pipeline speed.
+• Addressing technical debt
+    - Refactoring of core plugins, like the file manager, addresses technical debt and prepares the project for future development.
+    - Linting fixes throughout the codebase improve code quality and consistency.
+• Focus on user experience
+    - UI/UX improvements like dragbar, scroll fixes, and tooltip enhancements suggest a focus on user experience.
+• Growing plugin ecosystem
+    - Support for new languages and tools via plugins indicates a desire to cater to a broader range of development needs.
+• Iterative bug fixing
+    - Numerous small bug fixes and UI tweaks indicate an iterative approach to development with responsiveness to user feedback.
+
+
+

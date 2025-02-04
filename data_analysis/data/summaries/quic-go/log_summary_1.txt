@@ -1,0 +1,50 @@
+[description]
+This project is a Go implementation of the QUIC protocol, focusing on both gQUIC and IETF QUIC versions. The commit logs track development over several months, encompassing features, bug fixes, performance improvements, and architectural refactoring.
+
+[milestones]
+• IETF QUIC Support
+    - Implementation of draft versions of IETF QUIC, including header parsing, frame handling, and handshake logic.  Support for various IETF QUIC features like ACK decimation, TLPs, connection migration, and flow control.
+• gQUIC Support
+    - Support for multiple gQUIC versions (39, 42, 43, 44), with version negotiation and specific handling for each.
+• TLS 1.3 Handshake Integration
+    - Implementation of a basic TLS 1.3 handshake integrated with the QUIC protocol. Use of mint for TLS functionality, and updates to reflect mint API changes.
+• Multiplexing and Connection Management
+    - Multiplexing of multiple clients on a single packet connection. Improved connection handling, including closing, error handling, and connection ID management. Introduction of a connection multiplexer for both client and server.
+• Packet Handling and Performance
+    - Various optimizations in packet packing, unpacking, and handling, reducing allocations and syscalls.  Introduction of a packet buffer pool for improved performance. Implementation of packet pacing for better network utilization.
+• Cryptography and Security
+    - Implementation and updates to the cryptography layer, including AEAD algorithms (AES-GCM, ChaCha20Poly1305), key derivation, and diversification nonces.  Handling of undecryptable packets and public resets.
+• Flow Control and Congestion Control
+    - Implementation of stream-level and connection-level flow control. Introduction of byte-based congestion control mechanisms, including Cubic.
+• Error Handling and Logging
+    - Improved error handling and reporting, with introduction of specific error codes and a QuicError type. Introduction of a prefix logger and more detailed logging throughout the codebase.
+• Testing and CI Improvements
+    - Addition of extensive tests, including unit tests, integration tests, and benchmark tests. Integration of CircleCI and AppVeyor for continuous integration, and improvements to Travis CI configuration.  Introduction of a UDP proxy for testing purposes.
+• HTTP/2 Integration (h2quic)
+    - Development of an HTTP/2 client and server using QUIC (h2quic). Handling of header streams, request and response bodies, and HTTP errors.
+• API Changes and Refactoring
+    - Significant API changes and refactoring, including the introduction of interfaces for session, stream, and other components. Internalization of several packages for better code organization.
+
+[patterns]
+• Iterative Development
+    - Frequent commits with incremental improvements to features, bug fixes, and testing.
+• Test-Driven Development
+    - Many commits focused on adding tests for new features and bug fixes before implementing them.
+• Performance Optimization
+    - Recurring theme of optimizing packet handling, frame processing, and cryptography for improved performance.  Use of profiling tools and benchmarks to guide optimization efforts.
+• Refactoring for Maintainability
+    - Frequent commits dedicated to refactoring code for better organization, readability, and testability.
+• API Evolution
+    - Gradual evolution of the public API, with changes driven by evolving requirements and best practices.  Introduction of interfaces and breaking changes documented in the commit messages.
+• Focus on Security
+    - Attention to security considerations, with commits addressing vulnerabilities and implementing security features like public resets and secure handshakes.
+• Dependency Management
+    - Vendoring of dependencies and updates to manage external libraries effectively.
+• Active Maintenance and Bug Fixing
+    - Continuous bug fixing and addressing issues reported through GitHub issues.
+• Continuous Integration and Delivery
+    - Strong emphasis on CI/CD practices, with regular updates and improvements to the CI pipeline.
+• Adapting to Changing Standards
+    - Regular updates to implement changes in the QUIC protocol drafts and specifications.
+• Potential Technical Debt
+    -  Occasional workarounds and quick fixes indicate potential accumulation of technical debt.  Some areas lack comprehensive tests, suggesting potential for undiscovered bugs.  Rapid API changes might impact users.

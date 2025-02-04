@@ -1,0 +1,26 @@
+[description]
+This project is pandas, a data analysis library for Python.  The commit logs span a period of development focused on enhancing core features, improving performance, expanding data structure support, implementing sparse data structures, refining the API, increasing test coverage, and preparing for version 0.7.0.
+
+[milestones]
+• Implemented new indexing functions iget/irow/icol.
+• Added crosstab function with custom aggregation.
+• Implemented lookup function for label-based fancy indexing.
+• Introduced concat function and extended join capabilities.
+• Added margins to pivot_table.
+• Implemented SparseSeries and SparseDataFrame, along with supporting operations.
+• MultiIndex support enhanced: creation, operations, storage, and indexing.
+• Python 3 compatibility improved.
+• Performance optimizations across various operations like groupby, join, and indexing.
+• Test coverage increased significantly.
+• Documentation expanded and reorganized.
+• Version 0.7.0 release notes drafted.
+
+[patterns]
+• Focus on performance optimization: - Evidence: Numerous commits dedicated to speeding up groupby, join, indexing, and other core operations using Cython, khash, and other techniques. - Impact: Substantial performance gains across key operations.
+• Expansion of data structures: - Evidence: Introduction of SparseSeries, SparseDataFrame, and enhancements to MultiIndex functionality. - Impact: Increased flexibility and efficiency for handling various data types and structures.
+• API refinement and consistency: - Evidence: Renaming and deprecation of functions, improved error messages, and efforts to make the API more consistent and user-friendly. - Impact: Enhanced usability and maintainability.
+• Increased emphasis on testing: - Evidence: Multiple commits focused on expanding unit test coverage, addressing test failures, and introducing benchmark suites. - Impact: Improved code reliability and performance analysis.
+• Active development towards release: - Evidence: Draft release notes, version bumps, and a clear focus on bug fixes and enhancements. - Impact: Preparation for a stable and feature-rich 0.7.0 release.
+• Addressing user feedback and issues: - Evidence: Several commits reference GitHub issues and pull requests, indicating responsiveness to user feedback and community contributions. - Impact: Enhanced community engagement and issue resolution.
+• Refactoring for code maintainability and extensibility: - Evidence: Commits mentioning code cleanup, reorganization, and efforts to make the internals more generic and n-dimensional. - Impact: Improved long-term maintainability and extensibility.
+• Potential technical debt: - Evidence: Some commits mention "hacks" and "workarounds", which could indicate areas of potential technical debt needing further attention. - Impact: Requires monitoring and refactoring to prevent accumulation of technical debt.

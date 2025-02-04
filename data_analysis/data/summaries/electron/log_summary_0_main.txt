@@ -1,0 +1,29 @@
+[description]
+Electron project, focusing on building cross-platform desktop applications using Chromium and Node.js.
+
+[milestones]
+• Windows Control Overlay (WCO) on Windows and Linux: Implements the WCO feature for modern title bar styling and enhanced window management on Windows and extends it to Linux, improving UI consistency across platforms.
+• UtilityProcess API: Introduces the UtilityProcess API for running tasks in a separate process, enhancing security and performance isolation for specific operations.
+• Migration to WebContentsView: Replaces BrowserView with WebContentsView, providing a more modern and robust API for embedding web content.
+• Node.js Upgrade to v20, v18, v16: Major Node.js upgrades bring performance improvements, new features, and security updates to Electron applications.
+• Chromium Upgrade to v134, v133, etc.: Chromium upgrades consistently deliver web platform updates, performance optimizations, and security patches.
+• File System API Support: Implements the File System Access API, offering enhanced capabilities for interacting with the file system.
+• Shared Dictionary Management API: Adds shared dictionary management APIs for better data sharing and inter-process communication.
+• WebFrameMain API Enhancements: Enhances WebFrameMain API with properties like `detached` and `origin`, providing more control and context over embedded frames.
+• Protocol Handler Enhancements: Introduces `protocol.handle` API for intercepting and handling custom protocols, enabling greater flexibility in resource loading.
+• asar Integrity Validation on macOS: Adds support for validating the integrity of ASAR archives on macOS, improving security against tampered application resources.
+• Removal of Remote Module: The remote module is removed in favor of more secure communication methods like contextBridge, improving the security posture of Electron applications.
+• Dropping macOS 10.13/10.14 Support: Drops support for older macOS versions, allowing Electron to focus on newer operating system features and security updates.
+
+
+[patterns]
+• Continuous Chromium and Node.js Upgrades: Regular bumps to Chromium and Node.js versions indicate a commitment to keeping Electron up-to-date with the latest web platform and Node.js features and security updates.
+• Focus on Security: Introduction of features like fuses, sandboxed preloads, and the removal of the remote module demonstrates a focus on enhancing the security of Electron applications.
+• Modernization of APIs: Replacement of BrowserView with WebContentsView and the introduction of new APIs like UtilityProcess and protocol.handle indicate an ongoing effort to modernize Electron's APIs.
+• Platform Consistency: Implementation of WCO across Windows and Linux suggests an aim to provide consistent UI/UX across different platforms.
+• Performance Optimization: Focus on caching, using more efficient data structures, and migrating certain processes out-of-process demonstrate a commitment to performance improvement.
+• Documentation Improvements: Regular documentation updates and corrections suggest an emphasis on maintaining comprehensive and accurate documentation.
+• Addressing Technical Debt: Removal of deprecated APIs and modernization of existing code indicate efforts to address technical debt and improve code quality.
+• Testing and Deflaking: Regular testing and efforts to deflake tests, along with moving tests to the main process, indicate an emphasis on ensuring the stability and reliability of Electron.
+• Community Contributions: Commits from various contributors, including documentation updates and bug fixes, demonstrate a healthy and active community around the Electron project.
+• Use of Bots for Automation: Use of bots for routine tasks like dependency bumps and version updates indicates efficient project management and release processes.

@@ -1,0 +1,1 @@
+Remix IDE: Browser-based Solidity/Vyper/Circom IDE with AI features, contract verification, and enhanced UI/UX.

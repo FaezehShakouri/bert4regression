@@ -1,0 +1,30 @@
+[description]
+A JavaScript library (with Python and PHP versions) for serializing and deserializing complex JavaScript objects, including circular references and custom data types, going beyond the capabilities of JSON.stringify.  The project emphasizes performance and aims to be compatible with various JavaScript environments and build tools.
+
+[milestones]
+• Version 3.0.0
+    - Introduced dual ESM/CJS module support, improving compatibility with modern JavaScript workflows.
+    - Removed default ESM export, enforcing explicit imports.
+• Version 2.0.0
+    - Added `parse(text, revive)` function, enabling custom deserialization logic.
+• Version 1.0.0
+    - Initial stable release.
+• Python and PHP versions
+    - Expanded functionality to other languages.
+• TypeScript Support
+    - Added and improved TypeScript definitions.
+
+[patterns]
+• Continuous Improvement and Bug Fixes
+    - Numerous minor releases address bug fixes, typographical errors, and dependency updates.
+    - Demonstrates ongoing maintenance and community involvement.
+• Performance Optimization
+    - Benchmarks and comparisons with alternatives like @ungap/structured-clone suggest an emphasis on performance.
+• Addressing Technical Debt
+    - Refactoring for proper ESM and removing unnecessary dependencies indicate efforts to improve code maintainability.
+• Expanding Compatibility
+    - Support for various JavaScript build tools like Rollup and addressing compatibility with different Node.js and PHP versions.
+• Community Contributions
+    - Several pull requests from external contributors demonstrate community engagement and collaborative development.
+• Publishing and Packaging Improvements
+    - Several commits address issues related to publishing on npm and jsr.io, demonstrating a focus on developer experience.

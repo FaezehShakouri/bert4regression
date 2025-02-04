@@ -1,0 +1,50 @@
+[description]
+The project is a smart contract system named "Safe" (formerly "Gnosis Safe") designed for secure management of digital assets. It utilizes a multi-signature wallet architecture with modular functionalities for access control and transaction execution.
+
+[milestones]
+• Safe v1.5.0 Release
+    - zkSync support added.
+    - Migration contract introduced for easier upgrades.
+    - External contract signature support for enhanced flexibility.
+    - Optimization of `getTransactionHash` and `checkNSignatures` for gas efficiency.
+    - Introduction of module guards for enhanced security.
+    - Removal of deprecated `encodeTransactionData`.
+    - Formal verification efforts intensified, covering key aspects like owner management, native token balance updates, and module interactions.
+    - Multiple audits conducted and corresponding changes implemented.
+• Safe v1.4.1 Release
+    - Security fixes and optimizations.
+    - Migration enhancements for smoother upgrades.
+• Safe v1.4.0 Release
+    - L2 Safe implementation for layer-2 scaling solutions.
+    - Introduction of `checkNSignatures` for batch signature verification.
+    - Memory-safe assembly implementation for enhanced security.
+    - NatSpec documentation improvements.
+• Safe v1.3.0 Release
+    - Multi-send functionality enhancements.
+    - Significant gas optimizations.
+• Safe v1.1.0 Release
+    - EIP-1271 support added for contract signatures.
+    - Master copy deployment improvements.
+    - Audit report incorporated.
+• Safe v1.0.0 Release
+    - Initial release with core features like multi-signature wallet functionality, modules, and extensions.
+
+[patterns]
+• Focus on Security and Formal Verification
+    - Recurring themes of security audits, addressing vulnerabilities, and formal verification implementations suggest a strong emphasis on ensuring contract security.
+    - Impact: Increased reliability and trust in the Safe contract system.
+• Gas Optimization
+    - Frequent commits related to reducing gas costs in various functions such as `getTransactionHash`, signature verification, and module interactions highlight ongoing optimization efforts.
+    - Impact: Improved cost-effectiveness for users of the Safe contracts.
+• Migration and Upgrade Focus
+    - Development of migration contracts and tools, along with changelog updates, demonstrates a commitment to facilitating smooth upgrades for users.
+    - Impact: Reduced friction for users migrating to newer Safe versions.
+• Addressing Technical Debt
+    - Refactoring efforts, code cleanup, removal of unused code, and dependency updates suggest active management of technical debt.
+    - Impact: Improved maintainability and long-term sustainability of the project.
+• Community Contributions and Responsiveness
+    - Incorporation of community-submitted patches, typo fixes, and documentation improvements showcases a collaborative and responsive development approach.
+    - Impact: Enhanced community engagement and project quality.
+• Shift Towards Modular Design
+    - Introduction of module guards and external contract signature support emphasizes the growing importance of modularity in the Safe architecture.
+    - Impact: Increased flexibility and customizability for Safe users.

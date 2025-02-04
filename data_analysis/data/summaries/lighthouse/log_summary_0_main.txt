@@ -1,0 +1,241 @@
+[description]
+Lighthouse, an Ethereum consensus client, undergoes continuous development with a focus on performance, stability, security, and feature implementation according to the Ethereum 2.0 specifications.  The project uses Rust and focuses heavily on code quality, testing, and alignment with the evolving Ethereum specification.
+
+[milestones]
+• Release v6.0.0
+    - Major release introducing significant changes and improvements.
+• Release v6.0.1
+    - Patch release addressing issues found in v6.0.0.
+• Release v5.3.0
+    - Feature and improvement release.
+• Release v5.2.1
+    - Testing and bug fix release.
+• Release v5.2.0
+    - Feature and improvement release.
+• Release v5.1.3
+    - Bug fix release.
+• Release v5.1.2
+    - Bug fix release.
+• Release v5.1.1
+    - Bug fix release.
+• Release v5.1.0
+    - Feature and improvement release.
+• Release v5.0.0
+    - Major release introducing significant changes and improvements.
+• Release v4.6.0
+    - Feature release with Release Candidate v4.6.0-rc.0.
+• Release v4.5.0
+    - Feature and improvement release.
+• Release v4.4.1
+    - Bug fix release.
+• Release v4.4.0
+    - Feature and improvement release.
+• Release v4.3.0
+    - Feature and improvement release.
+• Release v4.1.0
+    - Feature and improvement release.
+• Release v4.0.1
+    - Bug fix release, Release Candidate v4.0.1-rc.0.
+• Release v4.0.0
+    - Major release introducing significant changes and improvements.
+• Release v3.5.1
+    - Bug fix release.
+• Release v3.5.0
+    - Feature and improvement release.
+• Release v3.4.0
+    - Feature and improvement release.
+• Release v3.3.0
+    - Feature and improvement release.
+• Release v3.2.1
+    - Bug fix release.
+• Release v3.2.0
+    - Feature and improvement release.
+• Release v3.1.2
+    - Bug fix release.
+• Release v3.1.1
+    - Bug fix release.
+• Release v3.1.0
+    - Feature and improvement release.
+• Release v2.5.1
+    - Bug fix release.
+• Release v2.5.0
+    - Feature and improvement release.
+• Release v2.4.0
+    - Feature and improvement release.
+• Release v2.3.2
+    - Release Candidate v2.3.2-rc.0.
+• Release v2.3.1
+    - Bug fix release.
+• Release v2.3.0
+    - Feature and improvement release, Release Candidate v2.3.0-rc.0.
+• Release v2.2.1
+    - Bug fix release.
+• Release v2.2.0
+    - Feature and improvement release.
+• Release v2.1.5
+    - Bug fix release.
+• Release v2.1.4
+    - Bug fix release.
+• Release v2.1.3
+    - Bug fix release.
+• Release v2.1.2
+    - Bug fix release.
+• Release v2.1.1
+    - Bug fix release.
+• Release v2.1.0
+    - Feature and improvement release, Release Candidate v2.1.0-rc.1, v2.1.0-rc.0.
+• Release v2.0.1
+    - Bug fix release.
+• Release v2.0.0
+    - Major release, Release Candidate v2.0.0-rc.0.
+• Release v1.5.2
+    - Bug fix release, Release Candidate v1.5.2-rc.0.
+• Release v1.5.1
+    - Bug fix release.
+• Release v1.5.0
+    - Feature and improvement release, Release Candidate v1.5.0-rc.1, v1.5.0-rc.0.
+• Release v1.4.0
+    - Feature and improvement release, Release Candidate v1.4.0-rc.0
+• Release v1.3.0
+    - Feature and improvement release.
+• Release v1.2.2
+    - Bug fix release.
+• Release v1.2.1
+    - Bug fix release.
+• Release v1.2.0
+    - Feature and improvement release, Release Candidate v1.2.0-rc.0.
+• Release v1.1.3
+    - Bug fix release.
+• Release v1.1.2
+    - Bug fix release.
+• Release v1.1.1
+    - Bug fix release.
+• Release v1.1.0
+    - Feature and improvement release.
+• Release v1.0.6
+    - Bug fix release.
+• Release v1.0.5
+    - Bug fix release.
+• Release v1.0.4
+    - Bug fix release.
+• Release v0.3.5
+    - Bug fix release
+• Release v0.3.4
+    - Bug fix release.
+• Release v0.3.3
+    - Bug fix release.
+• Release v0.3.0
+    - Feature and improvement release.
+• Release v0.2.12
+    - Specification update and preparation for next version.
+• Release v0.2.11
+    - Bug fix release.
+• Release v0.2.10
+    - Bug fix release.
+• Release v0.2.9
+    - Bug fix release.
+• Release v0.2.8
+    - Bug fix release.
+• Release v0.2.7
+    - Bug fix release.
+• Release v0.2.6
+    - Bug fix release.
+• Release v0.2.5
+    - Bug fix release.
+• Release v0.2.3
+    - Bug fix and improvements release.
+• Release v0.2.2
+    - Bug fix release.
+• Release v0.2.1
+    - Bug fix release.
+• Release v0.2.0
+    - Feature and improvement release.
+• Release v0.1.2
+    - Bug fix release.
+• Release v0.1.1
+    - Bug fix release.
+• Medalla Mainnet Launch 
+    - v0.2.0 release prepared for Medalla mainnet launch.
+• Altona Testnet
+    - Altona testnet support introduced.
+• Zinken Testnet
+    - Zinken testnet support added.
+• Testnet5 
+    - Testnet5 documentation and fixes.
+• Testnet3 
+    - Testnet3 parameters and documentation added.
+• Testnet2 
+    - Testnet2 support implemented.
+• Interop
+    - Focus on interoperability with other clients.
+• Merge Support
+    - Initial merge changes and consensus updates for v1.1.5, v1.1.1, and v1.1.0 specs.  Kintsugi merge testnet support.  Addition of execution API, handling of the merge fork, and related features and bug fixes.
+• Altair and Deneb/EIP-4844/Capella Fork Support
+    - Altair hard fork networking, validator client, consensus changes, and sync committee support. Deneb (EIP-4844) implemented and later renamed to Capella. Features include blob handling, gossip, syncing, and RPC endpoints for blobs and data columns. Devnets 3, 4, 6, 8, and 9.
+• Capella Hard Fork
+    - Implementation of the Capella hard fork, including withdrawals, data structures, epoch processing, and related tests.
+• QUIC Support
+    - Experimental QUIC support introduced.
+• PeerDAS Implementation
+    - Implementation of PeerDAS for data availability sampling.
+• Validator Manager
+    - Introduction of validator manager commands and features.
+• Light Client
+    - Various updates to the light client, including metrics, persistence, RPC methods, and support for Capella and Deneb forks.
+• Attestation Simulator
+    - Addition of an attestation simulator.
+• Doppelganger Protection
+    - Implementation of doppelganger detection.
+• WebSockets API
+    - Implementation of Server Sent Events (SSE) and WebSockets API for events and real-time updates.
+• RESTful HTTP API
+    - Initial implementation of RESTful HTTP API, later expanded and aligned with the specification.
+• Networking Improvements
+    - Significant effort dedicated to networking improvements, including libp2p upgrades, gossipsub updates, peer management, discovery, scoring, banning, sync threading, QUIC support, IPv6 support, and handling network timeouts and disconnections.
+• Performance Optimizations
+    - Optimizations for block processing, tree hashing, state storage, SSZ decoding, BLS verification, and database compaction.
+• Security Updates
+    - Updates to address CVEs, dependancy updates, changes to BLS implementation, and slashing protection improvements.
+• Ethereum 2.0 API and Specification Alignment
+    - Implementation and alignment with standard eth2.0 APIs, documentation updates for compliance, and handling various spec versions (v0.6 to v1.5).
+• Documentation Improvements
+    - Consistent documentation updates and improvements to the book, README, and other documentation files.
+• CI and Tooling Enhancements
+    - Improvements to CI workflows, use of Mergify, integration of Kurtosis for local testnets, addition of lcli commands, and multi-arch Docker build support.
+
+[patterns]
+• Continuous Spec Updates
+    - Regular updates to the consensus code, tests, and configurations to keep up with the evolving Ethereum 2.0 specification (v0.6 to v1.5 and beyond).
+    - Impact: Ensures Lighthouse remains compliant with the latest changes in the Ethereum network.
+• Focus on Performance
+    - Consistent effort towards optimising performance-critical parts of the codebase, including block processing, tree hashing, database access, and SSZ encoding/decoding.
+    - Impact: Improves the efficiency and speed of Lighthouse.
+• Emphasis on Networking
+    - Continuous updates and improvements to the networking layer using libp2p, including improved peer management, discovery, scoring, handling disconnections, gossipsub updates, and experimental QUIC support.
+    - Impact: Enhances the stability and resilience of Lighthouse's network connectivity.
+• Code Quality and Testing
+    - Regular use of Rust lints, including Clippy, and a comprehensive test suite covering various aspects of the codebase, including unit tests, integration tests, and EF tests.
+    - Impact: Maintains a high code quality, minimizes bugs, and ensures the stability of the software.
+• Active Community Engagement
+    - Documentation updates, integration of user feedback, and a responsive approach to issues and PRs.
+    - Impact: Creates a more accessible and user-friendly experience.
+• Feature Flag Usage
+    - Utilization of feature flags to enable/disable experimental or in-development features.
+    - Impact: Allows for controlled testing and experimentation without impacting the stability of the main branch.
+• Focus on Security
+    - Updates and patching of dependencies to address CVEs. Implementation of slashing protection.
+    - Impact: Improves the overall security of Lighthouse.
+• Regular Dependency Updates
+    - Consistent bumping of dependencies to newer versions.
+    - Impact: Benefits from latest improvements and bug fixes in external libraries, but can introduce integration challenges.
+• Transition to Mainnet
+    - Updates and configuration changes towards supporting and launching on mainnet, including adding mainnet genesis state and bootnodes.
+    - Impact: Prepares Lighthouse for operation on the live Ethereum network.
+• Refactoring and Code Cleanup
+    - Ongoing code refactoring and cleanup to improve readability, maintainability, and efficiency.
+    - Impact: Enhances long-term code quality and development velocity.
+• CI Improvements
+    - Continuous enhancement of CI workflows, including the use of caching and updated tools, like Kurtosis.
+    - Impact: Speeds up development cycles and improves code quality.
+
+

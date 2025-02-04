@@ -1,0 +1,1 @@
+TypeScript type utility library offering extensive transformations, guards, and deep object manipulation.

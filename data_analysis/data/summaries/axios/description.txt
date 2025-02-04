@@ -1,0 +1,1 @@
+Axios: Promise-based HTTP client (JS/TS) featuring Fetch adapter, enhanced headers, and strong security.

@@ -1,0 +1,87 @@
+[description]
+Babel, a JavaScript compiler
+
+[milestones]
+• Support for ES2016 and ES2017 features
+    - Async generator functions
+    - Async functions
+    - Trailing function commas
+    - Object rest/spread properties
+    - Class properties
+• Improved Flow type support
+    - Def-site variance syntax
+    - Exact object type annotations
+    - Leading pipes in type alias RHS syntax
+    - declare module.exports
+    - declare type and declare interface
+    - export interface
+    - This type annotations
+    - Null literal type annotations
+• Enhanced JSX support
+    - JSX spread children
+    - JSX source annotations
+• Improved code generation
+    - Minified output option
+    - Retain lines option
+    - ASCII-safe string literals
+• Babel Register improvements
+    - Source map path correction
+    - Custom runtime option
+• Improved error handling and messages
+• Enhanced test coverage and CI integration
+• Transition to a monorepo structure using Lerna
+• Introduction of new packages:
+    - babel-preset-latest
+    - babel-preset-es2017
+    - babel-code-frame
+    - babel-template
+• Deprecation of babel-doctor
+• Removal of babel-browser
+
+[patterns]
+• Focus on spec compliance and ESNext features
+    - Implementation of various ES2016/ES2017 features
+    - Continuous updates to Babylon parser and Babel generator
+    - Tests added for spec compliance
+    - Updates to estree and flow types
+    - Strict mode enforcement
+    - Alignment of babel-preset packages
+• Improvement of developer experience
+    - Better error messages
+    - Improved documentation (changelogs, READMEs, AST spec)
+    - Enhanced CLI options
+    - Support for preset organization shortcuts
+    - Introduction of issue and PR templates
+• Focus on performance optimization
+    - Code generation optimizations in babel-generator
+    - Scope cache invalidation and improvements
+    - Lazy-initialization of babel-traverse
+    - Removal of unused dependencies
+    - Optimized destructuring and rest parameter transforms
+• Active maintenance and bug fixing
+    - Numerous bug fixes related to various transforms, code generation, and parsing
+    - Updates to dependencies (e.g., eslint, flow-bin)
+    - Regular changelog updates
+    - Migration to newer versions of Node.js
+• Shift towards a modular architecture
+    - Transition to a monorepo using Lerna
+    - Introduction of new packages and splitting up of existing ones
+    - Removal of unnecessary dependencies in individual packages
+• Increased use of Flow type annotations and ESLint
+    - Flow types added to various modules
+    - ESLint used for code style and quality checks
+    - Focus on improving code style and consistency
+• Emphasis on testing and code coverage
+    - Expanded test coverage
+    - Tests for various edge cases and bug fixes
+    - Integration with code coverage tools (nyc, codecov)
+• Adoption of new tools and technologies
+    - Use of Lerna for monorepo management
+    - Use of json5 for parsing configuration files
+    - Use of cross-env for cross-platform scripting
+• Addressing technical debt
+    - Removal of deprecated plugins and options
+    - Cleanup of unused dependencies and code
+    - Refactoring of code generation logic
+
+

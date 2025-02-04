@@ -1,0 +1,1 @@
+JavaScript immutable state management library with TypeScript, focused on performance and featuring patches.

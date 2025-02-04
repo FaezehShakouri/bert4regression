@@ -1,0 +1,55 @@
+[description]
+Nimbus, an Ethereum client, is actively developed with a focus on efficiency, performance, and adapting to the evolving Ethereum specification. This includes mainnet readiness and support for key upgrades like Capella, Deneb, and Electra, demonstrating a commitment to staying current with the Ethereum roadmap.  The development also emphasizes performance improvements, security enhancements, and improved tooling and documentation.
+
+[milestones]
+• **Major Network Upgrades**:
+    - v1.0.0 Release (Mainnet readiness).
+    - Capella Hard Fork Integration (BLS to execution changes, validator withdrawal support).
+    - Deneb/EIP-4844 Implementation (Blob transactions, KZG commitments).
+    - Electra Hard Fork Support (Blob subnets, single attestations).
+• **Performance Improvements**:
+    - Optimization of attestation processing, block proposal speed, and state loading.
+    - Reduction of memory usage and CPU load.
+    - Implementation of caching mechanisms.
+• **Slashing Protection**:
+    - Introduction and refinement of slashing protection database.
+    - Switch to slashing DB v2.
+• **Peer Management and Networking**:
+    - Implementation of gossipsub v1.1.
+    - Peer scoring and connection limits.
+    - Anonymization of libp2p messages.
+    - Support for discovery v5 and v5.1.
+• **Light Client Integration and Enhancements**:
+    - Initial integration, protocol updates, data collection, persistence, and performance optimizations.
+• **Refactoring and Code Quality**:
+    - Consolidation of modules and data type cleanup.
+    - Removal of obsolete code and technical debt.
+    - Address of build warnings and hints.
+• **Tooling and Documentation**:
+    - Introduction of `ncli_db` database tool.
+    - Rocket Pool and Pi node guides.
+    - Updates to systemd setup instructions.
+    - Improved logging and error messages.
+    - Transition to REST API (implementation of new REST endpoints and updated documentation).
+• **Testnet Support**:
+    - Support for prater, Pyrmont, Toledo, and Zinken testnets.
+• **Validator Client Enhancements**:
+    - Validator APIs return actual balance.
+    - Improvements to key management.
+• **BLS Upgrade**:
+    - Upgrade to BLST v0.3.3.
+• **Dependency Updates and Tooling Improvements**:
+    - Regular dependency bumps and improvements to CI, tooling, and testing infrastructure.
+
+
+[patterns]
+• **Feature-Driven Development**: Development is strongly aligned with Ethereum upgrades (e.g., Capella, Deneb, Electra).
+• **Performance Optimization**:  Recurring focus on reducing memory usage, CPU load, and improving processing speed, particularly in areas like state transitions and signature verification.
+• **Spec Compliance**: Frequent updates to align with the latest Ethereum 2.0 specifications, including automated URL updates and use of latest test vectors.
+• **Increased Testing and Auditing**: Introduction of new tests, fuzzing tests, benchmarking tools, and updates to testing infrastructure.
+• **Refactoring for Maintainability**: Ongoing efforts to consolidate modules, clean up data types, and remove technical debt, improving code maintainability and readability.
+• **Focus on Security**: Implementation of slashing protection, keystore management improvements, and handling of malicious peers.
+• **Improved Documentation and User Experience**: Continuous updates to documentation, READMEs, user guides, error messages, and logging.
+• **Shift from Go to Nim/Technology Adoption**:  Gradual removal of Go code and increased reliance on native Nim libraries like libp2p, and adoption of new technologies like REST API.
+• **Incremental Feature Implementation**: Features implemented incrementally across multiple commits, demonstrating a structured approach.
+• **Potential Technical Debt**:  Occasional reverts and workarounds may indicate areas of potential technical debt requiring future attention.

@@ -1,0 +1,1 @@
+Core-js: Modular JavaScript polyfill library providing modern features across environments with focus on standards compliance.

@@ -1,0 +1,37 @@
+[description]
+This project is Pandas, a Python data analysis library. The commit logs span several months and show active development focused on performance improvements, bug fixes, typing enhancements, and deprecations of older functionalities.  The ArrayManager feature is a significant architectural change being actively worked on.
+
+[milestones]
+• ArrayManager Implementation
+    - Introduction of a new array-based data manager for columnar data storage aiming to improve performance for various operations.
+    - Initial implementation and gradual integration with core functionalities like concatenation, reductions, and indexing.
+• Enhanced StringArray with Arrow Backend
+    - Leveraging Apache Arrow for string operations resulting in significant performance improvements, particularly for string methods and dummy variable creation.
+• Pluggable SQL Engine
+    - Introduction of a new `engine` keyword argument for `to_sql`, enabling users to specify different SQL backends for performance optimization.
+• Styler Enhancements
+    - Multiple improvements to the Styler, including adding tooltips, conditional formatting for index/columns, and enhanced background gradients.
+• Deprecations
+    - Continued deprecation of older APIs like `append`, `ix`, certain positional arguments in `read_csv` and other functions, and special-cased downcasting.  `xlrd` engine for `read_excel` and `xlwt` for writing Excel files. Several Index subclasses in favor of more general Index types. 
+• Type Hinting Improvements
+    - Extensive work on improving type annotations across the codebase, particularly for core modules and libraries. Use of future annotations throughout.
+
+[patterns]
+• Performance Optimization
+    - Recurring commits focus on performance improvements in various areas, including indexing, concatenation, groupby operations, rolling operations, parsing, and Styler rendering.
+    - Use of Cython, Numba, and memory views for optimization. Efforts made to avoid unnecessary copies and optimize hashing.
+• Bug Fixes
+    - Consistent focus on resolving bugs related to various aspects like indexing, type casting, parsing, datetime handling, and edge cases in different functionalities.
+• Typing Enhancements
+    - Ongoing effort to improve type annotations using MyPy throughout the library, with a focus on increasing strictness and using more precise types. Focus on using future annotations. Type aliases and type variables created for clarity and consistency.
+• Deprecations and API Cleanup
+    - Consistent pattern of deprecating older functions and APIs, suggesting a focus on maintaining a cleaner and more consistent API.  Moving away from special-cased logic and simplifying code paths.
+• Testing Improvements
+    - Focus on improving tests by parametrizing existing tests, splitting large tests into smaller modules, adding regression tests for old issues, and tightening testing assertions.  Addressing flaky tests and updating exception messages.
+• Increased use of static methods for efficiency, especially in Styler.
+• Refactoring of core modules like `groupby` and `dtypes.cast`.
+• Focus on sharing methods between Index subclasses to reduce code duplication and improve consistency.  Sharing of internal helper functions.
+• Documentation Improvements
+    - Minor updates and corrections to docstrings, examples, and user guide pages.  Addition of a new page for window operations and various small clarifications.
+• Potential Technical Debt Indicators
+    - Some commits address "TODOs" and "FIXMEs," indicating areas where further work might be needed.  The ongoing architectural changes with ArrayManager could also introduce some temporary instability or require further adjustments in related code.  Some flaky tests suggest possible areas of instability.

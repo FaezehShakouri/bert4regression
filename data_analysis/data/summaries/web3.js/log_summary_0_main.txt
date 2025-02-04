@@ -1,0 +1,51 @@
+[description]
+Web3.py is a Python library for interacting with Ethereum. It provides APIs for various Ethereum functionalities, including contract interaction, transaction management, ENS resolution, and more.
+
+[milestones]
+• Middleware Refactor (v7.0.0):
+    - Introduced a new middleware system to improve modularity and extensibility.
+    - Replaced old middleware functions with classes for better organization and testability.
+    - Improved documentation for middleware and caching.
+• Async Support Enhancements:
+    - Added async support for many core functionalities, including contract interactions, transaction management, and ENS resolution.
+    - Introduced async versions of several providers, including IPCProvider and HTTPProvider.
+    - Provided examples and documentation for using the async APIs.
+• Dropped Python 3.7 Support (v7.0.0):
+    - Removed support for Python 3.7 to streamline development and utilize newer language features.
+• Contract Events API Improvements:
+    - Added sorting and filtering capabilities to contract events.
+    - Provided utility functions for working with event ABIs.
+• Removal of ethpm Module (v7.0.0):
+    - Removed the ethpm module due to deprecation.
+• Batch Requests Support:
+    - Implemented batch request functionality for improved performance when sending multiple JSON-RPC requests.
+• Cancun Network Upgrade Support:
+    - Added support for the Cancun network upgrade, including new transaction fields and RPC methods.
+• ENSIP-15 Support:
+    - Added support for the ENSIP-15 normalization standard.
+• Improved Exception Handling:
+    - Introduced more specific and informative exceptions.
+    - Added user-friendly error messages for improved debugging.
+• WebsocketProviderV2:
+    - Introduced a new websocket provider with improved performance and asynchronous capabilities.
+
+[patterns]
+• Increased Focus on Asynchronous Programming:
+    - A significant number of commits added async support for existing functionalities and providers.
+    - This indicates a shift towards providing more robust and efficient asynchronous interactions with Ethereum.
+• Deprecation and Removal of Older Features:
+    - Several commits deprecated and removed older features and modules, such as ethpm and Python 3.7 support.
+    - This suggests an effort to modernize the library and reduce technical debt.
+• Emphasis on Code Quality and Testing:
+    - Many commits focused on improving code quality, fixing bugs, and enhancing test coverage.
+    - This demonstrates a commitment to maintaining a high-quality and reliable library.
+• Improved Documentation:
+    - Several commits updated and improved the documentation, making it more comprehensive and user-friendly.
+• Performance Improvements:
+    - Commits related to caching, batch requests, and optimized data structures suggest a focus on enhancing performance.
+• Dependency Updates:
+    - Regular updates to dependencies indicate an effort to keep the library up-to-date and secure.
+• Focus on Standards Compliance:
+    - Commits related to ENSIP-15 and Cancun upgrade support highlight the importance of complying with evolving Ethereum standards.
+• Community Contributions:
+    - The logs show contributions from various developers, indicating an active and engaged community.

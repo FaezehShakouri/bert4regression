@@ -1,0 +1,28 @@
+[description]
+A Node.js utility for piping streams together.
+
+[milestones]
+• 3.0.0 Release
+    - Removed fs dependency for broader environment compatibility.
+    - Introduced environment variable configuration.
+• 2.0.0 Release
+    - Breaking change: Removed return of pipeline.
+• 1.0.0 Release
+    - Initial stable release.
+• Pump function returns last stream
+    - Improved usability by returning the last stream in the pipeline.
+
+[patterns]
+• Focus on stability and cross-environment compatibility
+    - Several releases address browser compatibility and remove dependencies.
+    - Indicates a goal to make the library widely usable.
+• Addressing technical debt
+    - Breaking change in 2.0.0 to simplify the API.
+    - Bug fixes related to stream handling and error management.
+• Documentation improvements
+    - Regular updates to README and other documentation.
+    - Shows commitment to user experience and clarity.
+• Community contributions
+    - Several pull requests merged for bug fixes and enhancements.
+    - Demonstrates open-source collaboration and community involvement.
+

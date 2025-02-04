@@ -1,0 +1,1 @@
+Go QUIC implementation: performance-optimized, secure, HTTP/3 support, using standard library TLS & generics.

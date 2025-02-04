@@ -1,0 +1,30 @@
+[description]
+Lodestar, a TypeScript implementation of the Ethereum consensus layer.
+
+[milestones]
+• Enabled ESLint across multiple packages (lodestar-params, lodestar-beacon-state-transition).
+• Implemented a custom JSON RPC client with batched request capabilities and retry logic for large Eth1 requests.
+• Refactored CLI options handling, including using strict options and commands, type-safe beacon node options, and simplified downloadTestsCli logic.
+• General improvements for handling Eth1 data for block production.
+• Implemented a slashing protection mechanism with interchange format and CLI commands.
+• Upgraded libp2p to 0.30 and gossipsub to 0.6.3.
+• Added support for the Pyrmont testnet, including configuration and CLI flags.
+• Performance improvements in block archival, including processing canonical blocks in chunks and using batch operations for database storage.
+• Improved fork choice implementation, including handling orphaned blocks, adding missing unit tests, and using justified balances for onBlock processing.
+• Added and updated REST API endpoints for various functionalities, such as state, pool, proposer duties, attester duties, and events.
+• Optimized gossip validation, including caching seen attestations and restructuring error handling.
+• Introduced performance tests for epoch processing and state transitions.
+• Improved initial sync process to handle orphaned blocks and avoid timeouts.
+• Version bump to v0.12.0.
+
+[patterns]
+• Focus on code quality: enabling ESLint across packages, adding type-safe options, refactoring for clarity, addressing Code Climate issues, and adding strict null checks.
+• Emphasis on performance optimization: batching database operations, improving block archival, optimizing gossip validation, and introducing performance tests.
+• Continuous improvement of core functionalities: fork choice, initial sync, gossip handling, state transitions.
+• Expanding API capabilities: adding and updating REST and JSON RPC endpoints for various functionalities.
+• Active development and integration of external libraries: libp2p, gossipsub, BLS.
+• Ongoing refactoring and technical debt reduction: simplifying CLI options, reorganizing code, removing unused dependencies.
+• Shift towards parallel testing and multi-threaded execution: running spec tests in parallel, splitting long E2E tests.
+• Increased focus on testing: adding unit tests, expanding E2E test coverage, using Mocha.js root hook plugins.
+• Gradual rollout of support for new testnets: Pyrmont, Spadina, Altona, Medalla, Zinken.
+• Addressing security concerns: implementing DOS resistance measures, validating gossip data, and hardening error handling.

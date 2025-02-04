@@ -1,0 +1,1 @@
+Fast HTML entity encoder/decoder (TypeScript, ESM) with trie-based optimization and improved tree shaking.

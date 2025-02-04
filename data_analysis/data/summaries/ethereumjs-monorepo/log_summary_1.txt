@@ -1,0 +1,36 @@
+[description]
+EthereumJS VM project.  Implements the Ethereum Virtual Machine (EVM) in Javascript. Includes utility functions for interacting with the EVM, such as running transactions and blocks, generating accounts, and managing state. Supports various Ethereum hardforks.
+
+[milestones]
+• Upgrade to TypeScript
+    - Gradual migration of codebase from Javascript to TypeScript. Improved type safety, code maintainability, and developer experience.
+• Upgrade to Github Actions
+    - Replaced Travis CI with Github Actions for continuous integration. Improved workflow flexibility and efficiency.
+• Refactoring and simplification of State Manager interface
+    - Improved the State Manager interface, removing direct VM access to the underlying Trie and cache.  Promoted better encapsulation and separation of concerns.
+• Implementation of EIP1191
+    - Added support for EIP1191, allowing chainId to be explicitly set in transactions. Improved transaction security and compatibility.
+• Promisification of VM API
+    - Refactored the VM API to use promises instead of callbacks. Simplified asynchronous code and made the API more user-friendly.
+• Update EthereumJS dependencies for Muir Glacier hardfork
+    - Updated dependencies like ethereumjs-tx, ethereumjs-block, and ethereumjs-common to support the Muir Glacier hardfork. Ensured compatibility with the latest network updates.
+• Upgrade ethereumjs-util to v7
+    - Upgraded the ethereumjs-util dependency to v7. Introduced breaking changes related to buffer and hex string handling in utility functions. Required code adjustments to maintain compatibility.
+• Dual ES5 and ES2017 builds
+    - Implemented dual builds for both ES5 and ES2017. Improved compatibility with different Javascript environments and allowed developers to choose the build that best suited their needs.
+
+[patterns]
+• Focus on code quality and maintainability
+    - Use of linters, formatters (Prettier), and Git hooks (Husky) to enforce code style and prevent common errors. Regular linting and formatting fixes in commit logs demonstrate attention to code quality.
+• Incremental refactoring and improvement of internal code structure
+    - Consistent efforts to refactor and simplify internal code. Examples include splitting large functions into smaller, more manageable units, migrating to ES6 classes, and optimizing specific opcodes for better performance. This indicates a focus on improving code maintainability and performance over time.
+• Increasing use of TypeScript and related tooling
+    - Gradual migration to TypeScript is a recurring theme. Commits related to TypeScript configuration, type annotations, and migration of specific modules indicate a long-term commitment to improving type safety and code maintainability.
+• Regular dependency updates and security audits
+    - Frequent updates of project dependencies, often driven by automated tools like Greenkeeper.  Addressing npm audit alerts shows a focus on security best practices and minimizing vulnerabilities.
+• Emphasis on testing and improving test coverage
+    - Regular addition of tests to improve code coverage and address identified bugs. Refactoring and expansion of test suites across different areas of the project demonstrate a commitment to thorough testing and a test-driven development approach.
+• Addressing technical debt through planned refactoring and upgrades
+    - Targeted efforts to address technical debt by removing deprecated code, simplifying interfaces, and upgrading dependencies. These activities reduce future maintenance burdens and improve the project's overall health.
+• Responding to community feedback and contributions
+    - Incorporation of community contributions and addressing issues raised by users.  Fixes to documentation, examples, and bug reports based on user feedback indicate responsiveness to the community and a commitment to maintaining a collaborative development environment.

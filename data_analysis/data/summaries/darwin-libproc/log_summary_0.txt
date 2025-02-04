@@ -1,0 +1,25 @@
+[description]
+A library providing access to process information on macOS.
+
+[milestones]
+• Initial Release
+    - Basic process information retrieval functions (proc_version, proc_pidpath, proc_name, proc_listpids).
+• macOS Bindings Generation
+    - Automated bindings generation for macOS 10.13 using bindgen.
+• Expanded API Coverage
+    - Added functions for pid_cwd, pid_rusage, and access to proc_bsdinfo via proc_pidinfo.
+    - Constants from proc_info.h made available.
+
+[patterns]
+• Incremental API Expansion
+    - Initial release provided basic functionality, with subsequent commits adding more specialized process information retrieval functions.
+    - Suggests ongoing development and potential for future feature additions.
+• Focus on Platform Compatibility
+    - Explicit support for macOS 10.13 added via bindgen.
+    - Indicates a dedication to maintaining compatibility across different macOS versions.
+• Documentation and Testing Improvements
+    - Updates to documentation links, additional documentation, and test coverage for pid lists.
+    - Demonstrates a commitment to code quality and maintainability.
+• Potential Technical Debt
+    - Early commits lack comprehensive testing. While later commits address some testing gaps, there's a possibility of uncovered areas needing attention.
+    - "Structs re-export" commit message is vague, suggesting potential code organization issues that could benefit from more detailed explanation.

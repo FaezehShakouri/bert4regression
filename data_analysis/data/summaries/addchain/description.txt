@@ -1,0 +1,1 @@
+CLI tool in Go for generating optimized addition chains for cryptographic scalar multiplication.

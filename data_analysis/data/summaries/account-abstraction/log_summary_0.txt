@@ -1,0 +1,43 @@
+[description]
+This project implements ERC-4337, a standard for account abstraction in Ethereum. The commit logs track its development from initial contract creation to a more mature state, including core contracts, sample implementations, testing, and deployment scripts.  The project aims to improve the user experience and security of Ethereum accounts.
+
+[milestones]
+• Account Abstraction (ERC-4337) Implementation
+    - Core contracts: EntryPoint, BaseAccount, Paymasters
+    - Sample implementations: SimpleAccount, TokenPaymaster, BLSAccount
+    - RPC methods for bundlers and users
+    - Gas optimization and validation rules
+• ERC-7562 (Reputation System)
+    - Introduction of reputation rules and updates to the specification
+• Security Audits and Bug Fixes
+    - Addressing vulnerabilities and improving code quality based on audit reports
+• Tooling and Testing Improvements
+    - Introduction of gas testing, simulations, and linting
+• Code Refactoring and Cleanup
+    - Removal of unused code, improved code organization, and consistent naming conventions
+• Deployment Scripts and Deployment on Testnets
+    - Automation of contract deployments
+
+
+[patterns]
+• Iterative Development based on Audit Feedback
+    - Numerous commits address specific audit findings (e.g., L-01 to L-14, N-01 to N-14, H-01 to H-10).
+    - Impact: Enhanced security and robustness of the implementation.
+• Focus on Gas Optimization
+    - Recurring theme of gas optimization commits (e.g., "gas-optimize deposit", "Pack gas fees").
+    - Impact: Reduced transaction costs for users.
+• Evolution of UserOperation Structure
+    - Changes in UserOperation fields and packing strategies (e.g., "Packing UserOperation and paymaster gas limits").
+    - Impact: Improved efficiency and flexibility of UserOperations.
+• Development of Supporting Infrastructure
+    - Creation of RPC methods, debugging tools, and simulations.
+    - Impact: Easier integration and development for bundlers and wallet developers.
+• Transition from Wallet to Account Terminology
+    - Consistent renaming of "wallet" to "account" across the codebase.
+    - Impact: Alignment with the ERC-4337 terminology.
+• Refinement of Validation and Bundling Rules
+    - Several updates to validation rules and bundling logic for security and consistency.
+    - Impact: More secure and predictable account behavior.
+• Code Quality Improvements through Linting and Cleanup
+    - Introduction of linting and commits addressing code style and unused code.
+    - Impact: Improved maintainability and readability of the codebase.

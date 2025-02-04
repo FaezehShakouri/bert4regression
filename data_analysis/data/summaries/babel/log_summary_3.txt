@@ -1,0 +1,68 @@
+[description]
+Babel (formerly 6to5) is a JavaScript transpiler that converts ES6+ code into backwards-compatible ES5 code. This allows developers to use the latest JavaScript features while maintaining support for older browsers.
+
+[milestones]
+• Babel CLI and External Helpers
+    - Introduced a dedicated CLI tool for easier command-line usage (`babel-cli`).
+    - Implemented external helpers, allowing runtime dependencies to be modularized and reducing code duplication.
+    - Added options for specifying helper whitelist and custom module IDs.
+
+• Plugin API
+    - Introduced a plugin API, allowing developers to extend Babel's functionality with custom transformations and plugins.
+    - Created a more modular architecture for easier maintenance and extension.
+
+• Runtime Transformation and Performance Improvements
+    - Implemented a runtime transformer that converts ES6 features to ES5 at runtime.
+    - Improved performance through optimization of hot paths, reduced closures, and minimized node allocations.
+
+• Enhanced Scope Tracking and Error Handling
+    - Enhanced scope tracking to avoid variable collisions and improve code generation, especially with `let` and `const`.
+    - Improved error handling with better error messages and syntax highlighting in code frames.
+    - Implemented a prepass to check which transformers need to be run.
+
+• JSX Support and Optimization
+    - Improved JSX support by making the transformer more generic, allowing comments, and optimizing for React.
+    - Added support for spread attributes, constant elements, and JSX pragmas.
+
+• ES6 Modules and Module Formatters
+    - Finalized ES6 modules support and added support for various module formats (AMD, CommonJS, SystemJS, UMD).
+    - Improved handling of module exports, default exports, and wildcard imports.
+    - Added an option for custom module resolution.
+
+• Core-js Integration
+    - Integrated core-js for polyfilling ES6 features not yet supported by browsers.
+    - Switched from `es6-symbol` and `es6-shim` to `core-js`.
+
+• Miscellaneous Features
+    - Added support for ES7 features like decorators, object rest/spread, and exponentiation operator.
+    - Implemented tail call optimization, class property initializers, and computed class properties.
+    - Added support for Flow types.
+
+• Renaming from 6to5 to Babel
+    - Renamed the project from 6to5 to Babel.
+
+
+[patterns]
+• Rapid Iteration and Feature Implementation
+    - Frequent commits and releases indicate a fast-paced development cycle.
+    - Continuous addition of new features and transformers, reflecting a focus on staying up-to-date with the evolving JavaScript language.
+
+• Focus on Performance and Optimization
+    - Recurring commits related to performance improvements suggest a commitment to efficient code generation.
+    - Use of optimization techniques like loop unrolling and object lookups.
+
+• Community Involvement and Collaboration
+    - Multiple pull requests from external contributors demonstrate active community involvement.
+    - Incorporation of feedback from users and integration of community plugins.
+
+• Addressing Technical Debt
+    - Refactoring and reorganization of codebase, such as the transition from nodes to paths, indicate efforts to manage technical debt.
+    - Simplifying code generation logic and removing dead code.
+
+• Testing and Code Quality
+    - Inclusion of tests for new features and regular updates to the test suite.
+    - Use of linters (JSHint, JSCS) and code style guidelines.
+
+• Experimental Features and Playground
+    - Inclusion of experimental transformers behind a flag suggests a focus on exploring new language features and proposals.
+    - Introduction of a "playground" for experimental features.

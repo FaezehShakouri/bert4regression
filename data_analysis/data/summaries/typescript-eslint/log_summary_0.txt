@@ -1,0 +1,36 @@
+[description]
+The `typescript-eslint` project provides a tooling ecosystem for linting TypeScript code.  Its core components include `typescript-estree` (a parser that converts TypeScript into an ESTree-compatible Abstract Syntax Tree (AST) for ESLint compatibility) and `eslint-plugin` (an ESLint plugin containing numerous custom rules for TypeScript). The project emphasizes accurate TypeScript parsing, AST transformations, scope analysis, and leveraging TypeScript's type system for enhanced linting and improved type safety.
+
+[milestones]
+* TypeScript Version Support:  Added support for TypeScript 4.2, 4.3, and 5.x features (including overrides on class members, getter/setter signatures, explicit resource management, auto accessors, satisfies operator, and const type parameters). Enhanced AST types for stricter representations.
+* ESLint Version Support: Upgraded to ESLint v7 and v9, adopting new features like flat config support and ensuring compatibility.
+* Project Service Integration: Implemented `parserOptions.projectService` and related options (e.g., `allowDefaultProjectForFiles`) for project-based linting with improved config resolution and debug logging.
+* Rule Enhancements & Deprecations: Enhanced existing rules (e.g., `no-unnecessary-condition`, `no-floating-promises`), deprecated rules in favor of ESLint core rules (e.g., formatting rules, `no-duplicate-imports`), and introduced new rules (e.g., `no-unsafe-enum-comparison`, `no-duplicate-type-constituents`).
+* `rule-tester` Package: Created a dedicated package for testing custom lint rules.
+* Nx Monorepo Migration: Migrated the project to an Nx monorepo structure.
+* AST Specification Module: Refactored AST specification into a separate module.
+* Scope Manager Package: Introduced the `scope-manager` package for enhanced scope analysis (including JSX and decorator support).
+* Splitting of Core Modules: Split visitor keys and types into separate packages.
+* Support for Optional Chaining and Nullish Coalescing: Added support for these operators.
+* Custom Module Resolution Support: Implemented custom module resolution.
+* Decorator Metadata Support: Enabled support for decorator metadata.
+* Project References Handling: Improved handling of project references.
+* Website Revamp: Migrated documentation to a new website with a playground, ESQuery visualizer, and improved navigation.
+
+[patterns]
+* Increased Type Safety: Continuously improving type safety within AST definitions, predicates, utility functions, and rules.  Focus on leveraging type information within rules (e.g., `no-unsafe-type-assertion`).
+* Performance Optimization:  Addressing performance in parsing and scope analysis, utilizing SWC for faster testing, and optimizing rule execution.
+* AST Alignment with ESTree:  Ongoing effort to align the generated AST with the ESTree standard.
+* Expansion of Rule Set: Continuous development and refinement of rules, including migration from TSLint and extending existing ESLint rules.
+* Gradual Shift to ESLint Core Rules: Deprecating custom rules that overlap with ESLint core rules and encouraging their use.
+* Documentation Improvements: Regular updates and a focus on comprehensive documentation, including a revamped website.
+* Community Contributions: Active community involvement and contributions.
+* Refactoring and Simplification:  Periodic refactoring for code clarity and maintainability.
+* Focus on Correctness and Bug Fixes:  Addressing bug fixes and regressions for stability and reliability.
+* Testing Enhancements: Improving testing infrastructure, including integration and AST alignment tests.
+* Adoption of New Technologies: Integrating new tools and best practices (e.g., Nx, Prettier, ESLint upgrades).
+* Managing Technical Debt: Addressing potential technical debt by removing deprecated APIs and dependencies and refactoring code.
+* Improving Developer Experience:  Enhanced documentation, issue templates, and standardized rule documentation.
+* Continuous Dependency Updates: Frequent dependency updates for new features and security.
+* Proactive Maintenance: Regular dependency bumps, coding style enforcement, and clear documentation.
+* Addressing Community Feedback: Incorporating community input into development.

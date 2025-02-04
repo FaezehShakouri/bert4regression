@@ -1,0 +1,1 @@
+JavaScript monorepo for secure Dapp-wallet connections using QR codes and deep links.

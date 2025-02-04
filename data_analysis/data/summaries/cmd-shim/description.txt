@@ -1,0 +1,1 @@
+Node.js cmd-shim manages executable shims, supporting cross-platform execution and various Node.js versions.

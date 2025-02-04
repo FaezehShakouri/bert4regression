@@ -1,0 +1,73 @@
+[description]
+Remix IDE is a browser-based Integrated Development Environment (IDE) primarily for Solidity smart contract development, but with growing support for other languages like Vyper, Circom, and Cairo.  The project focuses on feature development, testing, refactoring, UI/UX improvements, and external library updates.  Key areas of development include plugin architecture, AI integration, debugging enhancements, and support for multiple networks and providers.
+
+[milestones]
+• AI Integration:
+    - AI chat, code explanation, and code completion features.
+    - Transitioning between AI models (OpenAI, Solcoder, Llama).
+• Plugin Development & Enhancements:
+    - Static analysis plugins (Solhint, Slither).
+    - Documentation generator plugin.
+    - Etherscan verification plugin with proxy support and UI improvements.
+    - Saved state provider plugin.
+    - Web3 provider plugin.
+    - Contract verification plugin (Etherscan, Sourcify, Routescan).
+• File Explorer Enhancements:
+    - New flat tree view with multi-select, drag-and-drop, and file decorators.
+• Language Support:
+    - Vyper compiler updates and UI integration.
+    - Circom language support added (configuration, icons, compiler integration).
+    - Cairo (StarkNet) support added.
+    - Optimism compiler support.
+• Universal UDApp UI:
+    - New UI for contract interaction, deployment, and transaction logging.
+    - Recorder module for capturing and replaying interactions.
+    - Low-level interaction and response decoding.
+• Debugging Enhancements:
+    - Solidity locals panel and decoding for various types.
+    - Jump to exception, improved stepping, SSTORE cost calculation.
+• Remixd Integration Improvements:
+    - Enhanced error handling and feedback.
+• Testing Framework Enhancements:
+    - Improved time calculation and issue resolution in tests.
+    - Remix-tests CLI with relative path support.
+    - Automated UI testing using nightwatch and saucelabs.
+• Build System and Dependency Updates:
+    - Web3.js updated to v4.
+    - OpenZeppelin contracts updated.
+    - Various dependency bumps for security and functionality.
+    - React migration for many core plugins.
+• UI/UX Improvements:
+    - New themes (Violet, Pride/Unicorn).
+    - Accessibility improvements (placeholder text, button colors, tooltips).
+    - Redesigned run tab and debugger UI.
+    - Terminal improvements (resizing, styling, provider bug fixes).
+    - Editor improvements (Solidity warnings, context view, line highlights, auto-closing brackets).
+    - Refreshed Home tab (scam alert, file/folder creation fixes, backup functionality).
+• Solidity Compiler Updates:
+    - Support for multiple compilers.
+    - Improved compilation error handling and feedback.
+    - Metadata handling improvements (saving, generation, deployment).
+• Static Analysis Improvements:
+    - Solhint and Slither integration.
+    - UI improvements with tabs for analysis categories.
+    - Enhanced messages and reporting.
+
+[patterns]
+• Focus on Plugin Development: Continued development and improvement of plugins to extend functionality.
+• Emphasis on UI/UX Enhancements:  Consistent focus on improving user experience and accessibility.
+• Active Dependency Management: Regular updates to external libraries and dependencies.
+• Addressing Technical Debt: Ongoing refactoring, code cleanup, and linting efforts.
+• Iterative Development and QA: Frequent bug fixes and testing improvements alongside feature development.
+• Transition to React: Migration of core components to React for improved maintainability.
+• Increased Focus on Testing: Enhancements to testing frameworks and introduction of automated UI testing.
+• Focus on Modularity and Code Organization: Refactoring efforts to improve code structure and maintainability.
+• Growing Plugin Ecosystem:  Expanding support for new languages and tools via plugins.
+• Enhanced Solidity Compiler Support: Ongoing updates and improvements to Solidity compiler integration.
+• Growing Support for Development Frameworks and Alternative Languages: Integration of support for Vyper, Circom, Cairo, and other tools.
+• Focus on Improving the Debugger: Enhancements to debugging capabilities, including Solidity variable decoding and stepping functionality.
+• Iterative Development on AI Features: Gradual implementation and refinement of AI-powered features.
+• Emphasis on Metadata Management: Improvements to contract metadata handling and deployment.
+• Transition to Plugin Architecture:  Shifting core components to a plugin-based architecture for greater flexibility.
+• Close Collaboration with Remixd:  Improving integration with Remixd for local development workflows.
+• Commitment to Static Analysis: Continued development of static analysis features for improved code quality.

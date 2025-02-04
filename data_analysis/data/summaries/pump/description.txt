@@ -1,0 +1,1 @@
+Node.js stream piping utility with environment variable configuration and broad compatibility.

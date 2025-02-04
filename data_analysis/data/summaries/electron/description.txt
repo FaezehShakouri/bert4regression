@@ -1,0 +1,1 @@
+Electron builds cross-platform desktop apps using Chromium and Node.js, focusing on security, performance, and modern APIs.

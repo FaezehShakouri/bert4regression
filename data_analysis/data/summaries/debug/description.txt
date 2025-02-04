@@ -1,0 +1,1 @@
+Node.js/browser debugging utility with color output, namespace filtering, and formatters.

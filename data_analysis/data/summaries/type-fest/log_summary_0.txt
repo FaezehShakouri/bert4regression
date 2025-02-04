@@ -1,0 +1,25 @@
+[description]
+A TypeScript utility library providing a wide range of type transformations and guards.
+
+[milestones]
+• Expanded string manipulation: Added support for longer strings in `StringRepeat` and `Split` types, addressing previous limitations.
+• Improved union handling: Enhanced various types like `StringRepeat`, `KeysOfUnion`, `IsStringLiteral`, `SetRequiredDeep`, and `Sum`/`Subtract` to correctly handle union types, improving type safety and accuracy.
+• Enhanced deep type manipulation: Introduced `PickDeep`, `OmitDeep`, `ConditionalPickDeep`, `PartialOnUndefinedDeep`, `UndefinedOnPartialDeep`, `ReadonlyDeep`, `WritableDeep`, `CamelCasedPropertiesDeep`, and `DelimiterCasedPropertiesDeep`, enabling more complex and precise type transformations within nested objects and arrays.
+• Performance optimizations: Optimized the `Get` type for improved performance, particularly with complex paths.
+• New utility types: Added numerous new types like `IsTuple`, `SetRequiredDeep`, `SharedUnionFields`, `IntRange`, `IntClosedRange`, `Arrayable`, `SharedUnionFieldsDeep`, `Or`, `And`, `IsNull`, `IsInteger`, `IsFloat`, `SingleKeyObject`, `IfEmptyObject`, `DistributedPick`, `DistributedOmit`, `ArraySlice`, `StringSlice`, `IsNegative`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan`, `LessThanOrEqual`, `Sum`, `Subtract`, `UnionToTuple`, `ArraySplice`, `Tagged`, `UnwrapTagged`, `Branded`, `UnknownArray`, `SetFieldType`, `ArrayValues`, `SetParameterType`, `ArrayIndices`, `UndefinedOnPartialDeep`, `KeysOfUnion`, `OverrideProperties`, `WritableKeysOf`, `ReadonlyKeysOf`, `RequiredDeep`, `NonEmptyObject`, `IsAny`, `IsNever`, `IsUnknown`, `LiteralToPrimitiveDeep`, `HasReadonlyKeys`, `HasWritableKeys`, `Writable`, `RequireOneOrNone`, `UnknownRecord`, `Jsonifiable`, `SetReadonly`, `Exact`, `GlobalThis`, `Spread`, `TupleToUnion`, `NonEmptyTuple`, `FindGlobalType`, `FindGlobalInstanceType`, `StructuredCloneable`, `OptionalKeysOf`, `HasOptionalKeys`, `RequiredKeysOf`, `HasRequiredKeys`, `MultidimensionalArray`, `Includes`, `Replace`, `ObservableLike`, `ReadonlyTuple`, `IsEqual`, `InvariantOf`, `Schema`, `RemoveIndexSignature`, `StringKeyOf`, `LiteralToPrimitive`, `AbstractClass`, `TaggedUnion`, `RequireAllOrNone`, `SetNonNullable`, `SimplifyDeep`, `OmitIndexSignature`, `PickIndexSignature`, `EmptyObject`, `IsEmptyObject`, `ConditionalSimplify`, `ConditionalSimplifyDeep`, `SetReturnType`, `Asyncify`, `Entry`, `Entries`, `LiteralUnion`, `IterableElement`, `FixedLengthArray`, `Stringified`, `RequireExactlyOne`, `Mutable`, `Promisable`, `ValueOf`, expanding the library’s capabilities.
+• Improved documentation: Added examples and clarifications to JSDoc comments and the readme, making the library easier to understand and use.
+• Maintainer onboarding: Welcomed new maintainers to the project, fostering community involvement and ensuring long-term maintenance.
+• TypeScript version updates: Bumped the required TypeScript version multiple times, keeping up with the latest features and improvements.
+• Dependency updates: Regularly updated dependencies, including TypeScript and various dev dependencies, improving stability and security.
+• Breaking changes: Required Node.js 16 and TypeScript 5.1, dropped support for older versions, potentially impacting existing users. Removed `PromiseValue` in favor of built-in `Awaited`, changed `Mutable` to `Writable`, renamed `RemoveIndexSignature` alias, removed alias for `Omit`, potentially impacting existing users.
+
+
+[patterns]
+• Focus on utility types: The majority of commits involve adding, improving, or fixing utility types, demonstrating a consistent focus on expanding and refining the library's core functionality.
+• Community contributions: Several new types and improvements were contributed by the community, highlighting the project's active and engaged user base.
+• Iterative improvement: Many types underwent multiple revisions and bug fixes, indicating a commitment to quality and addressing user feedback.
+• Performance consciousness: The optimization of the `Get` type demonstrates a concern for performance, likely driven by real-world usage patterns.
+• Regular maintenance: Consistent dependency updates and refactoring indicate a well-maintained project.
+• Documentation improvements: The ongoing effort to improve documentation suggests a focus on user experience and accessibility.
+• Breaking changes managed: While breaking changes were introduced, they were often accompanied by clear explanations and justifications.
+• Increased strictness: Increasing the minimum required Node.js and TypeScript versions, enabling stricter type checking in the `Get` type, and making the `PackageJson` and `JsonObject` types stricter, all suggest a growing emphasis on type safety and correctness.

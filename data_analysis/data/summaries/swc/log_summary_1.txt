@@ -1,0 +1,67 @@
+[description]
+SWC, a super-fast TypeScript / JavaScript compiler.
+
+[milestones]
+• Performance optimizations across multiple modules (es/parser, es/minifier, es/transforms, common, bindings, node).
+    - Parallel processing of transforms, minifier passes, and name mangler.
+    - Optimized memory layout for AST types and reduced type sizes.
+    - Reduced call stacks, memory allocation, and usage of generics.
+    - Use of `jemalloc` for Linux builds and `fxhash` for hashing.
+    - LTO enabled for bindings.
+    - Reduced CI time.
+• Improved Minifier
+    - Implemented numerous minification rules, including loop optimizations, dead code elimination, conditional evaluation, pure function dropping, and improved alias analysis.
+    - Added support for `pure_funcs`, `pristine_globals`, and char frequencies.
+    - Enhanced the minifier comparator tool and added a CLI for debugging.
+• Enhanced Plugin System
+    - Added `SourceMap` APIs and implemented a plugin interface for WASM runtimes.
+    - Introduced `PluginContext` and tracing of plugin execution.
+    - Added support for global `HANDLER` and comments in the plugin context.
+• Upgraded TypeScript Support
+    - Support for TypeScript 4.2 and 4.3 features, including static index signatures, type-only import equals declarations, and override syntax.
+    - Improved handling of namespaces and enums.
+• Enhanced Testing Infrastructure
+    - Migrated tests to file-based fixtures and expanded execution tests.
+    - Added snapshot testing for the minifier and a diff tool for ECMA-Script.
+• Improved CSS Support
+    - Ported Stylis and implemented CSS code generation with minification capabilities, including compression of colors, selectors, and declarations.
+    - Implemented a CSS parser with improved error recovery.
+• React Fast Refresh Support
+    - Implemented Fast Refresh support and improved JSX entity escaping.
+• Upgraded Dependencies and Build System
+    - Updated various dependencies, including `browserslist-rs`, `napi`, `rkyv`, and `wasmer`.
+    - Upgraded to Rust 2021 edition.
+    - Improved build scripts and CI configuration.
+• Enhanced AST APIs and Utilities
+    - Implemented `Take` trait for AST types and improved error messages for wrong usages of scoped thread-local variables.
+    - Improved APIs for plugin authors.
+    - Added a pretty error reporter.
+• Improved Documentation
+    - Added examples for using Rust APIs and updated contribution guidelines.
+    - Added a Discord server link and more badges to the documentation.
+
+[patterns]
+• Focus on Performance Improvement
+    - Evidence: Recurring `perf` commits across various modules, introduction of parallel processing, memory optimization, and dependency updates.
+    - Impact: Significantly improved compilation speed and reduced resource usage.
+• Incremental Minifier Development
+    - Evidence: Continuous addition of minification rules and improvements to existing passes.
+    - Impact: Gradual reduction in output size and alignment with Terser's functionality.
+• Prioritization of TypeScript Support
+    - Evidence: Continuous updates and bug fixes related to TypeScript features and transforms.
+    - Impact: Ensured compatibility with the latest TypeScript versions and improved type checking.
+• Emphasis on Testing and Correctness
+    - Evidence: Expansion of the test suite, introduction of snapshot and execution tests, and focus on source map correctness.
+    - Impact: Enhanced code reliability and reduced regressions.
+• Increased Support for Plugin Development
+    - Evidence: Introduction of plugin APIs for comments and metadata, alongside improved documentation.
+    - Impact: Empowered plugin authors to extend SWC's capabilities more easily.
+• Focus on Code Quality and Maintainability
+    - Evidence: Use of Clippy for linting, refactoring efforts to improve code structure, and removal of unused dependencies.
+    - Impact: Improved code readability and reduced technical debt.
+• Active Community Engagement
+    - Evidence: Responsiveness to community contributions and bug reports, and clear communication through documentation and issue templates.
+    - Impact: Fostered a collaborative environment and facilitated faster development cycles.
+• Potential Technical Debt
+    - Evidence: Occasional reverts of changes and workarounds for dependencies.
+    - Impact: Could lead to future maintenance challenges if not addressed systematically.

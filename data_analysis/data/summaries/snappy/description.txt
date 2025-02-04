@@ -1,0 +1,1 @@
+Node.js Snappy compression/decompression library focused on performance, cross-platform compatibility, and maintenance.

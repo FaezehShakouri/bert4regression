@@ -1,0 +1,38 @@
+[description]
+A library for manipulating strings, especially useful for source code transformations, with features for managing sourcemaps and creating bundles.
+
+[milestones]
+• Source Map Management
+    - Introduced support for sourcemap generation and manipulation, including encoding, decoding, and integration with bundling.
+• Bundling
+    - Implemented `MagicString.Bundle` to combine multiple magic strings, facilitating complex code transformations.
+• String Manipulation API
+    - Added methods for string manipulation like `overwrite`, `insert`, `remove`, `trim`, `indent`, and `slice`, providing a comprehensive toolset for modifying source code.
+• Performance Improvements
+    - Optimized core algorithms like locate, encoding, and decoding, reducing memory overhead and improving processing speed, particularly for large files.
+• Web Worker Support
+    - Ensured compatibility with Web Workers by switching to the global `btoa` function.
+• Ignore List Functionality
+    - Added support for ignore lists to exclude specific sources from transformations.
+• New `update` and `reset` methods
+    - Provided a safer `update` method as an alternative to `overwrite`, and also introduced a new `reset` method.
+• Refactoring and Dependency Updates
+    - Migrated to ESLint flat config, refactored tests using Vitest, switched to pnpm, and upgraded dependencies to improve maintainability and performance.
+• TypeScript Support
+    - Improved TypeScript definitions for better type safety and integration with TypeScript projects.
+
+[patterns]
+• Performance Optimization
+    - Recurring commits focused on improving performance of encoding/decoding, locating, and string manipulation operations. This indicates a commitment to efficient processing of large codebases.
+• Incremental Feature Additions
+    - New methods and features were introduced gradually over time, suggesting a focus on iterative development and addressing specific user needs.
+• Community Contributions
+    - Several pull requests from external contributors were merged, indicating a healthy and active open-source community.
+• Addressing Edge Cases and Bug Fixes
+    - Numerous commits addressed specific edge cases and bugs related to sourcemap generation, string manipulation, and various utility functions. This demonstrates attention to detail and robustness.
+• Refactoring and Maintenance
+    - Regular dependency updates, code formatting, and tool migrations (e.g., ESLint, Vitest, pnpm) show a commitment to maintaining code quality and staying up-to-date with best practices.
+• Testing and Integrity
+    - Emphasis on testing, with updates and additions to test suites alongside feature implementations and bug fixes, suggesting a strong focus on ensuring correctness.
+• Documentation Improvements
+    - Updates to README and other documentation reflect a commitment to clear and comprehensive user guidance.

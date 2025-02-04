@@ -1,0 +1,58 @@
+[description]
+The project is py.test, a testing framework for Python.  The logs show development activity focused on a transition away from setuptools, improvements to the plugin system, documentation enhancements using Sphinx and Pygments, distributed testing features, and significant refactoring for version 1.0.
+
+[milestones]
+• Transition from setuptools to a different build system
+    - Motivated by ongoing problems with setuptools.
+• Plugin System Overhaul
+    - Renamed and refactored plugin-related objects.
+    - Introduced a new PluginAPI and MultiAPI for managing plugin calls.
+    - Shifted to keyword arguments for plugin calls.
+    - Introduced pytest_item_makereport hook for xfail plugin.
+    - Implemented a mechanism to exclude results from other plugins.
+    - Added a -p option to add plugins from the command line.
+• Documentation with Sphinx and Pygments
+    - Switched to Sphinx for documentation generation.
+    - Used Pygments for syntax highlighting of Python code and console output.
+• Distributed Testing Enhancements
+    - Implemented "--dist=each" to distribute tests to each available node.
+    - Improved node management and result reporting.
+    - Added the ability to send a test item to multiple nodes.
+    - Introduced options like --hosts (later renamed --gateways) and --rsyncdirs.
+• Refactoring for 1.0
+    - Removal of global setupstate.
+    - Introduction of py.test.collect.File.
+    - Renaming of py.test.keywords to py.test.mark.
+    - Internal renaming and cleanup of events and plugin calls.
+• Twisted Plugin
+    - Initial import of pytest_twisted plugin.
+• Figleaf Plugin
+    - Added pytest_figleaf plugin for code coverage.
+    - Filtering of coverage for files outside tested package.
+
+[patterns]
+• Focus on Plugin Architecture:
+    - Frequent renames, additions, and refactoring of plugin components.
+    - Impact: Improved plugin API, more flexibility for extensions.
+• Move towards Distributed Testing:
+    - Implementation of distributed test execution and reporting features.
+    - Impact: Enabled parallel test execution, scalable testing.
+• Documentation Improvement:
+    - Adoption of Sphinx and Pygments.
+    - Rewriting and reorganizing documentation content.
+    - Impact: Enhanced readability and navigability of documentation.
+• Refactoring and Cleanup:
+    - Removal of dead code, renames for consistency, and streamlining of internal calls.
+    - Impact: Improved code maintainability and reduced technical debt.
+• Addressing Technical Debt:
+    - Explicit effort to remove old, unused, or problematic code (e.g., setuptools, global setupstate).
+    - Impact: Improved long-term stability and maintainability.
+• Cross-Python Compatibility:
+    - Fixes and tests to ensure compatibility across different Python versions (2.3, 2.4, 2.5, 2.6).
+    - Impact: Broader user base and platform support.
+• Windows Support Improvements:
+    - Specific fixes for issues on Windows related to terminal, paths, and execnet.
+    - Impact: Better support for Windows developers.
+• Performance Optimization:
+    - Focus on reducing tracing overhead and avoiding unnecessary operations.
+    - Impact: Faster test execution.

@@ -1,0 +1,62 @@
+[description]
+Atom Shell, later renamed Electron, is a framework for building cross-platform desktop applications using web technologies. This commit log covers development activities between 2015-04-09 and 2016-02-15, focusing on features, bug fixes, documentation improvements, internationalization, and build system enhancements.
+
+[milestones]
+• Renaming to Electron
+    - Project officially renamed from Atom Shell to Electron.
+    - Updates to documentation, code, and build systems to reflect the new name.
+• Chrome 42 to 47 upgrades
+    - Chromium updated from version 42 to 47, bringing in new features and API changes.
+    - Updates to Electron's code to adapt to these API changes.
+• Introduction of the 'session' module
+    - A new 'session' module added to provide ways to manage browser sessions, cookies, proxy settings, and more.
+    - APIs added to clear cache, set proxy, handle certificate verification, and emulate network conditions.
+• Introduction of the 'desktopCapturer' API
+    - A new API to capture desktop screens and windows.
+• Mac App Store Submission Guide
+    - Documentation added to guide developers submitting apps to the Mac App Store.
+• Improved documentation and internationalization
+    - Documentation updated for clarity, grammar, and consistency.
+    - New translations added for various languages, including French, Japanese, Korean, Russian, Spanish, and Ukrainian.
+• Windows toast notifications implemented
+    - Support added for Windows toast notifications.
+• Enhanced auto-updater
+    - Improvements and bug fixes for auto-updater on different platforms.
+• WebRequest API and Protocol API enhancements
+    - New features and bug fixes related to web requests and custom protocols.
+    - Enhancements for filtering events, handling responses, and setting headers.
+• Removal of CoffeeScript and ES6 classes
+    - Project migrated from CoffeeScript to JavaScript.
+    - ES6 class usage removed for better compatibility.
+• Introduction of ipcMain and ipcRenderer modules
+    - New ipcMain and ipcRenderer modules introduced to replace the old ipc module.
+• ESlint introduced
+    - ESLint added to improve code quality and consistency.
+• FrameSubscriber memory leak fixed
+    - Memory leak fixed in FrameSubscriber.
+
+[patterns]
+• Active development with frequent API changes and additions
+    - Frequent commits indicate active development.
+    - Many commits related to API updates and new feature additions.
+• Focus on improving platform compatibility and resolving platform-specific issues
+    - Many commits address platform-specific bugs and inconsistencies.
+    - Efforts made to improve cross-platform compatibility.
+• Emphasis on documentation and internationalization
+    - Many commits dedicated to improving documentation quality and adding new translations.
+• Shift towards using more standard JavaScript and improved code quality
+    - Migration from CoffeeScript to JavaScript and removal of ES6 classes indicate a shift toward standard practices.
+    - Introduction of ESLint indicates focus on code quality.
+• Addressing technical debt
+    - Occasional commits related to memory leak fixes and code cleanup suggest ongoing efforts to address technical debt.
+    - However, the rapid pace of development may also lead to accumulation of technical debt.
+• Prioritization of performance
+    - Commits related to ASAR performance optimization and IPC improvements.
+• Reactive bug fixing
+    - Some commits are direct responses to reported issues and crashes. 
+    - Suggests a reactive approach to bug fixing.
+• Security considerations
+    - Improvements related to certificate verification, CORS, and web security.
+• Lack of extensive test coverage indicators
+    - Not many explicit mentions of testing or test coverage.
+    - Some commits suppress or make tests more reliable on CI, implying that there might be flaky tests.

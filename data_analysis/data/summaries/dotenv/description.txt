@@ -1,0 +1,1 @@
+Node.js module loads .env files, supports multi-line values, error handling, and secure .env.vault files.

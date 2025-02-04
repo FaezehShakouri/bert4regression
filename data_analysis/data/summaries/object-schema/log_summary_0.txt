@@ -1,0 +1,30 @@
+[description]
+A library for merging and validating configuration objects.  Started with basic merging functionality and evolved to include custom error types, built-in merge strategies, subschema support and a redesigned API.
+
+[milestones]
+• Release 2.0.0
+    - Throw custom errors instead of generics.
+• Release 1.2.0
+    - Subschema support introduced.
+    - Default validation strategies added.
+    - New merge strategy: replace().
+• Release 1.1.0
+    - Key added to error messages during merge.
+• Release 1.0.0
+    - API redesigned.
+• Initial Commit
+    - Basic merging functionality implemented.
+
+[patterns]
+• Regular releases and dependency updates
+    - Evidence: Frequent release commits and dependabot updates.
+    - Impact: Demonstrates good project maintenance.
+• Focus on error handling and validation
+    - Evidence: Several commits related to improved error messaging and custom error types.
+    - Impact: Increased usability and easier debugging.
+• Feature-driven development
+    - Evidence: Introduction of subschemas, merge strategies, and validation.
+    - Impact: Increased functionality and flexibility of the library.
+• Initial lack of automated testing, later added
+    - Evidence: CI setup commit after initial development.
+    - Impact: Potential technical debt in early stages, later addressed.

@@ -1,0 +1,1 @@
+Hardhat plugin simplifies contract deployments, upgrades, and cross-chain management using deterministic proxies and diamonds.

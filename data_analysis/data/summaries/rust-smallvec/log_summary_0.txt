@@ -1,0 +1,16 @@
+[description]
+A vector type optimized for small inline storage.  Development focused heavily on version 2.0.0, adding new features, improving performance, and enhancing no_std support.  Version 1.x saw incremental improvements and bug fixes.
+
+[milestones]
+• Version 2.0.0 (in development):  Extensive refactoring, including use of NonNull pointers and Edition 2021.  Introduction of Send/Sync for IntoIter, spare_capacity_mut, split_off, From<[T; M]>, Hash trait support, drain_filter, and std feature replacing write feature.  Bug fixes related to extend, from_iter, and collect.
+• Version 1.0.0:  Marked a stable release with default no_std support.
+• Initial Implementation:  Basic SmallVec functionality, including core methods like push, insert, extend, and pop.
+
+[patterns]
+• Performance Optimization:  Recurring theme throughout development, exemplified by micro-optimizations in extend, specialized clone_from, and optimized insert.  Benchmarks were added to measure improvements and identify areas for optimization.  Impact: Improved efficiency, especially for smaller vectors.
+• Increased no_std Support:  Progressive effort to make the crate usable in no_std environments.  This involved removing dependencies on std, updating to use liballoc, and making tests compatible with no_std. Impact: Expanded usability.
+• Bug Fixing and Testing: Several bug fixes addressed memory leaks, potential overflows, and correctness issues.  Testing included Miri, fuzzing, and targeted tests for specific scenarios.  Impact: Increased reliability.
+• API Improvements:  Introduction of new methods like append, resize, resize_with, from_raw_parts, into_inner, retain_mut, and others.  Deprecated older methods for better consistency and usability.  Impact: Enhanced functionality and ergonomics.
+• Refactoring and Code Quality:  Significant internal changes like replacing raw pointers with NonNull and migrating to Edition 2021.  Regular use of rustfmt and clippy for code style.  Impact: Improved maintainability and safety.
+• Dependency Management:  Updates to dependencies, such as bincode and heapsize, as well as removal of unmaintained dependencies.  Impact: Reduced technical debt.
+• Documentation Improvements:  Continuous effort to improve documentation, including examples, feature explanations, and API documentation. Impact: Improved developer experience.

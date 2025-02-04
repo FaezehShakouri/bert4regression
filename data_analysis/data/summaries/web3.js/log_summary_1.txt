@@ -1,0 +1,117 @@
+[description]
+Python library for interacting with Ethereum.
+
+[milestones]
+• Release 3.4.4
+    - Fix eth_getTransaction for unknown transaction hashes.
+    - Handle null values in transaction formatter.
+• Release 3.4.3
+    - Fix dynamic event type decoding.
+• Tester Module Introduction
+    - Added a dedicated testing module.
+    - Integrated latest testrpc.
+• Release 3.4.2
+    - Fixed a dependency issue.
+    - Addressed gas estimation issues.
+• Release 3.4.1
+    - Added a missing import.
+• Release 3.4.0
+    - Respect defaultAccount config within contracts.
+    - Improved ABI error reporting.
+• Release 3.3.0
+    - Reorganized and documented providers.
+• Release 3.2.0
+    - Implemented gevent connection pooling.
+• Release 3.1.1
+    - Fixed default account usage for transactions.
+• Release 3.1.0
+    - Implemented delegated signing manager.
+• Release 3.0.2
+    - Fixed IPC client error for large JSON responses.
+• Release 3.0.1
+    - Improved RPC compliance.
+• Release 3.0.0
+    - Added poll interval to filter polling.
+• Release 2.9.0
+    - Fixes for ABI signature generation.
+• Release 2.8.1
+    - Added support for SSL connections.
+• Release 2.8.0
+    - Added timeouts for RPC interactions.
+    - Cleaned up contract API.
+• Release 2.7.1
+    - Fixed KeyError on TypeError.
+• Release 2.7.0
+    - Implemented documentation.
+• Release 2.6.0
+    - Quieter testrpc WSGI logger.
+    - Fixed address array return types.
+• Release 2.5.0
+    - Implemented automatic gas estimation for transactions with data.
+• Release 2.4.0
+    - Allowed kwargs usage in transact.
+• Release 2.3.0
+    - Allowed event API usage as classmethod or instance.
+• Release 2.2.0
+    - Implemented event data extraction and decoding.
+• Release 2.1.1
+    - Allowed find_matching_fn_abi calls with no arguments.
+• Release 2.1.0
+    - Cast RPCProvider port to integer.
+• Release 2.0.0
+    - Improved gevent conformity.
+• Release 1.9.0
+    - Fixed Python 2 JSON decode error.
+• Release 1.8.0
+    - Added content-type header to requests.
+    - Fixed fromWei/toWei functions.
+• Release 1.7.1
+    - Fixed TestRPCProvider import path.
+• Release 1.7.0
+    - Formatted syncing return values.
+    - Added admin interface.
+• Release 1.6.0
+    - Integrated downstream homestead changes.
+• Release 1.5.0
+    - Implemented automatic gas estimation.
+• Release 1.4.0
+    - Minor adjustment to isAddress.
+    - Support for addresses as constructor arguments.
+• Release 1.3.0
+    - Implemented contract functionality.
+• Release 1.2.0
+    - Major code cleanup.
+• Release 1.1.0
+    - Implemented web3.isConnected().
+    - Implemented web3.setProvider().
+• Release 1.0.1
+    - Added undeclared dependencies.
+• Release 1.0.0
+    - Improved tests and documentation.
+
+
+[patterns]
+• Frequent Releases and Iterative Development
+    - Evidence: Consistent release tags throughout the log.
+    - Impact: Suggests agile methodology and responsiveness to issues/feedback.
+• Focus on API Improvements and Bug Fixes
+    - Evidence: Many commits relate to refining APIs, fixing errors, and improving RPC compliance.
+    - Impact: Demonstrates commitment to usability and stability.
+• Emphasis on Testing and Code Quality
+    - Evidence: Regular test updates, integration of testing modules, and addressing flaky tests.
+    - Impact: Indicates a focus on robust software development practices.
+• Refactoring and Code Reorganization
+    - Evidence: Commits related to reorganizing providers, cleaning up dead code, and general refactoring efforts.
+    - Impact: Suggests active maintenance and improvement of the codebase.
+• Dependency Management
+    - Evidence: Several commits address dependency issues and updates.
+    - Impact: Shows an awareness of external library dependencies and their potential impact.
+• Documentation Updates
+    - Evidence: Commits specifically targeting documentation improvements for various APIs and features.
+    - Impact: Reflects a focus on providing clear and comprehensive documentation for users.
+• Performance Optimization
+    - Evidence: Commits aimed at speeding up tests and RPC interactions, caching DAG, etc.
+    - Impact: Demonstrates concern for performance and efficiency.
+• Addressing Cross-Platform Compatibility
+    - Evidence: Fixes for Python 2/3 compatibility, handling Unicode, and other platform-specific issues.
+    - Impact: Broadens the library's usability across different environments.

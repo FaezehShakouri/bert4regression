@@ -1,0 +1,73 @@
+[description]
+This project is an eslint plugin for babel.  It provides linting rules for babel projects.
+
+[milestones]
+• 4.0.0
+    - Major release
+• 3.0.0
+    - Major release
+• 2.0.1
+    - Patch release
+• 2.0.0
+    - Major release, updated links and information.
+• 1.0.2
+    - Patch release
+• 1.0.1
+    - Patch release, fixed a bug with the config.
+• 1.0.0
+    - Initial release.
+• Addition of flowtype plugin.
+    - Added support for flowtype.
+• Improved Code Style Rules
+    - Added rules for trailing spaces and line endings.
+    - Added the "space-infix-ops" rule.
+• Use of Builtin ESLint Rule
+    - Switched to a builtin eslint rule.
+• Miscellaneous updates to documentation and dependencies
+    - Repository URL fix.
+    - Dependency bumps.
+    - General improvements to the README.
+• Implementation of Pull Request Workflow for test262.
+    - Improved testing infrastructure.
+• Support for TypeScript type import.
+    - Parsing improvements.
+• Refactoring and Performance Improvements
+    - Refactored traversal for performance.
+    - Numerous smaller performance tweaks.
+• Error Handling Improvements
+    - Improved error messages and handling.
+    - More informative error messages for invalid plugin/preset.
+• Support for .cjs config files.
+    - Added flexibility in configuration.
+• Removal of core-js from @babel/register.
+    - Dependency cleanup.
+• Addition of Pipeline operator and TypeScript namespace support.
+
+[patterns]
+• Regular Releases
+    - Evidence: Consistent release of major, minor, and patch versions.
+    - Impact: Indicates a healthy, active project.
+• Focus on Code Quality and Testing
+    - Evidence: Use of ESLint, Prettier, test262 integration, and other code quality tools.
+    - Impact: Shows commitment to maintaining a high-quality codebase.
+• Community Contributions
+    - Evidence: Pull requests from external contributors accepted.
+    - Impact: Suggests an open and welcoming community.
+• Dependency Management
+    - Evidence: Regular updates to dependencies, using tools like Greenkeeper and dependabot.
+    - Impact: Reduces potential vulnerabilities and ensures compatibility.
+• Performance Optimization Efforts
+    - Evidence: Recurring performance-related commits and refactoring.
+    - Impact: Indicates a focus on efficiency and scalability.
+• Documentation Updates
+    - Evidence: Frequent updates and improvements to README files and other documentation.
+    - Impact: Improves developer experience and understanding of the project.
+• Addressing Technical Debt
+    - Evidence: Refactoring and cleanup efforts, removal of unused code and dependencies.
+    - Impact: Contributes to long-term maintainability of the project.
+• Active Maintenance and Bug Fixing
+    - Evidence: Consistent attention to bug reports and issues.
+    - Impact: Ensures stability and reliability of the project.
+• Adoption of New Features and Proposals
+    - Evidence: Implementation of new ECMAScript features and Babel proposals.
+    - Impact: Keeps the project up-to-date with the evolving JavaScript landscape.

@@ -1,0 +1,53 @@
+[description]
+SVGR transforms SVGs into ready-to-use React components. The project focuses on providing various ways to configure the transformation process, including CLI options, configuration files, and runtime configuration. It supports different build tools like Webpack, Rollup, and Parcel, and also offers a playground for testing and demonstration.  The project aims to optimize SVGs, maintain accessibility features, and provide flexibility in customization through templates and plugins.
+
+[milestones]
+• Version 8.0.0
+    - Major version bump including peer dependency fixes and significant documentation improvements.
+    - Introduction of a more flexible index template.
+• Version 7.0.0
+    - Removal of @svgr/plugin-jsx from core.
+    - Upgrade to SVGO v3.
+• Version 6.0.0
+    - Rewritten documentation.
+    - Support for JSX runtime, CSS variables, and TypeScript.
+    - New architecture implemented.
+• Version 5.0.0
+    - Upgrade to several dependencies.
+    - Support for custom filename cases, multiple values in svgProps and replaceAttrValues options.
+    - Introduction of a new default template with a function.
+• Version 4.0.0
+    - New architecture.
+    - Support for project configurations, custom filename cases, configuration files (.svgrrc),  and the `titleProp` option.
+• Version 3.0.0
+    - Next.js support added, along with new "expandProps" option.
+    - Synchronous API introduced.
+• Version 2.0.0
+    - Support for SVGO and Prettier configuration files.
+    - Migration to a Lerna project.
+• Initial Release (v0.1.0)
+    - Basic SVG to React component transformation functionality.
+    - CLI implemented.
+
+
+[patterns]
+• Continuous Documentation Improvement
+    - Regular updates and fixes to documentation across different versions.
+    - Reflects a focus on user experience and clarity.
+• Dependency Management and Upgrades
+    - Frequent dependency upgrades throughout the project's history.
+    - Shows a focus on keeping the project up-to-date with the latest best practices and security patches.  Potential for instability or breaking changes between versions.
+• Feature-Driven Development
+    - Introduction of new features, such as custom templates, filename case handling, and various configuration options, in response to user needs and community feedback.
+• Refactoring and Performance Improvements
+    - Efforts made to optimize performance by refactoring internal functions and migrating to smaller packages.
+• Testing and Code Quality
+    - Several commits focused on tests and fixing flaky tests.
+• Addressing Accessibility (a11y)
+    - Commits related to improving accessibility features, like adding the "role=img" attribute and managing title elements. Indicates awareness of accessibility concerns.
+• Focus on Configuration Flexibility
+    -  Adding various ways to configure the transformation, indicating a focus on making SVGR adaptable to different project setups and workflows.
+• Breaking Changes Introduced with Major Releases
+    - Version bumps, particularly major versions, frequently include breaking changes or significant refactoring, necessitating careful consideration when upgrading.
+• Community Contributions and Collaboration
+    -  Several commits originate from community contributions, showing an active and collaborative community.

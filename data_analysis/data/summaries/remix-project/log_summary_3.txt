@@ -1,0 +1,55 @@
+Remix Project Development Analysis (2020-06-01 - 2020-09-12)
+
+[description]
+Remix Project, a browser-based IDE for Solidity development.
+
+[milestones]
+• Metadata Handling Improvements
+    - Implemented saving metadata on each compilation.
+    - Added option to generate contract metadata by default.
+    - Updated handling of metadata deployment.
+• Testing Framework Enhancements
+    - Improved time calculation and fixed issues in tests.
+    - Added expected vs. returned values in remix-tests CLI output.
+    - Developed remix-tests CLI with relative path support.
+    - Implemented unit testing assertion for integer parameters.
+• Refactoring and Library Updates
+    - Refactored remix-debug, moving classes from remix-lib.
+    - Moved tslib from dev dependency to main dependency in remixd.
+    - Updated remixd and plugin versions.
+    - Refactored multiple modules in remix-debug to use promises.
+• User Interface/User Experience Improvements
+    - Updated display of media panels.
+    - Fixed scroll issues and improved UI styling.
+    - Filtered and added new themes.
+    - Added icons to homepage items and updated theme colors.
+    - Updated UI for settings tab and improved visibility of themes.
+• Web3 Provider as Plugin
+    - Implemented web3 provider as a plugin.
+    - Updated wallet connect plugin hash and handled timeout.
+
+[patterns]
+• Focus on Metadata Management
+    - Multiple commits address metadata generation, saving, and deployment.
+    - Indicates a drive towards improving contract deployment and tracking.
+• Increased Emphasis on Testing
+    - Fixes and improvements to the testing framework suggest a commitment to quality.
+    - Enhanced CLI output helps with debugging failed tests.
+• Active Library Management & Refactoring
+    - Frequent library updates and refactoring demonstrate ongoing maintenance and improvement.
+    - Use of promises enhances code structure and readability in remix-debug.
+• Iterative UI/UX Development
+    - Regular UI/UX improvements address user feedback and design enhancements.
+    - Focus on visual appeal and usability across different themes.
+• Transition to Plugin Architecture
+    - Implementing web3 provider as a plugin highlights architectural modularity.
+    - Allows easier integration and management of different providers.
+    - Demonstrates commitment to extensibility and community contributions.
+• Version Bumping and Release Management
+    - Multiple version bumps of remixd, plugins, and other libraries suggest an active release cycle.
+• Documentation Updates
+    - Several commits address documentation improvements in various areas.
+    - Reflects effort towards better user support and onboarding.
+• Addressing Technical Debt
+    - Refactoring efforts, such as moving classes and using promises, indicate attempts to reduce technical debt.
+    - Library updates also help in managing dependencies and potential vulnerabilities.

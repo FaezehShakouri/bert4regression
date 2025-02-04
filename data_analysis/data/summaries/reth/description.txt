@@ -1,0 +1,1 @@
+Reth: Rust Ethereum execution client featuring Alloy integration, a new engine API, and Optimism support.

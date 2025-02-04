@@ -1,0 +1,42 @@
+[description]
+A color conversion library providing functions for converting between various color models like RGB, HSL, HSV, CMYK, XYZ, HWB, HCG, ANSI16, ANSI256, and named CSS colors.  The project has evolved to support automatic model routing and a simplified API.
+
+[milestones]
+• 2.0.0 release
+    - ES2016 migration.
+    - Dropped support for legacy Node.js versions.
+    - Removed `component.json`.
+• 1.0.0 release
+    - Introduced automatic model routing and simplified API.
+• Initial release
+    - Provided conversions between RGB, HSL, HSV, CMYK, and XYZ.
+• Addition of HWB color space
+    - Expanded conversion capabilities with HWB.
+• Hex color support
+    - Enabled conversion to and from hexadecimal color codes.
+• ANSI16/256 support
+    - Added functions for converting to ANSI16 and ANSI256 color codes.
+• HCG color space support
+    - Introduced conversions for the HCG color model.
+• Migration to GitHub Actions CI
+    - Improved the continuous integration process.
+
+[patterns]
+• Regular releases with incremental improvements and bug fixes.
+    - Frequent version bumps (1.1.x, 1.2.x, etc.) with targeted changes.
+    - Indicates a focus on iterative development and responsiveness to issues.
+• Community contributions and responsiveness to issues.
+    - Pull requests from external contributors addressing bugs and adding features (e.g., hex support, HWB, Lch).
+    - Shows active community engagement and maintainers' receptiveness to contributions.
+• Focus on performance optimization.
+    - Specific commits targeting algorithm performance (e.g., RGB to HSV).
+    - Suggests a concern for efficient color conversions.
+• Ongoing code quality improvements.
+    - Updates to coding style (XO standard), testing practices (`deepStrictEqual`), and dependency management.
+    - Demonstrates a commitment to maintaining a clean and well-tested codebase.
+• Expansion of supported color models over time.
+    - Gradual addition of new models like HWB, HCG, ANSI16/256, and named CSS colors.
+    - Reflects a strategy of expanding the library's utility incrementally.
+• Addressing edge cases and corner case bugs.
+    - Several bug fixes related to specific conversion scenarios and input values.
+    - Indicates a focus on robustness and accuracy of conversions.

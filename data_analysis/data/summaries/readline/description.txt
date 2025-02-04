@@ -1,0 +1,1 @@
+Go library providing GNU Readline-like interactive input with history, autocompletion, and Vim mode.

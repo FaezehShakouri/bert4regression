@@ -1,0 +1,45 @@
+[description]
+Solidity, a programming language for Ethereum smart contracts. This update focuses on enhancing the Yul intermediate representation (IR), improving the SMTChecker, expanding language features like try-catch and immutable variables, and refining the compiler's command-line interface and documentation.
+
+[milestones]
+• Yul IR Enhancements
+    - Support for function call options, jump types, and inline assembly.
+    - Introduction of typed EVM dialect and optimization steps.
+    - Implementation of various Yul built-in functions.
+• Language Feature Expansions
+    - Implementation of try-catch statements.
+    - Introduction of immutable state variables.
+    - Array slices for dynamic calldata arrays.
+    - Support for SPDX license identifiers.
+• SMTChecker Improvements
+    - Enhanced support for loops, arrays, tuples, and function calls.
+    - Ability to choose SMT solver at runtime.
+    - More precise error reporting and reduced resource limits.
+• Tooling and Documentation Refinements
+    - Upgrade to Solidity 0.6.x, introducing breaking changes related to the fallback function, inline assembly, and ABIEncoderV2.
+    - Improved command-line interface for Yul optimization and assembly mode.
+    - Enhanced documentation for Yul, reference types, inheritance, and common patterns.
+    - New and updated tests for various features.
+
+
+[patterns]
+• Focus on Yul Optimization
+    - Extensive work on the Yul optimizer, including new rules, simplifications, and bug fixes.
+    - Introduction of new Yul dialects and transformations (e.g., typed EVM, Wasm).
+    - Suggests a growing emphasis on using Yul as a core component of the compilation pipeline.
+• Increased Use of Formal Verification
+    - Significant improvements to the SMTChecker, reflecting a commitment to formal verification for increased code correctness.
+    - Inclusion of proofs and model checking engines highlights the focus on robust verification techniques.
+• Expansion of Language Features
+    - Introduction of try-catch, immutable variables, and array slices demonstrates ongoing efforts to expand the language's expressiveness and safety.
+• Gradual Move to Stricter Compilation
+    - Transition to stricter inline assembly and deprecation of loose assembly indicate a focus on improved language semantics and reduced ambiguity.
+• Extensive Refactoring and Cleanup
+    - Numerous instances of code refactoring, cleanup, and modernization efforts, suggesting a focus on code maintainability and quality.
+• Enhanced Testing and CI
+    - Addition of new tests and updates to existing test suites across various areas (e.g., Yul, SMTChecker, language features).
+    - Improvements to CI workflows, including Docker image updates, address sanitizer integration, and external test repository management, demonstrating a commitment to robust testing infrastructure.
+• Active Development and Community Engagement
+    - High frequency of commits and pull requests, along with contributions from multiple developers and community members, indicates an active and collaborative project.
+• Potential Technical Debt in Error Reporting
+    - Refactoring and improvement of error reporting mechanisms might point to prior inconsistencies or technical debt in this area.  The emphasis on more precise error messages and unique error IDs supports this hypothesis.

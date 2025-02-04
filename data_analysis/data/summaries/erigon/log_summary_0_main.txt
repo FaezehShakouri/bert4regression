@@ -1,0 +1,50 @@
+[description]
+Erigon, an Ethereum client, undergoes continuous development with a focus on performance, efficiency, and Polygon integration. This commit log reflects work on RPC methods, database optimization, Caplin integration, and bug fixes related to snapshots and data synchronization.
+
+[milestones]
+• Caplin Integration
+    - Added support for beacon snapshots and lightclient server.
+    - Implemented various Beacon API endpoints for validators, rewards, and duties.
+    - Optimized attestation and block processing in Caplin.
+    - Integrated Caplin with OtterScan and MDBX database.
+    - Added block production capabilities to Caplin.
+• Erigon 3.0 Development
+    - Implemented EIP-7702 (set code tx), EIP-7685/6110 (requests), EIP-2935 (historical block hashes), and EIP-2537 (BLS12-381).
+    - Transitioned to a new history data model with KVS iterators.
+    - Removed Proof-of-Work consensus code.
+    - Optimized state and snapshot handling, including pruning and merging.
+    - Improved RPC methods, particularly around tracing and logs.
+    - Upgraded various dependencies and libraries.
+• Polygon Integration
+    - Implemented a new Polygon sync stage, integrated bridge logic, and improved error handling.
+    - Added support for fetching headers, bodies, and spans from Heimdall.
+    - Implemented validators set snapshot computation in bor_heimdall stage.
+    - Optimized Bor and Heimdall synchronization and data handling.
+• Downloader Improvements
+    - Enhanced webseed handling, added support for tokens and manifests, and improved error messages.
+    - Implemented atomic operations for torrent files and optimized download rates.
+    - Added verification and re-download capabilities.
+• Database Optimization
+    - Implemented various performance improvements and bug fixes related to MDBX.
+    - Added support for managing dirty space, pruning tables, and compressing values.
+    - Optimized inverted indices, history ranges, and domain ranges.
+
+[patterns]
+• Performance Optimization
+    - Recurring theme of reducing allocations, optimizing loops, and improving concurrency in various components.
+    - Impact: Enhanced performance and reduced resource usage.
+• Caplin Focus
+    - Significant development effort directed towards Caplin integration and functionality.
+    - Impact: Improved beacon chain support and efficiency.
+• Erigon 3.0 Transition
+    - Ongoing work towards Erigon 3.0, with code refactoring, dependency upgrades, and new feature implementation.
+    - Impact: Preparing for the next major version of Erigon.
+• Polygon Integration Refinement
+    - Continuous improvement of Polygon synchronization and data handling, addressing bug fixes and edge cases.
+    - Impact: More robust and efficient Polygon support.
+• Increased Testing
+    - Focus on adding unit tests, integration tests, and QA tests, along with improved testing infrastructure.
+    - Impact: Enhanced code quality and reliability.
+• Technical Debt Management
+    - Removal of deprecated code, simplification of complex logic, and addressing technical debt accumulated in earlier versions.
+    - Impact: Improved maintainability and codebase health.

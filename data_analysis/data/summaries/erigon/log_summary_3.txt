@@ -1,0 +1,38 @@
+[description]
+Turbo-Geth is a project focused on improving the performance and scalability of Go-Ethereum.  The commit logs show a significant emphasis on database optimizations, a new synchronization model called "staged sync," and the development of supporting tools and infrastructure.  There's also integration with other projects and protocols like Silkworm, BitTorrent, and gRPC.
+
+[milestones]
+• Staged Sync Implementation
+    - Introduction of a new synchronization model (staged sync) to improve performance and resource management.
+    - Implementation of various stages for handling different parts of the sync process (headers, bodies, execution, state snapshots, etc.).
+    - Refactoring of existing code to integrate with the staged sync model.
+• Database Optimizations
+    - Transition from BoltDB to LMDB for improved performance and reduced memory usage.
+    - Implementation of various LMDB-specific optimizations (e.g., custom comparators, DupSort).
+    - Introduction of a key-value abstraction layer to support different database backends.
+• RPC Daemon Development
+    - Development of an RPC daemon to provide remote database access and improved RPC functionality.
+    - Implementation of various RPC methods within the daemon.
+• Thin History Index
+    - Design and implementation of a thin history index to reduce storage requirements for historical data.
+• Integration with Silkworm
+    - Integration of Silkworm execution engine.
+
+[patterns]
+• Performance Optimization
+    - Extensive focus on optimizing database operations, reducing allocations, and improving concurrency.
+    - Use of profiling tools and benchmarks to identify bottlenecks.
+• Modularization and Refactoring
+    - Breaking down complex tasks into smaller, more manageable stages.
+    - Refactoring existing code to improve modularity and maintainability.
+• Experimentation and Prototyping
+    - Frequent experimentation with new technologies and approaches (e.g., DupSort, different database backends).
+    - Development of prototypes to test new ideas and assess feasibility.
+• Increased Testing
+    - Addition of integration tests and unit tests to ensure correctness and stability.
+• Technical Debt Management
+    - Active efforts to address potential technical debt by refactoring and simplifying code.
+• External Integrations
+    - Incorporating external tools and libraries to enhance functionality (e.g., gRPC, BitTorrent, Silkworm).
+• Focus on Documentation
+    - Ongoing improvements to documentation (README files, tutorials) to improve developer experience.

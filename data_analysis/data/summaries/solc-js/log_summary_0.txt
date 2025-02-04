@@ -1,0 +1,42 @@
+[description]
+This project is the Solidity compiler, solc-js, a JavaScript wrapper for the Solidity compiler. The commit logs track its development, including feature additions, CI improvements, dependency updates, bug fixes, and documentation enhancements.
+
+[milestones]
+• Typescript Support
+    - Added base support for Typescript.
+• New Callback API
+    - Introduced a new callback API for interacting with the compiler.
+• Standard JSON Input/Output
+    - Implemented support for Standard JSON input and output, improving interoperability.
+• SMT Solver Integration
+    - Integrated SMT solvers for enhanced analysis and verification capabilities.
+• CLI Enhancements
+    - Added CLI options like `--include-path`, `--pretty-json`, `--verbose`, and import callbacks.
+• Dependency Updates
+    - Switched from yarn to pnpm, upgraded dependencies, and dropped legacy dependencies.
+• CI Improvements
+    - Migrated CI to CircleCI, added nightly runs, improved caching, and separated build jobs.
+• Solidity Version Updates
+    - Regular updates to support newer Solidity versions (0.8.x and 0.7.x).
+• Legacy Assembly Formatter
+    - Added a legacy assembly JSON formatter.
+
+[patterns]
+• Focus on CI/CD improvements
+    - Frequent updates and refactoring of CI pipelines, focusing on efficiency and robustness.
+    - Positive impact on developer experience and release process.
+• Emphasis on Modernization
+    - Adoption of Typescript, pnpm, and upgrading of key dependencies.
+    - Indicates proactive approach to maintainability and code quality.
+• Regular Solidity Version Support
+    - Consistent updates to the wrapper, aligning with Solidity releases.
+    - Essential for compatibility and adoption of new language features.
+• Incremental Feature Development
+    - Features like Standard JSON I/O and SMT Solver integration were introduced and improved over multiple commits.
+    - Suggests a well-planned and iterative development process.
+• Addressing Technical Debt
+    - Refactoring efforts, such as splitting `wrapper.ts` and removing unused dependencies.
+    - Positive impact on long-term project health.
+• Occasional Typos and Minor Documentation Fixes
+    - Minor commits correcting typos and clarifying documentation.
+    - Minimal impact, but demonstrates attention to detail.

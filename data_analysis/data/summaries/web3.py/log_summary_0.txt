@@ -1,0 +1,29 @@
+[description]
+Web3.py is a Python library for interacting with Ethereum.  This project has a history of continuous improvement, including adding new features, fixing bugs, updating dependencies, improving documentation, refactoring for better performance and maintainability, and supporting Ethereum network upgrades.  Key developments include a transition from older versions (e.g., v2, v3) with functionalities like basic contract interaction and event filtering to more recent versions (v5 - v7) featuring asynchronous programming, middleware refactoring, and enhanced performance.
+
+[milestones]
+Early Versions (v0.1.0 - v3.4.4):
+    - Foundation and Core Functionality (v0.1.0 - v1.7.0): Initial project setup, introduction of providers (RPC, IPC), basic contract interaction, admin interface, syncing return formatting.
+    - Improved Contract Interaction and Event Handling (v1.7.0 - v2.9.0): Automatic gas estimation, transaction kwargs support, enhanced event API and data extraction, filter improvements, SSL support, contract API cleanup.
+    - Enhanced Stability and Performance (v3.0.0 - v3.4.4): Gevent compatibility, timeout management, documentation improvements, keep-alive RPC provider, filter functionality improvements, delegated signing manager, dependency issue resolution, improved ABI error reporting, performance improvements, provider reorganization.
+Modern Versions (v5.0.0 - v7.0.0+):
+    - Persistent Connection Providers: Refactoring for HTTP, WebSocket, and IPC providers for better performance and exception handling. Introduction of ``RequestSessionManager``.
+    - Request Batching: Implementation for improved performance, handling single and batch error responses.
+    - Middleware Refactor: Redesign for greater flexibility and efficiency using a method-based approach.
+    - Contract Events API Enhancements: Support for retrieving event topics, sorting events, non-indexed argument filtering.
+    - ENSIP-15 Support: Implementation of the ENSIP-15 normalization standard.
+    - Dropping Python 3.7 Support: Focusing on newer Python versions.
+    - Cancun Network Upgrade Support: Adding Cancun-related fields and formatters.
+    - Removal of Deprecated Features: Removal of deprecated namespaces, methods, and arguments, providing migration guides.
+
+[patterns]
+Continuous Improvement and Frequent Releases:  Demonstrates active development and responsiveness to issues, reflected in frequent releases across all versions.
+Focus on Testing and Stability:  Prioritizing code reliability through the introduction of testing modules, improvements to test run overhead, fixing flaky tests, and expanding test coverage in later versions.
+Incremental Development of Contract Interaction Features: A structured approach to building complex contract functionalities, from basic interaction in early versions to advanced event handling and API enhancements in later versions.
+Refactoring and Code Cleanup:  Ongoing efforts to improve code maintainability and readability through refactoring and code cleanup across different versions.
+Documentation Improvements alongside Feature Development:  Consistent focus on enhancing usability and developer experience through documentation updates for new APIs and features.
+Dependency Management:  Active management of external dependencies, addressing compatibility issues and leveraging new features.
+Focus on Asynchronous Programming (v5+):  Emphasis on async functionality in newer versions, with dedicated async providers and methods.
+Improved Testing and CI (v5+):  More robust tests, addressing flaky tests, and expanding test coverage for different Python versions and environments.
+Performance Optimization (v5+):  Recurring focus on performance through efficient caching, request batching, and session management.
+Addressing Technical Debt (v5+):  Active management of technical debt through removal of deprecated code and refactoring for better maintainability.

@@ -1,0 +1,1 @@
+SVGR transforms SVGs into React components, offering flexible configuration and build tool support.

@@ -1,0 +1,24 @@
+[description]
+This project is an ESLint plugin for enforcing import best practices and resolving import paths.
+
+[milestones]
+• Flat config support added, enabling simpler configuration for users.
+• TypeScript support improved with enhanced handling of type imports, exports, and namespaces.  Overload handling, export assignment resolution, and arbitrary module namespace name support were added.
+• `order` rule significantly enhanced with options for alphabetization, controlling newlines, sorting type imports, and grouping by path.
+• `no-unused-modules` rule improved with options to ignore unused type exports, handle destructuring, and support dynamic imports.
+• New rules added: `no-empty-named-blocks`, `consistent-type-specifier-style`, `no-relative-packages`, `enforce-node-protocol-usage`, `no-import-module-exports` to address various import-related code style and potential issues.
+• Performance optimizations implemented for `ExportMap`, `no-cycle`, and `no-extraneous-dependencies`, improving the plugin's efficiency.
+• Documentation significantly improved with automated tools, additional examples, and clarity around TypeScript, flat config, and various rules.
+• Transition to Github Actions for CI, dropping older testing platforms and enhancing testing across different ESLint and Node.js versions.
+• Support for ESLint v8 and v9 added, ensuring compatibility with newer ESLint releases.
+• Webpack resolver updated with support for Webpack 5 features like externals function and 'eager' mode in dynamic imports.
+
+[patterns]
+• Incremental improvement and expansion of existing rules based on user feedback and evolving JavaScript/TypeScript features. This is evident in the numerous additions to rules like `order`, `no-unused-modules`, and the resolvers.
+• Focus on TypeScript support:  A significant portion of commits addressed TypeScript-specific features and issues, indicating a growing user base using TypeScript.
+• Performance consciousness:  Several commits focused on performance optimizations, especially for potentially expensive operations like dependency resolution and export map generation.
+• Community driven development: Many contributions originated from community members through pull requests and issue reports, indicating an active and engaged user base.
+• Attention to documentation:  Efforts were made to automate documentation generation, fix inaccuracies, and improve the clarity of rule descriptions and examples.
+• Proactive dependency management: Regular dependency updates and pinning to avoid breaking changes suggest a focus on maintaining a stable and reliable plugin.
+• Shift towards modern tooling: Migration to Github Actions for CI and adopting tools like `eslint-doc-generator` demonstrates a commitment to modernizing development practices.
+• Potential technical debt: Some areas, like support for older ESLint versions, have required workarounds and temporary disabling of tests, suggesting potential areas for future refactoring.

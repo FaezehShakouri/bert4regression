@@ -1,0 +1,47 @@
+[description]
+This project implements an Ethereum sharding client and beacon chain node.  It includes the sharding logic, validator registration contract, p2p networking, transaction handling, and database storage.
+
+[milestones]
+• Initial sharding implementation
+    - Basic sharding transaction structure defined.
+    - Implemented sharding client logic for transaction creation and handling.
+• Beacon chain development
+    - Implemented beacon chain data structures and core logic.
+    - Added state recalculation and block processing logic.
+    - Developed a network simulator for testing sync and block processing.
+• Validator client
+    - Implemented validator registration and management.
+    - Added attestation and reward/penalty logic.
+    - Developed RPC communication between validators and the beacon chain.
+• P2P networking
+    - Integrated libp2p for peer discovery and communication.
+    - Introduced topic-based pubsub for different message types.
+    - Added support for bootnodes and DHT peer discovery.
+• Refactoring and code improvements
+    - Refactored core packages to align with Ethereum 2.1 spec.
+    - Moved shared p2p library to a separate package.
+    - Improved code coverage with unit tests.
+• Tooling and infrastructure
+    - Migrated CI to Buildkite, adding support for faster builds.
+    - Added Docker images for the beacon chain and client.
+    - Introduced Kubernetes deployment scripts.
+
+[patterns]
+• Frequent dependency updates
+    - Renovate bot regularly updates project dependencies.
+    - Impact: Keeps the project up-to-date with the latest libraries, but also introduces churn.
+• Focus on testing
+    - Many commits address test coverage and bug fixes.
+    - Impact: Suggests a commitment to code quality but also highlights initial instability.
+• Alignment with Ethereum 2.0 spec
+    - Several refactoring efforts aim to synchronize the implementation with the spec.
+    - Impact: Reflects the evolving nature of the Ethereum 2.0 spec and the project's focus on adhering to it.
+• Transition from proof-of-concept to implementation
+    - Initial commits focus on basic data structures and functionality, later ones on production readiness.
+    - Impact: Shows project progression from research to a functional prototype.
+• Refactoring towards modularity
+    - Shared components are extracted into separate packages.
+    - Impact: Improves code organization and reusability.
+• Technical debt indicators
+    - Several TODO comments indicate potential areas for future work and possible technical debt.
+    - Impact: Highlights areas that might need attention in the future.

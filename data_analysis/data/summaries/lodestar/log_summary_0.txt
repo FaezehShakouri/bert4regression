@@ -1,0 +1,42 @@
+[description]
+Lodestar is a TypeScript implementation of the Ethereum consensus layer client.  The project has undergone significant development, from early implementations of core Ethereum 2.0 functionality to supporting major hard forks like Merge, Capella, Deneb, and Electra, and ongoing performance optimizations and API enhancements.
+
+[milestones]
+• Core Ethereum 2.0 Functionality (Early Stages): Implemented state transition logic (v0.7.1), SSZ library, libp2p networking, CLI, JSON-RPC server, BLS signatures, PouchDB database support, LMD-GHOST fork choice, Eth1 data handling, and validator logic.
+• Slashing Protection: Implemented a slashing protection mechanism with interchange format and CLI commands.
+• Pyrmont Testnet Support: Added support for the Pyrmont testnet.
+• Block Archival Improvements: Enhanced block archival performance, including processing blocks in chunks and using batch database operations.
+• Fork Choice Refinements: Improved fork choice implementation, handling orphaned blocks and using justified balances.
+• REST API Expansion: Added and updated REST API endpoints for various functions (state, pool, duties, events).
+• Gossip Validation Optimization: Optimized gossip validation, including caching seen attestations.
+• Performance Testing: Introduced performance tests for epoch processing and state transitions.
+• Initial Sync Improvements: Enhanced the initial sync process.
+• Version Bump to v0.12.0: Released version 0.12.0.
+• Altair Hard Fork Support: Implemented Altair endpoints and various bug fixes and performance improvements.
+• Merge Hard Fork Support: Transitioned to the post-merge Ethereum network.
+• Capella Hard Fork Support: Implemented proposer boost reorg panels, BLS to execution changes, historical state regeneration, and blob archival.
+• Electra Hard Fork Support: Handled attester slashing, updated rate limits, emitted block gossip events, and calculated partial withdrawal balances.
+• Deneb Hard Fork Support: Increased blob throughput and implemented architectural improvements (napi-rs for BLS, async shuffling).
+• Devnet Support (devnet-4, devnet-5): Adapted to evolving test network specifications.
+• API Enhancements (Ongoing): Introduced new endpoints for historical summaries, validator identities, proposer duties, fork choice context, and blinded blocks.
+• Performance Improvements (Ongoing): Optimized block processing, state serialization, gossip validation, keystore decryption, and BLS signature verification.
+• Refactoring and Code Quality (Ongoing): Refactored for better code structure, type safety, and migrated from ESLint to biomejs.
+• Dependency Updates (Ongoing): Regularly updated external dependencies (js-libp2p, discv5, etc.).
+• Documentation Updates (Ongoing): Improved documentation (contributor guidelines, debugging, API references).
+• Testing Improvements (Ongoing): Migrated to vitest, added simulation tests, and improved spec test coverage.
+• Tooling and Infrastructure Improvements (Ongoing): Enhanced Docker builds, implemented Prometheus and Grafana dashboards, and improved GitHub Actions workflows.
+• Validator Client Enhancements (Ongoing): Added support for remote signer, proposer configuration files, and improved validator monitoring.
+
+
+[patterns]
+• Spec Compliance and Hard Fork Support: Continuous adaptation to the evolving Ethereum specification and active support for new hard forks.
+• Performance Optimization: Consistent focus on improving performance across various areas of the codebase.
+• Refactoring and Code Quality: Ongoing efforts to improve code structure, maintainability, and type safety.
+• Testing and Quality Assurance: Strong emphasis on testing, including unit, integration, simulation, and spec conformance tests.
+• API Development and Enhancement: Continuous expansion and improvement of API capabilities.
+• Dependency Management: Regular updates and integration of external libraries.
+• Tooling and Automation: Increasing use of automated tools for development, testing, and deployment.
+• Documentation: Ongoing improvements to documentation for users and contributors.
+• Community Engagement and Collaboration: Active engagement with the community and contributions from external developers.
+• Security Focus: Addressing security vulnerabilities and implementing security best practices.
+• Continuous Integration and Continuous Delivery: Frequent releases and continuous integration workflows.

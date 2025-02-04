@@ -1,0 +1,30 @@
+[milestones]
+• **Version 8.0.0 Release:** This marks a significant milestone with substantial changes including a rewritten code generation system for improved performance, removal of several options (jsonPointers, serialize, cache, etc.), and a stricter mode enabled by default.  Type annotations for TypeScript were improved, and a new website was launched.
+• **Version 7.0.0 Release:**  Introduction of JSON Type Definition (JTD) support, a new schema validation method. This release also focused on refactoring for improved performance and stricter type checking.  Several options were deprecated or removed.  A new documentation site using VuePress was introduced.
+• **Standalone Code Generation:**  The project added the ability to generate standalone validation code, improving performance and reducing dependencies in production environments. This was a major architectural improvement.
+• **Removal of Draft-04 Support:**  Support for Draft-04 of JSON Schema was removed, simplifying the codebase and focusing on more recent drafts.
+• **Improved Error Reporting:**  Error messages and parameters were refined for better developer experience and to align with the JSON Schema specification. This included introducing more detailed error objects and parameters.
+• **Asynchronous Validation Improvements:** Native promises were adopted for asynchronous validation, providing a cleaner API and better integration with modern JavaScript.
+• **TypeScript Support Enhancements:**  TypeScript definitions were significantly expanded and improved, offering better type safety and developer tooling for TypeScript users.
+• **Migration to ajv-validator Organization:**  The project moved to the ajv-validator organization on GitHub, impacting URLs and some documentation links.
+
+
+[patterns]
+• **Focus on Performance Optimization:** Recurring themes of code optimization, refactoring for performance, and benchmarking indicate a strong emphasis on efficient validation.
+    - *Evidence:* Numerous commits related to code generation improvements, use of faster libraries like `fast-json-stable-stringify` and `fast-uri`, and removal of unnecessary checks.
+    - *Impact:*  Faster validation speeds, especially noticeable with complex schemas.
+• **Increasing Use of TypeScript:** A shift towards greater reliance on TypeScript is observed, including conversion of tests and core code to TypeScript.
+    - *Evidence:* Multiple commits adding and improving TypeScript definitions, converting tests to TypeScript, and enabling stricter TypeScript compiler options.
+    - *Impact:* Improved type safety, better developer tooling for TypeScript users, and a more maintainable codebase.
+• **Emphasis on Stricter Validation:**  The introduction of stricter modes and options, such as `strict`, `strictTypes`, and `strictTuples`, demonstrate a focus on enforcing the JSON Schema specification more rigorously.
+    - *Evidence:*  Introduction and enabling by default of these strict options, changes in error reporting to be more specific.
+    - *Impact:*  Potentially more errors during validation for schemas that were previously valid with more lenient options, leading to improved schema quality.
+• **Deprecation and Removal of Options:**  Several options were deprecated or removed, simplifying the API and reducing complexity.
+    - *Evidence:*  Commits related to removing options such as `jsonPointers`, `serialize`, `cache`, `errorDataPath`, `unicode: false`, and `uniqueItems`.
+    - *Impact:*  A cleaner and more focused API, but requires migration for users relying on removed options.
+• **Active Maintenance and Community Engagement:** The logs reflect active maintenance, responsiveness to issues and pull requests, and engagement with the community.
+    - *Evidence:*  Frequent releases, responses to issues and PRs, documentation updates, and incorporation of community contributions.
+    - *Impact:*  Improved software quality, a more robust and feature-rich library, and a healthy community ecosystem.
+• **Addressing Technical Debt:**  While actively maintained, some commits hint at addressing technical debt through refactoring and simplification.
+    - *Evidence:*  Commits related to removing unused code, simplifying functions, and improving code structure.
+    - *Impact:*  Improved maintainability and reduced risk of future bugs.  However, the frequent addition of new features and large-scale changes might introduce new technical debt.  Ongoing monitoring of code complexity and test coverage is crucial.

@@ -1,0 +1,1 @@
+Prettier plugin for Solidity formatting, supporting latest Prettier & Node.js with continuous improvements.

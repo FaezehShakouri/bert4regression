@@ -1,0 +1,53 @@
+[description]
+A JavaScript library for internationalization in React applications.
+
+[milestones]
+• Initial Release (0.1.0)
+    - Basic internationalization features implemented.
+• Relative Time Formatting (1.0.0-rc-2)
+    - Introduced relative time formatting.
+• React 15 Support (2.0.0-rc-1)
+    - Added support for React 15.
+• New Context API (3.0.0-beta-1)
+    - Switched to React's new context API.
+• Unified Number Formatting (3.1.10)
+    - Extended number formatting to the unified standard.
+• DateTime Skeleton Support (3.7.0)
+    - Added support for DateTime skeletons.
+• List Formatting (3.9.0)
+    - Introduced formatList and FormattedList for list formatting.
+• Display Name Formatting (3.12.0)
+    - Added formatDisplayName and FormattedDisplayName.
+• FormattedHTMLMessage XML Support (3.0.0-beta.19)
+    - Enabled formatting of embedded XML in FormattedHTMLMessage.
+• Removal of Yahoo BSD License (2015-01-13)
+    - License changed.
+
+[patterns]
+• Regular Dependency Updates
+    - Frequent updates to dependencies like React, Babel, and various intl-* packages.
+    - Ensures compatibility and leverages new features.
+• Performance Improvements
+    - Multiple commits focus on performance optimization, particularly in formatMessage and FormattedMessage.
+    - Improves rendering speed and efficiency.
+• Enhanced Error Handling
+    - Improved error messages and fallback mechanisms for missing locale data or formatting errors.
+    - Enhances developer experience and application robustness.
+• Refactoring for Modern Tooling and Standards
+    - Transitioned from Browserify to Rollup, adopted Babel 6, and embraced ES6 modules.
+    - Modernizes the build process and codebase.
+• Increased Testing and Coverage
+    - Gradual increase in unit and functional tests, along with coverage reporting.
+    - Improves code quality and reliability.
+• Documentation Improvements
+    - Continuous updates to the README and other documentation.
+    - Enhances usability and understanding of the library.
+• Shift to TypeScript
+    - Migration of source code to TypeScript for better type safety.
+    - Improves maintainability and developer experience.
+• CLDR Updates
+    - Periodic updates to CLDR data for locale-specific formatting rules.
+    - Ensures accurate and up-to-date internationalization support.
+• Removal of Deprecated APIs
+    - Deprecated APIs like withRef and old lifecycle methods removed.
+    - Encourages use of modern React features and patterns.

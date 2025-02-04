@@ -1,0 +1,45 @@
+[milestones]
+• Babel 8 Alpha Releases:
+    - Several alpha releases (8.0.0-alpha.5 through 8.0.0-alpha.15) mark progress towards Babel 8.  These introduce significant changes, including removing legacy options, aligning with newer standards, and laying groundwork for full ESM support.
+• Babel 7 Minor Releases:
+    - Numerous minor releases of Babel 7 (7.21.x through 7.26.x) continue to provide bugfixes, performance enhancements, and compatibility updates.  Highlights include improvements to JSX transform, enhanced TypeScript support, optimized module transforms, and broader compatibility with Node.js versions.
+• Decorators Update:
+    - Support for the 2023-11 normative update for decorators is a significant feature addition, aligning Babel with the latest proposals.  Related changes include streamlining decorator helpers and optimizing performance.
+• TypeScript Support Enhancements:
+    - Ongoing improvements to TypeScript support, including updates for TS 5.x, improved type handling, better constant enum inlining, and support for newer TS features like satisfies expressions and variance annotations.
+• Explicit Resource Management (ERM) Parsing and Transform:
+    - Implementation of parsing and transform support for using declarations marks progress in adopting the explicit resource management proposal.  Updates include relaxing restrictions on using await and allowing lookup of Symbol.dispose.
+• Performance Optimizations:
+    - Several performance improvements across various areas, including scope information collection, module transforms, `@babel/types` builders, and generator performance.
+• Flow Integration Updates:
+    - Alignment of Flow plugin and preset behavior with evolving Flow language features, deprecation of older options, and enhancements to type handling.
+• Tooling and Dependency Updates:
+    - Migration to ESLint 9, upgrade to Yarn 4, updates to build tools (Rollup, Jest), and dependency bumps for several packages contribute to improved developer experience and project maintainability.
+• Removal of Legacy Features and Options:
+    - Removal of legacy options and features, such as minimal/smart pipelines and various deprecated methods, contributes to a leaner Babel 8.
+
+[patterns]
+• Babel 8 Development:
+    - Evidence: Alpha releases, removal of legacy code, ESM focus, breaking changes.
+    - Impact: Preparing for a major release with improved performance, maintainability, and alignment with modern standards.  Breaking changes require attention during migration.
+• Iterative Improvement of Babel 7:
+    - Evidence: Consistent release of minor versions with bugfixes, performance optimizations, and expanded support for JavaScript features and runtime environments.
+    - Impact: Babel 7 remains a robust and actively maintained tool, providing a stable experience for existing users while progressively incorporating new features.
+• Focus on TypeScript Compatibility:
+    - Evidence: Frequent updates addressing TypeScript compatibility, support for new TS features, and improved type handling in the parser and transforms.
+    - Impact: Reflects the growing adoption of TypeScript and Babel's role in facilitating its use within various projects.
+• Emphasis on Performance and Code Quality:
+    - Evidence: Dedicated performance optimizations, removal of unused dependencies, code cleanup efforts, enabling stricter linting rules.
+    - Impact: Contributes to a more efficient and reliable Babel, improving developer experience and reducing potential technical debt.
+• Gradual Migration to TypeScript in the Codebase:
+    - Evidence: Conversion of several `@babel` packages from Flow to TypeScript.
+    - Impact: Indicates a shift towards using TypeScript for internal development, which may improve type safety and tooling support within the Babel project itself.
+• Community Contributions and Issue Resolution:
+    - Evidence: Several bug fixes, documentation improvements, and feature additions contributed by the community.
+    - Impact: Demonstrates a vibrant and engaged community, contributing to the overall health and evolution of Babel.
+• Proactive Deprecation of Legacy Features:
+    - Evidence: Clear communication about deprecations, providing migration paths and eventually removing obsolete code.
+    - Impact: Facilitates a clean and maintainable codebase, avoiding the accumulation of technical debt.  Requires attention from users to keep their projects up-to-date.
+• Focus on Compatibility with Evolving JavaScript Ecosystem:
+    - Evidence: Support for new language proposals, integration tests with frameworks like React Native and Vue.js, updates to runtime environments and compilation targets.
+    - Impact: Ensures Babel remains a relevant and versatile tool, adaptable to the rapid changes in the JavaScript landscape.

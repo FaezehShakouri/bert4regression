@@ -1,0 +1,1 @@
+Babel is a JavaScript compiler transforming ES6+ to ES5, enabling modern JS features in older browsers.

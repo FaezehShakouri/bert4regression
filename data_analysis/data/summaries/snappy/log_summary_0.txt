@@ -1,0 +1,34 @@
+[description]
+This project is a Node.js binding for the Snappy compression library. It provides methods for compressing and decompressing data using Snappy.
+
+[milestones]
+• Initial Implementation of Snappy Compression and Decompression (June 2021)
+    - Implemented core compress and uncompress functions.
+    - Added basic documentation and tests.
+• Upgrade to N-API 2 (November 2021)
+    - Improved performance and compatibility.
+• Various Performance Improvements and Bug Fixes (2021-2025)
+    - Addressed memory leaks.
+    - Optimized buffer handling to avoid unnecessary copying.
+    - Switched to mimalloc as the global allocator.
+    - Fixed compatibility issues across different operating systems (FreeBSD, CentOS, Void Linux).
+• Electron Compatibility Update (October 2022)
+    - Provided copyOutputData to ensure compatibility with Electron versions 21 and above.
+
+
+[patterns]
+• Consistent Dependency Updates (ongoing)
+    - Renovate bot regularly updates dependencies, indicating good maintenance practices.
+    - Dependencies like esbuild, yarn, and various GitHub actions are kept up-to-date.
+• Focus on Performance Optimization (recurring)
+    - Multiple commits address memory leaks and buffer handling.
+    - Introduction of mimalloc demonstrates a focus on improving performance.
+• Platform Compatibility Improvements (recurring)
+    - Fixes for FreeBSD, CentOS, Void Linux, and aarch64-musl builds highlight efforts to ensure broad platform support.
+• Reactive Bug Fixing (occasional)
+    - Several commits fix bugs related to memory leaks, invalid input handling, and native binding package names.
+• CI/CD Enhancements (occasional)
+    - Improvements to CI/CD pipelines, including memory leak detection and fixing various build issues.
+• Limited Feature Development (observed)
+    - After the initial implementation, development primarily focused on maintenance, bug fixes, performance improvements, and compatibility.  No major new features are apparent in the log.
+• Potential Technical Debt: Limited proactive code refactoring observed, reliance on automated dependency updates without thorough review.

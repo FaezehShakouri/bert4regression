@@ -1,0 +1,43 @@
+[description]
+This project is the Solidity compiler, solc. The commit logs show development focused on performance improvements, new features related to the Ethereum Object Format (EOF), improved error reporting, and enhanced tooling and infrastructure.
+
+[milestones]
+• Implementation of Ethereum Object Format (EOF) support
+    - Introduction of new instructions and assembly items for EOF
+    - Support for EOF contract creation and data section size validation
+    - Disallowing EOF builtins in inline assembly
+    - Updates to various tests for EOF compatibility
+• Introduction of transient storage
+    - Basic support for transient storage in Yul and inline assembly
+    - Transient storage layout generation
+    - Restriction on the initialization of transient storage variables
+• Improvements to the Yul optimizer
+    - New optimization steps and sequences
+    - Bug fixes and performance enhancements
+    - Export of Yul CFG to JSON and dot format
+    - Liveness analysis for Yul SSA CFG
+• Enhanced error reporting and testing
+    - More informative error messages, including source locations
+    - Improved testing frameworks and infrastructure, including parallelisation of tests
+    - Introduction of new test types, such as AST property tests and CLI equivalence tests
+• Upgrading dependencies and build system improvements
+    - Upgrading to C++20, Boost 1.83, and various other dependencies
+    - Switching from jsoncpp to nlohmann::json
+    - Improvements to CMake build system and Docker images
+
+[patterns]
+• Focus on EOF implementation
+    - Numerous commits dedicated to adding EOF-specific features and ensuring compatibility.
+    - Impact: Enables support for the new EOF, paving the way for future EVM upgrades.
+• Incremental development of transient storage
+    - Features added step by step, starting with basic support and progressing to layout generation and restrictions.
+    - Impact: Introduces transient storage, a significant new feature for managing temporary data in contracts.
+• Continuous improvement of the Yul optimizer
+    - Ongoing effort to enhance optimization capabilities, performance, and tooling.
+    - Impact: Leads to more efficient and optimized Yul code.
+• Prioritization of better error reporting
+    - Focus on providing more detailed and helpful error messages to improve developer experience.
+    - Impact: Makes it easier for developers to diagnose and fix issues in their Solidity code.
+• Active dependency management and build system modernization
+    - Regular updates to dependencies and continuous improvement of the build system.
+    - Impact: Ensures the compiler is built with modern tools and libraries, improving performance, stability, and maintainability.

@@ -1,0 +1,64 @@
+[description]
+WebdriverIO, a Node.js-based test automation framework, undergoes continuous development with a focus on enhancing features, improving developer experience, expanding integrations, and resolving bugs.  Version 9 introduces significant architectural changes like WebDriver Bidi support and drops support for older Node.js versions. Work on component testing with various frameworks is ongoing.
+
+[milestones]
+• WebdriverIO v9 Release
+    - Introduces WebDriver Bidi support, enabling bidirectional communication with browsers.
+    - Drops support for Node.js v16, requiring v18 or higher.
+    - Improves type safety for capabilities and other core functionalities.
+    - Enhances error handling and reporting, especially for WebDriver Bidi commands.
+    - Introduces new commands like setViewport and isStable/waitForStable for enhanced testing capabilities.
+    - Improves existing commands such as switchFrame, click, getHTML, and scrollIntoView, with better support for shadow DOMs and mobile environments.
+    - Removes deprecated commands like touchAction and isDisplayed/isDisplayedInViewport (merged into isDisplayed).
+
+• Component Testing Enhancements
+    - Adds support for StencilJS component testing.
+    - Improves mocking capabilities for component tests, allowing mocking of modules and external dependencies.
+    - Implements developer experience improvements for component testing, such as a loading animation, automatic opening in devtools in watch mode, and support for global fixtures.
+
+• Improved Developer Experience
+    - Migrates build process to Esbuild.
+    - Migrates package management to pnpm.
+    - Introduces new ESLint rules for better code quality.
+    - Improves TypeScript support with detailed contexts and fixes for Node.js 20 compatibility.
+    - Simplifies the setup wizard in the CLI for various testing purposes.
+    - Improves documentation with interactive examples and tested code snippets.
+
+
+• Enhanced Integrations and Features
+    - Integrates with new JSON reporter (`@wdio/json-reporter`).
+    - Improves integration with BrowserStack, including accessibility testing, test observability, and build identifier support.
+    - Adds support for snapshot testing.
+    - Implements a custom install command in the CLI with pnpm support.
+    - Adds dotenv support to the CLI.
+    - Enhances visual testing capabilities with new font rendering features.
+    - Implements support for sharding in the CLI.
+    - Removes integration with CrossBrowserTesting platform.
+
+• Bug Fixes
+    - Numerous bug fixes related to command behavior, type definitions, reporting discrepancies, and compatibility issues across different browsers and frameworks.
+
+[patterns]
+• Active Development and Community Engagement: Frequent releases, numerous contributions from various developers, and responsive bug fixes indicate an active and engaged community.
+    - High number of commits, pull requests, and issue resolutions.
+    - Contributions from both core maintainers and community members.
+
+• Focus on Developer Experience:  The project prioritizes improving developer experience through simplified setup, enhanced tooling, and better documentation.
+    - Improvements to configuration wizard, build process migration to Esbuild, and TypeScript enhancements.
+    - Focus on providing clear and concise documentation with interactive examples.
+
+• Expanding Ecosystem: The project actively expands its ecosystem by adding support for new frameworks, services, and reporters.
+    - Addition of new plugins and integrations, including component testing support and new reporter integrations.
+    - Removal of less-used or unmaintained integrations.
+
+• Commitment to Quality: The introduction of new ESLint rules, focus on type safety, and improved error handling demonstrates a commitment to code quality.
+    - Implementation of stricter ESLint rules and TypeScript enhancements.
+    - Focus on comprehensive testing and bug fixes.
+
+•  Shift Towards BiDirectional Communication with Browsers:  The introduction of WebDriver Bidi support signals a significant architectural shift that will likely influence future development.
+    - Implementation of WebDriver Bidi support and related commands.
+    - Focus on improving compatibility and stability of WebDriver Bidi interactions.
+
+•  Technical Debt Management: While the project actively addresses bug fixes and improves code quality, the rapid pace of development and introduction of new features could lead to potential technical debt if not carefully managed.
+    - The logs show a high frequency of bug fixes and refactoring, suggesting a need for continuous attention to technical debt.
+    - The ongoing work on component testing and WebDriver Bidi support requires careful planning and execution to minimize future technical debt.

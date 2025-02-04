@@ -1,0 +1,38 @@
+[description]
+Vyper, a Pythonic smart contract language. This commit log chronicles its evolution from initial implementation to beta releases, highlighting key features, improvements, and bug fixes.
+
+[milestones]
+• Implemented named structs
+• Added support for constants and constant folding
+• Introduced the `convert` function for type conversions, deprecating older methods
+• Implemented private functions and private function calls with argument passing
+• Added support for default function arguments
+• Implemented event logging with support for various data types, including bytes arrays
+• Developed a debugger (vdb)
+• Added support for custom units in variables and functions
+• Introduced the `vyper-serve` command for compiling Vyper code via JSON interface
+• Added support for binary literals and improved bytes array handling
+• Implemented integer division and removed implicit conversion for arithmetic operations
+• Introduced block scoping for `if` statements and `for` loops
+• Renamed the project from Viper to Vyper
+• Released beta versions of Vyper (0.1.0-beta.1 through 0.1.0-beta.4)
+
+[patterns]
+• Continuous improvement of type handling and safety
+    - Introduction of `convert` function, stricter type checking, custom unit support, overflow protection, removal of implicit conversions.
+    - Reduced type-related errors and improved code clarity.
+• Focus on gas optimization
+    - Optimized LLL generation for various operations, improved gas estimation, and reduced gas costs for private functions.
+    - Resulted in more efficient smart contracts.
+• Enhanced developer experience
+    - Introduction of `vyper-serve`, vdb, improved error messages, clear documentation updates, and standardized code formatting.
+    - Streamlined development and debugging processes.
+• Incremental feature additions
+    - Step-by-step implementation of features like constants, private functions, default arguments, events, bytes array handling, etc.
+    - Allowed for thorough testing and refinement of each feature.
+• Active community contributions
+    - Numerous pull requests addressing bug fixes, documentation updates, examples, and new features.
+    - Enhanced the project's development pace and robustness.
+• Addressing technical debt
+    - Refactoring of parser, removal of unnecessary dependencies, and cleanup of old code.
+    - Improved maintainability and reduced code complexity.

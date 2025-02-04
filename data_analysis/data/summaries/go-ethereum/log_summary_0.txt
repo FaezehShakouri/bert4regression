@@ -1,0 +1,61 @@
+[Description]
+Go Ethereum (geth): Leading Ethereum execution client implementing full node functionality, smart contracts, and network protocols.
+
+[Milestones]
+Implemented state history version 2.
+Fixed bugs related to state revert and other functionalities.
+Enhanced TOML file and gencodec.
+Initialized ChainID in SetCodeTx copy method.
+Updated various checks and functionalities related to ChainID, API, and subpool reset.
+Upgraded Go version to 1.23.5.
+Renamed system variables and updated Ethereum Improvement Proposals (EIPs).
+Bumped dependencies and updated EVM tests.
+Supported Solidity error unpacking and made changes to metrics and state context.
+Changed error messaging system and introduced bytecode-building utility.
+Developed protocol handler fuzzers and commenced a new version release.
+Supported EIP-712 array types and dynamic transaction support.
+Set basefee for AccessList and created testcases.
+Updated dependencies and crypto module, and security policies.
+Implemented flat deposit requests encoding and deprecated unused parameters.
+Changed core/txpool/blob pool functions and made improvements to trie and triedb/pathdb functions.
+Added stateless witness builders and more efficient error handling.
+Released Geth versions v1.14.4, v1.14.5, and v1.14.6.
+Implemented new features, bug fixes, system enhancements, library updates, and refactoring.
+Released new Geth versions and upgraded Ubuntu and Go version support.
+Improved performance and made changes and improvements to testing.
+Focused on code efficiency, optimization, and refactoring.
+Made changes to ContractCode, Verkle forks, and transaction pool feature.
+Supported BlobTxType receipts and added a method to test for subscription support.
+Supported withdrawals (EIP-4895) and added API debug_getTrieFlushInterval.
+Improved Ethereum API and network behavior and announced a new release cycle (v1.12.1).
+Implemented major features and made improvements and bug fixes in key modules.
+Optimized codebase and enhanced CLI operations and networking protocols.
+Introduced Gray Glacier hard-fork (EIP-5133) and Eth67 protocol.
+Added BLST fuzzing support and incorporated debug_traceCall with block overrides.
+Fixed critical race condition and goroutine leakage, and updated canonical hash marker.
+Improved testing methods and test coverage, and updated software dependencies, docker, and btcsuite/btcd/btcec.
+Added a command to validate trie nodes integrity and remote DB support.
+Made version upgrades and operational optimizations, and worked on Ethereum components.
+Refined error handling, exceptions, and code readability, and started new release cycles.
+Upgraded dependencies and made updates to crypto, eth, and blockhash.
+Focused on testing and made EIP-1559 and Docker updates.
+Fixed bugs, typos, and method names, and made code cleanups and refactoring.
+Made version updates and implemented fixes and new features.
+Focused on optimization, efficiency, and bug fixes, and made rapid deployment of fixes.
+Made bug fixing, documentation updates, feature enhancement, and test suite improvement.
+Refined and developed core/state/snapshot feature, and added benchmarking to cmd/evm.
+Implemented eth/65 transaction fetcher and fixed static check warnings.
+Updated fastcache version and made improvements to the trie module.
+Started releases cycles v1.9.9 and go-ethereum v1.9.8, and transitioned to Go modules.
+Made code refactoring and warning fixes, and bug fixes across various modules.
+Made enhancements, such as clique\_status API method and istanbul integration.
+Made Ethereum network configuration changes and miner import time fixes.
+
+[Patterns]
+Frequent contributions from specific developers drive project development and ensure continuity.
+Focus on code efficiency, optimization, and refactoring improves system performance and maintainability.
+Emphasis on testing and bug fixing increases system stability and reliability.
+Regular updates and version releases keep the project up-to-date and introduce new features.
+Adherence to EIPs ensures compatibility and alignment with Ethereum standards.
+Continuous integration and deployment (CI/CD) optimization streamlines the development process.
+Code quality and readability focus improves code maintainability and collaboration.

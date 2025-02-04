@@ -1,0 +1,29 @@
+[description]
+Browserslist is a tool that allows developers to specify the browsers they want to support in their web projects.  It uses a flexible query syntax to target browsers based on usage statistics, release dates, or specific versions.  It is integrated into various build tools and helps optimize website performance by only including necessary polyfills and CSS prefixes.
+
+[milestones]
+• Release 4.24.4: Bug fixes and dependency updates.
+• Optimization of FS cache: Improved performance for file system caching.
+• Introduction of `browserslist.findConfigFile` API: Allows programmatic access to configuration files.
+• Addition of various support queries:  Including "fully supports" and "partially supports."
+• Implementation of a query resolving cache: Significant performance enhancement for repeated queries.
+• Introduction of `mobileToDesktop` option: Allows querying mobile browsers as their desktop counterparts.
+• Support for multiple environments in a single configuration section.
+• Introduction of `ignoreUnknownVersions` option:  Handles unknown browser versions more gracefully.
+• Support for shared configurations from external packages.
+• Implementation of a linter.
+• Support for patch versions of Electron.
+• Transition from Travis CI to GitHub Actions.
+• Addition of `browserslist config` query:  Allows querying the active Browserslist configuration.
+
+[patterns]
+• Regular Dependency Updates: Frequent updates to dependencies, indicating active maintenance and addressing potential vulnerabilities.
+• Performance Improvements:  Recurring focus on optimizing performance, including caching and faster parsing of large files.
+• Community Contributions:  Multiple pull requests from contributors, demonstrating an active and engaged community.
+• Focus on Documentation: Consistent updates to documentation, improving clarity and addressing user feedback.
+• Increased Testing:  Gradual increase in test coverage and stability, reflecting a commitment to code quality.
+• Tooling Enhancements: Development of new tools and APIs, expanding the ecosystem and usability of Browserslist.
+• Refactoring and Code Cleanup: Regular code cleanups and simplifications.
+• Addressing Edge Cases:  Consistent attention to fixing bugs and addressing edge cases, particularly around browser versions and configuration handling.
+• Shifting Build Tools:  Movement from Yarn to pnpm and changes in CI configurations, reflecting adaptation to evolving development practices.
+• Deprecated Features: Removal of certain options and features, like `dangerousExtend`, indicating a focus on streamlining and simplifying the API.

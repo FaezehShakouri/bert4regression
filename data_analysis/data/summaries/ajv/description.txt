@@ -1,0 +1,1 @@
+Fast JSON Schema validator with TypeScript support, focused on performance and strictness.

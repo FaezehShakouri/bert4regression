@@ -1,0 +1,1 @@
+Vyper: Pythonic smart contract language with Venom IR, Cancun EVM support, and enhanced optimizations.

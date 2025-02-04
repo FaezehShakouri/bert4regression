@@ -1,0 +1,13 @@
+[description]
+A JavaScript utility for aligning the delimiters and cells of markdown tables.
+
+[milestones]
+• 3.0.0: Complete rewrite using ESM modules. This significantly changed the project's architecture and how it's used.  JSDoc-based types were added for improved developer experience.
+• 2.0.0: Algorithm rewrite, resulting in potential breaking changes. Several options like custom delimiters, `rule`, and `dot` alignment were removed. `pad` option was renamed to `alignDelimiters`.
+• 1.0.0: Initial stable release of the utility.
+
+[patterns]
+• Regular maintenance: Frequent updates of dev dependencies and project metadata like `package.json`, READMEs and other configuration files show an ongoing effort to keep the project up to date.
+• Focus on code quality: Refactoring for code style, use of linters (xo, eslint), and testing indicate a focus on maintaining code quality and consistency.
+• Simplification and modernization: The project has moved towards a simpler and more modern codebase with the removal of several options and the transition to ESM. This suggests a preference for maintainability and alignment with current JavaScript standards.  Use of GitHub Actions further modernizes the CI process.
+• Addressing technical debt:  Refactoring efforts, like simplifying branches, and bundle size improvements, indicate a conscious effort to address technical debt and maintain project health.

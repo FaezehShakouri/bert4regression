@@ -1,0 +1,1 @@
+Modular JavaScript internationalization library (i18n) with CLDR data, Intl polyfills, and React/Vue support.

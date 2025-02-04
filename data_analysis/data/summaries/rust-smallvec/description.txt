@@ -1,0 +1,1 @@
+rust-smallvec: Inline storage vector optimized for small sizes, featuring no_std support and enhanced performance.

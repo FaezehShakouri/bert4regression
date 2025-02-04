@@ -1,0 +1,1 @@
+Go library accesses system config via sysconf/sysctl, supporting various Unix-like OSs.

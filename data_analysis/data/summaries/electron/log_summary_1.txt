@@ -1,0 +1,55 @@
+[description]
+Electron v14.0.0-nightly development from March 2020 to May 2021.
+
+[milestones]
+• Chromium updated to v92.
+    - Multiple Chromium updates from v90 to v92.
+• Node.js updated to v14.17.0.
+    - Node updates throughout the development period.
+• Enabled context isolation by default.
+    - Improved security by isolating preload scripts.
+• Enabled nativeWindowOpen by default.
+    - Changed window opening behavior.
+• Implemented <webview> using contextBridge.
+    - Improved security for webviews.
+• Removed app.allowRendererProcessReuse.
+    - Changed process management behavior.
+• Removed remote module.
+    - Encouraged use of contextBridge for IPC.
+• Introduced Electron Fuses.
+    - Added package-time feature toggles.
+• Added several new APIs.
+    - session.storagePath, WebFrameMain visibilityState, roundedCorners option for BrowserWindow, process.contextId/contextIsolation, support for DOM elements over contextBridge.
+• Deprecated and removed several APIs.
+    - additionalFeatures, BrowserWindow option inheritance, globalShortcut before ready, several systemPreferences methods, worldSafeExecuteJavaScript, several crashReporter and extension APIs.
+• Documentation improvements and reorganization.
+    - Style guide updates, revised several feature pages, improved build instructions and troubleshooting guides, updated default WebPreferences values.
+• Build system improvements.
+    - Goma usage for faster builds, patch system improvements, various CI enhancements, support for Apple Silicon, updated TypeScript and webpack, symbol server updates.
+• Performance optimizations.
+    - Optimized contextBridge and data structures.
+• Refactoring and code cleanup.
+    - Ginification of several modules, removed dead code and unused patches, TypeScript conversion of various modules, improved error handling and logging.
+
+[patterns]
+• Active modernization and refactoring efforts.
+    - Ginification of modules, TypeScript conversion, removal of deprecated APIs.
+    - Indicates a focus on improving code maintainability and reducing technical debt.
+• Focus on security improvements.
+    - Context isolation enabled by default, contextBridge usage in webviews, removal of remote module.
+    - Demonstrates a priority on enhancing the security posture of Electron applications.
+• Transition to newer technologies and dependencies.
+    - Chromium and Node.js updates, TypeScript 4 upgrade, webpack usage.
+    - Suggests active adaptation to the evolving web ecosystem and leveraging modern tools.
+• Continuous improvement of the build system and CI.
+    - Goma integration, patch system automation, docker image updates.
+    - Highlights a commitment to efficient development processes and reliable releases.
+• Ongoing documentation updates and revisions.
+    - Improved documentation style and organization, updated API descriptions.
+    - Reflects attention to developer experience and providing clear guidance.
+• Potential technical debt in remaining patches.
+    - Several patches applied to Chromium and Node.js.
+    - While some patches may be necessary, they could represent potential technical debt if not upstreamed or regularly reviewed.
+• Focus on platform compatibility and accessibility.
+    - Support for Apple Silicon, Wayland support, improved dark mode handling, various platform-specific fixes.
+    - Indicates a commitment to cross-platform compatibility and inclusive design.

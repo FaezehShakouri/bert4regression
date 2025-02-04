@@ -1,0 +1,24 @@
+[Description]
+WebdriverIO has undergone significant evolution from v5 to v9, marked by major architectural changes, expanded capabilities for browser and mobile automation, enhanced developer tooling, and improved TypeScript support.  Version 9 introduces WebDriver Bidi support, drops older Node.js versions, and focuses on component testing.
+
+[Milestones]
+v7.0.0 (Async API & TypeScript):  Fundamental shift to an asynchronous API for improved performance. Introduced `attachToSession` and enhanced mobile emulation.  Complete TypeScript rewrite of packages for improved type safety and developer experience. Included auto-compilation and custom tsconfig-paths options. Improved spec reporting for multiremote setups.
+v6.3.0 - v7.1.0 (DevTools & Testing):  Significant expansion of DevTools protocol integration for advanced debugging, performance measurement, and mobile emulation. Improved Selenium v4 Grid CDP support.  Support for grouped specs, custom locator strategies, and extended Appium capabilities (resource-id selectors, real-time reporting). Added Firefox 86+ support in DevTools service.
+v5.0.0 - v7 and throughout (CLI & Error Handling): Rewritten CLI with improved onboarding and tagged package installation. Enhanced error handling with clearer messages, error diffs, and `SevereServiceError` introduction. Shortened base64 strings in logs.
+v9.0.0 (WebDriver Bidi & Node.js 18+): Introduces WebDriver Bidi support for bidirectional browser communication. Drops Node.js v16 support (v18+ required). Improves type safety, error handling, and introduces new commands (setViewport, isStable/waitForStable). Enhances existing commands (switchFrame, click, getHTML, scrollIntoView) with better shadow DOM and mobile support. Removes deprecated commands (touchAction, isDisplayed/isDisplayedInViewport).
+Component Testing (Ongoing): Adds StencilJS support, improves mocking capabilities, and enhances developer experience with loading animations, automatic devtools opening, and global fixtures.
+Developer Experience Improvements (v9 and ongoing):  Migration to Esbuild and pnpm. New ESLint rules, improved TypeScript support (Node.js 20 compatibility), simplified CLI setup wizard, and enhanced documentation with interactive examples.
+Integrations & Features (v9 and ongoing): New JSON reporter (`@wdio/json-reporter`), improved BrowserStack integration, snapshot testing support, custom install command with pnpm support, dotenv support in CLI, enhanced visual testing, sharding support in CLI. Removed CrossBrowserTesting integration.
+Bug Fixes (Ongoing): Numerous bug fixes addressing command behavior, type definitions, reporting, and compatibility across browsers and frameworks.
+
+[Patterns]
+Continuous Integration and Deployment: GitHub Actions for CI/CD, automated website deployments, and dependabot for dependency updates.
+Focus on Documentation: Continuous improvements and updates to documentation with examples and TypeScript clarifications.
+Active Community Engagement: OpenCollective, workshops, and community page for open office hours. High number of commits, pull requests, and issue resolutions from both core maintainers and community members.
+Refactoring and Code Quality: Ongoing efforts to address technical debt, improve code quality with ESLint and test coverage increases, especially during TypeScript transition.  LGTM scan warnings mitigated.  New ESLint rules and TypeScript enhancements in v9 demonstrate continued commitment.
+Dependency Management: Updates and pinning of dependencies (Puppeteer, Cucumber, type definitions) for security and compatibility. Transition to using `got` for HTTP requests. Migration to pnpm in v9.
+TypeScript Adoption Strategy: Gradual migration to TypeScript, starting with individual packages and moving to utilities and core packages.
+Focus on Developer Experience: Simplified setup, enhanced tooling, and better documentation are prioritized. Improvements to the configuration wizard, build process, and TypeScript.
+Expanding Ecosystem: Active expansion through support for new frameworks, services, and reporters. Addition of new plugins and integrations while removing less-used ones.
+Shift Towards BiDirectional Communication with Browsers: Introduction of WebDriver Bidi support signals a major architectural shift influencing future development.
+Technical Debt Management: Active bug fixing and code quality improvements are ongoing, but the rapid pace of development requires continuous attention to potential technical debt.

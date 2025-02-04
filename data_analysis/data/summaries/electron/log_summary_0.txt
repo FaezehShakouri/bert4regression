@@ -1,0 +1,25 @@
+[description]
+Electron project development spanning from 2015 to 2021, encompassing major version upgrades, API changes, security enhancements, performance optimizations, documentation improvements, and build system modernization.
+
+[milestones]
+Chromium Upgrades:** Continuous upgrades from v42 (2015) to v134+ (2023), requiring ongoing adaptation to API changes and leveraging new web platform features. Specific versions mentioned include v59, v61-v72, v90-v92, v133-v134.
+Node.js Upgrades:** Regular updates from v8.2.1 (2015) to v20+ (2023), bringing performance improvements, new features, and security updates. Specific versions mentioned include v8.9.3, v9.3.0, v9.7.0, v10.2.0, v10.6.0, v10.10.0, v10.11.0, v14.17.0, v16, v18, v20.
+Context Isolation and Security:** Enabled context isolation by default, improving security by isolating preload scripts. Implemented contextBridge for secure IPC, removing the remote module.  Introduced Electron Fuses for package-time feature toggles. Enhanced security features like mixed-sandbox mode, improved IPC validation, and asar integrity validation on macOS.
+Window Management:** Implemented nativeWindowOpen by default, changing window opening behavior.  Introduced Windows Control Overlay (WCO) for modern title bar styling on Windows and Linux.  Implemented BrowserView (later replaced by WebContentsView) for embedding web content.  Added custom window level support.
+API Evolution:** Introduced and enhanced various APIs, including session, desktopCapturer, Notification API, Touch Bar API, UtilityProcess API, File System Access API, shared dictionary management API, WebFrameMain API, and protocol handling API. Deprecated and removed APIs like `app.allowRendererProcessReuse`, `additionalFeatures`, and several `systemPreferences` methods. Promisified numerous APIs.
+Offscreen Rendering (OSR):** Significant improvements and fixes to OSR, including refactoring, crash resolutions, improved framerate control, and support for transparent windows.
+Build System Modernization:** Transitioned from GYP to GN build system.  Improved build performance with Goma integration. Enhanced patch system and CI processes. Added support for Apple Silicon.
+Documentation and Internationalization:** Extensive documentation updates and reorganization, including new guides, API clarifications, style updates, and translations into various languages (Korean, Portuguese, Russian, French, Japanese, Spanish, Ukrainian).
+Performance Optimizations:** Optimized contextBridge, data structures, and caching mechanisms. Migrated certain processes out-of-process for performance isolation.
+Refactoring and Code Cleanup:** Ongoing code refactoring, including Ginification of modules, TypeScript conversion, removal of dead code, and improved error handling. Transitioned from CoffeeScript to JavaScript. Removed Brightray components.
+Renaming from Atom Shell:** Project officially renamed from Atom Shell to Electron.
+
+[patterns]
+Continuous Modernization:** Active refactoring, API modernization, dependency upgrades (Chromium, Node.js, TypeScript, webpack), and build system improvements demonstrate a commitment to keeping Electron up-to-date with evolving technologies.
+Security Focus:** Consistent improvements to security posture through context isolation, contextBridge, removal of remote module, sandbox enhancements, and other security-focused features.
+Cross-Platform Compatibility:** Addressing platform-specific issues and ensuring consistent behavior across Windows, macOS, and Linux. Includes WCO implementation on Windows and Linux, macOS specific fixes, and dropping support for older macOS versions.
+Developer Experience:** Focus on improving documentation, promisifying APIs, providing TypeScript definitions, and enhancing developer tools.
+Community Involvement:** Active community contributions, including documentation translations, bug fixes, and feature implementations.
+Test-Driven Development and CI:** Increasing emphasis on testing, with new specs for features and bug fixes. Robust CI processes with regular updates to configurations and scripts.
+Addressing Technical Debt:** Ongoing efforts to remove deprecated APIs, refactor code, and address technical debt accumulated through rapid development.
+Performance Optimization:** Continuous efforts to improve performance through various optimizations, including caching, data structure improvements, and process isolation.

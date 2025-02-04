@@ -1,0 +1,58 @@
+[description]
+Hardhat, initially named Buidler, is a development environment for Ethereum smart contracts.  This commit log reflects its early development, focusing on core functionality, plugin infrastructure, and integrations with other tools like Ethers.js, Waffle, and Truffle.
+
+[milestones]
+• Hardhat Network:  A local Ethereum network for development and testing. Includes forking from mainnet and other networks.
+    - Support for mainnet forking, including account impersonation, RPC methods, and transaction pool management.
+    - Implementation of `evm_mine`, `evm_setIntervalMining`, `evm_snapshot`, and `evm_revert`.
+• Plugin System: Infrastructure to extend Hardhat's functionality.
+    - Plugin loading and configuration resolution.
+    - Introduction of `extendEnvironment` and type extensions.
+• Hardhat Ethers: Integration with the Ethers.js library.
+    - Exposing Ethers.js API through the Hardhat Runtime Environment (HRE).
+    - Implementation of `getSigner` and helper functions.
+• Hardhat Waffle: Plugin for testing with Waffle and Chai.
+    - Automatic initialization of Waffle matchers.
+    - Integration with Buidler EVM and type extensions for testing.
+• Hardhat Etherscan: Plugin for verifying contracts on Etherscan.
+    - Support for multiple Solidity versions.
+    - Handling of fully qualified names, constructor arguments and libraries.
+• Buidler EVM:  (Renamed to Hardhat Network)
+    - Implemented transaction pool, nonce management, logging, block gas limit management and gas estimations.
+    - Improved logging, error messages, and handling of Solidity compiler versions.
+• Improved Compilation Pipeline: Changes to how Solidity files are compiled and cached.
+    - Handling of multiple Solidity versions (`--multi-solc`).
+    - Introduction of `CompilationJob` and internal tasks for compilation steps.
+• TypeScript Support:  Introduction of TypeScript for plugin and project development.
+    - Configuration and setup for TypeScript projects.
+    - Migration guides for Buidler plugins and type extensions.
+• Website and Documentation: Creation of the Hardhat website and documentation.
+    - Migration guides, tutorials, and API documentation.
+    - Improved error messages and documentation links.
+• Project Initialization:  Improvements to creating new Hardhat projects.
+    - Sample project and configuration files.
+    - Scripts for installing dependencies.
+
+
+[patterns]
+• Focus on Testing and Debugging:  Many commits are dedicated to improving error messages, stack traces, and testing infrastructure.
+    - Extensive use of Mocha for testing across packages.
+    - Development of test helpers and fixture projects.
+    - Introduction of `--verbose` mode.
+• Iterative Development of Core Features: The development of core features like the Hardhat Network and the plugin system progressed incrementally.
+    - Initial implementations were basic, with more advanced features added over time.
+    - New features were often accompanied by corresponding tests and documentation updates.
+• Refactoring and Code Quality:  Several commits focused on refactoring, improving code readability, and addressing technical debt.
+    - Simplification of type annotations and imports.
+    - Use of design patterns like lazy loading.
+• Emphasis on Integration with Existing Tools: A significant effort was made to integrate Hardhat with existing tools like Ethers.js, Waffle, and Truffle.
+    - This includes providing type extensions and helper functions to improve developer experience.
+• Migration from Buidler to Hardhat:  The renaming from Buidler to Hardhat required significant changes across the codebase and documentation.
+    - This demonstrates a commitment to community feedback and improving the project's image.
+• Prioritization of Performance: Several optimizations were implemented to improve startup time and compilation speed.
+    - Use of caching mechanisms for Solidity compilation and dependency resolution.
+    - Lazy loading of modules.
+• Community Involvement: Incorporation of community contributions, including bug fixes, documentation updates, and new plugins.
+    - Pull requests and feedback from external contributors were actively reviewed and merged.
+
+

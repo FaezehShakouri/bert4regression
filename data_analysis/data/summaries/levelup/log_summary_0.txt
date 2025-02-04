@@ -1,0 +1,48 @@
+levelup
+A Node.js wrapper for LevelDB, providing a simplified API and additional features like streams and encodings.
+
+milestones
+• Version 5.0.0
+    - Dropped support for older Node.js versions, IE, Safari 9-11, and stock Android.
+    - Modernized syntax and bumped standard.
+    - Removed Batch._levelup property.
+    - Default export removed.
+• Version 4.0.0
+    - Introduced encoding options for chained batch put() and del().
+• Version 3.0.0
+    - Browser support added.
+    - Removal of brfs and using Buffer.from().
+• Version 2.0.0
+    - Support for passing options to open().
+    - Added clear() method.
+    - Dropped leveldown as bundled dependency.
+    - Introduced promise support.
+    - Removed encodings option.
+    - TypeScript definitions added.
+• Version 1.0.0
+    - Static functions deprecated.
+    - WriteStream removed.
+    - Default type for batch operations set.
+
+patterns
+• Dependency Updates
+    - Regular dependency bumps via automated tools like Dependabot and Greenkeeper.
+    - Demonstrates a focus on staying up-to-date with dependencies and security best practices.
+• Testing Improvements
+    - Rewriting tests from Buster to Tape for better browser support.
+    - Addition of code coverage for browser tests.
+    - Focus on improving the reliability and portability of the test suite.
+• API Modernization
+    - Dropping support for older environments and modernizing the codebase.
+    - Simplifying API surface and improving developer experience.
+• Performance Optimizations
+    - Multiple performance improvements to ReadStreams and other areas.
+    - Suggests an ongoing effort to keep levelup performant.
+• Documentation Enhancements
+    - Consistent attention to improving documentation and READMEs.
+• Removal of Less-Used Features
+    - Removal of features like approximateSize(), WriteStream, and iterators.
+    - Simplifies the library and suggests a preference for focusing on core functionality.
+• Refactoring and Code Style Changes
+    - Several instances of refactoring, syntax modernization, and code style updates.
+    - Reflects ongoing code maintenance and efforts to improve maintainability.

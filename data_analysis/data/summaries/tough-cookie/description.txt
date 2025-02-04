@@ -1,0 +1,1 @@
+Robust Node.js/browser cookie library (TypeScript) with RFC 6265 compliance and enhanced maintainability.

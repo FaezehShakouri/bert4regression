@@ -1,0 +1,1 @@
+Solidity (solc-js): JavaScript compiler wrapper with TypeScript, Standard JSON I/O, and SMT solver integration.

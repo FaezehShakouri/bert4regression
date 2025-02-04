@@ -1,0 +1,1 @@
+JavaScript error & performance monitoring SDK with OpenTelemetry integration, focusing on DX and reduced bundle size.

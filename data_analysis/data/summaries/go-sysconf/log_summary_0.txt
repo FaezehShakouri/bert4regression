@@ -1,0 +1,52 @@
+[description]
+A Go library providing access to system configuration variables using the sysconf(2) or sysctl(3) system calls, supporting various Unix-like operating systems.
+
+[milestones]
+• Initial FreeBSD Support
+    - Implemented all defined sysconf variables.
+• Darwin Support
+    - Added support for Darwin (macOS), including necessary adjustments for various system calls.
+• OpenBSD Support
+    - Implemented support for OpenBSD and utilized sysctl for specific variables.
+• NetBSD Support
+    - Added support for NetBSD.
+• Solaris Support
+    - Implemented support for Solaris.
+• Windows Support
+    - Added support for testing on Windows.
+• ARM Runner Support
+    - Introduced CI runner for ubuntu-24.04-arm.
+• Go 1.18 Support
+    - Updated the project to utilize Go 1.18.
+• Go 1.19 Support
+    - Updated to use Go 1.19.
+• Go 1.20 Support
+    - Updated to Go 1.20 and dropped support for older versions.
+• Go 1.21 Support
+    - Updated CI to use Go 1.21.
+• Go 1.22 Support
+    - Updated CI to use Go 1.22.
+• Go 1.23 Support
+    - Updated CI to use Go 1.23.
+
+[patterns]
+• Continuous dependency updates
+    - Regular bumping of dependencies using dependabot.
+    - Improves security and incorporates latest features.
+• CI/CD improvements
+    - Migration from Travis CI to GitHub Actions.
+    - Gradual refinement and addition of CI checks, such as formatting and static analysis.
+    - Expansion of tested platforms and Go versions.
+• Platform support expansion
+    - Incremental addition of operating system support (FreeBSD, Darwin, OpenBSD, NetBSD, Solaris).
+    - Demonstrates a commitment to cross-platform compatibility.
+• Code quality focus
+    - Use of linters and static analysis tools.
+    - Refactoring and simplification of code (e.g., simplifying skip conditions, removing unused variables).
+    - Improvements to testing practices (e.g., adding subtests, improved error handling in tests).
+• Dependency on `golang.org/x/sys`
+    - Heavy reliance on the `x/sys` package for system call access.
+    - Introduces potential instability due to changes in the upstream dependency.
+• Non-standard variable handling
+    - Inclusion of non-standard sysconf variables.
+    - Could lead to inconsistencies across platforms.

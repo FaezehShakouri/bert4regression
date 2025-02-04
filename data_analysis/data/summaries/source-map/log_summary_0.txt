@@ -1,0 +1,40 @@
+[description]
+A JavaScript library for working with source maps.
+
+[milestones]
+• Addition of source map specification tests
+    - Added a test harness for source map spec tests.
+    - Included tests for transitive mappings.
+    - Integrated existing source map tests.
+• Improvement of performance in certain situations
+    - SourceMapConsumer now sorts generated and original mappings on demand.
+• Implementation of core source map features
+    - Implemented SourceMapConsumer.prototype.computeColumnSpans.
+    - Implemented SourceMapConsumer.allGeneratedPositionsFor.
+    - Added support for mapping from original to generated positions.
+• Rewriting performance-critical parts in Rust and WebAssembly
+    - Implemented VLQ decoding in WebAssembly for improved performance.
+    - Provided asynchronous initialization for WebAssembly module.
+• Upgrade to WebAssembly based mappings
+    - Replaced JavaScript QuickSort with Rust/WebAssembly implementation.
+    - Optimized base64 decoding using WebAssembly.
+
+[patterns]
+• Focus on Performance Optimization
+    - Several commits aimed at improving parsing speed and memory usage.
+    - Use of WebAssembly demonstrates a commitment to leveraging performance optimization techniques.
+• Addressing Technical Debt
+    - Refactoring of internal data structures and comparators suggests efforts to reduce technical debt and improve maintainability.
+• Incremental Feature Development
+    - Source map specification tests were added incrementally, starting with a draft and refining it based on feedback.
+• Community Contributions and Code Reviews
+    - Pull requests and code reviews indicate an active community and a focus on code quality.
+    - Contributions from various developers show a diverse range of perspectives and expertise.
+• Continuous Integration and Automated Testing
+    - Use of Travis CI and later GitHub Actions reflects a strong emphasis on automated testing and continuous integration.
+• Focus on Code Quality and Maintainability
+    - Adoption and enforcement of linting and code formatting rules (Prettier, ESLint) ensures consistent code style and reduces code quality issues.
+• Attention to Edge Cases and Error Handling
+    - Commits addressing specific bugs, such as off-by-one errors and handling of null values, show a dedication to thorough testing and robust error handling.
+• Transition to Modern Tooling and Dependencies
+    - Shift from Dryice to Webpack for builds and the upgrade to GitHub Actions for CI demonstrate a commitment to keeping up-to-date with modern development tools.

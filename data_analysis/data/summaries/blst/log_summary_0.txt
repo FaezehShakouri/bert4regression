@@ -1,0 +1,55 @@
+[description]
+BLST (Boneh-Lynn-Shacham) is a pairing-friendly elliptic curve cryptography library. The project focuses on performance and provides bindings for various programming languages.
+
+[milestones]
+• Initial Commit and Rust Bindings
+    - Basic library structure and core functionality established.
+    - Rust bindings introduced with fundamental features.
+• Go Bindings and CI Integration
+    - Go bindings implemented, expanding language support.
+    - Continuous Integration (CI) set up with Travis and GitHub Actions.
+• Node.js and C# Bindings
+    - Node.js and C# bindings added, broadening accessibility.
+• Java Bindings and JNI Loader
+    - Java bindings developed with a custom Java Native Interface (JNI) loader.
+• Constant-Time Inversion and Scalar Arithmetic
+    - Constant-time inversion implemented for enhanced security.
+    - Scalar arithmetic operations exposed in bindings.
+• Multi-Scalar Multiplication and Pippenger Algorithm
+    - Multi-scalar multiplication implemented for efficiency.
+    - Pippenger's algorithm added for faster multi-scalar multiplication.
+• Hash-to-Curve Implementation and Testing
+    - Hash-to-curve functionality implemented according to drafts.
+    - Comprehensive test vectors added for validation.
+• BLS Signature v3 Key Generation
+    - Support for draft-irtf-cfrg-bls-signature-05 key generation added.
+• Portable Mode and Optimization Improvements
+    - Portable mode introduced for wider platform compatibility.
+    - Performance optimizations through improved caching and algorithm refinements.
+• CHERI Support and Platform-Specific Builds
+    - CHERI capability pointers support added for specific architecture.
+    - Various platform-specific build enhancements and fixes.
+
+[patterns]
+• Continuous Improvement and Refinement
+    - Frequent commits address bugs, performance issues, and compiler warnings.
+    - Continuous refactoring and code cleanup demonstrates focus on quality.
+• Platform-Specific Optimization
+    - Assembly code and compiler flags tailored to various architectures (x86_64, ARMv8, etc.).
+    - Focus on maximizing performance across different platforms.
+• Security Focus
+    - Constant-time algorithms and hardened deserialization highlight security considerations.
+    - Address sanitizer and static analysis tools used to detect potential vulnerabilities.
+• Multi-Language Support
+    - Bindings for multiple languages (Go, Rust, Python, Java, Node.js, C#) expand reach.
+    - Focus on providing consistent interfaces across languages.
+• Community Contributions and Feedback
+    - External contributions and bug reports addressed.
+• Testing and Benchmarking
+    - Comprehensive test suite and benchmarks demonstrate functionality and performance.
+• Dependency Management
+    - Careful management of dependencies and build tools.
+• Documentation Updates
+    - README and other documentation updated to reflect changes and improvements.
+• Technical Debt Management
+    - Refactoring and cleanup efforts suggest awareness of potential technical debt.

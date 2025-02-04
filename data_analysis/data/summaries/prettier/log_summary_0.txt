@@ -1,0 +1,60 @@
+[description]
+Prettier, a code formatter, aims for consistent code style across various languages and integrates with multiple editors.  Development focuses on improving formatting heuristics, expanding language support, enhancing CLI/API functionality, performance optimization, and robust dependency management.
+
+[milestones]
+
+• **Core Functionality & Features:**
+    - Support for reading config from package.json with JSONC syntax on Bun.
+    - Implementation of `objectWrap` config option.
+    - Improved `FormatResultsCache` for enhanced caching.
+    - Added `--cache` CLI option.
+    - Bundled printers in plugins and auto-generated types files.
+    - Added name to errors for improved debugging.
+    - Supported import attributes.
+    - New Playground for testing with different parsers and options.
+    - Plugin API for extending Prettier with custom parsers.
+    - Introduction of new rules and options (e.g., conflicting comment check flags, negative index access, flat AST path calls, embedded language formatting, ignoring unknown files).
+
+• **Language Support:**
+    - Markdown: Added TOML support, auto-detection of list styles, preserved non-breakable whitespace.
+    - GraphQL: Support for top-level interpolations, schema definitions, and type extensions.
+    - CSS: Support for `prettier-ignore`, CSS case normalization, and Less/SCSS improvements.
+    - TypeScript:  Numerous improvements and bug fixes, including JSX formatting, optional catch binding, declare modifiers, upgrades to newer TypeScript versions (2.6.2, 4.1, 4.2, 4.3, 5.5), reduced plugin size.
+    - JSX: Improved formatting for styled-components, fragments, spread children, and addressed various line break/inlining issues.
+    - Handlebars: Support out of alpha.
+    - HTML, Vue, Angular, MDX: Introduction of basic support with ongoing improvements.
+    - Angular: Improved ICU expression printing, support for `@let` syntax.
+
+• **CLI & Configuration:**
+    - Added `--loglevel` and `--stdin-filepath` options and support for multiple ignore patterns.
+    - Improved error handling and reporting, including clickable errors.
+    - Support for configuration files via cosmiconfig and `--find-config-path` option.
+
+• **Infrastructure & Tooling:**
+    - Migration from Docusaurus 1 to Docusaurus 3 for website documentation.
+    - Replaced `chalk` with `node-style-text`.
+    - Dropped Node.js 10, 12, and 18 support for development builds.
+    - Updated yarn to v4.6.0.
+    - Migrated from `probot/no-response` to `lee-dohm/no-response`.
+    - Migrated various parsers and the CLI to ES Modules.
+    - Bundled pure ESM packages as CommonJS in vendors directory.
+    - Removal of deprecated `babylon` and `postcss` parsers and CLI options.
+    - Switch default branch to `main`.
+    - Added action to publish preview release for PRs.
+
+
+[patterns]
+
+• **Automated Dependency Management:** Extensive use of Dependabot and Renovate Bot for automated dependency updates and security.
+• **Frequent Releases & Documentation:** Regular releases, changelog updates, and website updates, demonstrating a commitment to frequent releases, well-documented changes, and good communication.
+• **Performance Optimization:** Focus on improving performance through reduced bundle sizes, improved computational complexity, and AST traversal optimization.
+• **Addressing Technical Debt:**  Dependency updates, code refactoring, and dropping support for older Node.js versions.
+• **Active Community Engagement:**  Contributions from various developers, responses to issues, and incorporation of community feedback.
+• **Modernization & Code Quality:** Transitioning to ES Modules, increased use of internal ESLint rules (including `eslint-plugin-unicorn`), and focus on code quality and maintainability.
+• **Improved Developer Experience:** Improvements to build scripts, release processes, and testing infrastructure.
+• **Focus on Key Ecosystems:** Dedicated attention to TypeScript support and Angular features.
+• **Documentation Focus:** Consistent effort to enhance documentation, including website updates, examples, and improved clarity.
+• **Gradual Deprecation:**  Phased removal of older features and APIs (e.g., "minimal" Pipeline Operator, importReflection).
+• **Iterative Development & Bug Fixing:** Addressing specific formatting edge cases and bugs reported by users, with frequent snapshot updates.
+• **Expanding Language Support:** Ongoing effort to add and improve support for various languages.
+• **Strong Testing Practices:** Utilizing integration tests, unit tests, and AST comparison tests.

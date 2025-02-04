@@ -1,0 +1,34 @@
+[description]
+A Node.js web framework called Polka.
+
+[milestones]
+• Initial Release (0.1.0)
+    - Basic routing and middleware functionality.
+• Sub-application Support (0.2.0)
+    - Allows mounting other apps under a specific path.
+• Asynchronous Middleware (0.2.2)
+    - Support for asynchronous middleware functions.
+• Removal of `start()` (0.3.0)
+    - Favoring `listen()` for starting the server.
+• Introduction of `send` and `send-type` packages
+    - Added separate packages for sending responses.
+• Variadic Route Handlers (0.5.0)
+    - Support for multiple route handler functions.
+• GitHub Actions for CI (2019)
+    - Switched from TravisCI to GitHub Actions.
+
+[patterns]
+• Continuous Improvement and Refinement
+    - Regular updates with bug fixes, performance enhancements, and documentation improvements.
+• Focus on Performance
+    - Benchmarks included and updated throughout development, indicating a focus on speed and efficiency.
+• Community Contributions
+    - Examples and fixes contributed by various developers, suggesting growing community involvement.
+• Dependency Management
+    - Regular dependency bumps via dependabot, demonstrating attention to security and keeping dependencies up-to-date.
+• Shift to Monorepo Structure
+    - Moving core functionality and related packages into a `packages` directory, improving code organization.
+• Example-Driven Development
+    - Numerous examples showcasing integration with various technologies like Socket.IO, GraphQL, and Next.js.
+• Early Adoption of New Technologies
+    - Integrating newer Node.js features and tools like async/await and GitHub Actions.

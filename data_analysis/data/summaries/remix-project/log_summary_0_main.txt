@@ -1,0 +1,45 @@
+[description]
+Remix Ethereum IDE project.  Development focused on features, testing, refactoring, UI/UX improvements, and external library updates. Significant effort dedicated to integrating AI features, contract verification plugin, a new file explorer, and supporting Vyper and Circom.
+
+[milestones]
+• Remix AI integration
+    - AI chat functionality in terminal and UI panel.
+    - AI-powered code explanation.
+    - AI-driven code completion.
+    - Documentation generation with AI.
+• Contract Verification Plugin
+    - Integrated plugin for contract verification.
+    - Support for multiple verifiers (Etherscan, Sourcify, Routescan).
+    - Improved UI and user experience.
+• New File Explorer UI
+    - Implemented flat tree view for file explorer.
+    - Multi-select drag and drop functionality.
+    - File decorators for enhanced status visualization.
+    - Keyboard shortcuts for file operations.
+• Vyper and Circom Language Support
+    - Vyper compiler updates and UI integration.
+    - Circom compiler integration, syntax highlighting, and error parsing.
+    - Sindri template and script support.
+• Saved State Provider
+    - Added a saved state provider plugin.
+    - Functionality to save and load VM states.
+
+[patterns]
+• Iterative Development on AI Features
+    - Gradual implementation of AI chat, code explanation, and code completion.
+    - Shift from OpenAI to Solcoder and Llama models for backend.
+    - Focus on refining prompts, user experience, and rate limiting.
+• Testing and Refactoring
+    - Frequent test fixes and additions, especially for new features.
+    - Refactoring efforts for code quality and maintainability.
+    - Addressing flaky tests and improving test stability.
+• Emphasis on UI/UX
+    - Updates to the home tab, plugin manager, and several plugins.
+    - Theme fixes and adjustments for improved accessibility.
+    - Responsive design improvements.
+• External Library Upgrades
+    - Regular dependency updates, including React, Web3.js, and others.
+    - Focus on compatibility and addressing vulnerabilities.
+• Addressing Technical Debt
+    - Fixing linting errors, typos and code formatting across the project.
+    - Consolidation of UI elements and code cleanup.

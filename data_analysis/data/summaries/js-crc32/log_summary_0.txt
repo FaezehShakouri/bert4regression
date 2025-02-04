@@ -1,0 +1,33 @@
+[description]
+This project is a library for working with CRC32 checksums, with a focus on performance and compatibility with different JavaScript environments.
+
+[milestones]
+• Initial Release (0.2.0): Basic CRC32 functionality with performance optimizations.
+    - 8-step unroll implemented for performance.
+• Performance Improvements (0.4.0, 1.0.0, 1.0.1):  Focus on checksum calculation speed.
+    - Rolling checksums introduced.
+    - `bstr` performance improvements.
+• Infrastructure and Tooling (1.2.0): Improvements to testing and build processes.
+    - Increased test timeouts for newer Node.js versions.
+    - ESM build added.
+• Bug Fixes (1.2.1): Addressing specific issues.
+    - Fix for slice-by-16 for `buf` and `bstr`.
+• Dependency Updates (1.1.0, 1.2.2, 1.2.3): Regular version bumps likely include dependency updates.
+    - Pinned dependencies.
+
+[patterns]
+• Performance Optimization: Recurring theme throughout the project's history.
+    - Evidence: Commits related to unrolling, rolling checksums, and `bstr` performance.
+    - Impact: Improved efficiency of CRC32 calculations.
+• Platform Compatibility: Efforts to support different JavaScript environments.
+    - Evidence: Node.js version updates in testing, AMD support, IE7/IE8 tests, Buffer.from fix for Node 4.x.
+    - Impact: Wider applicability of the library.
+• Incremental Development: Features and improvements added gradually over time.
+    - Evidence: Version bumps and specific feature additions.
+    - Impact: Steady progress and manageable changes.
+• Limited Testing Visibility: Early commits lack detailed test information.
+    - Evidence: Initial commits mention tests but lack specifics. Later commits improve testing infrastructure.
+    - Impact: Potential for undiscovered bugs in earlier versions.
+• Maintenance and Updates: Ongoing effort to keep the project up-to-date.
+    - Evidence: Version bumps, dependency updates, link replacements.
+    - Impact: Ensures compatibility and addresses potential vulnerabilities.

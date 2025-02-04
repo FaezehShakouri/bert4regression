@@ -1,0 +1,1 @@
+macOS library providing process information access via automated bindings and a C API.

@@ -1,0 +1,34 @@
+[description]
+A JavaScript library providing Long integer support.
+
+[milestones]
+• WebAssembly Support
+    - Introduced WebAssembly for core logic (cb2fb1b) improving performance.
+• ECMAScript Module Support
+    - Switched to ESM and modernized the build process (8641039), aligning with modern JavaScript standards.
+• TypeScript Definition Improvements
+    - Resolved issues with TypeScript imports (d5ab8f6), ensuring compatibility with TypeScript 5.x.
+    - Separated ESM/CJS TypeScript definitions (453de51), supporting both module systems.
+• Unsigned Integer Support
+    - Added unsigned integer support (1847bb3), expanding the library's functionality.
+• Performance Optimizations
+    - Reduced minified code size (82e0108), enhancing loading performance.
+• API Improvements
+    - Added `ctz` and `clz` methods (088e44e), expanding bitwise operations.
+    - Added `fromBytesLE/BE` methods (8cdc1f7), enabling byte manipulation.
+• 2.0.0 Release
+    - Major API cleanup and AMD module support (3fa4468).
+
+[patterns]
+• Continuous Improvement and Bug Fixing
+    - Regular fixes addressing various issues throughout the project's lifecycle (e.g., d5ab8f6, cd84ddd, 453de51, 3cea40d, 19ac17b).
+• Focus on Compatibility and Standards
+    - Efforts towards CommonJS, AMD, ESM, TypeScript, and WebAssembly compatibility demonstrate a commitment to supporting various environments (e.g., 8641039, 453de51, 0d0aea6).
+• Performance Optimization as a Recurring Theme
+    - Several commits focus on reducing code size and optimizing performance (e.g., 82e0108, 2a64a5c).
+• Community Contributions
+    - Several pull requests incorporated, demonstrating community involvement (e.g., 8bd86df, 9717c38, 2484cb6, 418423e).
+• Documentation Updates
+    - README and API documentation updates reflect ongoing efforts to maintain clear documentation (e.g., 9d90c0b, 2065b8e).
+• Addressing Technical Debt
+    - Instances of code cleanup and refactoring indicate addressing technical debt (e.g., 0b0859a).

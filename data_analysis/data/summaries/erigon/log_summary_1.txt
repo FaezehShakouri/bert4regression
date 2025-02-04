@@ -1,0 +1,61 @@
+[description]
+Erigon, an Ethereum client, undergoes significant development and bug fixing, including performance optimization, refactoring, support for new hard forks and EIPs, updates to dependencies and test infrastructure, and introduction of experimental features like Erigon3 and Caplin.
+
+[milestones]
+• Erigon3 (E3) Development
+    - Introduction of a new storage engine with incremental reconstitution, parallel execution, and aggressive pruning.
+    - Implementation of `eth_getLogsV3`, `eth_traceTransaction`, and other RPC methods using iterators.
+    - Development of a key-value temporal store.
+• Caplin (CL) Integration
+    - Implementation of Caplin, a consensus layer light client, with support for gossip, state transition, and various optimizations.
+    - Refactoring and separation of consensus from the execution engine.
+• EIP-4844 and 4788 Support
+    - Implementation of EIP-4844 (Shard Blob Transactions) related changes in transaction pool, receipts, and block execution.
+    - Implementation of EIP-4788 (Beacon Block Root in the EVM) support, including RPC methods and fork choice updates.
+• Erigon-lib Development
+    - Movement of common utilities and data structures to the `erigon-lib` subdirectory for improved code organization and reusability.
+• Refactoring and Performance Optimizations
+    - Several refactoring efforts across different modules, like transaction pool and snapshots, for improved performance and reduced allocations.
+    - Implementation of read-ahead and other optimization strategies.
+• Tooling and Infrastructure Improvements
+    - Development of a devnet tool for testing and simulation.
+    - Updates to the testing infrastructure, including new tests and benchmarking.
+    - Introduction of new CLI commands for database backup and snapshot management.
+• Logging Improvements
+    - Introduction of separate log files for different modules and improved log verbosity controls.
+• Dependency Updates
+    - Updates to several dependencies, including gRPC, libp2p, and Prometheus.
+• Support for new Chains and Forks/Updates to existing ones
+    - Holesky, Cancun, Shapella, Capella, Prague, Shanghai, Bellatrix, Altair, Gibbs, Moran, Indore, Delhi
+    - Sepolia, Goerli, Rinkeby, Mumbai, Chiado, Gnosis Chain, Mainnet (ETH), BSC, Polygon
+• Bug Fixes
+    - Numerous bug fixes addressing issues in body downloader, tracing, snapshots, RPC methods, txpool, and other components.
+
+[patterns]
+• Focus on Performance Optimization
+    - Recurring themes of reducing allocations, optimizing iterators, and improving caching strategies.
+    - Impact: Improved performance and resource utilization.
+• Shift Towards Modularity
+    - Increased use of `erigon-lib` and separation of consensus and execution engines.
+    - Impact: Improved code organization, maintainability, and testability.
+• Increased Testing and Benchmarking
+    - New tests, integration tests, and benchmarking efforts.
+    - Impact: Enhanced code quality and reliability.
+• Active Development of Experimental Features
+    - Focus on Erigon3 and Caplin.
+    - Impact: Exploration of new architectural solutions for improved scalability and efficiency.
+• Ongoing Refactoring and Technical Debt Reduction
+    - Continuous refactoring and cleanup of code.
+    - Impact: Improved code maintainability and reduction of technical debt.
+• Focus on Supporting Multiple Chains and Hard Forks
+    - Implementation of support for various chains and hard forks.
+    - Impact: Enhanced compatibility and adaptability.
+• Improvement of Logging
+    - Continuous focus on making logs more informative and user-friendly.
+    - Impact: Improved debuggability and monitoring.
+• Regular Dependency Updates
+    - Consistent updates to external libraries.
+    - Impact: Reduced security risks and access to latest features.
+• Community Contributions and Code Reviews
+    - Several commits indicate community involvement and code review processes.
+    - Impact: Enhanced collaboration and code quality.

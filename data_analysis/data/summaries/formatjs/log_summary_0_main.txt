@@ -1,0 +1,55 @@
+[description]
+This project is formatjs, a modular collection of JavaScript libraries for internationalization.  It provides tools for formatting messages, dates, times, numbers, and more, along with polyfills for Intl APIs and CLDR data.  The project uses Bazel and supports React and Vue.
+
+[milestones]
+• Upgraded CLDR to v46.
+    - Updated various packages like `@formatjs/icu-messageformat-parser`, `@formatjs/intl-displaynames`, etc. to use CLDR v46.
+• Dropped support for TypeScript 4.
+    - Updated `@formatjs/intl` and `react-intl` packages to require TypeScript 5+.
+    - Removed polyfill packages from dependencies.
+• Introduced new linter rules.
+    - Added `prefer-formatted-message` and `prefer-pound-in-plural` to `eslint-plugin-formatjs`.
+• Improved `no-complex-selectors` linter rule.
+    - Made it more performant and versatile.
+• Implemented Intl.LocaleMatcher polyfill.
+    - Added distance-based locale matching using languageMatching algorithm.
+• Migrated to Bazel.
+    - Started using Bazel as the primary build system.
+• Implemented Intl.Segmenter polyfill.
+    - Added support for Intl.Segmenter API.
+• Introduced new pseudo locale en-XB for bidi support.
+• Added support for DateTimeRange format.
+    - Included new format key for `dateTimeRange` in `@formatjs/intl` and `react-intl`.
+• Upgraded SWC support.
+    - Added SWC plugin for message formatting and experimental support for newer SWC versions.
+• Documentation improvements.
+    - Switched documentation search to Lunr.
+    - Various documentation updates and clarifications.
+
+[patterns]
+• Regular dependency updates.
+    - Renovate bot and Dependabot regularly update dependencies.
+    - Impact: Keeps the project up-to-date with security patches and new features.
+• Focus on performance.
+    - Used memoized constructors and other optimizations in several packages.
+    - Impact: Improves runtime performance.
+• Active maintenance and bug fixing.
+    - Frequent bug fixes and documentation updates.
+    - Impact: Shows a healthy and well-maintained project.
+• Transition to newer technologies.
+    - Migrated to newer versions of TypeScript and CLDR data.
+    - Adopted newer tooling like Bazel and SWC.
+    - Impact: Indicates commitment to modern development practices and improved performance.
+• Focus on spec compliance.
+    - Updated implementations to match latest specifications for Intl APIs.
+    - Ran test262 tests to ensure compliance.
+    - Impact: Increases reliability and interoperability.
+• Improvement of documentation and tooling.
+    - Constant work on improving the documentation and adding more tooling features like the CLI.
+    - Impact: Helps users adopt and integrate formatjs into their projects.
+• Deprecation of old features.
+    - Removed support for older versions of tools and deprecated certain APIs.
+    - Impact: Simplifies the project and encourages users to upgrade to newer best practices.
+• Increased usage of TypeScript.
+    - Migrated several packages from JavaScript to TypeScript.
+    - Impact: Improves code quality and maintainability.

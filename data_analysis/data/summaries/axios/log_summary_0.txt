@@ -1,0 +1,38 @@
+[milestones]
+• **v1.0.0 Release**: This marks a major milestone signifying the project's maturity and stability.
+    - Includes numerous documentation improvements and a finalized build process.
+
+• **Introduction of Fetch Adapter (v1.7.0-beta.0 and subsequent)**: Added a new adapter based on the Fetch API. This offers a modern alternative to the XHR adapter and is crucial for modern browser environments and other JavaScript runtimes.
+    - Several beta releases and subsequent patches focused on stabilizing and optimizing the Fetch adapter, including memory leak fixes, header handling, and progress capturing.
+
+• **AxiosHeaders Class Overhaul (v1.1.x and v1.2.x)**: The AxiosHeaders class was significantly refactored and improved. This brought better handling of headers, including merging, clearing, and type safety.  These improvements simplified header manipulation for developers.
+
+• **Removal of IE11 Support and Modernization Efforts (v1.0.0 and later)**: The project has deliberately dropped support for IE11. This facilitated the adoption of modern JavaScript features and the use of more modern tools like Rollup.  Also, several updates focused on code cleanup, such as removing unnecessary polyfills and improving import paths.
+
+• **Enhanced FormData and Blob Support (v1.2.x and v1.3.x):**  Improved handling of FormData and Blob types for requests, particularly focusing on content-type header management and compatibility with various environments.
+
+• **Improved Error Handling and Stack Traces (v1.2.x, v1.6.x):** AxiosError class improvements enabled better stack trace capturing, facilitating debugging. Specific fixes addressed issues with async stack traces and wrapping errors. A CSRF vulnerability (CVE-2023-45857) was also addressed in v1.6.0.
+
+• **Customizable Params Serializer (v1.1.x):**  Added support for custom parameter serialization, providing more flexibility for handling query parameters in requests.
+
+• **Deprecation of `withCredentials` Default (v1.6.x):**  Removed the automatic setting of the `withCredentials` option by default for security reasons. This change requires developers to explicitly set `withCredentials` when necessary, enhancing security.
+
+
+[patterns]
+• **Focus on Documentation and Developer Experience**: Throughout the commit history, a strong emphasis on improving documentation is evident, including updating the README, adding examples, and enhancing JSDoc.  There's also an effort to clarify confusing areas of the API and provide clearer error messages.
+    - Impact: Enhances usability and understanding for developers.
+
+• **Increased Focus on Type Safety (Especially v1.1.x and later)**:  Many commits concentrate on improving TypeScript types, making the library more robust and user-friendly for TypeScript developers. This involved refining existing types, adding new types, and fixing type-related issues.
+    - Impact: Improves code maintainability and developer experience for TypeScript users.
+
+• **Proactive Security Vulnerability Remediation**: Several commits address security vulnerabilities like ReDoS and prototype pollution (CVE-2024-39338, CVE-2023-45857), demonstrating a commitment to security best practices. These addressed critical vulnerabilities and reduced potential attack vectors.
+    - Impact: Creates a more secure library for users.
+
+• **Continuous Integration and Build Process Improvements**: Several commits focus on CI/CD enhancements, switching from Travis CI to GitHub Actions, adding caching to workflows, and implementing automated release processes.  This includes switching to Rollup.js as the primary build tool.
+    - Impact:  Leads to a more streamlined, automated, and robust release cycle.
+
+• **Community Engagement and Responsiveness**: Addressing community feedback and contributions is a recurring theme.  Examples include simplifying import paths based on user requests, addressing type definition issues raised by TypeScript users, and clarifying documentation based on feedback.
+    - Impact: Fosters a stronger community and a more user-centric development process.
+
+• **Refactoring for Code Quality and Maintainability**:  Several commits deal with internal refactoring, such as restructuring project files to avoid circular dependencies and optimizing code for performance (e.g., mergeConfig performance). This improved internal code structure and reduced potential issues.
+    - Impact: Improves the long-term health and maintainability of the codebase.

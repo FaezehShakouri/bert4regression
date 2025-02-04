@@ -1,0 +1,1 @@
+High-performance, modular Ethereum Virtual Machine (EVM) in Rust supporting EIPs and L2s like Optimism.

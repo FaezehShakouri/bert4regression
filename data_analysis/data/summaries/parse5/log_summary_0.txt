@@ -1,0 +1,49 @@
+[description]
+A HTML parser and serializer.  
+
+[milestones]
+• Migrated testing framework to Vitest.
+• Enabled the no-explicit-any ESLint rule as an error.
+• Upgraded to ESLint 9.x.
+• Upgraded to TypeScript 5.6.
+• Changed parser/tokenizer methods to protected visibility.
+• Added support for `<search>` element parsing.
+• Updated documentation links and several code examples.
+• Fixed various parsing bugs related to `<noframes>`, foreign elements, attribute locations, and other edge cases.
+• Improved serialization of attributes and void elements.
+• Implemented CommonJS builds for the parse5 and htmlparser2-adapter modules.
+• Introduced Typedoc for documentation generation.
+• Added CommonJS export for the parse5 module.
+• Several improvements and refactorings for code quality, performance, and maintainability.
+• Significant dependency bumps, including TypeDoc, ESLint, Prettier and others.
+• Switched CI to Github Actions.
+• Numerous dependency updates and chores.
+
+[patterns]
+• Consistent dependency management:
+    - Dependabot is actively used for managing dependencies, resulting in frequent updates.
+    - Impact: Keeps the project up-to-date with security patches and new features, but also introduces churn in the commit log.
+• Focus on code quality:
+    - Regular updates to ESLint, Prettier, and other development tools. Enabling stricter rules like "no-explicit-any".  Introduction of stricter import rules.
+    - Impact: Demonstrates attention to code style and maintainability.
+• Testing improvements:
+    - Migration to Vitest. Addition of new tests and updates to existing tests.
+    - Impact: Increased confidence in the parser's correctness and robustness. Improved testing workflow with faster test runs due to Vitest.
+• Documentation Enhancements:
+    - Use of Typedoc for documentation generation and some documentation link fixes. Improved examples and small fixes. Introduction of TreeAdapter docs.
+    - Impact: Improved developer experience. Makes the project more accessible to new users.
+• Refactoring and Code Improvements:
+    - Several commits focused on refactoring and improving code quality. Introduction of stricter import rules. Refactoring position tracking.
+    - Impact: Enhances the parser's maintainability, performance, and internal design.
+• Proactive Security Measures:
+    - Keeping dependencies up-to-date via Dependabot.
+    - Tidelift security integration & `SECURITY.md` file added.
+    - Impact: Helps in mitigating potential security vulnerabilities. Increased attention to project security.
+• Large focus on maintenance and dependency upgrades.
+    - Many commits are dedicated to dependency updates and chores, indicating a well-maintained project but cluttering the change history slightly.
+    - Impact: Ensures the project stays current and compatible with evolving ecosystems, but also makes it harder to track significant feature development.
+• Performance Improvements:
+    - Several performance-related optimizations. Efforts to improve stream parsing memory management. Focus on character and numeric entity optimizations.
+    - Impact: Faster parsing and serialization. Reduced memory footprint, especially for large inputs.
+
+

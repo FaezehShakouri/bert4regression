@@ -1,0 +1,1 @@
+Browserslist: Node.js tool specifying browser support via queries, optimizing builds with polyfills and prefixes.

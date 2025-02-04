@@ -1,0 +1,1 @@
+Node.js library providing Git's .gitignore functionality with TypeScript support and robust pattern matching.

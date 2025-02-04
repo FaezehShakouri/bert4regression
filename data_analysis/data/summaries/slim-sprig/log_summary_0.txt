@@ -1,0 +1,37 @@
+[description]
+A Go template function library adding many useful functions to Go's default template functions.
+
+[milestones]
+• v3.0.0 Release
+    - Minimum Go version upgraded to 1.20
+    - Taskfile upgraded to v3
+    - Dependency upgrades, including stretchr/testify
+• v3.2.3 and v3.2.2 releases.
+• Addition of new functions.
+    - `toJson`, `mustFromJson`, `randBytes`, `bcrypt`, `randInt`, `duration`, `htpasswd`, `regexQuoteMeta`, `dig`, `deepcopy`, `mustDeepCopy`, `getHostByName`, `durationRound`, `withErrors`, `urlParse`, `urlJoin`, `listConcat`, `toDecimal`, `deepEqual`, `dateInZone`, `encryptAES`, `decryptAES`, `kebabcase`, `alder32sum`, `getCA`, `sha1sum`, `genPrivateKey`, `ternary`, `keys`, `nindent`, `merge` for multiple dictionaries, `ago`, `uuidv4`, `sha256sum`, `derivePassword`, `splitList`, `file functions`, `set`, `unset`, `hasKey`, `trimall`, `substr`, `split`, `default`, `env`, `expandenv`, `typeIsLike`, `typeIs`, `typeOf`, `kindIs`, `kindOf`, `quote`, `squote`, `add` with varargs, `biggest` with varargs, `base32` encoding/decoding, `split`, `trimSuffix`, `trimPrefix`, `hasSuffix`, `hasPrefix`, `until`, `untilStep`, `plural`, `cat`, `indent`, `replace`, `trunc`, `empty`, `min`, `htmlDate`, `htmlDateInZone`, `tuple`, `float64`, `base64` encoding/decoding, `string contains`, `random generators`, and initial template functions.
+• Documentation improvements:
+    - README updates
+    - New documentation site
+    - Documentation for new and existing functions
+    - Typo fixes and clarifications
+
+[patterns]
+• Regular dependency updates
+    - Frequent bumps of various libraries like stretchr/testify, semver, crypto, etc.
+    - Indicates attention to security and keeping dependencies up-to-date.
+• Focus on expanding functionality
+    - Continuous addition of new template functions across different domains (string manipulation, cryptography, date/time, etc.)
+    - Demonstrates a commitment to providing a rich set of tools for template processing.
+• Improvement of code quality and testing
+    - Refactoring efforts, linting, and addition of tests.
+    - Suggests an emphasis on maintainability and correctness of the codebase.
+• Shift to Go modules.
+    - Migration from Glide to Go modules for dependency management.
+    - Reflects adoption of newer Go tooling.
+• Addressing technical debt
+    - Replacement of panics with errors.
+    - Removal of non-hermetic functions.
+    - Suggests an ongoing effort to improve the robustness and reliability of the library.
+• Community contributions
+    - Several features and bug fixes contributed via pull requests.
+    - Indicates active community involvement and open-source collaboration.

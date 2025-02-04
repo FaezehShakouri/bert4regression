@@ -1,0 +1,55 @@
+[description]
+Web3.py is a Python library for interacting with Ethereum. This project focuses on improving the library, including adding features, fixing bugs, updating dependencies, improving documentation, and refactoring for better performance and maintainability.  It also involves a significant shift from version 5 to 7, with changes in middleware, naming conventions, and removal of deprecated features.
+
+[milestones]
+• Persistent Connection Providers: Refactoring of shared logic for HTTP, WebSocket, and IPC providers, improving performance and exception handling.
+    - Introduction of ``RequestSessionManager`` for better request management.
+    - Graceful handling of timeouts and disconnects.
+    - Support for asynchronous operations.
+• Request Batching: Implementation of batch requests for improved performance.
+    - Support for contract calls and other RPC methods.
+    - Handling of single and batch error responses.
+    - Sorting and caching of batch responses.
+• Middleware Refactor: Redesign of middleware architecture for greater flexibility and efficiency.
+    - Introduction of a method-based approach.
+    - Manipulation of requests and responses via middleware.
+    - Logging and debugging improvements.
+• Contract Events API: Enhancements to contract event handling.
+    - Support for retrieving contract event topics.
+    - Sorting of contract events by log index and block number.
+    - Non-indexed event argument filtering.
+• ENSIP-15 Support: Implementation of ENSIP-15 normalization standard.
+    - Unicode 15 support through pyunormalize dependency.
+    - Handling of invalid names and empty names.
+    - Updates to ENS and AsyncENS methods.
+• Dropping Python 3.7 Support:  Removal of Python 3.7 support and updates for compatibility with newer Python versions.
+• Cancun Network Upgrade Support: Addition of Cancun-related fields to data structures and formatters.
+    - Formatting for type 3 transaction fields.
+    - Updates to EthereumTesterProvider and middleware.
+• Removal of Deprecated Features: Removal of deprecated namespaces (e.g., personal), methods, and arguments.
+    - Updated documentation and migration guides for versions 6 and 7.
+
+[patterns]
+• Focus on Asynchronous Programming: Increased emphasis on async functionality, reflected in new async methods, middleware, and test suites.
+    - Introduction and refinement of ``AsyncHTTPProvider``, ``AsyncIPCProvider``, ``AsyncWebSocketProviderV2``.
+    - Async support for various functionalities, including contract interactions and ENS resolution.
+• Improved Testing and CI: Continuous improvement in testing practices, including more robust tests, addressing flaky tests, and expanding test coverage for different Python versions and environments.
+    - Introduction of new test suites and fixtures.
+    - Use of pytest markers like xfail for flaky tests.
+    - Addition of Windows CI run and Python 3.11 support in CI.
+• Emphasis on Documentation: Consistent effort to improve documentation, including updates for new features, migration guides, troubleshooting, and general clarity.
+    - Restructuring and overhaul of different sections, such as overview, quickstart, and providers.
+    - Addition of contributing documentation and a code of conduct.
+• Dependency Updates: Regular updates to external dependencies, addressing compatibility issues and leveraging new features.
+    - Bumping versions of libraries like eth-utils, eth-abi, eth-tester, and hexbytes.
+    - Introduction of new dependencies like pyunormalize.
+• Performance Optimization: Recurring focus on improving the library's performance.
+    - Refactoring for more efficient caching and request handling.
+    - Implementation of request batching.
+    - Performance improvements in session management and cache implementations.
+• Addressing Technical Debt: Active management of technical debt by removing deprecated code, refactoring for better maintainability, and simplifying logic.
+    - Removal of deprecated modules, methods, and arguments.
+    - Consolidation and refactoring of shared logic in providers.
+    - Simplification of old test cases and fixtures.
+
+

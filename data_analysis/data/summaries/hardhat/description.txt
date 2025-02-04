@@ -1,0 +1,1 @@
+Hardhat: Ethereum development environment with Ignition deployments, EDR execution, and pnpm.

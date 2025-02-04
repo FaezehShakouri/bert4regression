@@ -1,0 +1,53 @@
+[description]
+This project, typescript-eslint, is a tooling ecosystem for linting TypeScript code.  It provides a parser (typescript-estree) to parse TypeScript into an ESTree-compatible Abstract Syntax Tree (AST), enabling linting with ESLint. The project also offers an ESLint plugin (eslint-plugin) containing numerous custom rules specifically designed for TypeScript code.  A key focus of development is improving type-safety and leveraging TypeScript's type information within the linting process.
+
+[milestones]
+• TypeScript 5.x Support
+    - Added support for new TypeScript 5.x features, including explicit resource management syntax, auto accessors, satisfies operator, and const type parameters.
+    - Enhanced AST types for stricter and more accurate representations.
+• ESLint v9 Support
+    - Upgraded internal ESLint usage to v9.
+    - Adapted types and updated shared configs for compatibility.
+    - Introduced flat config support.
+• Project Service Integration
+    - Implemented `parserOptions.projectService` and related options like `allowDefaultProjectForFiles` for project-based linting with the TypeScript project service.
+    - Added debug logging for project service interactions.
+    - Improved handling of config resolution and file paths.
+• Rule Enhancements & Deprecations
+    - Enhanced several existing rules with new options, improved messages, and enhanced type checking, notably `no-unnecessary-condition`, `no-floating-promises`, `no-unsafe-argument`, and `prefer-nullish-coalescing`.
+    - Deprecated several rules in favor of ESLint core rules or renamed equivalents, including formatting rules, `no-duplicate-imports`, `no-throw-literal` (renamed to `only-throw-error`), and `no-useless-template-literals` (renamed to `no-useless-template-expression`).
+    - Introduced new rules, including `no-unsafe-enum-comparison`, `no-duplicate-type-constituents`, and `no-unsafe-type-assertion`.
+• New `rule-tester` package
+    - Extracted the `RuleTester` functionality into its own package (`rule-tester`) for improved testability and maintainability of custom lint rules.
+• Website Revamp
+    - Migrated documentation to a new website built with Docusaurus.
+    - Added features like a Playground with an embedded editor and ESQuery visualizer, automatic rule documentation generation, Algolia search, and improved navigation.
+
+[patterns]
+• Increased Focus on Type Safety
+    - Introduction of rules that leverage type information (`no-unsafe-type-assertion`, `no-unsafe-enum-comparison`).
+    - Deprecation of less strict rules and encouraging more type-aware alternatives.
+    - Continued enhancements to existing rules for more accurate type checking.
+• Performance Optimization
+    - Refactoring existing rules for faster execution (`no-misused-promises`, `naming-convention`).
+    - Use of SWC for faster testing.
+    - Introduction of `allowDefaultProjectForFiles` to limit project service scope.
+• Gradual Shift to ESLint Core Rules
+    - Deprecation of rules that overlap with ESLint core rules.
+    - Aligning rule schemas with ESLint v8.
+    - Encouraging the use of core rules wherever possible.
+• Improving Developer Experience
+    - Revamped website with enhanced documentation, playground, and easier navigation.
+    - Enhanced issue and PR templates for smoother contributions.
+    - Standardized rule documentation format.
+• Managing Technical Debt
+    - Removing deprecated AST properties and APIs.
+    - Replacing legacy dependencies.
+    - Refactoring code for better maintainability and testability.
+• Addressing Community Feedback
+    - Incorporation of community contributions and feedback in rule enhancements and documentation improvements.
+    - Regular updates to sponsors and contributors lists.
+• Proactive Maintenance
+    - Bumping dependencies regularly.
+    - Adding and enforcing coding style rules internally.
+    - Providing clear and comprehensive documentation.

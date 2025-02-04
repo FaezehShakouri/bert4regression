@@ -1,0 +1,65 @@
+[description]
+Remix IDE: A browser-based Solidity IDE for developing, testing, and deploying smart contracts.
+
+[milestones]
+• Solidity Locals Panel and Decoding
+    - Added a panel in the debugger to display Solidity local variables.
+    - Implemented decoding for various Solidity types including structs, arrays, dynamic byte arrays, strings, enums, ints, uints, addresses, and bools.
+• Enhanced Debugging Capabilities
+    - Implemented jump to exception functionality.
+    - Improved stepping functionality (step over back and forward).
+    - Added ability to calculate the cost of SSTORE operations and store empty storage during contract creation.
+    - Implemented a "jump out" action for debugging.
+    - Improved error messages and handling.
+    - Displayed messages for transaction not found or trace loading failures.
+• UI/UX Improvements
+    - Applied new Remix API, fixing dropdown panel and resetting behavior.
+    - Various typo fixes and code comments.
+    - Improved UI panels and styling, including changes to buttons and dropdown elements.
+• Refactoring and Code Improvements
+    - Refactored InternalCallTree and building process, using async/await.
+    - Removed unnecessary code and dependencies.
+    - Reorganized project files and renamed variables for clarity.
+    - Addressed technical debt by fixing regex escape, compatibility issues, and compilation process.
+• Web3 Integration
+    - Updated to use web3.js 0.18.0.
+    - Added check for current block gas limit before sending transactions.
+    - Updated Udapp to use lookupOnly flag and properly pass the fallback ABI.
+    - Fixed contract details rendering and display of empty functions block.
+• Testing Improvements
+    - Added tests for decoding, contract types and state management.
+    - Fixed tests related to calltree, VM, storage retrieval, and tx result.
+    - Implemented automated UI testing using nightwatch and saucelabs.
+    - Moved tests to the babelify-src folder and included async/await.
+• Compiler Integration
+    - Removed the dependency on the editor from the compiler.
+    - Added helper runCompiler to the app.
+    - Added target contract name to the compiler.
+    - Displayed metadata hash and the entire metadata if available.
+
+
+[patterns]
+• Iterative Development on Decoding Functionality
+    - Gradual implementation of decoding for different Solidity types with accompanying tests.
+    - Reflects a focus on enhancing the debugger's understanding of contract states.
+• Focus on Improving the Debugger
+    - Recurring commits addressing stepping functionality, error handling, exception management and variable display.
+    - Indicates prioritization of providing robust debugging tools for smart contract developers.
+• UI/UX Refinement as an Ongoing Process
+    - Consistent stream of commits addressing UI/UX issues, including typos, styling and responsiveness.
+    - Suggests an iterative approach to UI development based on user feedback and internal testing.
+• Increased Emphasis on Testing
+    - Introduction of automated UI testing with saucelabs and nightwatch.
+    - Addition of more detailed tests for core functionalities like decoding and call tree building.
+    - Demonstrates a growing commitment to code quality and reducing technical debt through automated testing.
+• Active Maintenance and Dependency Management
+    - Regular updates to dependencies like web3.js and ethereumjs-vm.
+    - Frequent bug fixes and addressing compatibility issues.
+    - Reflects a proactive approach to project maintenance and ensuring compatibility with evolving ecosystem tools.
+• Refactoring for Improved Code Quality
+    - Commits focused on reorganizing project structure, removing redundant code, and applying coding standards.
+    - Suggests an ongoing effort to improve code maintainability and readability.
+• Transition to Modular Design
+    - Extraction of components like the compiler and editor into separate modules.
+    - Introduction of utility modules for common functions and data.
+    - Indicates a shift towards a more modular project architecture for better organization and maintainability.

@@ -1,0 +1,60 @@
+[description]
+Prysm, an Ethereum 2.0 client, undergoes continuous development focusing on performance enhancements, security improvements, refactoring, and alignment with the evolving Eth2 spec.  This commit log reflects work towards mainnet readiness and includes significant changes in database interactions, state management, initial sync processes, and RPC functionality.
+
+[milestones]
+• Spec v1.0.0 Alignment
+    - Numerous commits refactor code, config, and tests to adhere to v1.0.0, indicating a major milestone toward mainnet compatibility.
+• Accounts v2 as Default
+    - Transition to Accounts v2 signifies improved wallet management and key handling.
+• Prysm Web V1 Release
+    - Marks a major user-facing milestone with a new web interface.
+• Initial Sync Improvements
+    - Several optimizations enhance initial sync speed and robustness, like batch block processing and weighted round robin peer selection.  Removal of deprecated initial sync flags streamlines the process.
+• Slashing Protection Enhancements
+    - Enhanced local slashing protection improves validator security with new data storage and import logic.
+• BLS Library Transition to Blst
+    - Blst is made the default BLS library, likely offering performance gains.
+• New State Management (`--enable-new-state-mgmt`)
+    - Commits focused on a new state management service, suggesting significant architectural improvement with potential performance and memory usage benefits.
+• Removal of Archival Service
+    - Archival service and related RPC endpoints are removed, simplifying the node.  Fallback mechanisms for archival RPC endpoints before the complete removal show a planned deprecation strategy.
+• Introduction of Proto Array Fork Choice
+    - Proto array fork choice implementation replaces the older method, potentially improving fork choice efficiency.
+• gRPC Gateway Enabled by Default
+    - Improves RPC accessibility.
+• Validator Client Improvements
+    - Adds features like dynamic key reloading, configurable deposit amounts, and voluntary exit functionality.
+• Introduction of Slasher Service and RPC
+    - Adds new functionality to detect and report slashable events.
+• Deprecation of Accounts v1
+    - Simplifies the codebase.
+• Removal of Kademlia and Transition to Discovery V5
+    - Improves peer discovery with more modern protocols.
+• Roughtime Implementation
+    - Enhances security against clock attacks.
+• ToS Acceptance Requirement
+    - Adds legal compliance measures.
+
+[patterns]
+• Performance Optimization
+    - Batch processing of blocks and signatures, caching strategies for state, blocks, and committees, optimized data structures (like replacing expiration cache with go-cache for attestation pool), and algorithm improvements all aim to boost performance.
+• Refactoring and Code Cleanup
+    - Recurring commits address technical debt with code cleanup, error handling improvements (like error wrapping), and package restructuring. Removal of dead code and deprecated flags/methods simplifies the codebase.
+• Security Hardening
+    - Slashing protection enhancements, transition to crypto-secure PRNGs, and input validation improvements enhance security.
+• Alignment with Eth2 Spec
+    - Ongoing integration of latest spec changes demonstrates commitment to mainnet readiness.  This involves data structure modifications, function renames, and constant updates.
+• Testing and Fuzzing
+    - Addition of tests, fuzz tests, and benchmark tests indicates an emphasis on code quality and identifying edge cases.  This includes improving test coverage, assertion functions, and end-to-end testing updates.
+• Database Interactions Optimization
+    -  Commits optimizing database interactions, introducing new getters and setters, and implementing caching, aim to improve database efficiency.  The database refactor to support multiple blocks/states at slots is a substantial change.
+• RPC API Development and Improvements
+    - Introduction and refinement of RPC methods and associated protos reflects a focus on providing a comprehensive API.  This includes implementing streaming RPC methods, improving error codes, and pagination support.
+• Logging Enhancements
+    - Numerous commits improve logging, adding more context, adjusting log levels, and making error messages more descriptive.
+• Focus on Best Practices
+    - Commits addressing Quantstamp audit report feedback, applying assertion functions, and fixing static analysis findings suggest a focus on improving code quality and following best practices.  For example, enforcing the use of `InitWithReset` in static analysis.
+• Feature Flag Management
+    - Use of feature flags allows gating experimental features and managing transitions to new implementations.  Examples include flags for new state management, initial sync, BLS library selection, and caching mechanisms.  Inverting flags to opt-in rather than opt-out reduces user confusion.
+• Metric Instrumentation
+    - Addition of various metrics related to block processing, attestation inclusion, and validator performance, suggest an emphasis on observability and performance monitoring.

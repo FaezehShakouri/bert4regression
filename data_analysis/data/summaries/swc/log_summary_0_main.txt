@@ -1,0 +1,51 @@
+[description]
+The project is SWC, a Rust-based platform for building developer tools. The analyzed commit logs show development activity focused primarily on performance improvements, bug fixes, refactoring, dependency updates, and expanding features, particularly within the ECMAScript modules, minifier, and parser.  There's also significant work on CSS modules, Wasm plugin support, and a new HTML parser and minifier.  The project also introduces and refines its own allocator, `swc_allocator`.  Lastly, work is done towards enabling better testing and debugging with the introduction of new testing tools and a CLI for reporting issues.
+
+[milestones]
+• Experimental Node.js and JS interop packages added.
+• `swc_core` updated to various versions, including major versions 10, 11 and 12.
+• `hstr` merged into the main repository, which is used for Atom string handling.
+• Parallelization of various operations using `chili` instead of `rayon`.
+• `swc_parallel` crate introduced and implemented for basic APIs.
+• New `Pass` API for visitors and adjusted visitor APIs.
+• Introduction of `FastJsWord` and `FastId` in `swc_atoms` for performance.
+• Wasm plugin support significantly improved and breaking changes applied.
+• TypeScript fast strip mode improved and made more robust.
+• New ES lints added and existing ones optimized.
+• HTML parser and minifier implemented and improved.
+• `@swc/html` package introduced.
+• Stage 3 decorator support implemented.
+• Decorator metadata proposal implemented.
+• Custom `SwcAlloc` allocator introduced and made feature-gated.
+• Wasm build size reduced, `rkyv` dependency updated.
+• New traversal APIs for AST introduced.
+• Isolated declarations for TypeScript implemented.
+• New utility functions added to `es/ast`.
+• `@swc/types` introduced for type definitions.
+• `swc_typescript` crate created.
+• New publish pipeline using changesets integrated.
+• Nightly builds and publish actions improved.
+• Support added for several ECMAScript proposals, including explicit resource management, import attributes, and auto accessors.
+• CSS Modules implementation completed.
+• `@swc/minifier` and `@swc/counter` packages created.
+• Several optimizations for reducing LOCs and compile time by removing dependencies and using specialized data structures.
+
+[patterns]
+• Focus on Performance Optimization: Frequent commits address performance bottlenecks, primarily in the minifier, parser, and lexer, often using tools like `chili` and `hstr`.
+    - Examples include parallelizing operations, caching, and optimizing data structures like `SyntaxContext`, `Mark`, and `Atom`.
+    - Impact: Leads to substantial performance gains across various operations and potentially lower memory consumption.
+• Incremental Refactoring:  Many commits address refactoring, often focused on individual components or utilities.
+    - Examples: Simplification of `StringInput`, removal of unsafe code, and refining specific APIs like those in `es/utils` and Wasm bindings.
+    - Impact: Improves code maintainability and lays the groundwork for future development, also potentially contributing to smaller build sizes.
+• Emphasis on Testing and Correctness: Commits introduce new tests (fixture tests) and update existing test suites. This includes work on execution tests to validate Wasm and plugin functionality.
+    - Examples: Updating the `tsc` conformance test suite, improving the comment testing story, and enabling tests on different platforms.
+    - Impact: Demonstrates a commitment to code quality and helps uncover and address bugs early, with improvements for different environments like Windows.
+• Active Dependency Management: Regular updates to dependencies like `wasmer`, `rkyv`, `sourcemap`, and `browserslist-rs`.
+    - Impact: Ensures the project benefits from the latest improvements and security patches in its dependencies, reducing potential technical debt.
+• Shift to Monorepo and Multi-package Structure: Several commits refactor and extract code into separate packages, and introduce a new publish pipeline using changesets.
+    - Examples: Creation of packages like `@swc/types`, `@swc/minifier`, `@swc/counter`, `@swc/helpers`, and `swc_typescript`.
+    - Impact: Improves project organization, maintainability, and potentially allows for more flexible usage of individual components in different projects.
+• Addressing Technical Debt: Occasional commits address technical debt by removing unused code, dependencies, and migrating to more efficient solutions.
+    - Examples: Removing unused files, replacing `string-cache` with `hstr`, and updating `@swc/helpers`.
+    - Impact: Reduces code size, improves performance, and simplifies maintenance.
+

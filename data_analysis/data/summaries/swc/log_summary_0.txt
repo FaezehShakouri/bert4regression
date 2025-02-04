@@ -1,0 +1,36 @@
+```
+[description]
+SWC is a super-fast TypeScript/JavaScript compiler written in Rust.  It provides a platform for building developer tools, with a focus on performance, extensibility, and support for modern web technologies.
+
+[milestones]
+• **Performance Optimizations:** Extensive performance improvements across all modules (parser, minifier, transforms, bindings, etc.) including parallel processing, optimized memory management, reduced call stacks and allocation, and the use of specialized tools and data structures like `jemalloc`, `fxhash`, `hstr`, `chili`, `FastJsWord`, and `FastId`.
+• **Minifier Enhancements:** Numerous minification rules implemented (loop optimizations, dead code elimination, etc.), support for `pure_funcs` and `pristine_globals`, and improved tooling for debugging and comparison. Creation of a dedicated `@swc/minifier` package.
+• **Plugin System:**  A robust plugin system with `SourceMap` APIs, `PluginContext`, tracing, and support for WASM runtimes. Implementation of a Wasm plugin interface and breaking changes for improved performance and functionality.
+• **TypeScript Support:**  Continuous updates and bug fixes for compatibility with new TypeScript versions (4.0, 4.1, 4.2, 4.3), including support for static index signatures, type-only imports, override syntax, improved namespace and enum handling, fast strip mode improvements, and isolated declarations. Creation of `@swc/typescript` package.
+• **Bundler:** Implementation of a bundler with support for dynamic imports and handling of circular dependencies, including deterministic output and performance optimizations.
+• **CSS Support:** Ported Stylis and implemented CSS code generation with minification, compression, and improved parsing with error recovery. Implementation of CSS Modules.
+• **HTML Support:** Implementation of an HTML parser and minifier. Introduction of `@swc/html` package.
+• **Wasm Support:** Implemented Wasm support, enabling SWC to run in the browser with improvements to compilation and deployment.  Reduction of Wasm build size.
+• **Jest Extension:** Introduction of a Jest extension.
+• **Spack Integration:** Introduction of Spack for enhanced build processes and module handling.
+• **React Fast Refresh:** Implementation of React Fast Refresh support and improved JSX entity escaping. JSX support refined, including JSX pragmas and fragments.
+• **Decorator Support:** Implemented support for stage 3 decorators and the decorator metadata proposal, as well as legacy and TypeScript decorators including those on parameter properties.
+• **AST Improvements:**  Significant refactoring and improvements to the AST for performance and new feature support. New traversal APIs and utility functions added.  Introduction of `@swc/types` for type definitions.
+• **Testing Improvements:** Migration to file-based fixtures, expanded execution tests, snapshot testing for the minifier, and a new testing framework with increased test coverage.  TSC conformance tests updated and comment testing improved.
+• **Dependency and Build System Updates:** Upgraded dependencies (including `browserslist-rs`, `napi`, `rkyv`, `wasmer`, and `sourcemap`) and migrated to Rust 2021 edition. Improved build scripts and CI configuration.  Introduction of a new publish pipeline using changesets. Nightly builds and publish actions improved.
+• **Error Reporting:** Improved error reporting and messaging for better diagnostics.  A pretty error reporter added.
+• **Node.js Integration:** node-swc, a Node.js binding, moved into the main repository. Experimental Node.js and JS interop packages added.  `swc_core` updated to various versions, including major version bumps.
+• **Custom Allocator:** Introduction of a feature-gated custom allocator, `SwcAlloc`.
+• **ES Modules & Linting:** Implementation of various ECMAScript proposals (explicit resource management, import attributes, auto accessors) and new ES lints added and optimized.  Improvements to hygiene and block scoping.  `@swc/counter` and `@swc/helpers` packages created.
+
+
+[patterns]
+• **Performance Focus:** Continuous emphasis on performance optimization across all areas of the project.
+• **Incremental Development:** Features are implemented incrementally and iteratively.
+• **Community Engagement:** Active community contributions and responsiveness.
+• **Testing & Correctness:** Strong focus on testing, correctness, and bug fixing.
+• **Technical Debt Management:**  Proactive approach to addressing technical debt through refactoring and code cleanup.
+• **TypeScript Prioritization:** Continuous updates and improvements to TypeScript support.
+• **Modern Tooling & Dependencies:** Active dependency management and adoption of modern tools and technologies.
+• **Modularity & Maintainability:** Shift towards a monorepo structure with clearly defined packages for better organization and maintainability.
+```

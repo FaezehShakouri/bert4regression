@@ -1,0 +1,39 @@
+[description]
+A testing framework project with rapid initial development, focusing on core features like suite management, reporting, configuration, and basic CLI functionality.  Early versions prioritize establishing fundamental functionalities and iterating on them.
+
+[milestones]
+• Initial Framework Setup
+    - Basic suite functionality implemented.
+    - Snapshot testing introduced.
+    - CLI added for running tests.
+• Configuration and Reporting
+    - Support for `vitest.config.ts` configuration files.
+    - Simple overview reporting added.
+    - Reporter functionality implemented.
+• Suite Management Enhancements
+    - Reworked suite collecting mechanism.
+    - Suite modes (skip, todo, only) introduced.
+    - Tasks mode added.
+• Run Modes and Documentation
+    - Basic run modes documented.
+    - Only mode and tasks mode implemented.
+
+[patterns]
+• Rapid Iteration and Feature Addition
+    - Frequent releases (v0.0.1 - v0.0.8) indicate rapid development and focus on delivering new features quickly.
+    - Impact: Demonstrates active development but may lead to instability in early stages.
+• Focus on Core Testing Features
+    - Early commits concentrate on fundamental testing functionalities (suite, snapshot, CLI).
+    - Impact: Establishes a solid foundation for building more advanced features later.
+• Collaborative Development
+    - Contributions from multiple developers (Anthony Fu, patak).
+    - Impact: Positive sign, brings diverse perspectives and accelerates development.
+• Addressing Bugs and Refinements
+    - Several "fix" commits indicate active bug fixing and improvement of existing features.
+    - Impact: Improves stability and usability of the framework.
+• Documentation Improvements
+    - Addition of documentation for basic run modes.
+    - Impact: Enhances user experience and understanding of the framework.
+• Potential Technical Debt
+    - Rapid development and frequent refactoring might indicate accumulating technical debt.
+    - Impact: Needs careful management to ensure long-term maintainability.  Breaking change introduced with suite collecting rework suggests potential future instability.

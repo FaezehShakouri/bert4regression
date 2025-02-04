@@ -1,0 +1,32 @@
+[description]
+A library providing a fast deep equality check for JavaScript.
+
+[milestones]
+• Version 3.0.0
+    - Added support for React elements.
+    - Added TypeScript typings.
+    - Improved performance, especially for large objects and maps.
+    - ES6 support for Map and Set.
+    - Separate ES6 build.
+• Version 2.0.0
+    - Functions are considered unequal, addressing a previous bug.
+    - Performance improvements, specifically NaN handling.
+• Version 1.0.0
+    - Initial stable release.
+
+[patterns]
+• Continuous Performance Optimization
+    - Evidence: Multiple commits focused on performance improvements, including handling NaN, optimizing comparisons for different data types (Map, Set, Objects, Typed Arrays).
+    - Impact:  Provides faster equality checks, making it suitable for performance-sensitive applications.
+• Dependency Management and Updates
+    - Evidence: Regular dependency bumps and updates through automated tools like Dependabot.
+    - Impact: Reduces potential vulnerabilities and keeps the project up-to-date with the latest improvements in dependencies.
+• Community Contributions and Collaboration
+    - Evidence: Merge requests from external contributors, addressing bug fixes, adding features, and improving test coverage.
+    - Impact: Enhanced code quality, broader community engagement, and faster development.
+• Focus on Testing and Code Quality
+    - Evidence: Multiple commits related to improving test coverage and adding tests for new features and edge cases.
+    - Impact: Ensures stability and reliability of the library.
+• Addressing Technical Debt
+    - Evidence: Refactoring commits, optimization for specific data types.
+    - Impact: Maintains maintainability and performance over time.

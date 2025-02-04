@@ -1,0 +1,33 @@
+## EthereumJS Monorepo Summary
+
+This document summarizes the recent development activity within the EthereumJS monorepo, encompassing both the core VM and surrounding ecosystem packages. The project is implemented in JavaScript (with ongoing TypeScript migration) and provides core Ethereum functionalities like VM execution, blockchain management, transaction processing, and utility functions.
+
+**Description:**
+
+The EthereumJS monorepo comprises packages addressing core Ethereum functionalities implemented in JavaScript, including the Ethereum Virtual Machine (EVM), blockchain management, transaction processing, peer-to-peer networking, consensus mechanisms, and utility functions. This includes tools for running transactions and blocks, generating accounts, managing state, and supporting various Ethereum hardforks.
+
+**Milestones:**
+
+* **TypeScript Migration:** Ongoing gradual migration of the codebase from JavaScript to TypeScript for improved type safety, maintainability, and developer experience.  This includes updating TypeScript to v5.
+* **Build Process Improvements:** Implemented dual ES5 and ES2017 builds for broader compatibility and migrated from Travis CI to GitHub Actions for improved CI workflow flexibility and efficiency.
+* **Verkle Tree Implementation:** Introduced verkle trees within a dedicated `verkle` package, including proof verification and integration with stateful execution within the client. Various verkle-related fixes and optimizations were also implemented.
+* **State Management Enhancements:** Refactored and optimized the state manager interface, removing direct VM access to underlying Trie (now renamed `mpt`) and cache, and introducing stateful and stateless verkle state managers with improved storage caching. Migrated from BN.js to BigInt for number representation.
+* **Ethereum Client Development:**  Implemented snap sync and associated fetchers, new engine API methods for Shanghai and Cancun hardforks, support for Holesky and Kaustinen testnets, and various RPC methods (e.g., `debug_traceTransaction`, `debug_traceCall`). Improved client syncing stability and performance.
+* **Transaction Processing Improvements:** Refactored transaction capabilities with a generic interface. Implemented EIPs 7702 (withdrawal requests), 4895 (beacon chain withdrawals), 4844 (blobs), and 1559 (fee market).
+* **Hardfork Support:** Updated dependencies (e.g., `ethereumjs-tx`, `ethereumjs-block`, `ethereumjs-common`) to support various hardforks including Muir Glacier, Shanghai, and Cancun. Implemented EIP-1191 (chainId).  Refactoring for better hardfork management within `common` package.
+* **Dependency Management:** Upgraded `ethereumjs-util` to v7 (handling breaking changes), migrated test data from JSON to JS, removed and replaced various dependencies.
+* **Code Refactoring:** Addressed technical debt through refactoring, code cleanup, and improved code documentation.  Extracted the EVM from the VM as a standalone package. Introduced `genesis` and `wallet` packages.
+
+**Patterns:**
+
+* **Code Quality and Maintainability:** Emphasized through linters, formatters (Prettier), Git hooks (Husky), and continuous refactoring efforts.  Incremental improvements to internal code structure, including splitting functions, adopting ES6 classes, and optimizing opcodes.
+* **Testing and Test Coverage:** Focus on improving test coverage through regular test additions and expansion of test suites. Migration to Vitest for testing, implementation of a more performant code cache, extended test timeouts.
+* **TypeScript Adoption:**  Continued migration to TypeScript with related tooling and type annotations.  Continuous removal of `ts-ignore` statements.
+* **Security:** Regular dependency updates and security audits via automated tools and addressing `npm audit` alerts.
+* **Performance Optimization:** Implementing various EVM and VM optimizations (stack, memory management), optimizing VerkleNode storage, improving trie `findPath` performance.
+* **Modularity:**  Increased modularity through package extraction (e.g., EVM, genesis, wallet) and state manager refactoring.
+* **Developer Experience:** Improved documentation, added debugging utilities, enhanced logging (DEBUG variable, Prometheus), implemented an EVM profiler, and introduced easier conversion helpers (e.g., Unit class).
+* **Community Engagement:** Addressing community feedback, incorporating contributions, and fixing documentation and bug reports based on user input.
+
+
+This summary provides a comprehensive overview of the ongoing development within the EthereumJS monorepo, highlighting key milestones, recurring patterns, and the project's commitment to code quality, performance, and community engagement.

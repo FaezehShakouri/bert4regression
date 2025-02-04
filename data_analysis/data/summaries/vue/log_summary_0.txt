@@ -1,0 +1,46 @@
+[description]
+Vue.js core library.
+
+[milestones]
+• Composition API support in v2.7.0
+    - Includes reactivity APIs like ref, reactive, computed, watch, and lifecycle hooks.
+    - Enables using Vue 3's Composition API in Vue 2 projects.
+• New Slot Syntax in v2.6.0
+    - Introduced v-slot directive for more flexible and readable slot usage.
+• Dynamic Directive Arguments in v2.6.0
+    - Allows dynamic arguments for v-on, v-bind, and custom directives.
+• SSR Improvements throughout 2.x
+    - Various optimizations and features added to improve server-side rendering performance and developer experience.
+    - Includes bundle renderer, streaming renderer, and caching options.
+• Transition API refactor in v2.1.0
+    - Refactored transition API with new component-based approach and transition modes.
+
+[patterns]
+• Extensive Type Declarations added progressively
+    - TypeScript definitions improved and expanded throughout the project's lifecycle, enhancing developer experience and type safety.
+• Focus on Performance Optimization
+    - Recurring theme of performance improvements in VDOM patching, rendering, and change detection.
+• Weex Platform Integration in 2.x
+    - Specific commits address Weex platform compatibility and feature support, showcasing a multi-platform focus.
+• Bug Fixes and Polish
+    - Consistent pattern of bug fixes and code polishing, addressing issues raised by the community and improving overall quality.
+• Security Updates
+    - Several security vulnerabilities addressed, demonstrating a commitment to security best practices.
+• Dependency Updates
+    - Regular dependency bumps to keep the project up-to-date and address potential vulnerabilities.
+• Improved Developer Experience
+    - Several commits focus on improving error messages and warnings, making debugging and development easier.
+• Testing Enhancements
+    - Tests migrated to Vitest in 2.7, reflecting a move towards modern testing tools.
+    - Continuous improvement of test coverage throughout different releases.
+• Refactoring towards Vue 3 alignment
+    - Type alignment, API changes, and code refactoring were incrementally introduced in Vue 2 to ease the migration path to Vue 3.
+    - Examples are changes related to lifecycle hooks, provide/inject and slot syntax changes.
+• Community Contributions
+    - Many commits from community contributors indicate a healthy and active open-source project.
+• Regular Releases with detailed changelogs
+    - Reflects good project management and release practices.
+• Minor typo fixes and documentation improvements are recurring
+    - Suggests attention to detail and documentation quality.
+
+

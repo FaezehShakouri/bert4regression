@@ -1,0 +1,1 @@
+Fast, reliable JavaScript package manager with offline caching, workspaces, and Plug'n'Play.

@@ -1,0 +1,45 @@
+[description]
+This project is pytest, a testing framework for Python. The logs span several months and showcase active development with a focus on features, bug fixes, documentation improvements, and architectural changes.
+
+[milestones]
+• Release 3.8.0
+    - Several features, bug fixes, and documentation updates are included in this release.
+• Assertion Rewriting Improvements
+    - Optimizations for assertion rewriting, addressing crashes and edge cases. Improvements include handling of changing current working directories and pyc file writing, as well as more informative warning messages.
+• Warnings System Revamp
+    - Pytest's warnings system underwent a significant overhaul, with better capture, display, and filtering of warnings. This involved introducing new hooks, changing default warning behaviors, and increasing compatibility with standard warnings.
+• Logging Plugin Integration
+    - A logging plugin was integrated into pytest, allowing for capture and display of logs during test execution. Related features include new command-line options and ini file settings for logging, as well as improvements to logging output formatting.
+• Markers Refactor
+    - Pytest's marker implementation was refactored, addressing performance, scoping issues, and internal API usage. The refactor also touched on how markers interact with parametrization.
+• Documentation Overhaul
+    - The project documentation received extensive updates, including fixes to typos, links, and general formatting.  Clarifications and additions related to features, good practices, and the deprecation roadmap were made.
+• py37 Support
+    - Official support for Python 3.7 was added, along with CI adjustments.
+• Package-scoped Fixtures (Experimental)
+    - Experimental support for package-scoped fixtures was introduced.
+• Improved Fixture-Related Docs and Examples
+    - New and updated fixture examples were added. The examples cover package ordering, avoiding recursion, and combining tests.
+
+[patterns]
+• Increased Focus on Performance
+    - Evidence: Assertion rewriting and monkeypatch optimizations, focus on reducing complexity in various areas.
+    - Impact: Improved execution speed and reduced resource consumption.
+• Proactive Deprecation of Legacy Code
+    - Evidence: Removal of old-style classes, deprecation of certain prefixes and API calls.
+    - Impact: Cleaner and more maintainable codebase, but potential for breakage in existing user code.
+• Focus on Improved User Experience
+    - Evidence: More informative error messages, enhanced documentation, focus on providing warnings and hints for potential issues.
+    - Impact: Easier troubleshooting and debugging for users, as well as smoother integration with other tools.
+• Focus on Increased py3 Compatibility
+    - Evidence: Fixes to unicode handling, Python 3.7 support, use of six for compatibility.
+    - Impact: Wider Python version support and reduction of issues related to cross-version compatibility.
+• Active Community Involvement
+    - Evidence: Multiple contributions through pull requests, feedback on proposed changes.
+    - Impact: Fosters a collaborative environment and enables a wider range of perspectives to influence project development.
+• Increased Code Quality Awareness
+    - Evidence: Introduction of flake8 and black for code style enforcement, pre-commit hooks for automated checks.
+    - Impact: Consistent code style, reduced risk of introducing simple errors, improved maintainability.
+• Potential Technical Debt
+    - Evidence: Xfailed tests, some temporary workarounds for compatibility issues, experimental features.
+    - Impact: Possible future refactoring needs, risk of regressions related to workarounds, potential need to address issues in experimental features before they are fully integrated.

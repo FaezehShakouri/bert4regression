@@ -1,0 +1,46 @@
+[description]
+A debugging utility for Node.js and web browsers supporting colored output and namespace filtering.
+
+[milestones]
+• 4.4.0
+    - Improved efficiency of `.enable()` regex and `.enabled()` tests.
+• 4.3.0
+    - Introduced deprecation notice for `debug.destroy()`.
+    - Fixed a memory leak within debug instance.
+    - Added tests for enabling/disabling existing instances.
+• 4.0.0
+    - Major refactor using Browserify for browser distribution.
+    - Removed build system.
+• 3.0.0
+    - Major refactor introducing namespace colors and improved browser support.
+• 2.0.0
+    - Rewrote library, improved browser support and color output, introduced formatters.
+• 1.0.0
+    - Initial stable release with basic functionality.
+
+[patterns]
+• Regular Maintenance and Bug Fixes
+    - Frequent minor version releases addressing specific issues (e.g., memory leaks, regex inefficiencies, browser compatibility).
+    - Indicates ongoing commitment to project health.
+• Dependency Updates
+    - Several commits updating dependencies like "ms" and "supports-color".
+    - Reflects attention to security and compatibility.
+• Refactoring and Code Quality Improvements
+    - Shift from custom build system to Browserify.
+    - Adoption of linters (XO) and editorconfig.
+    - Suggests a focus on maintainability and best practices.
+• Documentation Updates
+    - Numerous README updates improving clarity and addressing user questions.
+    - Demonstrates responsiveness to community feedback.
+• Security Enhancements
+    - Addressing ReDoS vulnerabilities and null pointer checks.
+    - Shows concern for secure coding practices.
+• Feature Additions
+    - Introduction of namespace colors, custom formatters, and wildcard support.
+    - Represents expansion of library capabilities.
+• Deprecations and Removals
+    - Removal of examples folder, changelog, and `debug.destroy()`.
+    - Simplifies project and reduces maintenance burden.  
+• Community Contributions
+    - Many pull requests merged from external contributors.
+    - Indicates a healthy and active open-source project.

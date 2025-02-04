@@ -1,0 +1,18 @@
+[description]
+WebdriverIO project undergoing major version transition from v5 to v7, with significant architectural changes and new features, particularly around enhanced developer tooling, improved TypeScript support, and expanded capabilities for both browser and mobile automation.
+
+[milestones]
+• Async API (v7.0.0):  Fundamental shift to an asynchronous API, improving performance and modernizing the framework. Introduction of `attachToSession` for re-connecting to existing sessions. Enhanced mobile emulation capabilities. Improved spec reporting for multiremote setups.
+• Transition to TypeScript (v7.0.0, v6.0.0): Complete rewrite of packages to TypeScript, improving type safety, maintainability, and developer experience. Introduction of auto-compilation and custom tsconfig-paths options.
+• Improved Error Handling and Reporting (v7.0.0 and throughout): Enhanced error messages, including clearer timeout messages, error diffs, and better propagation of errors in hooks. Addition of `SevereServiceError` for specific service errors. Shortened base64 strings in logs.
+• DevTools Protocol Integration (v6.3.0 and throughout): Significant expansion of DevTools automation protocol integration, enabling advanced debugging, performance measurement, network primitives, and mobile emulation.  Improved support for Selenium v4 Grid CDP.
+• Enhanced Testing Capabilities (v7.1.0, v6.12.0, and throughout): Support for grouped specs in suites, custom locator strategies, and extended capabilities for Appium, including resource-id selectors and real-time reporting.  Added support for Firefox 86+ in DevTools service.
+• CLI Enhancements (v5.0.0 and throughout): Rewritten CLI interface, improved onboarding process, support for installing tagged packages, and integration with config utility.
+
+[patterns]
+• Continuous Integration and Deployment:  Use of GitHub Actions for CI/CD pipeline, automated website deployments triggered by releases. Implementation of dependabot for automated dependency updates.
+• Focus on Documentation:  Continuous improvement and updates to documentation, addressing typos, clarifying usage, and adding examples, particularly for new features and TypeScript.
+• Active Community Engagement: Addition of OpenCollective, promotion of workshops, and creation of community page for open office hours, indicating a growing and active community.
+• Refactoring and Code Quality: Ongoing effort to address technical debt, improve code quality through ESLint enforcements and test coverage increases, particularly during the TypeScript transition.  LGTM scan warnings mitigated.
+• Dependency Management:  Updates and pinning of dependencies, including Puppeteer, Cucumber, and various type definitions, addressing security vulnerabilities and compatibility issues. Transition to using `got` for HTTP requests.
+• TypeScript Adoption Strategy: Gradual migration to TypeScript starting with individual packages, followed by utilities and core packages, demonstrating a structured approach to large-scale refactoring.

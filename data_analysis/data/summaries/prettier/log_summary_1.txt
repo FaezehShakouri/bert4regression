@@ -1,0 +1,70 @@
+[description]
+Prettier, a code formatter
+
+[milestones]
+• Release 2.3.0
+    - Various dependency bumps
+    - Support for TypeScript 4.3
+    - Support for async do expressions
+    - Support for Flow's Optional Indexed Access type
+    - Fix for long YAML keys triggering explicit mapping
+    - Several formatting tweaks and bug fixes
+• Release 2.2.1
+    - Fix for unstable JSX formatting
+    - Fix for missing parentheses on async inside for..of loops
+• Release 2.2.0
+    - Support for TypeScript 4.2
+    - Support for Flow's Indexed Access type
+    - Support for module blocks proposal
+    - Improvement in formatting of curried arrow functions
+    - Various dependency updates and bug fixes
+• Release 2.1.2
+    - Bug fixes related to TypeScript and Handlebars formatting
+• Release 2.1.0 and 2.1.1
+    - Handlebars support out of alpha
+    - Initial support for TypeScript 4.1
+    - Various dependency updates and bug fixes
+• Support for HTML, Vue, Angular and MDX files
+    - Introduction of basic support for formatting HTML, Vue, Angular, and MDX files.
+    - Several improvements and bug fixes related to whitespace handling, tag names, attributes, and script formatting in these languages.
+• New Playground
+    - Introduction of a new playground for testing Prettier with different parsers and options.
+    - Various improvements to the playground, including versioning, code folding, and language examples.
+• Plugin API
+    - Introduction of a plugin API, allowing for extension of Prettier with custom parsers and other features.
+    - Several improvements and bug fixes related to plugin resolution, options, and comment handling.
+• Removal of Deprecated Features
+    - Removal of the `babylon` and `postcss` parsers and deprecated CLI options.
+• Switch Default Branch to Main
+    - Changed the default branch from master to main.
+• Introduction of New Rules and Options
+    - New rules for handling conflicting comment check flags, negative index access, and flat AST path calls.
+    - New options for embedded language formatting and ignoring unknown files.
+
+
+[patterns]
+• Extensive use of Dependabot
+    - Frequent dependency updates managed by Dependabot.
+    - Indicates a focus on keeping dependencies up-to-date and addressing potential security vulnerabilities.
+• Focus on TypeScript and Flow Support
+    - Regular updates and improvements to TypeScript and Flow support.
+    - Suggests a commitment to supporting popular typed JavaScript supersets.
+• Refactoring and Code Quality Improvements
+    - Recurring commits related to refactoring, code simplification, and code style improvements.
+    - Demonstrates an effort to maintain a clean and readable codebase.
+• Active Development and Community Engagement
+    - Frequent releases and bug fixes.
+    - Incorporation of community contributions and feedback.
+    - Indicates an active and responsive development team.
+•  Increased reliance on community plugins
+    -  Growth of the plugin ecosystem suggests a shift towards a more modular and extensible architecture.
+    -  May also indicate a reduced focus on supporting niche languages directly in the core of Prettier.
+•  Focus on Performance Optimization:
+    -  Several commits aimed at improving performance, particularly in the areas of AST traversal, string width calculation, and build scripts.
+    -  Indicates an awareness of performance concerns and a dedication to optimizing Prettier for larger codebases.
+• Migration to New Tools and Technologies:
+    -  Updates to newer versions of dependencies, switch to GitHub Actions for CI, and adoption of new tools like `eslint-plugin-unicorn`.
+    -  Suggests a willingness to embrace new technologies and improve the developer experience.
+• Documentation Improvements:
+    -  Consistent effort to enhance documentation, including updating the website, adding examples, and improving the clarity of explanations.
+    -  Indicates a focus on making Prettier more accessible to users.

@@ -1,0 +1,54 @@
+[description]
+Babel is a JavaScript compiler ecosystem consisting of several interrelated projects:
+
+* **Babel Compiler:** Transpiles ES6+ code into backwards-compatible ES5, supporting modern ECMAScript features, JSX, TypeScript, Flow, and experimental proposals.  It focuses on performance, error handling, and a modular architecture.
+* **Babel ESLint Plugin:** Provides ESLint rules for Babel projects, ensuring code quality and compatibility with evolving JavaScript.
+* **Babel Parser (Babylon):** A high-performance JavaScript parser supporting modern JavaScript features (ES6+, JSX), loose parsing modes, and utilities like an AST walker.
+
+[milestones]
+
+* **Babel Compiler:**
+    * Babel 8: Alpha releases (8.0.0-alpha.5 to 8.0.0-alpha.15) introducing breaking changes, removing legacy options, and preparing for full ESM support.
+    * Babel 7: Minor releases (7.21.x to 7.26.x) with bug fixes, performance enhancements, improved JSX/TypeScript/Node.js compatibility.
+    * ES2016/ES2017 Support:  Async functions, object rest/spread, class properties, etc.
+    * JSX, Flow, TypeScript: Enhanced support and ongoing improvements.
+    * Tooling & Architecture: Babel CLI, plugin API, runtime transformation, core-js integration, monorepo structure (Lerna).
+    * Decorators: Support for the 2023-11 normative update.
+    * Explicit Resource Management (ERM): Parsing and transform support.
+
+* **Babel ESLint Plugin:**
+    * Versioned Releases: 1.0.0, 2.0.0, 3.0.0, and 4.0.0, with various patch releases.
+    * Feature Additions: Flowtype plugin, improved code style rules, TypeScript type import support.
+    * Tooling/Workflow: test262 integration, enhanced error handling, .cjs config file support, dependency cleanup (core-js), pipeline operator and TypeScript namespace support.
+
+* **Babel Parser:**
+    * Initial Import: Adapted from Esprima.
+    * JSX Support: Parsing JSX syntax (namespaces, attributes, nesting).
+    * ES6 Support: let/const, arrow functions, classes, template strings, generators, destructuring, spread operator, modules.
+    * Loose Parser: Relaxed syntax rules and improved error recovery.
+    * AST Walker: Utility for traversing and manipulating the AST.
+    * Tooling/Infrastructure: Travis CI, Code Climate, Istanbul, improved documentation.
+
+
+[patterns]
+
+* **Continuous Improvement/Iterative Releases:** Regular updates (major, minor, patch) demonstrate active development and a commitment to bug fixes, performance, and new features.
+* **Modern JavaScript/Compatibility:** Focus on supporting new ECMAScript features and maintaining compatibility with evolving standards and environments.
+* **Performance/Code Quality:** Ongoing optimization efforts, refactoring, and removal of technical debt.
+* **Tooling/Testing/DX:** Enhanced tooling (CLI, plugins, runtime transformations), rigorous testing (test262, CI), and improved documentation.
+* **Community Engagement:** Active contributions (pull requests, issue resolution) and open collaboration.
+* **Modular Architecture:**  Monorepo structure (Lerna) promoting easier maintenance and integration with the JavaScript ecosystem.
+* **Addressing Technical Debt:** Refactoring, cleanup, and removal of legacy code/dependencies.
+* **Active Maintenance/Bug Fixing:** Consistent attention to bug reports and issues, ensuring stability and reliability.
+* **Adoption of New Features/Proposals:** Implementation of new ECMAScript features and Babel proposals keeps the project up-to-date.
+* **Focus on Spec Compliance (Compiler):**  Implementation and testing of ESNext features according to specifications.
+* **Improved Developer Experience (Compiler):** Better error messages, documentation, CLI options.
+* **Performance Optimization (Compiler):** Code generation, scope management, dependency management.
+* **Shift towards Modular Architecture (Compiler):** Adoption of Lerna and splitting into smaller packages.
+* **Increased use of Flow/TypeScript and ESLint (Compiler):**  Improving code quality and consistency.
+* **Incremental ES6 Feature Implementation (Parser):** Structured approach to adding new language features.
+* **Refactoring/Code Quality (Parser):** Attention to maintainability and code style.
+* **Performance Optimization (Parser):** Reducing array creation, optimizing string handling.
+* **Addressing External Dependencies (Parser):** Managing dependencies (Esprima) and ensuring compatibility.
+* **Testing and Validation (Parser):** Thorough testing of JSX, ES6 features, and edge cases.
+* **Documentation Improvements (Parser):**  Focus on clarity and completeness of documentation.

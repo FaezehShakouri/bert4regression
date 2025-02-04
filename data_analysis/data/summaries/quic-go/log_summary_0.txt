@@ -1,0 +1,25 @@
+[description]
+This project is a Go implementation of the QUIC protocol, initially supporting both gQUIC and IETF draft versions, and later transitioning to full QUIC v1 (RFC 9000) and HTTP/3 support.  The commit logs demonstrate a continuous development process focused on performance optimization, security enhancements, adapting to evolving QUIC specifications, and improving code maintainability.
+
+[milestones]
+• **IETF QUIC and gQUIC Support:** Initial implementation included support for both IETF QUIC draft versions (with features like ACK decimation, TLPs, connection migration, and flow control) and multiple gQUIC versions (39, 42, 43, 44).  This was later superseded by a transition to QUIC v1.
+• **QUIC v1 and HTTP/3:** The project transitioned to support QUIC v1 and implemented HTTP/3, including features like capsules, datagrams, extended CONNECT, and header trailers.
+• **TLS Evolution:** Initially, a basic TLS 1.3 handshake was integrated using the "mint" library.  The project later migrated to the standard library's `crypto/tls` package for QUIC, with `qtls` managing QUIC-specific TLS aspects.
+• **Connection Management:**  Improved connection handling throughout the project's lifecycle, including closing, error handling, connection ID management (issuing, retiring, authenticating), Path MTU Discovery (DPLPMTUD), and connection migration.  A connection multiplexer was introduced for both client and server.
+• **Packet Handling and Performance:** Continuous optimization of packet packing, unpacking, and handling, with a focus on reducing allocations and syscalls. Techniques included a packet buffer pool, packet pacing, ring buffers, and optimized parsing logic.
+• **Cryptography and Security:** Implementation and updates to the cryptography layer, including AEAD algorithms (AES-GCM, ChaCha20Poly1305), key derivation, diversification nonces, handling of undecryptable packets, public resets, handshake limiting, and frame validation.
+• **Flow Control and Congestion Control:** Implementation of stream-level and connection-level flow control, as well as byte-based congestion control mechanisms like Cubic.
+• **Error Handling and Logging:**  Continuous improvement of error handling, reporting, and propagation, with specific error codes, a `QuicError` type, enhanced QLOG logging conforming to the latest specification, and a dedicated `qerr` package.
+• **Testing and CI:**  Extensive testing throughout development, including unit tests, integration tests, benchmark tests, and fuzzing targets for headers, frames, and transport parameters.  Integration of various CI platforms (CircleCI, AppVeyor, Travis CI) and the use of a UDP proxy for testing.  A transition from Ginkgo/Gomega to standard library testing was also made.
+• **HTTP/2 Integration (h2quic):** Development of an HTTP/2 client and server using QUIC, handling header streams, request/response bodies, and HTTP errors.  This evolved with the transition to HTTP/3.
+• **API Changes and Refactoring:** Significant API changes and refactoring, including interfaces for session, stream, and other components.  Internalization of packages for better code organization and removal of deprecated features.  Generics were adopted for improved type safety and efficiency.
+
+[patterns]
+• **Iterative Development and Continuous Refinement:** Frequent commits with incremental improvements, bug fixes, and continuous refinement of existing features.
+• **Performance Optimization:**  A recurring theme with numerous commits focused on reducing allocations, optimizing parsing, and using efficient data structures like ring buffers.
+• **Test-Driven Development and Code Quality:**  Emphasis on testing, including unit, integration, benchmark, and fuzz testing.  Focus on code quality through linters and refactoring.
+• **Adapting to Evolving Standards:**  Regular updates to implement changes in QUIC protocol drafts and specifications, culminating in the adoption of QUIC v1 and HTTP/3.
+• **Security Consciousness:**  Attention to security considerations, addressing vulnerabilities, and implementing security features.
+• **Modern Go Adoption:**  Transition to standard library features (`crypto/tls`, testing package), adoption of generics, and leveraging newer language features for performance and maintainability.
+• **Active Maintenance and API Evolution:**  Continuous bug fixing, addressing issues, deprecating and removing old features, and improving documentation.
+• **Potential Technical Debt:**  While actively addressed, occasional workarounds and rapid API changes in earlier stages may indicate some residual technical debt.

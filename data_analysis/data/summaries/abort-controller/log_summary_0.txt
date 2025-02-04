@@ -1,0 +1,28 @@
+[description]
+This project provides a polyfill for the AbortController and AbortSignal APIs, enabling consistent usage across different browser environments.
+
+[milestones]
+• 3.0.0 Release
+    - Bug fixes in polyfill files for proper functionality.
+    - Browser compatibility tweaks.
+• 2.0.0 Release
+    - TypeScript rewrite for improved type safety.
+    - Added type tests to CI.
+• 1.1.0 Release
+    - Introduction of a polyfill.js file.
+• 1.0.0 Release
+    - Initial implementation of the AbortController polyfill.
+
+[patterns]
+• Bug fixing and Refinement
+    - Recurring bug fixes related to polyfill compatibility and build process.
+    - Indicates ongoing effort to improve reliability and browser support.
+• Feature additions driven by user needs
+    - Polyfill.js introduction addresses broader compatibility requirements.
+    - TypeScript definitions added based on user request.
+• Focus on code quality and testing
+    - Introduction of type tests, improved test coverage, and lint checks.
+    - Demonstrates commitment to maintainability and correctness.
+• Dependency updates and platform support changes
+    - Dropping Node 4 support and updating dependencies.
+    - Reflects adapting to evolving JavaScript ecosystem.

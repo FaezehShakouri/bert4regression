@@ -1,0 +1,62 @@
+[description]
+Nimbus implementation of the Ethereum Beacon Chain, a key component of Ethereum's transition to Proof-of-Stake.
+
+[milestones]
+• v1.0.0 Release
+    - Mainnet readiness.
+• Slashing Protection
+    - Introduced and refined slashing protection database.
+    - Switch to slashing DB v2 by default.
+• Performance Improvements
+    - Optimization of attestation processing, block proposal speed, and state loading.
+    - Reduction of memory usage and CPU load.
+    - Implementation of caching mechanisms for various data structures.
+• Peer Management and Networking
+    - Implementation of gossipsub v1.1.
+    - Introduction of peer scoring and connection limits.
+    - Anonymization of libp2p messages.
+    - Support for discovery v5 and v5.1.
+• Refactoring and Code Quality
+    - Consolidation of modules and data type cleanup.
+    - Removal of obsolete code and technical debt.
+    - Address of build warnings and hints.
+• Tooling and Documentation
+    - Introduction of `ncli_db` database tool.
+    - Rocket Pool and Pi node guides.
+    - Updates to systemd setup instructions.
+    - Improved logging and error messages.
+• Testnet Support
+    - Support for prater testnet.
+    - Pyrmont and Toledo network support.
+    - Zinken network preparation.
+• Validator Client Enhancements
+    - Validator APIs return actual balance.
+    - Improvements to key management and handling.
+• BLS Upgrade
+    - Upgrade to BLST v0.3.3 with performance improvements and broader platform support.
+
+
+[patterns]
+• Performance Optimization
+    - Recurring commits focused on reducing memory usage, CPU load, and improving processing speed.
+    - Impact: Enhanced efficiency and scalability of the beacon chain implementation.
+• Spec Compliance
+    - Frequent updates to align with the latest Ethereum 2.0 specifications.
+    - Impact: Ensures compatibility with the evolving Ethereum network.
+• Increased Testing and Auditing
+    - Introduction of new tests, fuzzing tests, and benchmarking tools.
+    - Migration of audit tasks and publication of the Auditors Handbook.
+    - Impact: Improved code quality, reliability, and security.
+• Refactoring for Maintainability
+    - Ongoing efforts to consolidate modules, clean up data types, and remove technical debt.
+    - Impact: Enhanced code maintainability, readability, and future development.
+• Focus on Security
+    - Implementation of slashing protection, keystore management improvements, and handling of malicious peers.
+    - Impact: Strengthens the security of the beacon chain implementation.
+• Improved Documentation and User Experience
+    - Continuous updates to the documentation, READMEs, and user guides.
+    - Implementation of better error messages and logging.
+    - Impact: Enhanced user experience and accessibility for both developers and users.
+• Shift from Go to Nim
+    - Gradual removal of Go code and increased reliance on native Nim libraries like libp2p.
+    - Impact: Streamlined development process and improved performance.

@@ -1,0 +1,1 @@
+Prettier is a JavaScript code formatter supporting multiple languages, focusing on consistent style, performance, and extensibility.

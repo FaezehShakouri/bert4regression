@@ -1,0 +1,1 @@
+Fast JavaScript deep equality check with TypeScript support and optimized performance.

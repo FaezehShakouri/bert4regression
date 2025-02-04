@@ -1,0 +1,86 @@
+[description]
+A spell checking library and command line tool.
+
+[milestones]
+• Refactor cspell-trie-lib
+• Support for `--file-list` cli option
+• Support for cache options in config files.
+• Remove 40 character limit on spell checking words
+• Fix backwards compatibility for Reporters
+• Fix type for some older TypeScript parsers.
+• Prevent Integration PRs
+• Update cspell-types docs
+• Update the list of integrations to be checked.
+• Make config file version `0.2` by default.
+• Add integration test for apollo-server
+• Support `--dot` command line option
+• Upgrade HTML dictionary
+• Add gitpod config
+• Fix #2077
+• Use `npm-check-updates` to update dependencies
+• Add awareness of Monkey C
+• Limit memory usage when build dictionaries
+• Remove eslint-plugin-promise
+• Update eslint
+• Make cspell aware of PureScript and Dhall
+• Add setup-node caching to remaining jobs
+• Update TypeScript extensions
+• Refactor cache files
+• Upgrade to the newest, (case sensitive), English dictionary
+• Fix issue where some dictionaries (nl-nl) could cause slow suggestions
+• Add Patreon logos
+• Move hunspell-reader into the cspell monorepo
+• Improve the look of releases by nesting commits
+• Reduce the cost of regexp exclusions
+• Add Dependabot for Gemfile
+• Support `--cache` option to lint only changed files
+• Try to speed up `npm install`
+• Cache integration test repo files
+• Use only the integration commit for the repo hash
+• Try caching integration test runs to avoid repeat runs.
+• Support Manual Integration Test runs
+• Improve Patterns and RegExp handling
+• Allow config file version to be a number.
+• Сustom reporters support
+• Add a file parser.
+• Improve `trace` words command results.
+• Support `--no-gitignore` option
+• Add support for `.gitignore`
+• Add a couple of integrations
+• Add software licenses dictionary
+• Improve reporting on files matching glob patterns.
+• Add link command
+• Automatic Workflow to update dependencies
+• Fix Performance issue when checking long strings of non-words
+• Move default branch to `main`
+• Migrate all CI to GitHub Actions
+• Add extracted dictionaries to cspell-lib
+• cspell5 - Fix 345
+• cspell5 fix issue with spaces in languageIds
+• Add mdx support
+
+[patterns]
+• Regular Dependency Updates
+    - Frequent commits from dependabot and workflow bot.
+    - Keeps dependencies up-to-date, reducing vulnerabilities.
+• Focus on Performance Improvement
+    - Recurring commits aimed at speeding up spell checking and suggestions.
+    - Important for usability, especially with large files and dictionaries.
+• Integration Testing
+    - Ongoing addition and maintenance of integration tests.
+    - Demonstrates commitment to ensuring compatibility with various projects.
+• Documentation Updates
+    - Regular improvements and additions to documentation.
+    - Improves user experience and understanding of the project.
+• Refactoring and Code Quality
+    - Several commits address code quality, refactoring, and linting.
+    - Indicates a focus on maintainability and reducing technical debt.
+• Increased use of CI/CD Automation
+    - Introduction and refinement of automated workflows for dependency updates, testing, and publishing.
+    - Streamlines development processes and reduces manual effort.
+• Community Contributions
+    - Several pull requests merged from external contributors, including dictionary additions and documentation improvements.
+    - Shows community engagement and broadens project support.
+• Shift to Monorepo
+    - Consolidation of related packages into a single monorepo.
+    - Simplifies dependency management and code sharing between packages.

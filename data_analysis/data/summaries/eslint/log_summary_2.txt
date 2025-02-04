@@ -1,0 +1,44 @@
+[description]
+ESLint, a pluggable linting utility for JavaScript, underwent significant development and several releases.  The project focused on bug fixes, new rules, improved documentation, build system enhancements, and architectural improvements to support features like JSX, custom parsers, and ES6 features.
+
+[milestones]
+• Version 0.20.0
+    - Numerous bug fixes across various rules to address issues with ES6 features, JSX, and edge cases.
+    - Introduced the `init` command for easier project setup.
+• Enhanced JSX support
+    - Implemented support for JSX spread operator and ensured proper handling of JSX variables in rules like `no-undef` and `no-unused-vars`.
+• Improved ES6 compatibility
+    - Introduced `es6` environment and made numerous rules compatible with ES6 features such as arrow functions, classes, and modules.
+• Custom parsers
+    - Added the ability to configure a custom parser, allowing ESLint to work with non-standard JavaScript syntax.
+• Configuration extensions
+    - Implemented support for extending configuration files, enabling modularity and reuse.
+• New Rules
+    - Added several new rules, including `no-unneeded-ternary`, `object-shorthand`, `no-dupe-args`, `no-mixed-linebreaks`, `no-var`, `generator-star-spacing`, `newline-after-var`, and others to enforce best practices and improve code style.
+• Improved Documentation
+    - Restructured and enhanced the documentation, including rule descriptions, configuration options, and integration guides.
+• Build System Improvements
+    - Transitioned from Jake to Grunt for build management.
+    - Introduced linting for Markdown files and implemented a performance testing framework.
+• CLI Enhancements
+    - Added the `--stdin-filename` option for linting code from standard input.
+    - Implemented the `--quiet` option to suppress warnings.
+
+
+[patterns]
+• Focus on Bug Fixes and Rule Enhancements
+    - A large portion of commits address bug fixes and improvements to existing rules.  This suggests a focus on stability and addressing user-reported issues.
+• Gradual Adoption of ES6 and JSX
+    - Commits related to ES6 and JSX are spread out over time, indicating a gradual integration of support for these emerging technologies.
+• Active Community Contributions
+    - Many pull requests are merged from external contributors, demonstrating an active and engaged community.
+• Emphasis on Documentation and Testing
+    - Several commits and pull requests focus on improving documentation and testing, indicating a commitment to quality and maintainability.
+• Refactoring for Performance and Maintainability
+    - Certain commits address performance issues and code refactoring, suggesting an awareness of technical debt and a desire for a clean codebase.
+• Breaking Changes Introduced Carefully
+    - While some commits introduce breaking changes, they are well-documented and often accompanied by fixes to ensure a smooth transition.
+• Shift in Build System
+    - Moving from Jake to Grunt suggests a reevaluation of build tooling and a potential streamlining of the development process.
+• Strong Focus on Code Style and Best Practices
+    - The introduction of new stylistic and best-practice rules indicates a project goal of enforcing consistent and high-quality code.

@@ -1,0 +1,61 @@
+[description]
+This document summarizes recent developments in the Solidity compiler (solc), focusing on enhancements to the Yul intermediate representation (IR), language features, formal verification (SMTChecker), error reporting, tooling, and infrastructure.  The project prioritizes correctness, performance, and developer experience through continuous refactoring, testing, and community engagement.
+
+[milestones]
+• Yul Intermediate Representation (IR):
+    - Transitioning towards using Yul IR for code generation and optimization.
+    - Refactored various components to work with IR (control flow graph, stack layout generator, source location handling).
+    - Support for function call options, jump types, and inline assembly.
+    - Introduction of typed EVM dialect and optimization steps.
+    - Implementation of various Yul built-in functions.
+    - New optimization steps and sequences, bug fixes, and performance enhancements.
+    - Export of Yul CFG to JSON and dot format.
+    - Liveness analysis for Yul SSA CFG.
+    - Basic support for transient storage in Yul and inline assembly, including layout generation and restrictions.
+• Language Feature Expansions:
+    - Implemented user-defined value types (parsing, type checking, code generation, assembly access). Supports mapping keys, contract access, and array copying.
+    - Added support for immutables, fixed-point types, authorized proxies, and changes related to the London EVM version (basefee).
+    - Implementation of try-catch statements.
+    - Array slices for dynamic calldata arrays.
+    - Support for SPDX license identifiers.
+• Ethereum Object Format (EOF) Support:
+    - Introduction of new instructions and assembly items for EOF.
+    - Support for EOF contract creation and data section size validation.
+    - Disallowing EOF builtins in inline assembly.
+    - Updates to various tests for EOF compatibility.
+• SMTChecker Enhancements:
+    - Support for user types, modules, constants, and improved counterexample reporting.
+    - Added options for solver choice and targets.
+    - Enhanced support for loops, arrays, tuples, and function calls.
+    - Ability to choose SMT solver at runtime.
+    - More precise error reporting and reduced resource limits.
+• ABI Coder & Related Changes:
+    - Enabled ABI coder v2 by default.
+    - Implemented stricter type checking for conversions and assignments involving ABIEncoderV1 and V2 types.
+    - Upgrade to Solidity 0.6.x, introducing breaking changes related to the fallback function, inline assembly, and ABIEncoderV2.
+• Error Reporting & Diagnostics:
+    - Improved error messages for various compiler components (better diagnostics for failed imports, bad paths, and exception handling).
+    - More informative error messages, including source locations.
+• Tooling and Documentation:
+    - Improved command-line interface for Yul optimization and assembly mode.
+    - Extensive documentation improvements (clarifications on path resolution, optimizer steps, storage layout, and fixed-point type in isoltest).
+    - Enhanced documentation for Yul, reference types, inheritance, and common patterns.
+• Build System and CI:
+    - Improved build speed, switched CI runs to Ubuntu 20.04.
+    - Added UBSan build and test CI, enhanced caching, and improved bytecode comparison scripts.
+    - Upgrading to C++20, Boost 1.83, and various other dependencies.
+    - Switching from jsoncpp to nlohmann::json.
+    - Improvements to CMake build system and Docker images.
+    - Improved testing frameworks and infrastructure, including parallelization of tests.
+    - Introduction of new test types (AST property tests and CLI equivalence tests).
+    - New and updated tests for various features.
+
+[patterns]
+• Increased use of Yul IR: Shifting towards Yul for code generation and optimization, enabling a more modular and optimizable pipeline. *Impact:* Improved code generation and optimization capabilities.
+• Focus on correctness and error handling: Multiple bug fixes and improved error messages enhance compiler reliability and developer experience.
+• Formal Verification Emphasis: Significant improvements to the SMTChecker demonstrate a commitment to formal verification for increased code correctness.
+• Expansion of Language Features: Ongoing efforts to expand the language's expressiveness and safety through features like try-catch, immutables, and array slices.
+• Proactive technical debt reduction: Refactoring, code cleanup, and dependency updates (e.g., replacing Boost with ranges-v3) improve maintainability and reduce risk of future bugs.
+• Comprehensive testing and CI: Regular updates to tests, including new test types and infrastructure improvements, enhance confidence in the compiler's correctness and stability.
+• Active development and community engagement: High frequency of commits and contributions from multiple developers indicate an active and collaborative project.
+• Modernization of build system and dependencies: Continuous improvement of the build system and dependency management ensures the compiler leverages modern tools and libraries.

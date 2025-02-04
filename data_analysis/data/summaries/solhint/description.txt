@@ -1,0 +1,1 @@
+Solhint: Solidity linter for security & style, featuring gas optimization, autofixes, and plugins.

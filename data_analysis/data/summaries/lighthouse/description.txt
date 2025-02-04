@@ -1,0 +1,1 @@
+Lighthouse: Rust Ethereum consensus client focused on performance, stability, and Eth2 feature implementation.

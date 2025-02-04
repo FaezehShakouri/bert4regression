@@ -1,0 +1,77 @@
+[description]
+The project is the Sentry JavaScript SDK, a library for error and performance monitoring in JavaScript applications.
+
+[milestones]
+• Version 9.0.0-alpha.0 Release
+    - Removal of `getCurrentHub()`, `Hub`, and `getCurrentHubShim()`.
+    - Dropping support for Prisma v5, adding support for Prisma v6.
+    - Removal of `enableTracing`.
+    - Collection of IP addresses only when `sendDefaultPii: true`.
+    - Dropping support for Remix v1 and SvelteKit @1.x.
+    - Numerous refactoring and API changes aimed at simplifying the SDK and improving performance.
+• Feature Flags Integration
+    - Addition of feature flag integrations for LaunchDarkly and OpenFeature.
+    - Introduction of a flag buffer in the scope and related APIs.
+• User Feedback Enhancements
+    - Redesign of the feedback button.
+    - Screenshot and cropping features in the feedback integration.
+    - Improved error handling and messaging in the feedback integration.
+• Browser Tracing Improvements
+    - Addition of LCP timing information to page load spans.
+    - Sending CLS as a standalone span (experimental).
+    - Improved handling of browser extension errors.
+• Node.js Enhancements
+    - Support for Node.js 22.
+    - New integrations for various Node.js libraries (e.g., Prisma, Knex, Tedious, KafkaJS, AMQPLib, generic-pool, etc.).
+    - Improved handling of ESM loaders.
+    - Collection of request sessions via HTTP instrumentation.
+    - ANR detection and Local Variables collection improvements.
+• OpenTelemetry Integration
+    - Updated OpenTelemetry dependencies.
+    - Streamlined `sentry-trace`, baggage, and DSC handling.
+    - New options for OpenTelemetry integration configuration.
+• Removal of Deprecated Code
+    - Removal of metrics API, `autoSessionTracking`, and various deprecated methods and options.
+    - Transition from class-based integrations to functional integrations.
+• Build System and CI Improvements
+    - Updated build tools (e.g., Rollup, Biome, Vitest).
+    - Streamlined CI workflows and improved caching.
+    - Size limit checks for various bundles.
+• Improved Documentation and Migration Guides
+    - Updated READMEs and migration guides for various SDKs.
+    - Added documentation for new features and breaking changes.
+
+
+[patterns]
+• Deprecation and Removal of Legacy Code
+    - Consistent effort to remove deprecated code and simplify the SDK.
+    - Clear migration guides provided to help users transition to newer versions.
+    - Impact: Reduces technical debt and improves maintainability.
+• Transition to Functional Integrations
+    - Shift from class-based integrations to functional integrations.
+    - Impact: Simplifies the SDK and potentially reduces bundle size.
+• Increased Use of OpenTelemetry
+    - Greater reliance on OpenTelemetry for tracing and performance monitoring.
+    - Impact: Improves interoperability with other OpenTelemetry-based systems.
+• Focus on Performance and Bundle Size Optimization
+    - Numerous changes aimed at optimizing performance and reducing bundle size.
+    - Size limit checks added to CI to ensure bundles stay within reasonable limits.
+    - Impact: Improves user experience and reduces resource consumption.
+• Improved Testing and CI
+    - Transition to newer testing frameworks (e.g., Vitest, Playwright).
+    - More comprehensive integration and E2E tests.
+    - Improved CI workflows and caching.
+    - Impact: Increases confidence in code quality and reduces development time.
+• Focus on Developer Experience
+    - Improved documentation, clearer error messages, and simplified APIs.
+    - Impact: Makes the SDK easier to use and integrate into projects.
+• Breaking Changes Introduced with Major Version Bump (v9)
+    - Significant API changes and removal of legacy features.
+    - Impact: Requires users to update their code when migrating to v9.
+    - Mitigation: Detailed migration guides provided to ease the transition.
+• Security Improvements (e.g., CSP, Masking)
+    - Addition of options to configure nonces for scripts and iframes.
+    - Enforced masking of sensitive data in replays.
+    - Impact: Enhances security of applications using the SDK.
+
+

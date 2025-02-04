@@ -1,0 +1,40 @@
+[description]
+A JavaScript serialization library designed to handle complex data structures, including regular expressions and functions, commonly used in server-side rendering.  Focuses on robust serialization, performance, and compatibility across Node.js versions.
+
+[milestones]
+• Support for sparse arrays (2020-09-09)
+    - Enables serialization of arrays with empty slots.
+• Support for URL objects (2021-06-21)
+    - Expands the range of serializable objects to include URLs.
+• Support for BigInt (2020-05-24, reverted 2020-05-28, reintroduced later)
+    - Demonstrates iterative development and responsiveness to potential issues with BigInt serialization.
+• Added `ignoreFunction` option (2019-09-04)
+    - Provides more control over function serialization behavior.
+• Support for ES6 Sets and Maps (2019-04-16)
+    - Modernizes the library to handle newer data structures.
+• Enhanced object literal support (2018-12-24)
+    - Improves compatibility with different object literal syntaxes.
+• Added `unsafe` flag (2018-04-18)
+    - Introduces a performance optimization for straightforward serialization.
+• Support for Dates (2017-03-26)
+    - Adds basic support for serializing Date objects.
+• Performance improvement via `isJSON` option (2016-05-25)
+    - Introduces a way to bypass unnecessary parsing for already-stringified JSON.
+• Beautification option for serialize() (2016-02-13)
+    - Improves readability of serialized output.
+
+[patterns]
+• Consistent dependency updates
+    - Regular bumps of dependencies like Mocha, NYC, and Lodash demonstrate a focus on maintaining up-to-date dependencies and addressing security vulnerabilities (e.g., minimist update).
+• Active maintenance and bug fixes
+    - Several commits address specific serialization issues (e.g., URL strings, BigInt, undefined values, object literals, regular expressions in strings), indicating responsiveness to bug reports and user needs.
+• Focus on testing and CI
+    - Commits related to testing frameworks (Mocha, Chai), coverage tools (NYC, Istanbul), and CI configuration (Travis, GitHub Actions) showcase a commitment to code quality and automated testing.  Shift from Travis to GitHub Actions reflects adaptation to evolving CI/CD practices.
+• Performance considerations
+    - Introduction of the `isJSON` and `unsafe` options highlights a concern for serialization performance.
+• Documentation improvements
+    - Updates to the README file demonstrate a focus on providing clear documentation for users.
+• Occasional breaking changes
+    - Version bumps like v2.0.0, v3.0.0, v4.0.0, v5.0.0, and v6.0.0 suggest potential breaking changes, although details are not provided in the commit messages.  This indicates a need for better communication around breaking changes.
+• Potential technical debt
+    - Reverting and reintroducing features (like BigInt support) and the lack of detail in some commit messages may indicate areas of potential technical debt that require further investigation.  The lack of detail around major version bumps obscures changes making assessment of technical debt challenging.

@@ -1,0 +1,79 @@
+[description]
+This project is a spell checking library and command line tool with integrations for various programming languages, editors, and other tools.  It utilizes dictionaries, supports configuration files, and is actively maintained using automated workflows for dependency updates, integration tests, and documentation generation.
+
+[milestones]
+* cspell v5: Several fixes including issue #345 and handling spaces in language IDs. Added MDX support.
+* cspell v8.8.0 - v8.17.3: Primarily focused on performance improvements, bug fixes, dependency updates, and integration test adjustments.  Specific improvements include:
+    * Support for Windows UNC files.
+    * Improved handling of flagged words and error reporting.
+    * Node version bump to 18 and later to 22 for integration tests.
+    * Fix for race conditions involving config files.
+    * Improvement for negative globs in ignore patterns.
+    * Addresses issues with file exclusions.
+    * Upgrade to tinyglobby for performance.
+    * Improvements related to flatpack-json.
+    * Removal of a timeout in the ESLint plugin.
+    * Introduction of `@cspell/normalize-json` package.
+    * Improvement related to trie search performance.
+    * Fixed an issue with duplicate output.
+    * Use of resolved root for Glob Root.
+    * Added option to show a performance report.
+    * Support forced integration update.
+    * Focused on Yarn examples and pnpm usage.
+    * Improvements related to removing objects from the cache.
+    * Fixes related to publishing.
+* General Improvements:
+    * Refactor cspell-trie-lib.
+    * Support for `--file-list`, `--dot`, `--cache`, and `--no-gitignore` CLI options.
+    * Support for cache options in config files.
+    * Removed 40 character limit on spell checking words.
+    * Fixed backwards compatibility for Reporters and types for older TypeScript parsers.
+    * Prevention of Integration PRs.
+    * Updated cspell-types docs and the list of integrations to be checked.
+    * Default config file version set to `0.2` and later allowed to be a number.
+    * Added integration tests, including for apollo-server.
+    * Upgraded HTML and English dictionaries.
+    * Added gitpod config.
+    * Fixed issue #2077.
+    * Used `npm-check-updates` to update dependencies.
+    * Added awareness of Monkey C, PureScript, and Dhall.
+    * Limited memory usage when building dictionaries.
+    * Removed eslint-plugin-promise and updated eslint.
+    * Added setup-node caching to remaining jobs.
+    * Updated TypeScript extensions.
+    * Refactored cache files.
+    * Fixed issue where some dictionaries (nl-nl) could cause slow suggestions.
+    * Added Patreon logos.
+    * Moved hunspell-reader into the cspell monorepo.
+    * Improved the look of releases by nesting commits.
+    * Reduced the cost of regexp exclusions.
+    * Added Dependabot for Gemfile.
+    * Tried to speed up `npm install`.
+    * Cached integration test repo files.
+    * Used only the integration commit for the repo hash.
+    * Tried caching integration test runs to avoid repeat runs.
+    * Supported Manual Integration Test runs.
+    * Improved Patterns and RegExp handling.
+    * Added custom reporters support and a file parser.
+    * Improved `trace` words command results.
+    * Added support for `.gitignore`.
+    * Added a couple of integrations.
+    * Added software licenses dictionary.
+    * Improved reporting on files matching glob patterns.
+    * Added link command.
+    * Created an automatic workflow to update dependencies.
+    * Fixed performance issue when checking long strings of non-words.
+    * Moved default branch to `main`.
+    * Migrated all CI to GitHub Actions.
+    * Added extracted dictionaries to cspell-lib.
+
+[patterns]
+* Regular Dependency Updates: Frequent commits from dependabot and workflow bots keep dependencies up-to-date, reducing vulnerabilities.
+* Focus on Performance Improvement: Recurring commits aimed at speeding up spell checking, suggestions, and trie lookups are important for usability, especially with large files and dictionaries.
+* Integration Testing: Ongoing addition and maintenance of integration tests demonstrate a commitment to ensuring compatibility with various projects.
+* Documentation Updates: Regular improvements and additions to documentation enhance user experience and understanding of the project.
+* Refactoring and Code Quality: Several commits addressing code quality, refactoring, and linting indicate a focus on maintainability and reducing technical debt.
+* Increased use of CI/CD Automation: Introduction and refinement of automated workflows for dependency updates, testing, and publishing streamlines development processes.
+* Community Contributions: Merged pull requests from external contributors, including dictionary additions and documentation improvements, show community engagement and broaden project support.
+* Shift to Monorepo: Consolidation of related packages into a single monorepo simplifies dependency management and code sharing.
+* Transition towards ESM Modules: Modernization effort to adopt newer JavaScript module standards.

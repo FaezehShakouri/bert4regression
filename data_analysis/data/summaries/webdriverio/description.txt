@@ -1,0 +1,1 @@
+Node.js based WebdriverIO automates tests, using WebDriver Bidi, enhanced dev tools, and component testing.

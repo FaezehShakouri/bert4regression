@@ -1,0 +1,39 @@
+[description]
+FormatJS is a modular collection of JavaScript libraries for internationalization, providing tools for formatting messages, dates, times, numbers, and more. It includes polyfills for Intl APIs and CLDR data, supports React and Vue, and uses Bazel as its build system.  A key component is `react-intl`, a specific library for internationalization in React applications.
+
+[milestones]
+• Initial Release (0.1.0) - Basic internationalization features implemented in `react-intl`.
+• Relative Time Formatting (1.0.0-rc-2) - Introduced relative time formatting in `react-intl`.
+• React 15 Support (2.0.0-rc-1) - Added React 15 support to `react-intl`.
+• New Context API (3.0.0-beta-1) - `react-intl` switched to React's new context API.
+• FormattedHTMLMessage XML Support (3.0.0-beta.19) - Enabled formatting of embedded XML in `react-intl`'s FormattedHTMLMessage.
+• Removal of Yahoo BSD License (2015-01-13) - License changed for `react-intl`.
+• Unified Number Formatting (3.1.10) - Extended number formatting to the unified standard in `react-intl`.
+• DateTime Skeleton Support (3.7.0) - Added support for DateTime skeletons in `react-intl`.
+• List Formatting (3.9.0) - Introduced formatList and FormattedList in `react-intl`.
+• Display Name Formatting (3.12.0) - Added formatDisplayName and FormattedDisplayName in `react-intl`.
+• Upgraded CLDR to v46 - Updated various FormatJS packages to use CLDR v46.
+• Dropped support for TypeScript 4 - FormatJS packages now require TypeScript 5+.
+• Introduced new linter rules - Added `prefer-formatted-message` and `prefer-pound-in-plural` to `eslint-plugin-formatjs`.
+• Improved `no-complex-selectors` linter rule - Enhanced performance and versatility.
+• Implemented Intl.LocaleMatcher polyfill - Added distance-based locale matching.
+• Migrated to Bazel - FormatJS now uses Bazel as its build system.
+• Implemented Intl.Segmenter polyfill - Added support for Intl.Segmenter API.
+• Introduced new pseudo locale en-XB for bidi support.
+• Added support for DateTimeRange format - Included new `dateTimeRange` format key.
+• Upgraded SWC support - Added SWC plugin for message formatting.
+• Documentation improvements - Switched documentation search to Lunr.
+
+[patterns]
+• Regular Dependency Updates - Frequent updates to dependencies (React, Babel, Intl, CLDR, TypeScript) for compatibility, new features, and security patches.  Managed by Renovate bot and Dependabot.
+• Performance Improvements - Ongoing optimizations in various packages and components (e.g., formatMessage, FormattedMessage) using techniques like memoized constructors.
+• Enhanced Error Handling - Improved error messages and fallback mechanisms for missing locale data or formatting errors.
+• Refactoring for Modern Tooling and Standards - Modernized the build process and codebase using tools like Rollup, Babel, ES6 modules, Bazel, and SWC.
+• Increased Testing and Coverage - Continuous increase in unit and functional tests and coverage reporting.
+• Documentation Improvements - Ongoing updates and clarifications to documentation.
+• Shift to TypeScript - Migration of source code to TypeScript for better type safety and maintainability.
+• CLDR Updates - Periodic updates to CLDR data for accurate locale-specific formatting.
+• Removal of Deprecated APIs - Deprecated APIs (e.g., withRef, old lifecycle methods) removed to encourage modern practices.
+• Focus on spec compliance - Updates to match latest Intl API specifications, using test262 tests.
+• Improvement of tooling -  Work on improving tooling like the CLI.
+• Deprecation of old features -  Removal of support for older tools and APIs.

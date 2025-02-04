@@ -1,0 +1,46 @@
+[description]
+WalletConnect monorepo containing packages and providers for connecting dapps and wallets.
+
+[milestones]
+• Release 2.18.0
+    - Includes latency improvements, dependency updates, and repository cleanup.
+• Replaced stablelibs with noble libs
+    - Refactored cryptographic operations to use noble libraries, improving performance and security.
+• Deprecation of pairing methods
+    - Added deprecation warnings for older pairing methods and reduced the expiry time of active pairings.
+• Repository cleanup
+    - Removed unused files and dependencies, optimized imports, and improved repository structure.
+• Improved connection stability
+    - Implemented various improvements to connection stability, including request queueing, reconnection logic, and network drop handling.
+• Release 2.17.0
+    - Introduces support for Telegram deeplinks and improved URI handling.
+• Added support for Tezos
+    - Added Tezos to the Universal Provider, expanding the range of supported blockchains.
+• Authentication API introduced
+    - Implemented new authentication features and API, including session authentication and verification context.
+• Bundler proxy introduced
+    - Added support for bundler proxies, allowing dapps to use custom bundler URLs.
+• Release 2.15.0
+    - Includes support for link mode, improved deeplink handling, and automatic publishing.
+• Request queue mechanism
+    - Implemented a request queue to handle incoming requests in order and prevent race conditions.
+
+[patterns]
+• Frequent releases and bug fixes
+    - Indicates an active development cycle with a focus on iterative improvements and addressing user feedback.
+• Refactoring and dependency updates
+    - Demonstrates a commitment to code quality, performance optimization, and security best practices.
+• Expansion of supported chains and providers
+    - Suggests a focus on increasing platform compatibility and broadening the ecosystem.
+• Focus on connection stability and reliability
+    - Highlights the importance of robust infrastructure for decentralized applications.
+• Introduction of new features and API improvements
+    - Shows ongoing development and expansion of the platform's functionality.
+• Proactive technical debt management
+    - Repository cleanup and refactoring efforts indicate attention to maintainability and long-term stability.
+• Thorough testing practices
+    - The presence of numerous tests and regular updates to test suites suggests a commitment to quality assurance.
+• Flaky tests addressed
+    - Indicates awareness of testing instability and efforts to improve reliability.
+• Focus on performance optimization
+    - Several changes are aimed at reducing latency and improving performance, such as optimizing cryptographic operations and payload handling.

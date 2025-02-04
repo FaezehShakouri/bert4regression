@@ -1,0 +1,34 @@
+[description]
+A Go library implementing Inner Product Arguments (IPA) and multiproofs, initially using BLS12-381 and later switching to Bandersnatch.  The project focuses on performance optimization and API improvements.
+
+[milestones]
+• Bandersnatch Implementation
+    - Replaced BLS12-381 with the Bandersnatch curve for improved performance.
+    - Implemented optimized MSM using precomputed tables for Bandersnatch.
+    - Added serialization/deserialization methods for points.
+• Multiproof Functionality
+    - Introduced multiproof capabilities, enabling efficient verification of multiple proofs.
+    - Implemented parallelization for prover and verifier algorithms.
+    - Added benchmarks and fuzzing for enhanced testing.
+• IPA Optimization
+    - Implemented batch inversion and normalization for improved performance.
+    - Optimized Fiat-Shamir transcript generation.
+    - Added support for in-domain evaluations.
+• Dependency Updates
+    - Updated gnark-crypto dependency multiple times, incorporating upstream improvements.
+• API Improvements
+    - Refactored API for better usability and code clarity.
+    - Improved documentation and comments.
+    - Removed panics and added error handling.
+
+[patterns]
+• Performance Optimization
+    - Continuous focus on reducing allocations and improving computational efficiency through techniques like batch inversion, precomputation, and parallelization. Impact: Significant performance gains throughout the project's development.
+• Iterative API Refinement
+    - Regular API adjustments and improvements based on evolving requirements and best practices. Impact: Enhanced code usability and maintainability.
+• Dependency Management
+    - Active management of external dependencies, incorporating updates and leveraging upstream enhancements. Impact: Reduced code complexity and improved performance by using specialized libraries.
+• Increased Testing and Fuzzing
+    - Gradual increase in testing and fuzzing efforts to improve code quality and robustness. Impact: Enhanced reliability and reduced risk of vulnerabilities.
+• Technical Debt Addressing
+    - Refactoring and code improvements to address technical debt. Impact: Improved maintainability and long-term project health.

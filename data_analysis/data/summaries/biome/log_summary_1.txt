@@ -1,0 +1,62 @@
+[description]
+Rome is a linter, compiler, bundler, and more for JavaScript, TypeScript, HTML, JSON, Markdown, and CSS.
+
+[milestones]
+• Initial Release of Rome Formatter (0.6.0)
+    - Basic formatting capabilities for JavaScript and TypeScript.
+    - Support for JSX and TSX formatting.
+    - Prettier compatibility metrics and tests.
+• Linter and CLI Enhancements
+    - Implementation of numerous lint rules (e.g., no-unused-variables, no-shadow, etc.) across various languages.
+    - Introduction of rule groups and severity levels.
+    - Extensible `declare_rule` macro for custom rule creation.
+    - Code actions for lint fixes (e.g., `inlineVariable`).
+    - CLI commands for linting (`check`, `ci`) and code fixing (`--apply-suggested`).
+• Language Server and VS Code Extension
+    - Development of a Language Server Protocol (LSP) server.
+    - Integration with VS Code for diagnostics, code actions, and formatting.
+    - Status bar item for LSP.
+• Playground Development
+    - Creation of a playground for interactive experimentation with Rome features.
+    - AST visualization and control flow graph display.
+• Core Infrastructure and Performance Improvements
+    - Refactoring of diagnostics to use markup.
+    - Replacement of the system allocator with mimalloc on Windows.
+    - Optimization of code action diff generation and formatter source map performance.
+• Parsing Enhancements
+    - Introduction of the `rome_rowan` crate for AST manipulation.
+    - Development of a JSX parser and error recovery mechanism.
+    - Support for parsing various TypeScript syntax constructs.
+• CSS, JSON, and Markdown Support
+    - Implementation of parsers and formatters for CSS, JSON, and Markdown.
+    - Lint rules for CSS.
+
+[patterns]
+• Incremental Development:
+    - Features like the formatter and LSP were gradually developed and improved over multiple commits.
+    - This demonstrates a focus on iterative development and regular releases.
+• Focus on Performance:
+    - Several commits aimed at optimizing performance (e.g., printer source map, code action diff generation).
+    - This suggests a commitment to providing a fast and efficient developer experience.
+• Prioritization of Testing and Correctness:
+    - Introduction of snapshot tests and a Prettier compatibility test suite for the formatter.
+    - Parser tests for ensuring correct AST generation.
+    - Use of coverage tools to assess test thoroughness.
+    - This highlights a strong emphasis on testing and maintaining code quality.
+• Open Source Collaboration:
+    - Many commits were from community contributors, demonstrating a healthy and active open-source community.
+• Focus on Extensibility:
+    - Introduction of macros for defining lint rules and AST node unions.
+    - This indicates an intention to make the framework customizable and adaptable.
+• Refactoring for Improved Codebase:
+    - Several commits were dedicated to refactoring (e.g., `FormatLanguage` trait, diagnostics refactor).
+    - This suggests a focus on maintaining a clean and manageable codebase.
+• Automation for Development Workflow:
+    - Code generation for formatter and documentation.
+    - CI workflows for automated testing, benchmarking, and releases.
+    - This emphasizes a commitment to streamlining the development process.
+• Shift towards Stability:
+    - Early commits focused on core features and infrastructure.
+    - Later commits addressed stability and user experience, particularly in the CLI and LSP.
+• Potential Technical Debt Indicator:
+    - Early use of `println` and `dbg`, later removed, could indicate initial development haste or a need for more rigorous code review practices in early development phases.

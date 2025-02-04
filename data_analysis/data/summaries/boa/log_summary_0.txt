@@ -1,0 +1,49 @@
+[description]
+Boa is a JavaScript engine written in Rust. The project aims to create a high-performance, embeddable JavaScript engine.
+
+[milestones]
+• Implementation of a bytecode interpreter and virtual machine.
+    - This enabled Boa to execute JavaScript code, marking a significant step towards a working engine.
+• Introduction of a new garbage collector.
+    - Replaced the previous GC with an ephemeron-based implementation, potentially improving performance and memory management.
+• Overhaul of the object model.
+    - Includes support for hidden classes and a type-safe root shape, likely enhancing object access and manipulation speed.
+• Implementation of various built-in objects and their methods.
+    - Includes `Array`, `String`, `Object`, `Map`, `Set`, `Proxy`, `Promise`, `Intl`, `Temporal`, etc. providing essential JavaScript functionality.
+• Restructuring of the repository into a workspace.
+    - This likely improved code organization and maintainability.
+• Development of a CLI application (`boa_cli`).
+    - Offers a REPL and script execution capabilities.
+• Implementation of a simple module loader.
+    - Enables the use of modules in Boa.
+• Integration of ICU4X for internationalization support.
+    - Allows for locale-specific operations.
+• Development of `boa_tester`, a tool for running Test262 tests.
+    - Ensures conformance with the ECMAScript specification.
+• Continuous integration improvements, including cross-platform testing and benchmarking.
+    - Helps maintain code quality and identify performance regressions.
+
+[patterns]
+• Regular dependency updates and security audits via Dependabot.
+    - Demonstrates a focus on keeping dependencies up-to-date and addressing potential vulnerabilities.
+• Focus on performance optimization.
+    - Examples include using `ThinVec` for object representation, direct array element access, and constant folding optimization.
+• Refactoring of core components like the object model and VM for improved design and efficiency.
+    - Indicates a commitment to long-term maintainability and performance.
+• Continuous integration is used extensively, including testing on different platforms and regular benchmarks with criterion.
+    - Supports the project's focus on performance and cross-platform compatibility.
+• Active development of `boa_tester` with regular updates to the test262 suite.
+    - Reflects a commitment to ECMAScript conformance.
+• Gradual implementation of ECMAScript features and built-in objects.
+    - Suggests a methodical approach to development, prioritizing core features and gradually adding more complex ones.
+• Extensive use of feature flags.
+    - Enables experimental features to be tested without affecting the stability of the main codebase.
+• Thorough documentation.
+    - Suggests an emphasis on making the engine easy to understand and use.
+• Active community involvement, with contributions from a diverse set of developers.
+    - Indicates a healthy and growing open-source project.
+• Shift towards using more idiomatic Rust features (e.g., let-else, ok_or_else).
+    - Suggests ongoing efforts to improve code readability and maintainability.
+• Potential technical debt in older parts of the codebase where less idiomatic Rust patterns might still exist.
+    - Further refactoring might be needed in the future to address this.
+
