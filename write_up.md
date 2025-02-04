@@ -1,4 +1,4 @@
-## Approach: Text Regression Using Transformers
+## Approach: Text Regression Using Transformers With One Line Summary of Projects
 
 Our approach is a middle ground between agent-based methods and traditional feature-based approaches. We utilized text regression with transformers to analyze Git project logs and predict funding amounts.
 
@@ -22,7 +22,7 @@ We experimented with multiple transformer models:
 - Longformer
 
 **Performance:**
-- Using BERT, we achieved an **MSE of 0.020** on Hugging Face.
+- Using BERT, we achieved an **MSE of 0.0206** on Hugging Face.
 - Alternative input formats were tested:
   1. Adding project metadata: *"Project A: description of project a (star count: x, fork count: y), Project B: description of project b (star count: x, fork count: y)"*
      - This did not significantly improve the MSE.
@@ -50,4 +50,4 @@ A Solidity code formatter for Prettier.
 - **Technical Debt Indicators**: Frequent bug fixes point to complex parsing and formatting logic.
 
 ### Conclusion
-Our transformer-based text regression approach seems to effectively predict project similarity using Git logs. BERT performed best, achieving an **MSE of 0.020**, while alternative formats and longer descriptions did not improve results. Future work could explore fine-tuning BERT further or testing other summarization techniques to enhance the dataset quality.
+Our transformer-based text regression approach seems to effectively predict project similarity using Git logs. BERT performed best, achieving an **MSE of 0.0206**, while alternative formats and longer descriptions did not improve results. Future work could explore fine-tuning BERT further or testing other summarization techniques to enhance the dataset quality.
