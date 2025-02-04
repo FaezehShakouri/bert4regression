@@ -33,10 +33,12 @@ class ModelTrainer:
 
     def preprocess_data(self, examples, include_label=True):
         logger.info("Preprocessing data...")
-        project_as = examples["project_a"]
-        project_bs = examples["project_b"]
 
-        text = [f"Project A: {project_a}, Project B: {project_b}" for project_a, project_b in zip(project_as, project_bs)]
+        text = [f"Project A: {project_a} (Stars: {star_count_a}, Forks: {fork_count_a}), Project B: {project_b} (Stars: {star_count_b}, Forks: {fork_count_b})" 
+               for project_a, project_b, star_count_a, fork_count_a, star_count_b, fork_count_b 
+               in zip(examples['project_a'], examples['project_b'], examples["star_count_a"], examples["fork_count_a"], 
+                     examples["star_count_b"], examples["fork_count_b"])]
+        
         encoding = self.tokenizer(text, padding="max_length", truncation=True, max_length=self.tokenizer_max_length)
         
         if include_label:
@@ -54,7 +56,7 @@ class ModelTrainer:
         encoded_dataset.set_format("torch")
         return encoded_dataset
 
-    def split_data(self, train_size=0.7, validation_size=0.15, test_size=0.15):
+    def split_data(self, train_size=0.85, validation_size=0.075, test_size=0.075):
         df = pd.read_csv(self.args.dataset_file)
 
         logger.info("Splitting datasets to train, validation and test...")
@@ -177,14 +179,14 @@ def main(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset-file', type=str, default='data/data.mirror.csv', help='Path to the dataset')
+    parser.add_argument('--dataset-file', type=str, default='data/data.enriched.mirror.csv', help='Path to the dataset')
     parser.add_argument('--model-type', type=str, default='bert-base-uncased', help='Type of model to use')
     parser.add_argument('--tokenizer-max-length', type=int, default=512, help='Max length of the tokenizer')
     parser.add_argument('--output-dir', type=str, default=None, help='Directory for output files')
     parser.add_argument('--num-epochs', type=int, default=5, help='Number of training epochs')
     parser.add_argument('--checkpoint', type=str, help='Path to checkpoint to resume from')
     parser.add_argument('--save-model', action='store_true', help='Whether to save the final model')
-    parser.add_argument('--test-file', type=str, default='data/test.csv', help='File to make predictions on')
+    parser.add_argument('--test-file', type=str, default='data/test.enriched.csv', help='File to make predictions on')
     parser.add_argument('--predictions-output', type=str, default=None, help='Where to save predictions')
     args = parser.parse_args()
     main(args)

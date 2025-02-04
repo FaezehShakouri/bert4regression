@@ -18,6 +18,6 @@ def post_process_predictions(input_file, output_file):
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     # Example usage
-    input_file = "artifacts/predictions_bert-base-uncased_20250202_134549.csv"  
-    output_file = "artifacts/predictions_bert-base-uncased_20250202_134549_postprocessed.csv"
+    input_file = "artifacts/predictions_bert-base-uncased_20250203_221716.csv"  
+    output_file = "artifacts/predictions_bert-base-uncased_20250203_221716_postprocessed.csv"
     post_process_predictions(input_file, output_file)
