@@ -1,8 +1,7 @@
-# BERT-based Regression Model
+# Text Regression Using Transformers With One Line Summary of Projects
 
-This project implements a sentiment analysis model using BERT (Bidirectional Encoder Representations from Transformers) to perform regression tasks. 
+This project employs a transformer-based text regression approach to analyze Git project logs and predict funding amounts. By utilizing models like BERT, we summarize project activities and assess project similarities, achieving a mean squared error (MSE) of 0.0206.
 
-**Note:** The dataset used in this project is only test and sample data, intended for demonstration purposes.
 
 ## Table of Contents
 
@@ -16,7 +15,7 @@ This project implements a sentiment analysis model using BERT (Bidirectional Enc
 To set up the project, clone the repository and install the required packages:
 ```bash
 git clone <repository-url>
-cd <repository-directory>
+cd <repository-directory>/model
 pip install -r requirements.txt
 ```
 
@@ -25,7 +24,7 @@ pip install -r requirements.txt
 To train the model, run the following command:
 
 ```bash
-python src/main.py --train_file <path-to-train-file> --validation_file <path-to-validation-file> --test_file <path-to-test-file>
+python src/main.py
 ```
 
 Make sure to adjust any parameters in the script as needed.
